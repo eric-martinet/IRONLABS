@@ -6,4 +6,4 @@
  - Conditional Statements
  - Loops
  - Regular expressions
- - and new things to come!
+ - and more to come!
