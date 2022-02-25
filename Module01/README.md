@@ -6,4 +6,5 @@
  - Conditional Statements
  - Loops
  - Regular expressions
+ - Strings
  - and more to come!
