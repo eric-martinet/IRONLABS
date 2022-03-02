@@ -8,8 +8,8 @@ SELECT Max(price), Min(Price) FROM order_items;
 # Price of the highest priced order = 0.85
 
 # 2. From the order_items table, what is the range of the shipping_limit_date of the orders?
-SELECT Max(shipping_limit_date), Min(shipping_limit_date) FROM order_items;
-# The range is 2016-09-19 02:15:34 to 2020-04-10 00:35:08
+SELECT Datediff(Max(shipping_limit_date), Min(shipping_limit_date)) FROM order_items;
+# The range is 1,299 days: from 2016-09-19 02:15:34 to 2020-04-10 00:35:08
 
 # 3. From the customers table, find the states with the greatest number of customers.
 SELECT * from customers;
