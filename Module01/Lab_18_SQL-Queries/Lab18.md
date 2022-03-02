@@ -76,4 +76,6 @@ We first order by rating, since many apps have the same top rating of 5, and the
 1. Domino's Pizza USA: rating 5, votes 258,624
 1. Plants vs. Zombies HD: rating 5, votes 163,598
 
-### 11. 
+### 11. Do people care about the price of an app?
+Users are generally more satisfied with paid apps than free apps.
+However, as price goes up, users tend to be slightly less happy with the app, but still remain happier than with a free app.

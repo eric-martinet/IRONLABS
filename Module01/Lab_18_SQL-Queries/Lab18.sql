@@ -41,15 +41,41 @@ ORDER BY user_rating DESC, rating_count_tot DESC
 LIMIT 3;
 
 # 11. Do people care about the price of an app?
-# Let's look, by genre, if people tend to give a better rating to free or paid apps.
-# Let's  firt look at the average rating for free apps.
-SELECT prime_genre, AVG(user_rating) as RatingAverageFreeApps FROM applestore
-WHERE price  = 0
-GROUP BY prime_genre
-ORDER BY prime_genre;
+# Let's look if people tend to give a better rating to free or paid apps.
+
+# Let's  first look at the average rating for free apps.
+SELECT AVG(user_rating), Sum(rating_count_tot) as RatingAverageFreeApps FROM applestore
+WHERE price  = 0;
+#3.83 with 23,045,350 reviews
 
 # Let's now look at the average rating for paying apps.
-SELECT prime_genre, AVG(user_rating) as RatingAveragePayingApps FROM applestore
-WHERE price  > 0
-GROUP BY prime_genre
-ORDER BY prime_genre;
+SELECT AVG(user_rating), Sum(rating_count_tot) as RatingAveragePayingApps FROM applestore
+WHERE price  <> 0;
+#4.04 with 4,311,926 reviews
+
+# Conclusion: users are generally more satisfied with paid apps than free apps.
+
+# But are users satisfied with the most expensive apps? Let's see the price ranges and average ratings.
+SELECT price, AVG(user_rating) FROM applestore
+GROUP BY price
+ORDER BY price DESC;
+
+# Let's define three groups: paying app with price below $5, between $5 and $10, above $10
+# and let's look at the average rating.
+# Let's not forget about the number of ratings to make sure it is significant.
+
+SELECT AVG(user_rating), Sum(rating_count_tot) as RatingAveragePayingApps FROM applestore
+WHERE price  < 5 AND price > 0;
+# 4.05 with 3,876,088 reviews
+
+SELECT AVG(user_rating), Sum(rating_count_tot)as RatingAveragePayingApps FROM applestore
+WHERE price  < 10 AND price >= 5;
+# 3.95 with 429,202 reviews
+
+SELECT AVG(user_rating), Sum(rating_count_tot) as RatingAveragePayingApps FROM applestore
+WHERE price  >= 10;
+# 3.92 with 6,636 reviews
+# Not that significant.
+
+# As price goes up, users tend to be slightly less happy with the app, but still remain happier than with a free app.
+
