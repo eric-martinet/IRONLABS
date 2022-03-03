@@ -27,7 +27,23 @@ GROUP BY Author_ID, Publisher
 ORDER BY Title_count DESC, Author_ID DESC)
 ;
 
-SELECT * FROM summary_challenge2;
+SELECT Sum(Title_count) FROM summary_challenge2;
+
+# Other way if we do not want to store the summary table.
+SELECT Sum(Title_count) FROM
+(
+SELECT auths.au_id AS Author_ID, auths.au_lname AS LastName, auths.au_fname AS FirstName, pubs.pub_name AS Publisher, Count(tits.title) as Title_count
+FROM titleauthor titauth
+LEFT JOIN authors auths
+ON titauth.au_id = auths.au_id
+LEFT JOIN titles tits
+ON titauth.title_id = tits.title_id
+LEFT JOIN publishers pubs
+ON tits.pub_id = pubs.pub_id
+GROUP BY Author_ID, Publisher
+ORDER BY Title_count DESC, Author_ID DESC
+) 
+AS summary; # Derived table must have its own alias.
 
 SELECT Sum(Title_count) FROM summary_challenge2;
 # 25 titles, as the number of records in titleauthor
