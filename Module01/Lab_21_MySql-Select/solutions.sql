@@ -24,7 +24,8 @@ ON titauth.title_id = tits.title_id
 LEFT JOIN publishers pubs
 ON tits.pub_id = pubs.pub_id
 GROUP BY Author_ID, Publisher
-ORDER BY Title_count DESC, Author_ID DESC)
+ORDER BY Title_count DESC, Author_ID DESC
+)
 ;
 
 SELECT Sum(Title_count) FROM summary_challenge2;
