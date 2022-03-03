@@ -13,9 +13,9 @@ ORDER BY Author_ID;
 
 # CHALLENGE 2: Who Have Published How Many At Where?
 
-DROP TABLE IF EXISTS summary_challenge2; 
+DROP TEMPORARY TABLE IF EXISTS summary_challenge2;
 
-CREATE TABLE IF NOT EXISTS summary_challenge2
+CREATE TEMPORARY TABLE IF NOT EXISTS summary_challenge2 # Temporary table so it is not stored in the DB after the SQL session has ended
 SELECT auths.au_id AS Author_ID, auths.au_lname AS LastName, auths.au_fname AS FirstName, pubs.pub_name AS Publisher, Count(tits.title) as Title_count
 FROM titleauthor titauth
 LEFT JOIN authors auths
@@ -48,7 +48,6 @@ ORDER BY Title_count DESC, Author_ID DESC
 ) 
 AS summary; # Derived table must have its own alias.
 
-SELECT Sum(Title_count) FROM summary_challenge2;
 # 25 titles, as the number of records in titleauthor
 
 # CHALLENGE 3: Best Selling Authors
