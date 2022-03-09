@@ -15,16 +15,30 @@ Refactor the code based on what you have learned about code simplicity and effic
 # Rename function
 def get_longest_side(max_side):
 
-    solutions = []
-    for x in range(5, max_side):
-        for y in range(4, max_side):
-            for z in range(3, max_side):
-                if (x*x==y*y+z*z):
-                    # extend instead of append so we get a flat list
-                    # in which we can determine the max
-                    solutions.extend([x, y, z])
+    # Original algorithm was testing all possible triangles several times for each of them
+    # and the domain cardinality was a cube, resulting in long computations.
+    # Since we are looking for the max, we just need to stop when we find it.
+    # To ensure it is the max, we can start by the max value and then increment down.
+    # We can also order the values of the triangles x > y > z
+    # so we make sure we do not test the same triangle several times.
 
-    return max(solutions)
+    # We could even make it faster using Fermat's theorem
+    # and we first check if x can be expressed as the sum of two squares
+    # (if not, no need to run the y & z loops)
+    # but other labs await :)
+
+    # Fermat's theorem:
+    # A number N is expressible as a sum of 2 squares
+    # if and only if in the prime factorization of N,
+    # every prime of the form (4k+3) occurs an even number of times.
+
+        for x in range(max_side, 5, -1):
+            for y in range(x-1, 4, -1):
+                for z in range(y-1, 3, -1):
+                    if (x*x == y*y + z*z):
+                        print((x,y,z))
+                        # solution found, we can return it (which also breaks all loops)
+                        return x
 
 # Keep look & feel
 # Input variable renamed so it is senseful
