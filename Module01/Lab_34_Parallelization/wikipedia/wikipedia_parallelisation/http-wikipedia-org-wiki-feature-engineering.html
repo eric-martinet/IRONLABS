@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Feature engineering - Wikipedia</title>
+<script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"8fb6d1c8-9686-424e-b103-f3957438c739","wgCSPNonce":false,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Feature_engineering","wgTitle":"Feature engineering","wgCurRevisionId":1069237301,"wgRevisionId":1069237301,"wgArticleId":46207323,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["CS1 errors: missing periodical","All articles with unsourced statements","Articles with unsourced statements from January 2020","All articles lacking reliable references","Articles lacking reliable references from January 2020","Articles with a promotional tone from June 2021",
+"All articles with a promotional tone","Machine learning","Data analysis"],"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"Feature_engineering","wgRelevantArticleId":46207323,"wgIsProbablyEditable":true,"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgFlaggedRevsParams":{"tags":{"status":{"levels":-1}}},"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en"},"wgMFDisplayWikibaseDescriptions":{"search":true,"nearby":true,"watchlist":true,"tagline":false},"wgWMESchemaEditAttemptStepOversample":false,"wgWMEPageLength":10000,"wgNoticeProject":"wikipedia","wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgPopupsFlags":10,"wgULSCurrentAutonym":"English","wgEditSubmitButtonLabelPublish":true,"wgCentralAuthMobileDomain":false,"wgULSPosition":"interlanguage","wgULSisCompactLinksEnabled":true,"wgWikibaseItemId":"Q22245680","wgGENewcomerTasksGuidanceEnabled":true,
+"wgGEAskQuestionEnabled":false,"wgGELinkRecommendationsFrontendEnabled":false};RLSTATE={"ext.globalCssJs.user.styles":"ready","site.styles":"ready","user.styles":"ready","ext.globalCssJs.user":"ready","user":"ready","user.options":"loading","ext.cite.styles":"ready","ext.pygments":"ready","skins.vector.styles.legacy":"ready","jquery.makeCollapsible.styles":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.wikimediaBadges":"ready","ext.uls.interlanguage":"ready","wikibase.client.init":"ready"};RLPAGEMODULES=["ext.cite.ux-enhancements","site","mediawiki.page.ready","jquery.makeCollapsible","mediawiki.toc","skins.vector.legacy.js","ext.gadget.ReferenceTooltips","ext.gadget.charinsert","ext.gadget.extra-toolbar-buttons","ext.gadget.refToolbar","ext.gadget.switcher","mmv.head","mmv.bootstrap.autostart","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging","ext.wikimediaEvents","ext.navigationTiming",
+"ext.cx.eventlogging.campaigns","ext.centralNotice.geoIP","ext.centralNotice.startUp","ext.centralauth.centralautologin","ext.popups","ext.uls.compactlinks","ext.uls.interface","ext.growthExperiments.SuggestedEditSession"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@1i9g4",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});});});</script>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=ext.cite.styles%7Cext.pygments%2CwikimediaBadges%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cjquery.makeCollapsible.styles%7Cskins.vector.styles.legacy%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.38.0-wmf.25"/>
+<meta name="referrer" content="origin"/>
+<meta name="referrer" content="origin-when-crossorigin"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Kernel_Machine.svg/1200px-Kernel_Machine.svg.png"/>
+<meta property="og:image:width" content="1200"/>
+<meta property="og:image:height" content="546"/>
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Kernel_Machine.svg/800px-Kernel_Machine.svg.png"/>
+<meta property="og:image:width" content="800"/>
+<meta property="og:image:height" content="364"/>
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Kernel_Machine.svg/640px-Kernel_Machine.svg.png"/>
+<meta property="og:image:width" content="640"/>
+<meta property="og:image:height" content="291"/>
+<meta property="og:title" content="Feature engineering - Wikipedia"/>
+<meta property="og:type" content="website"/>
+<link rel="preconnect" href="//upload.wikimedia.org"/>
+<link rel="alternate" media="only screen and (max-width: 720px)" href="//en.m.wikipedia.org/wiki/Feature_engineering"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Feature_engineering&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="license" href="https://creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Feature_engineering"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject mw-editable page-Feature_engineering rootpage-Feature_engineering skin-vector action-view skin-vector-legacy"><div id="mw-page-base" class="noprint"></div>
+<div id="mw-head-base" class="noprint"></div>
+<div id="content" class="mw-body" role="main">
+	<a id="top"></a>
+	<div id="siteNotice"><!-- CentralNotice --></div>
+	<div class="mw-indicators">
+	</div>
+	<h1 id="firstHeading" class="firstHeading mw-first-heading">Feature engineering</h1>
+	<div id="bodyContent" class="vector-body">
+		<div id="siteSub" class="noprint">From Wikipedia, the free encyclopedia</div>
+		<div id="contentSub"></div>
+		<div id="contentSub2"></div>
+		
+		<div id="jump-to-nav"></div>
+		<a class="mw-jump-link" href="#mw-head">Jump to navigation</a>
+		<a class="mw-jump-link" href="#searchInput">Jump to search</a>
+		<div id="mw-content-text" class="mw-body-content mw-content-ltr" lang="en" dir="ltr"><div class="mw-parser-output"><style data-mw-deduplicate="TemplateStyles:r1045330069">.mw-parser-output .sidebar{width:22em;float:right;clear:right;margin:0.5em 0 1em 1em;background:#f8f9fa;border:1px solid #aaa;padding:0.2em;text-align:center;line-height:1.4em;font-size:88%;border-collapse:collapse;display:table}body.skin-minerva .mw-parser-output .sidebar{display:table!important;float:right!important;margin:0.5em 0 1em 1em!important}.mw-parser-output .sidebar-subgroup{width:100%;margin:0;border-spacing:0}.mw-parser-output .sidebar-left{float:left;clear:left;margin:0.5em 1em 1em 0}.mw-parser-output .sidebar-none{float:none;clear:both;margin:0.5em 1em 1em 0}.mw-parser-output .sidebar-outer-title{padding:0 0.4em 0.2em;font-size:125%;line-height:1.2em;font-weight:bold}.mw-parser-output .sidebar-top-image{padding:0.4em}.mw-parser-output .sidebar-top-caption,.mw-parser-output .sidebar-pretitle-with-top-image,.mw-parser-output .sidebar-caption{padding:0.2em 0.4em 0;line-height:1.2em}.mw-parser-output .sidebar-pretitle{padding:0.4em 0.4em 0;line-height:1.2em}.mw-parser-output .sidebar-title,.mw-parser-output .sidebar-title-with-pretitle{padding:0.2em 0.8em;font-size:145%;line-height:1.2em}.mw-parser-output .sidebar-title-with-pretitle{padding:0.1em 0.4em}.mw-parser-output .sidebar-image{padding:0.2em 0.4em 0.4em}.mw-parser-output .sidebar-heading{padding:0.1em 0.4em}.mw-parser-output .sidebar-content{padding:0 0.5em 0.4em}.mw-parser-output .sidebar-content-with-subgroup{padding:0.1em 0.4em 0.2em}.mw-parser-output .sidebar-above,.mw-parser-output .sidebar-below{padding:0.3em 0.8em;font-weight:bold}.mw-parser-output .sidebar-collapse .sidebar-above,.mw-parser-output .sidebar-collapse .sidebar-below{border-top:1px solid #aaa;border-bottom:1px solid #aaa}.mw-parser-output .sidebar-navbar{text-align:right;font-size:115%;padding:0 0.4em 0.4em}.mw-parser-output .sidebar-list-title{padding:0 0.4em;text-align:left;font-weight:bold;line-height:1.6em;font-size:105%}.mw-parser-output .sidebar-list-title-c{padding:0 0.4em;text-align:center;margin:0 3.3em}@media(max-width:720px){body.mediawiki .mw-parser-output .sidebar{width:100%!important;clear:both;float:none!important;margin-left:0!important;margin-right:0!important}}</style><table class="sidebar sidebar-collapse nomobile nowraplinks"><tbody><tr><td class="sidebar-pretitle">Part of a series on</td></tr><tr><th class="sidebar-title-with-pretitle"><a href="/wiki/Machine_learning" title="Machine learning">Machine learning</a><br />and <a href="/wiki/Data_mining" title="Data mining">data mining</a></th></tr><tr><td class="sidebar-image"><a href="/wiki/File:Kernel_Machine.svg" class="image" title="Scatterplot featuring a linear support vector machine&#39;s decision boundary (dashed line)"><img alt="Scatterplot featuring a linear support vector machine&#39;s decision boundary (dashed line)" src="//upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Kernel_Machine.svg/220px-Kernel_Machine.svg.png" decoding="async" width="220" height="100" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Kernel_Machine.svg/330px-Kernel_Machine.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Kernel_Machine.svg/440px-Kernel_Machine.svg.png 2x" data-file-width="512" data-file-height="233" /></a></td></tr><tr><td class="sidebar-content">
+<div class="sidebar-list mw-collapsible"><div class="sidebar-list-title" style="border-top:1px solid #aaa;text-align:center; background:#ddd;">Problems</div><div class="sidebar-list-content mw-collapsible-content hlist">
+<ul><li><a href="/wiki/Statistical_classification" title="Statistical classification">Classification</a></li>
+<li><a href="/wiki/Cluster_analysis" title="Cluster analysis">Clustering</a></li>
+<li><a href="/wiki/Regression_analysis" title="Regression analysis">Regression</a></li>
+<li><a href="/wiki/Anomaly_detection" title="Anomaly detection">Anomaly detection</a></li>
+<li><a href="/wiki/Data_Cleaning" class="mw-redirect" title="Data Cleaning">Data Cleaning</a></li>
+<li><a href="/wiki/Automated_machine_learning" title="Automated machine learning">AutoML</a></li>
+<li><a href="/wiki/Association_rule_learning" title="Association rule learning">Association rules</a></li>
+<li><a href="/wiki/Reinforcement_learning" title="Reinforcement learning">Reinforcement learning</a></li>
+<li><a href="/wiki/Structured_prediction" title="Structured prediction">Structured prediction</a></li>
+<li><a class="mw-selflink selflink">Feature engineering</a></li>
+<li><a href="/wiki/Feature_learning" title="Feature learning">Feature learning</a></li>
+<li><a href="/wiki/Online_machine_learning" title="Online machine learning">Online learning</a></li>
+<li><a href="/wiki/Semi-supervised_learning" title="Semi-supervised learning">Semi-supervised learning</a></li>
+<li><a href="/wiki/Unsupervised_learning" title="Unsupervised learning">Unsupervised learning</a></li>
+<li><a href="/wiki/Learning_to_rank" title="Learning to rank">Learning to rank</a></li>
+<li><a href="/wiki/Grammar_induction" title="Grammar induction">Grammar induction</a></li></ul></div></div></td>
+</tr><tr><td class="sidebar-content">
+<div class="sidebar-list mw-collapsible mw-collapsed"><div class="sidebar-list-title" style="border-top:1px solid #aaa;text-align:center; background:#ddd;"><div style="display:inline-block; padding:0.1em 0;line-height:1.2em;"><a href="/wiki/Supervised_learning" title="Supervised learning">Supervised learning</a><br /><style data-mw-deduplicate="TemplateStyles:r886047488">.mw-parser-output .nobold{font-weight:normal}</style><span class="nobold"><span style="font-size:85%;">(<b><a href="/wiki/Statistical_classification" title="Statistical classification">classification</a></b>&#160;&#8226;&#32;<b><a href="/wiki/Regression_analysis" title="Regression analysis">regression</a></b>)</span></span> </div></div><div class="sidebar-list-content mw-collapsible-content hlist">
+<ul><li><a href="/wiki/Decision_tree_learning" title="Decision tree learning">Decision trees</a></li>
+<li><a href="/wiki/Ensemble_learning" title="Ensemble learning">Ensembles</a>
+<ul><li><a href="/wiki/Bootstrap_aggregating" title="Bootstrap aggregating">Bagging</a></li>
+<li><a href="/wiki/Boosting_(machine_learning)" title="Boosting (machine learning)">Boosting</a></li>
+<li><a href="/wiki/Random_forest" title="Random forest">Random forest</a></li></ul></li>
+<li><a href="/wiki/K-nearest_neighbors_algorithm" title="K-nearest neighbors algorithm"><i>k</i>-NN</a></li>
+<li><a href="/wiki/Linear_regression" title="Linear regression">Linear regression</a></li>
+<li><a href="/wiki/Naive_Bayes_classifier" title="Naive Bayes classifier">Naive Bayes</a></li>
+<li><a href="/wiki/Artificial_neural_network" title="Artificial neural network">Artificial neural networks</a></li>
+<li><a href="/wiki/Logistic_regression" title="Logistic regression">Logistic regression</a></li>
+<li><a href="/wiki/Perceptron" title="Perceptron">Perceptron</a></li>
+<li><a href="/wiki/Relevance_vector_machine" title="Relevance vector machine">Relevance vector machine (RVM)</a></li>
+<li><a href="/wiki/Support-vector_machine" title="Support-vector machine">Support vector machine (SVM)</a></li></ul></div></div></td>
+</tr><tr><td class="sidebar-content">
+<div class="sidebar-list mw-collapsible mw-collapsed"><div class="sidebar-list-title" style="border-top:1px solid #aaa;text-align:center; background:#ddd;"><a href="/wiki/Cluster_analysis" title="Cluster analysis">Clustering</a></div><div class="sidebar-list-content mw-collapsible-content hlist">
+<ul><li><a href="/wiki/BIRCH" title="BIRCH">BIRCH</a></li>
+<li><a href="/wiki/CURE_algorithm" title="CURE algorithm">CURE</a></li>
+<li><a href="/wiki/Hierarchical_clustering" title="Hierarchical clustering">Hierarchical</a></li>
+<li><a href="/wiki/K-means_clustering" title="K-means clustering"><i>k</i>-means</a></li>
+<li><a href="/wiki/Expectation%E2%80%93maximization_algorithm" title="Expectation–maximization algorithm">Expectation–maximization (EM)</a></li>
+<li><br /><a href="/wiki/DBSCAN" title="DBSCAN">DBSCAN</a></li>
+<li><a href="/wiki/OPTICS_algorithm" title="OPTICS algorithm">OPTICS</a></li>
+<li><a href="/wiki/Mean_shift" title="Mean shift">Mean shift</a></li></ul></div></div></td>
+</tr><tr><td class="sidebar-content">
+<div class="sidebar-list mw-collapsible mw-collapsed"><div class="sidebar-list-title" style="border-top:1px solid #aaa;text-align:center; background:#ddd;"><a href="/wiki/Dimensionality_reduction" title="Dimensionality reduction">Dimensionality reduction</a></div><div class="sidebar-list-content mw-collapsible-content hlist">
+<ul><li><a href="/wiki/Factor_analysis" title="Factor analysis">Factor analysis</a></li>
+<li><a href="/wiki/Canonical_correlation" title="Canonical correlation">CCA</a></li>
+<li><a href="/wiki/Independent_component_analysis" title="Independent component analysis">ICA</a></li>
+<li><a href="/wiki/Linear_discriminant_analysis" title="Linear discriminant analysis">LDA</a></li>
+<li><a href="/wiki/Non-negative_matrix_factorization" title="Non-negative matrix factorization">NMF</a></li>
+<li><a href="/wiki/Principal_component_analysis" title="Principal component analysis">PCA</a></li>
+<li><a href="/wiki/Proper_generalized_decomposition" title="Proper generalized decomposition">PGD</a></li>
+<li><a href="/wiki/T-distributed_stochastic_neighbor_embedding" title="T-distributed stochastic neighbor embedding">t-SNE</a></li></ul></div></div></td>
+</tr><tr><td class="sidebar-content">
+<div class="sidebar-list mw-collapsible mw-collapsed"><div class="sidebar-list-title" style="border-top:1px solid #aaa;text-align:center; background:#ddd;"><a href="/wiki/Structured_prediction" title="Structured prediction">Structured prediction</a></div><div class="sidebar-list-content mw-collapsible-content hlist">
+<ul><li><a href="/wiki/Graphical_model" title="Graphical model">Graphical models</a>
+<ul><li><a href="/wiki/Bayesian_network" title="Bayesian network">Bayes net</a></li>
+<li><a href="/wiki/Conditional_random_field" title="Conditional random field">Conditional random field</a></li>
+<li><a href="/wiki/Hidden_Markov_model" title="Hidden Markov model">Hidden Markov</a></li></ul></li></ul></div></div></td>
+</tr><tr><td class="sidebar-content">
+<div class="sidebar-list mw-collapsible mw-collapsed"><div class="sidebar-list-title" style="border-top:1px solid #aaa;text-align:center; background:#ddd;"><a href="/wiki/Anomaly_detection" title="Anomaly detection">Anomaly detection</a></div><div class="sidebar-list-content mw-collapsible-content hlist">
+<ul><li><a href="/wiki/K-nearest_neighbors_algorithm" title="K-nearest neighbors algorithm"><i>k</i>-NN</a></li>
+<li><a href="/wiki/Local_outlier_factor" title="Local outlier factor">Local outlier factor</a></li></ul></div></div></td>
+</tr><tr><td class="sidebar-content">
+<div class="sidebar-list mw-collapsible mw-collapsed"><div class="sidebar-list-title" style="border-top:1px solid #aaa;text-align:center; background:#ddd;"><a href="/wiki/Artificial_neural_network" title="Artificial neural network">Artificial neural network</a></div><div class="sidebar-list-content mw-collapsible-content hlist">
+<ul><li><a href="/wiki/Autoencoder" title="Autoencoder">Autoencoder</a></li>
+<li><a href="/wiki/Cognitive_computing" title="Cognitive computing">Cognitive computing</a></li>
+<li><a href="/wiki/Deep_learning" title="Deep learning">Deep learning</a></li>
+<li><a href="/wiki/DeepDream" title="DeepDream">DeepDream</a></li>
+<li><a href="/wiki/Multilayer_perceptron" title="Multilayer perceptron">Multilayer perceptron</a></li>
+<li><a href="/wiki/Recurrent_neural_network" title="Recurrent neural network">RNN</a>
+<ul><li><a href="/wiki/Long_short-term_memory" title="Long short-term memory">LSTM</a></li>
+<li><a href="/wiki/Gated_recurrent_unit" title="Gated recurrent unit">GRU</a></li>
+<li><a href="/wiki/Echo_state_network" title="Echo state network">ESN</a></li></ul></li>
+<li><a href="/wiki/Restricted_Boltzmann_machine" title="Restricted Boltzmann machine">Restricted Boltzmann machine</a></li>
+<li><a href="/wiki/Generative_adversarial_network" title="Generative adversarial network">GAN</a></li>
+<li><a href="/wiki/Self-organizing_map" title="Self-organizing map">SOM</a></li>
+<li><a href="/wiki/Convolutional_neural_network" title="Convolutional neural network">Convolutional neural network</a>
+<ul><li><a href="/wiki/U-Net" title="U-Net">U-Net</a></li></ul></li>
+<li><a href="/wiki/Transformer_(machine_learning_model)" title="Transformer (machine learning model)">Transformer</a>
+<ul><li><a href="/wiki/Vision_transformer" title="Vision transformer">Vision</a></li></ul></li>
+<li><a href="/wiki/Spiking_neural_network" title="Spiking neural network">Spiking neural network</a></li>
+<li><a href="/wiki/Memtransistor" title="Memtransistor">Memtransistor</a></li>
+<li><a href="/wiki/Electrochemical_RAM" title="Electrochemical RAM">Electrochemical RAM</a> (ECRAM)</li></ul></div></div></td>
+</tr><tr><td class="sidebar-content">
+<div class="sidebar-list mw-collapsible mw-collapsed"><div class="sidebar-list-title" style="border-top:1px solid #aaa;text-align:center; background:#ddd;"><a href="/wiki/Reinforcement_learning" title="Reinforcement learning">Reinforcement learning</a></div><div class="sidebar-list-content mw-collapsible-content hlist">
+<ul><li><a href="/wiki/Q-learning" title="Q-learning">Q-learning</a></li>
+<li><a href="/wiki/State%E2%80%93action%E2%80%93reward%E2%80%93state%E2%80%93action" title="State–action–reward–state–action">SARSA</a></li>
+<li><a href="/wiki/Temporal_difference_learning" title="Temporal difference learning">Temporal difference (TD)</a></li></ul></div></div></td>
+</tr><tr><td class="sidebar-content">
+<div class="sidebar-list mw-collapsible mw-collapsed"><div class="sidebar-list-title" style="border-top:1px solid #aaa;text-align:center; background:#ddd;">Theory</div><div class="sidebar-list-content mw-collapsible-content hlist">
+<ul><li><a href="/wiki/Kernel_machines" class="mw-redirect" title="Kernel machines">Kernel machines</a></li>
+<li><a href="/wiki/Bias%E2%80%93variance_tradeoff" title="Bias–variance tradeoff">Bias–variance tradeoff</a></li>
+<li><a href="/wiki/Computational_learning_theory" title="Computational learning theory">Computational learning theory</a></li>
+<li><a href="/wiki/Empirical_risk_minimization" title="Empirical risk minimization">Empirical risk minimization</a></li>
+<li><a href="/wiki/Occam_learning" title="Occam learning">Occam learning</a></li>
+<li><a href="/wiki/Probably_approximately_correct_learning" title="Probably approximately correct learning">PAC learning</a></li>
+<li><a href="/wiki/Statistical_learning_theory" title="Statistical learning theory">Statistical learning</a></li>
+<li><a href="/wiki/Vapnik%E2%80%93Chervonenkis_theory" title="Vapnik–Chervonenkis theory">VC theory</a></li></ul></div></div></td>
+</tr><tr><td class="sidebar-content">
+<div class="sidebar-list mw-collapsible mw-collapsed"><div class="sidebar-list-title" style="border-top:1px solid #aaa;text-align:center; background:#ddd;">Machine-learning venues</div><div class="sidebar-list-content mw-collapsible-content hlist">
+<ul><li><a href="/wiki/Conference_on_Neural_Information_Processing_Systems" title="Conference on Neural Information Processing Systems">NeurIPS</a></li>
+<li><a href="/wiki/International_Conference_on_Machine_Learning" title="International Conference on Machine Learning">ICML</a></li>
+<li><a href="/wiki/Machine_Learning_(journal)" title="Machine Learning (journal)">ML</a></li>
+<li><a href="/wiki/Journal_of_Machine_Learning_Research" title="Journal of Machine Learning Research">JMLR</a></li>
+<li><a rel="nofollow" class="external text" href="https://arxiv.org/list/cs.LG/recent">ArXiv:cs.LG</a></li></ul></div></div></td>
+</tr><tr><td class="sidebar-content">
+<div class="sidebar-list mw-collapsible mw-collapsed"><div class="sidebar-list-title" style="border-top:1px solid #aaa;text-align:center; background:#ddd;">Related articles</div><div class="sidebar-list-content mw-collapsible-content hlist">
+<ul><li><a href="/wiki/Glossary_of_artificial_intelligence" title="Glossary of artificial intelligence">Glossary of artificial intelligence</a></li>
+<li><a href="/wiki/List_of_datasets_for_machine-learning_research" title="List of datasets for machine-learning research">List of datasets for machine-learning research</a></li>
+<li><a href="/wiki/Outline_of_machine_learning" title="Outline of machine learning">Outline of machine learning</a></li></ul></div></div></td>
+</tr><tr><td class="sidebar-navbar"><style data-mw-deduplicate="TemplateStyles:r1063604349">.mw-parser-output .navbar{display:inline;font-size:88%;font-weight:normal}.mw-parser-output .navbar-collapse{float:left;text-align:left}.mw-parser-output .navbar-boxtext{word-spacing:0}.mw-parser-output .navbar ul{display:inline-block;white-space:nowrap;line-height:inherit}.mw-parser-output .navbar-brackets::before{margin-right:-0.125em;content:"[ "}.mw-parser-output .navbar-brackets::after{margin-left:-0.125em;content:" ]"}.mw-parser-output .navbar li{word-spacing:-0.125em}.mw-parser-output .navbar a>span,.mw-parser-output .navbar a>abbr{text-decoration:inherit}.mw-parser-output .navbar-mini abbr{font-variant:small-caps;border-bottom:none;text-decoration:none;cursor:inherit}.mw-parser-output .navbar-ct-full{font-size:114%;margin:0 7em}.mw-parser-output .navbar-ct-mini{font-size:114%;margin:0 4em}</style><div class="navbar plainlinks hlist navbar-mini"><ul><li class="nv-view"><a href="/wiki/Template:Machine_learning" title="Template:Machine learning"><abbr title="View this template">v</abbr></a></li><li class="nv-talk"><a href="/wiki/Template_talk:Machine_learning" title="Template talk:Machine learning"><abbr title="Discuss this template">t</abbr></a></li><li class="nv-edit"><a class="external text" href="https://en.wikipedia.org/w/index.php?title=Template:Machine_learning&amp;action=edit"><abbr title="Edit this template">e</abbr></a></li></ul></div></td></tr></tbody></table>
+<p><b>Feature engineering</b> (or <b>feature extraction</b>) is the process of using <a href="/wiki/Domain_knowledge" title="Domain knowledge">domain knowledge</a> to extract <a href="/wiki/Feature_(machine_learning)" title="Feature (machine learning)">features</a> (characteristics, properties, attributes) from raw <a href="/wiki/Data" title="Data">data</a>.<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">&#91;1&#93;</a></sup>  The motivation is to use these extra features to improve the quality of results from a <a href="/wiki/Machine_learning" title="Machine learning">machine learning</a> process, compared with supplying only the raw data to the machine learning process. 
+</p>
+<div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2 id="mw-toc-heading">Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Process"><span class="tocnumber">1</span> <span class="toctext">Process</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Typical_engineered_features"><span class="tocnumber">1.1</span> <span class="toctext">Typical engineered features</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-3"><a href="#Relevance"><span class="tocnumber">2</span> <span class="toctext">Relevance</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Explosion"><span class="tocnumber">3</span> <span class="toctext">Explosion</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#Automation"><span class="tocnumber">4</span> <span class="toctext">Automation</span></a>
+<ul>
+<li class="toclevel-2 tocsection-6"><a href="#Multi-relational_decision_tree_learning_(MRDTL)"><span class="tocnumber">4.1</span> <span class="toctext">Multi-relational decision tree learning (MRDTL)</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#Deep_Feature_Synthesis"><span class="tocnumber">4.2</span> <span class="toctext">Deep Feature Synthesis</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-8"><a href="#Feature_stores"><span class="tocnumber">5</span> <span class="toctext">Feature stores</span></a></li>
+<li class="toclevel-1 tocsection-9"><a href="#See_also"><span class="tocnumber">6</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-10"><a href="#References"><span class="tocnumber">7</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-11"><a href="#Further_reading"><span class="tocnumber">8</span> <span class="toctext">Further reading</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Process">Process</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Feature_engineering&amp;action=edit&amp;section=1" title="Edit section: Process">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The feature engineering process is:<sup id="cite_ref-2" class="reference"><a href="#cite_note-2">&#91;2&#93;</a></sup>
+</p>
+<ul><li><a href="/wiki/Brainstorming" title="Brainstorming">Brainstorming</a> or <a href="/wiki/Software_testing" title="Software testing">testing</a> features;<sup id="cite_ref-3" class="reference"><a href="#cite_note-3">&#91;3&#93;</a></sup></li>
+<li>Deciding what features to create;</li>
+<li>Creating features;</li>
+<li>Testing the impact of the identified features on the task;</li>
+<li>Improving your features if needed;</li>
+<li>Repeat.</li></ul>
+<h3><span class="mw-headline" id="Typical_engineered_features">Typical engineered features</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Feature_engineering&amp;action=edit&amp;section=2" title="Edit section: Typical engineered features">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The following list<sup id="cite_ref-4" class="reference"><a href="#cite_note-4">&#91;4&#93;</a></sup> provides some typical ways to engineer useful features
+</p>
+<ul><li>Numerical transformations (like taking fractions or scaling)</li>
+<li>Category encoder like one-hot or target encoder (for <a href="/wiki/Categorical_variable" title="Categorical variable">categorical data</a>)<sup id="cite_ref-5" class="reference"><a href="#cite_note-5">&#91;5&#93;</a></sup></li>
+<li>Clustering</li>
+<li>Group aggregated values</li>
+<li>Principal component analysis (for numerical data)</li></ul>
+<h2><span class="mw-headline" id="Relevance">Relevance</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Feature_engineering&amp;action=edit&amp;section=3" title="Edit section: Relevance">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Features vary in significance.<sup id="cite_ref-6" class="reference"><a href="#cite_note-6">&#91;6&#93;</a></sup> Even relatively insignificant features may contribute to a model. <a href="/wiki/Feature_selection" title="Feature selection">Feature selection</a> can reduce the number of features to prevent a model from becoming too specific to the training data set (overfitting).<sup id="cite_ref-7" class="reference"><a href="#cite_note-7">&#91;7&#93;</a></sup>
+</p>
+<h2><span class="mw-headline" id="Explosion">Explosion</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Feature_engineering&amp;action=edit&amp;section=4" title="Edit section: Explosion">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Feature explosion occurs when the number of identified features grows inappropriately. Common causes include:
+</p>
+<ul><li>Feature templates - implementing feature templates instead of coding new features</li>
+<li>Feature combinations - combinations that cannot be represented by a linear system</li></ul>
+<p>Feature explosion can be limited via techniques such as: <a href="/wiki/Regularization_(mathematics)" title="Regularization (mathematics)">regularization</a>, <a href="/wiki/Kernel_method" title="Kernel method">kernel methods</a>, and <a href="/wiki/Feature_selection" title="Feature selection">feature selection</a>.<sup id="cite_ref-8" class="reference"><a href="#cite_note-8">&#91;8&#93;</a></sup>
+</p>
+<h2><span class="mw-headline" id="Automation">Automation</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Feature_engineering&amp;action=edit&amp;section=5" title="Edit section: Automation">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Automation of feature engineering is a research topic that dates back to the 1990s.<sup id="cite_ref-9" class="reference"><a href="#cite_note-9">&#91;9&#93;</a></sup> Machine learning software that incorporates <a href="/wiki/Automated_feature_engineering" class="mw-redirect" title="Automated feature engineering">automated feature engineering</a> has been commercially available since 2016.<sup id="cite_ref-10" class="reference"><a href="#cite_note-10">&#91;10&#93;</a></sup> Related academic literature can be roughly separated into two types:
+</p>
+<ul><li>Multi-relational decision tree learning (MRDTL) uses a supervised algorithm that is similar to a <a href="/wiki/Decision_tree" title="Decision tree">decision tree</a>.</li>
+<li>Deep Feature Synthesis uses simpler methods.<sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">&#91;<i><a href="/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources. (January 2020)">citation needed</span></a></i>&#93;</sup></li></ul>
+<h3><span id="Multi-relational_decision_tree_learning_.28MRDTL.29"></span><span class="mw-headline" id="Multi-relational_decision_tree_learning_(MRDTL)">Multi-relational decision tree learning (MRDTL)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Feature_engineering&amp;action=edit&amp;section=6" title="Edit section: Multi-relational decision tree learning (MRDTL)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>MRDTL generates features in the form of SQL queries by successively adding clauses to the queries.<sup id="cite_ref-11" class="reference"><a href="#cite_note-11">&#91;11&#93;</a></sup> For instance, the algorithm might start out with
+</p>
+<div class="mw-highlight mw-highlight-lang-sql mw-content-ltr" dir="ltr"><pre><span></span><span class="k">SELECT</span> <span class="k">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span> <span class="k">FROM</span> <span class="n">ATOM</span> <span class="n">t1</span> <span class="k">LEFT</span> <span class="k">JOIN</span> <span class="n">MOLECULE</span> <span class="n">t2</span> <span class="k">ON</span> <span class="n">t1</span><span class="p">.</span><span class="n">mol_id</span> <span class="o">=</span> <span class="n">t2</span><span class="p">.</span><span class="n">mol_id</span> <span class="k">GROUP</span> <span class="k">BY</span> <span class="n">t1</span><span class="p">.</span><span class="n">mol_id</span>
+</pre></div>
+<p>The query can then successively be refined by adding conditions, such as "WHERE t1.charge &lt;= -0.392".<sup id="cite_ref-12" class="reference"><a href="#cite_note-12">&#91;12&#93;</a></sup>
+</p><p>However, most  MRDTL studies base implementations on relational databases, which results in many redundant operations. These redundancies can be reduced by using tricks such as tuple id propagation.<sup id="cite_ref-13" class="reference"><a href="#cite_note-13">&#91;13&#93;</a></sup><sup id="cite_ref-14" class="reference"><a href="#cite_note-14">&#91;14&#93;</a></sup> Efficiency can be increased by using incremental updates, which eliminates redundancies.<sup id="cite_ref-15" class="reference"><a href="#cite_note-15">&#91;15&#93;</a></sup><sup class="noprint Inline-Template" style="white-space:nowrap;">&#91;<i><a href="/wiki/Wikipedia:RS#Questionable_sources" class="mw-redirect" title="Wikipedia:RS"><span title="The material in the vicinity of this tag may rely on a promotional source (January 2020)">promotional source?</span></a></i>&#93;</sup>
+</p>
+<h3><span class="mw-headline" id="Deep_Feature_Synthesis">Deep Feature Synthesis</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Feature_engineering&amp;action=edit&amp;section=7" title="Edit section: Deep Feature Synthesis">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The Deep Feature Synthesis algorithm beat 615 of 906 human teams in a competition.<sup id="cite_ref-16" class="reference"><a href="#cite_note-16">&#91;16&#93;</a></sup><sup id="cite_ref-17" class="reference"><a href="#cite_note-17">&#91;17&#93;</a></sup>
+</p><p>Libraries:
+</p>
+<ul><li>Featuretools.<sup id="cite_ref-18" class="reference"><a href="#cite_note-18">&#91;18&#93;</a></sup></li>
+<li>OneBM<sup id="cite_ref-19" class="reference"><a href="#cite_note-19">&#91;19&#93;</a></sup></li>
+<li>ExploreKit.<sup id="cite_ref-20" class="reference"><a href="#cite_note-20">&#91;20&#93;</a></sup></li></ul>
+<style data-mw-deduplicate="TemplateStyles:r996844942">.mw-parser-output .templatequote{overflow:hidden;margin:1em 0;padding:0 40px}.mw-parser-output .templatequote .templatequotecite{line-height:1.5em;text-align:left;padding-left:1.6em;margin-top:0}</style><blockquote class="templatequote"><p>[OneBM] helps data scientists reduce data exploration time allowing them to try and error many ideas in short time. On the other hand, it enables non-experts, who are not familiar with data science, to quickly extract value from their data with a little effort, time, and cost.<sup id="cite_ref-21" class="reference"><a href="#cite_note-21">&#91;21&#93;</a></sup></p></blockquote>
+<h2><span class="mw-headline" id="Feature_stores">Feature stores</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Feature_engineering&amp;action=edit&amp;section=8" title="Edit section: Feature stores">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<table class="box-Advert plainlinks metadata ambox ambox-content ambox-Advert" role="presentation"><tbody><tr><td class="mbox-image"><div style="width:52px"><img alt="" src="//upload.wikimedia.org/wikipedia/en/thumb/b/b4/Ambox_important.svg/40px-Ambox_important.svg.png" decoding="async" width="40" height="40" srcset="//upload.wikimedia.org/wikipedia/en/thumb/b/b4/Ambox_important.svg/60px-Ambox_important.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/b/b4/Ambox_important.svg/80px-Ambox_important.svg.png 2x" data-file-width="40" data-file-height="40" /></div></td><td class="mbox-text"><div class="mbox-text-span">This section <b>contains content that is written like <a href="/wiki/Wikipedia:What_Wikipedia_is_not#Wikipedia_is_not_a_soapbox_or_means_of_promotion" title="Wikipedia:What Wikipedia is not">a disguised advert; Feast is maintained by former Uber engineers that where working on Michelangelo; they are effectively advertising themselves</a></b>.<span class="hide-when-compact"> Please help <a class="external text" href="https://en.wikipedia.org/w/index.php?title=Feature_engineering&amp;action=edit">improve it</a> by removing <a href="/wiki/Wikipedia:Spam" title="Wikipedia:Spam">promotional content</a> and inappropriate <a href="/wiki/Wikipedia:External_links#Advertising_and_conflicts_of_interest" title="Wikipedia:External links">external links</a>, and by adding encyclopedic content written from a <a href="/wiki/Wikipedia:Neutral_point_of_view" title="Wikipedia:Neutral point of view">neutral point of view</a>.</span>  <span class="date-container"><i>(<span class="date">June 2021</span>)</i></span><span class="hide-when-compact"><i> (<small><a href="/wiki/Help:Maintenance_template_removal" title="Help:Maintenance template removal">Learn how and when to remove this template message</a></small>)</i></span></div></td></tr></tbody></table>
+<p>A feature store includes the ability to store code used to generate features, apply the code to raw data, and serve those features to models upon request. Useful capabilities include feature versioning and policies governing the circumstances under which features can be used.<sup id="cite_ref-22" class="reference"><a href="#cite_note-22">&#91;22&#93;</a></sup>
+</p><p>Feature stores can be standalone software tools or built into machine learning platforms. For example, <i>Feast</i><sup id="cite_ref-23" class="reference"><a href="#cite_note-23">&#91;23&#93;</a></sup> is an open source feature store, while platforms like Uber's Michelangelo use feature stores as a component.<sup id="cite_ref-24" class="reference"><a href="#cite_note-24">&#91;24&#93;</a></sup>
+</p>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Feature_engineering&amp;action=edit&amp;section=9" title="Edit section: See also">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul><li><a href="/wiki/Covariate" class="mw-redirect" title="Covariate">Covariate</a></li>
+<li><a href="/wiki/Data_transformation_(statistics)" title="Data transformation (statistics)">Data transformation</a></li>
+<li><a href="/wiki/Feature_extraction" title="Feature extraction">Feature extraction</a></li>
+<li><a href="/wiki/Feature_learning" title="Feature learning">Feature learning</a></li>
+<li><a href="/wiki/Hashing_trick" class="mw-redirect" title="Hashing trick">Hashing trick</a></li>
+<li><a href="/wiki/Kernel_method" title="Kernel method">Kernel method</a></li>
+<li><a href="/wiki/List_of_datasets_for_machine_learning_research" class="mw-redirect" title="List of datasets for machine learning research">List of datasets for machine learning research</a></li>
+<li><a href="/wiki/Space_mapping" title="Space mapping">Space mapping</a></li></ul>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Feature_engineering&amp;action=edit&amp;section=10" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<style data-mw-deduplicate="TemplateStyles:r1011085734">.mw-parser-output .reflist{font-size:90%;margin-bottom:0.5em;list-style-type:decimal}.mw-parser-output .reflist .references{font-size:100%;margin-bottom:0;list-style-type:inherit}.mw-parser-output .reflist-columns-2{column-width:30em}.mw-parser-output .reflist-columns-3{column-width:25em}.mw-parser-output .reflist-columns{margin-top:0.3em}.mw-parser-output .reflist-columns ol{margin-top:0}.mw-parser-output .reflist-columns li{page-break-inside:avoid;break-inside:avoid-column}.mw-parser-output .reflist-upper-alpha{list-style-type:upper-alpha}.mw-parser-output .reflist-upper-roman{list-style-type:upper-roman}.mw-parser-output .reflist-lower-alpha{list-style-type:lower-alpha}.mw-parser-output .reflist-lower-greek{list-style-type:lower-greek}.mw-parser-output .reflist-lower-roman{list-style-type:lower-roman}</style><div class="reflist">
+<div class="mw-references-wrap mw-references-columns"><ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-1">^</a></b></span> <span class="reference-text"><style data-mw-deduplicate="TemplateStyles:r1067248974">.mw-parser-output cite.citation{font-style:inherit;word-wrap:break-word}.mw-parser-output .citation q{quotes:"\"""\"""'""'"}.mw-parser-output .citation:target{background-color:rgba(0,127,255,0.133)}.mw-parser-output .id-lock-free a,.mw-parser-output .citation .cs1-lock-free a{background:linear-gradient(transparent,transparent),url("//upload.wikimedia.org/wikipedia/commons/6/65/Lock-green.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-limited a,.mw-parser-output .id-lock-registration a,.mw-parser-output .citation .cs1-lock-limited a,.mw-parser-output .citation .cs1-lock-registration a{background:linear-gradient(transparent,transparent),url("//upload.wikimedia.org/wikipedia/commons/d/d6/Lock-gray-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-subscription a,.mw-parser-output .citation .cs1-lock-subscription a{background:linear-gradient(transparent,transparent),url("//upload.wikimedia.org/wikipedia/commons/a/aa/Lock-red-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .cs1-ws-icon a{background:linear-gradient(transparent,transparent),url("//upload.wikimedia.org/wikipedia/commons/4/4c/Wikisource-logo.svg")right 0.1em center/12px no-repeat}.mw-parser-output .cs1-code{color:inherit;background:inherit;border:none;padding:inherit}.mw-parser-output .cs1-hidden-error{display:none;color:#d33}.mw-parser-output .cs1-visible-error{color:#d33}.mw-parser-output .cs1-maint{display:none;color:#3a3;margin-left:0.3em}.mw-parser-output .cs1-format{font-size:95%}.mw-parser-output .cs1-kern-left{padding-left:0.2em}.mw-parser-output .cs1-kern-right{padding-right:0.2em}.mw-parser-output .citation .mw-selflink{font-weight:inherit}</style><cite class="citation web cs1"><a rel="nofollow" class="external text" href="https://ai.stanford.edu/~ang/slides/DeepLearning-Mar2013.pptx">"Machine Learning and AI via Brain simulations"</a>. <i>Stanford University</i><span class="reference-accessdate">. Retrieved <span class="nowrap">2019-08-01</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=Stanford+University&amp;rft.atitle=Machine+Learning+and+AI+via+Brain+simulations&amp;rft_id=https%3A%2F%2Fai.stanford.edu%2F~ang%2Fslides%2FDeepLearning-Mar2013.pptx&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFeature+engineering" class="Z3988"></span></span>
+</li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-2">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><cite class="citation web cs1"><a rel="nofollow" class="external text" href="https://www.youtube.com/watch?v=drUToKxEAUA">"Big Data: Week 3 Video 3 - Feature Engineering"</a>. <i>youtube.com</i>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=youtube.com&amp;rft.atitle=Big+Data%3A+Week+3+Video+3+-+Feature+Engineering&amp;rft_id=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DdrUToKxEAUA&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFeature+engineering" class="Z3988"></span></span>
+</li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><b><a href="#cite_ref-3">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><cite id="CITEREFJalal2018" class="citation journal cs1">Jalal, Ahmed Adeeb (January 1, 2018). <a rel="nofollow" class="external text" href="https://content.iospress.com/articles/international-journal-of-knowledge-based-and-intelligent-engineering-systems/kes180383">"Big data and intelligent software systems"</a>. <i>International Journal of Knowledge-based and Intelligent Engineering Systems</i>. <b>22</b> (3): 177–193. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.3233%2FKES-180383">10.3233/KES-180383</a> &#8211; via content.iospress.com.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=International+Journal+of+Knowledge-based+and+Intelligent+Engineering+Systems&amp;rft.atitle=Big+data+and+intelligent+software+systems&amp;rft.volume=22&amp;rft.issue=3&amp;rft.pages=177-193&amp;rft.date=2018-01-01&amp;rft_id=info%3Adoi%2F10.3233%2FKES-180383&amp;rft.aulast=Jalal&amp;rft.aufirst=Ahmed+Adeeb&amp;rft_id=https%3A%2F%2Fcontent.iospress.com%2Farticles%2Finternational-journal-of-knowledge-based-and-intelligent-engineering-systems%2Fkes180383&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFeature+engineering" class="Z3988"></span></span>
+</li>
+<li id="cite_note-4"><span class="mw-cite-backlink"><b><a href="#cite_ref-4">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><cite class="citation web cs1"><a rel="nofollow" class="external text" href="https://kaggle.com/ryanholbrook/creating-features">"Creating Features"</a>. <i>kaggle.com</i><span class="reference-accessdate">. Retrieved <span class="nowrap">2021-09-30</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=kaggle.com&amp;rft.atitle=Creating+Features&amp;rft_id=https%3A%2F%2Fkaggle.com%2Fryanholbrook%2Fcreating-features&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFeature+engineering" class="Z3988"></span></span>
+</li>
+<li id="cite_note-5"><span class="mw-cite-backlink"><b><a href="#cite_ref-5">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><cite class="citation web cs1"><a rel="nofollow" class="external text" href="https://contrib.scikit-learn.org/category_encoders/index.html">"Category Encoders — Category Encoders 2.2.2 documentation"</a>. <i>contrib.scikit-learn.org</i><span class="reference-accessdate">. Retrieved <span class="nowrap">2021-10-01</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=contrib.scikit-learn.org&amp;rft.atitle=Category+Encoders+%E2%80%94+Category+Encoders+2.2.2+documentation&amp;rft_id=https%3A%2F%2Fcontrib.scikit-learn.org%2Fcategory_encoders%2Findex.html&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFeature+engineering" class="Z3988"></span></span>
+</li>
+<li id="cite_note-6"><span class="mw-cite-backlink"><b><a href="#cite_ref-6">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><cite class="citation web cs1"><a rel="nofollow" class="external text" href="http://www.cs.princeton.edu/courses/archive/spring10/cos424/slides/18-feat.pdf">"Feature Engineering"</a> <span class="cs1-format">(PDF)</span>. 2010-04-22<span class="reference-accessdate">. Retrieved <span class="nowrap">12 November</span> 2015</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Feature+Engineering&amp;rft.date=2010-04-22&amp;rft_id=http%3A%2F%2Fwww.cs.princeton.edu%2Fcourses%2Farchive%2Fspring10%2Fcos424%2Fslides%2F18-feat.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFeature+engineering" class="Z3988"></span></span>
+</li>
+<li id="cite_note-7"><span class="mw-cite-backlink"><b><a href="#cite_ref-7">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><cite class="citation web cs1"><a rel="nofollow" class="external text" href="http://www.cs.berkeley.edu/~jordan/courses/294-fall09/lectures/feature/slides.pdf">"Feature engineering and selection"</a> <span class="cs1-format">(PDF)</span>. Alexandre Bouchard-Côté. October 1, 2009<span class="reference-accessdate">. Retrieved <span class="nowrap">12 November</span> 2015</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Feature+engineering+and+selection&amp;rft.pub=Alexandre+Bouchard-C%C3%B4t%C3%A9&amp;rft.date=2009-10-01&amp;rft_id=http%3A%2F%2Fwww.cs.berkeley.edu%2F~jordan%2Fcourses%2F294-fall09%2Flectures%2Ffeature%2Fslides.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFeature+engineering" class="Z3988"></span></span>
+</li>
+<li id="cite_note-8"><span class="mw-cite-backlink"><b><a href="#cite_ref-8">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><cite class="citation web cs1"><a rel="nofollow" class="external text" href="https://web.archive.org/web/20160304112056/https://ufal.mff.cuni.cz/~zabokrtsky/courses/npfl104/html/feature_engineering.pdf">"Feature engineering in Machine Learning"</a> <span class="cs1-format">(PDF)</span>. Zdenek Zabokrtsky. Archived from <a rel="nofollow" class="external text" href="https://ufal.mff.cuni.cz/~zabokrtsky/courses/npfl104/html/feature_engineering.pdf">the original</a> <span class="cs1-format">(PDF)</span> on 4 March 2016<span class="reference-accessdate">. Retrieved <span class="nowrap">12 November</span> 2015</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Feature+engineering+in+Machine+Learning&amp;rft.pub=Zdenek+Zabokrtsky&amp;rft_id=https%3A%2F%2Fufal.mff.cuni.cz%2F~zabokrtsky%2Fcourses%2Fnpfl104%2Fhtml%2Ffeature_engineering.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFeature+engineering" class="Z3988"></span></span>
+</li>
+<li id="cite_note-9"><span class="mw-cite-backlink"><b><a href="#cite_ref-9">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><cite id="CITEREFKnobbeSiebesVan_Der_Wallen1999" class="citation book cs1">Knobbe, Arno J.; Siebes, Arno; Van Der Wallen, Daniël (1999). <a rel="nofollow" class="external text" href="https://link.springer.com/content/pdf/10.1007/978-3-540-48247-5_46.pdf">"Multi-relational Decision Tree Induction"</a> <span class="cs1-format">(PDF)</span>. <i>Principles of Data Mining and Knowledge Discovery</i>. Lecture Notes in Computer Science. Vol.&#160;1704. pp.&#160;378–383. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1007%2F978-3-540-48247-5_46">10.1007/978-3-540-48247-5_46</a>. <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-3-540-66490-1" title="Special:BookSources/978-3-540-66490-1"><bdi>978-3-540-66490-1</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.atitle=Multi-relational+Decision+Tree+Induction&amp;rft.btitle=Principles+of+Data+Mining+and+Knowledge+Discovery&amp;rft.series=Lecture+Notes+in+Computer+Science&amp;rft.pages=378-383&amp;rft.date=1999&amp;rft_id=info%3Adoi%2F10.1007%2F978-3-540-48247-5_46&amp;rft.isbn=978-3-540-66490-1&amp;rft.aulast=Knobbe&amp;rft.aufirst=Arno+J.&amp;rft.au=Siebes%2C+Arno&amp;rft.au=Van+Der+Wallen%2C+Dani%C3%ABl&amp;rft_id=https%3A%2F%2Flink.springer.com%2Fcontent%2Fpdf%2F10.1007%2F978-3-540-48247-5_46.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFeature+engineering" class="Z3988"></span></span>
+</li>
+<li id="cite_note-10"><span class="mw-cite-backlink"><b><a href="#cite_ref-10">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><cite class="citation web cs1"><a rel="nofollow" class="external text" href="https://reality.ai/it-is-all-about-the-features/">"Its all about the features"</a>. <i>Reality AI Blog</i>. September 2017.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=Reality+AI+Blog&amp;rft.atitle=Its+all+about+the+features&amp;rft.date=2017-09&amp;rft_id=https%3A%2F%2Freality.ai%2Fit-is-all-about-the-features%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFeature+engineering" class="Z3988"></span></span>
+</li>
+<li id="cite_note-11"><span class="mw-cite-backlink"><b><a href="#cite_ref-11">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><cite class="citation journal cs1">"A Comparative Study Of Multi-Relational Decision Tree Learning Algorithm". <a href="/wiki/CiteSeerX_(identifier)" class="mw-redirect" title="CiteSeerX (identifier)">CiteSeerX</a>&#160;<span class="cs1-lock-free" title="Freely accessible"><a rel="nofollow" class="external text" href="//citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.636.2932">10.1.1.636.2932</a></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=A+Comparative+Study+Of+Multi-Relational+Decision+Tree+Learning+Algorithm&amp;rft_id=%2F%2Fciteseerx.ist.psu.edu%2Fviewdoc%2Fsummary%3Fdoi%3D10.1.1.636.2932%23id-name%3DCiteSeerX&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFeature+engineering" class="Z3988"></span> <span class="cs1-hidden-error citation-comment"><code class="cs1-code">{{<a href="/wiki/Template:Cite_journal" title="Template:Cite journal">cite journal</a>}}</code>: </span><span class="cs1-hidden-error citation-comment">Cite journal requires <code class="cs1-code">&#124;journal=</code> (<a href="/wiki/Help:CS1_errors#missing_periodical" title="Help:CS1 errors">help</a>)</span></span>
+</li>
+<li id="cite_note-12"><span class="mw-cite-backlink"><b><a href="#cite_ref-12">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><cite id="CITEREFLeivaAtramentovHonavar2002" class="citation journal cs1">Leiva, Hector; Atramentov, Anna; Honavar, Vasant (2002). <a rel="nofollow" class="external text" href="http://web.cs.iastate.edu/~honavar/Papers/kddmrdmpaperfinal.pdf">"Experiments with MRDTL – A Multi-relational Decision Tree Learning Algorithm"</a> <span class="cs1-format">(PDF)</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=Experiments+with+MRDTL+%E2%80%93+A+Multi-relational+Decision+Tree+Learning+Algorithm&amp;rft.date=2002&amp;rft.aulast=Leiva&amp;rft.aufirst=Hector&amp;rft.au=Atramentov%2C+Anna&amp;rft.au=Honavar%2C+Vasant&amp;rft_id=http%3A%2F%2Fweb.cs.iastate.edu%2F~honavar%2FPapers%2Fkddmrdmpaperfinal.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFeature+engineering" class="Z3988"></span> <span class="cs1-hidden-error citation-comment"><code class="cs1-code">{{<a href="/wiki/Template:Cite_journal" title="Template:Cite journal">cite journal</a>}}</code>: </span><span class="cs1-hidden-error citation-comment">Cite journal requires <code class="cs1-code">&#124;journal=</code> (<a href="/wiki/Help:CS1_errors#missing_periodical" title="Help:CS1 errors">help</a>)</span></span>
+</li>
+<li id="cite_note-13"><span class="mw-cite-backlink"><b><a href="#cite_ref-13">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><cite id="CITEREFYinHanYangYu2004" class="citation book cs1">Yin, Xiaoxin; Han, Jiawei; Yang, Jiong; Yu, Philip S. (2004). "CrossMine: Efficient Classification Across Multiple Database Relations". <i>Proceedings. 20th International Conference on Data Engineering</i>. <i>Proceedings of the 20th International Conference on Data Engineering</i>. pp.&#160;399–410. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1109%2FICDE.2004.1320014">10.1109/ICDE.2004.1320014</a>. <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-7695-2065-0" title="Special:BookSources/0-7695-2065-0"><bdi>0-7695-2065-0</bdi></a>. <a href="/wiki/S2CID_(identifier)" class="mw-redirect" title="S2CID (identifier)">S2CID</a>&#160;<a rel="nofollow" class="external text" href="https://api.semanticscholar.org/CorpusID:1183403">1183403</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.atitle=CrossMine%3A+Efficient+Classification+Across+Multiple+Database+Relations&amp;rft.btitle=Proceedings.+20th+International+Conference+on+Data+Engineering&amp;rft.pages=399-410&amp;rft.date=2004&amp;rft_id=https%3A%2F%2Fapi.semanticscholar.org%2FCorpusID%3A1183403%23id-name%3DS2CID&amp;rft_id=info%3Adoi%2F10.1109%2FICDE.2004.1320014&amp;rft.isbn=0-7695-2065-0&amp;rft.aulast=Yin&amp;rft.aufirst=Xiaoxin&amp;rft.au=Han%2C+Jiawei&amp;rft.au=Yang%2C+Jiong&amp;rft.au=Yu%2C+Philip+S.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFeature+engineering" class="Z3988"></span></span>
+</li>
+<li id="cite_note-14"><span class="mw-cite-backlink"><b><a href="#cite_ref-14">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><cite id="CITEREFFrankMoserEster2007" class="citation book cs1">Frank, Richard; Moser, Flavia; Ester, Martin (2007). "A Method for Multi-relational Classification Using Single and Multi-feature Aggregation Functions". <i>Knowledge Discovery in Databases: PKDD 2007</i>. Lecture Notes in Computer Science. Vol.&#160;4702. pp.&#160;430–437. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1007%2F978-3-540-74976-9_43">10.1007/978-3-540-74976-9_43</a>. <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-3-540-74975-2" title="Special:BookSources/978-3-540-74975-2"><bdi>978-3-540-74975-2</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.atitle=A+Method+for+Multi-relational+Classification+Using+Single+and+Multi-feature+Aggregation+Functions&amp;rft.btitle=Knowledge+Discovery+in+Databases%3A+PKDD+2007&amp;rft.series=Lecture+Notes+in+Computer+Science&amp;rft.pages=430-437&amp;rft.date=2007&amp;rft_id=info%3Adoi%2F10.1007%2F978-3-540-74976-9_43&amp;rft.isbn=978-3-540-74975-2&amp;rft.aulast=Frank&amp;rft.aufirst=Richard&amp;rft.au=Moser%2C+Flavia&amp;rft.au=Ester%2C+Martin&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFeature+engineering" class="Z3988"></span></span>
+</li>
+<li id="cite_note-15"><span class="mw-cite-backlink"><b><a href="#cite_ref-15">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><cite class="citation web cs1"><a rel="nofollow" class="external text" href="https://get.ml/resources/how-getml-works">"How automated feature engineering works - The most efficient feature engineering solution for relational data and time series"</a><span class="reference-accessdate">. Retrieved <span class="nowrap">2019-11-21</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=How+automated+feature+engineering+works+-+The+most+efficient+feature+engineering+solution+for+relational+data+and+time+series&amp;rft_id=https%3A%2F%2Fget.ml%2Fresources%2Fhow-getml-works&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFeature+engineering" class="Z3988"></span></span>
+</li>
+<li id="cite_note-16"><span class="mw-cite-backlink"><b><a href="#cite_ref-16">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><cite class="citation web cs1"><a rel="nofollow" class="external text" href="https://news.mit.edu/2015/automating-big-data-analysis-1016">"Automating big-data analysis"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Automating+big-data+analysis&amp;rft_id=https%3A%2F%2Fnews.mit.edu%2F2015%2Fautomating-big-data-analysis-1016&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFeature+engineering" class="Z3988"></span></span>
+</li>
+<li id="cite_note-17"><span class="mw-cite-backlink"><b><a href="#cite_ref-17">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><cite id="CITEREFKanterVeeramachaneni2015" class="citation book cs1">Kanter, James Max; Veeramachaneni, Kalyan (2015). "Deep Feature Synthesis: Towards Automating Data Science Endeavors". <i>2015 IEEE International Conference on Data Science and Advanced Analytics (DSAA)</i>. <i>IEEE International Conference on Data Science and Advanced Analytics</i>. pp.&#160;1–10. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1109%2FDSAA.2015.7344858">10.1109/DSAA.2015.7344858</a>. <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-1-4673-8272-4" title="Special:BookSources/978-1-4673-8272-4"><bdi>978-1-4673-8272-4</bdi></a>. <a href="/wiki/S2CID_(identifier)" class="mw-redirect" title="S2CID (identifier)">S2CID</a>&#160;<a rel="nofollow" class="external text" href="https://api.semanticscholar.org/CorpusID:206610380">206610380</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.atitle=Deep+Feature+Synthesis%3A+Towards+Automating+Data+Science+Endeavors&amp;rft.btitle=2015+IEEE+International+Conference+on+Data+Science+and+Advanced+Analytics+%28DSAA%29&amp;rft.pages=1-10&amp;rft.date=2015&amp;rft_id=https%3A%2F%2Fapi.semanticscholar.org%2FCorpusID%3A206610380%23id-name%3DS2CID&amp;rft_id=info%3Adoi%2F10.1109%2FDSAA.2015.7344858&amp;rft.isbn=978-1-4673-8272-4&amp;rft.aulast=Kanter&amp;rft.aufirst=James+Max&amp;rft.au=Veeramachaneni%2C+Kalyan&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFeature+engineering" class="Z3988"></span></span>
+</li>
+<li id="cite_note-18"><span class="mw-cite-backlink"><b><a href="#cite_ref-18">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><cite class="citation web cs1"><a rel="nofollow" class="external text" href="https://www.featuretools.com/">"Featuretools | An open source framework for automated feature engineering Quick Start"</a>. <i>www.featuretools.com</i><span class="reference-accessdate">. Retrieved <span class="nowrap">2019-08-22</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=www.featuretools.com&amp;rft.atitle=Featuretools+%7C+An+open+source+framework+for+automated+feature+engineering+Quick+Start&amp;rft_id=https%3A%2F%2Fwww.featuretools.com%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFeature+engineering" class="Z3988"></span></span>
+</li>
+<li id="cite_note-19"><span class="mw-cite-backlink"><b><a href="#cite_ref-19">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><cite id="CITEREFHoang_Thanh_LamThiebautSinnChen2017" class="citation arxiv cs1">Hoang Thanh Lam; Thiebaut, Johann-Michael; Sinn, Mathieu; Chen, Bei; Mai, Tiep; Alkan, Oznur (2017). "One button machine for automating feature engineering in relational databases". <a href="/wiki/ArXiv_(identifier)" class="mw-redirect" title="ArXiv (identifier)">arXiv</a>:<span class="cs1-lock-free" title="Freely accessible"><a rel="nofollow" class="external text" href="//arxiv.org/abs/1706.00327">1706.00327</a></span> [<a rel="nofollow" class="external text" href="//arxiv.org/archive/cs.DB">cs.DB</a>].</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=preprint&amp;rft.jtitle=arXiv&amp;rft.atitle=One+button+machine+for+automating+feature+engineering+in+relational+databases&amp;rft.date=2017&amp;rft_id=info%3Aarxiv%2F1706.00327&amp;rft.au=Hoang+Thanh+Lam&amp;rft.au=Thiebaut%2C+Johann-Michael&amp;rft.au=Sinn%2C+Mathieu&amp;rft.au=Chen%2C+Bei&amp;rft.au=Mai%2C+Tiep&amp;rft.au=Alkan%2C+Oznur&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFeature+engineering" class="Z3988"></span></span>
+</li>
+<li id="cite_note-20"><span class="mw-cite-backlink"><b><a href="#cite_ref-20">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><cite class="citation web cs1"><a rel="nofollow" class="external text" href="https://people.eecs.berkeley.edu/~dawnsong/papers/icdm-2016.pdf">"ExploreKit: Automatic Feature Generation and Selection"</a> <span class="cs1-format">(PDF)</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=ExploreKit%3A+Automatic+Feature+Generation+and+Selection&amp;rft_id=https%3A%2F%2Fpeople.eecs.berkeley.edu%2F~dawnsong%2Fpapers%2Ficdm-2016.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFeature+engineering" class="Z3988"></span></span>
+</li>
+<li id="cite_note-21"><span class="mw-cite-backlink"><b><a href="#cite_ref-21">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><cite id="CITEREFThanh_LamThiebautSinnChen2017" class="citation arxiv cs1">Thanh Lam, Hoang; Thiebaut, Johann-Michael; Sinn, Mathieu; Chen, Bei; Mai, Tiep; Alkan, Oznur (2017-06-01). "One button machine for automating feature engineering in relational databases". <a href="/wiki/ArXiv_(identifier)" class="mw-redirect" title="ArXiv (identifier)">arXiv</a>:<span class="cs1-lock-free" title="Freely accessible"><a rel="nofollow" class="external text" href="//arxiv.org/abs/1706.00327">1706.00327</a></span> [<a rel="nofollow" class="external text" href="//arxiv.org/archive/cs.DB">cs.DB</a>].</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=preprint&amp;rft.jtitle=arXiv&amp;rft.atitle=One+button+machine+for+automating+feature+engineering+in+relational+databases&amp;rft.date=2017-06-01&amp;rft_id=info%3Aarxiv%2F1706.00327&amp;rft.aulast=Thanh+Lam&amp;rft.aufirst=Hoang&amp;rft.au=Thiebaut%2C+Johann-Michael&amp;rft.au=Sinn%2C+Mathieu&amp;rft.au=Chen%2C+Bei&amp;rft.au=Mai%2C+Tiep&amp;rft.au=Alkan%2C+Oznur&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFeature+engineering" class="Z3988"></span></span>
+</li>
+<li id="cite_note-22"><span class="mw-cite-backlink"><b><a href="#cite_ref-22">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><cite class="citation web cs1"><a rel="nofollow" class="external text" href="https://phaseai.com/resources/intro-to-feature-stores">"An Introduction to Feature Stores"</a><span class="reference-accessdate">. Retrieved <span class="nowrap">2021-04-15</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=An+Introduction+to+Feature+Stores&amp;rft_id=https%3A%2F%2Fphaseai.com%2Fresources%2Fintro-to-feature-stores&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFeature+engineering" class="Z3988"></span></span>
+</li>
+<li id="cite_note-23"><span class="mw-cite-backlink"><b><a href="#cite_ref-23">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><cite class="citation web cs1"><a rel="nofollow" class="external text" href="https://feast.dev/">"Feast: Feature Store for Machine Learning"</a><span class="reference-accessdate">. Retrieved <span class="nowrap">2021-04-15</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Feast%3A+Feature+Store+for+Machine+Learning&amp;rft_id=https%3A%2F%2Ffeast.dev%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFeature+engineering" class="Z3988"></span></span>
+</li>
+<li id="cite_note-24"><span class="mw-cite-backlink"><b><a href="#cite_ref-24">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><cite class="citation web cs1"><a rel="nofollow" class="external text" href="https://eng.uber.com/michelangelo-machine-learning-platform/">"Meet Michelangelo: Uber's Machine Learning Platform"</a>. 5 September 2017<span class="reference-accessdate">. Retrieved <span class="nowrap">2021-04-15</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Meet+Michelangelo%3A+Uber%27s+Machine+Learning+Platform&amp;rft.date=2017-09-05&amp;rft_id=https%3A%2F%2Feng.uber.com%2Fmichelangelo-machine-learning-platform%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFeature+engineering" class="Z3988"></span></span>
+</li>
+</ol></div></div>
+<h2><span class="mw-headline" id="Further_reading">Further reading</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Feature_engineering&amp;action=edit&amp;section=11" title="Edit section: Further reading">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul><li><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><cite id="CITEREFBoehmkeGreenwell2019" class="citation book cs1">Boehmke, Bradley; Greenwell, Brandon (2019). "Feature &amp; Target Engineering". <i>Hands-On Machine Learning with R</i>. Chapman &amp; Hall. pp.&#160;41–75. <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-1-138-49568-5" title="Special:BookSources/978-1-138-49568-5"><bdi>978-1-138-49568-5</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.atitle=Feature+%26+Target+Engineering&amp;rft.btitle=Hands-On+Machine+Learning+with+R&amp;rft.pages=41-75&amp;rft.pub=Chapman+%26+Hall&amp;rft.date=2019&amp;rft.isbn=978-1-138-49568-5&amp;rft.aulast=Boehmke&amp;rft.aufirst=Bradley&amp;rft.au=Greenwell%2C+Brandon&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFeature+engineering" class="Z3988"></span></li>
+<li><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><cite id="CITEREFZhengCasari2018" class="citation book cs1">Zheng, Alice; Casari, Amanda (2018). <i>Feature Engineering for Machine Learning: Principles and Techniques for Data Scientists</i>. O'Reilly. <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-1-4919-5324-2" title="Special:BookSources/978-1-4919-5324-2"><bdi>978-1-4919-5324-2</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Feature+Engineering+for+Machine+Learning%3A+Principles+and+Techniques+for+Data+Scientists&amp;rft.pub=O%27Reilly&amp;rft.date=2018&amp;rft.isbn=978-1-4919-5324-2&amp;rft.aulast=Zheng&amp;rft.aufirst=Alice&amp;rft.au=Casari%2C+Amanda&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFeature+engineering" class="Z3988"></span></li>
+<li><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><cite id="CITEREFZumelMount2020" class="citation book cs1">Zumel, Nina; Mount, John (2020). "Data Engineering and Data Shaping". <i>Practical Data Science with R</i> (2nd&#160;ed.). Manning. pp.&#160;113–160. <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-1-61729-587-4" title="Special:BookSources/978-1-61729-587-4"><bdi>978-1-61729-587-4</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.atitle=Data+Engineering+and+Data+Shaping&amp;rft.btitle=Practical+Data+Science+with+R&amp;rft.pages=113-160&amp;rft.edition=2nd&amp;rft.pub=Manning&amp;rft.date=2020&amp;rft.isbn=978-1-61729-587-4&amp;rft.aulast=Zumel&amp;rft.aufirst=Nina&amp;rft.au=Mount%2C+John&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFeature+engineering" class="Z3988"></span></li></ul>
+<!-- 
+NewPP limit report
+Parsed by mw1407
+Cached time: 20220302164958
+Cache expiry: 1814400
+Reduced expiry: false
+Complications: [vary‐revision‐sha1]
+CPU time usage: 0.549 seconds
+Real time usage: 0.636 seconds
+Preprocessor visited node count: 1833/1000000
+Post‐expand include size: 82110/2097152 bytes
+Template argument size: 3435/2097152 bytes
+Highest expansion depth: 12/100
+Expensive parser function count: 3/500
+Unstrip recursion depth: 1/20
+Unstrip post‐expand size: 81467/5000000 bytes
+Lua time usage: 0.305/10.000 seconds
+Lua memory usage: 6418240/52428800 bytes
+Number of Wikibase entities loaded: 0/400
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  543.519      1 -total
+ 48.03%  261.054      1 Template:Reflist
+ 27.29%  148.347     15 Template:Cite_web
+ 24.10%  131.014      1 Template:Machine_learning
+ 23.14%  125.771      1 Template:Sidebar_with_collapsible_lists
+ 12.53%   68.102      1 Template:Citation_needed
+ 11.20%   60.877      2 Template:Fix
+ 10.43%   56.706      7 Template:Cite_book
+  6.58%   35.742      3 Template:Category_handler
+  3.58%   19.445      1 Template:Longitem
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:46207323-0!canonical and timestamp 20220302164957 and revision id 1069237301. Serialized with JSON.
+ -->
+</div><noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript>
+<div class="printfooter">Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Feature_engineering&amp;oldid=1069237301">https://en.wikipedia.org/w/index.php?title=Feature_engineering&amp;oldid=1069237301</a>"</div></div>
+		<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Machine_learning" title="Category:Machine learning">Machine learning</a></li><li><a href="/wiki/Category:Data_analysis" title="Category:Data analysis">Data analysis</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:CS1_errors:_missing_periodical" title="Category:CS1 errors: missing periodical">CS1 errors: missing periodical</a></li><li><a href="/wiki/Category:All_articles_with_unsourced_statements" title="Category:All articles with unsourced statements">All articles with unsourced statements</a></li><li><a href="/wiki/Category:Articles_with_unsourced_statements_from_January_2020" title="Category:Articles with unsourced statements from January 2020">Articles with unsourced statements from January 2020</a></li><li><a href="/wiki/Category:All_articles_lacking_reliable_references" title="Category:All articles lacking reliable references">All articles lacking reliable references</a></li><li><a href="/wiki/Category:Articles_lacking_reliable_references_from_January_2020" title="Category:Articles lacking reliable references from January 2020">Articles lacking reliable references from January 2020</a></li><li><a href="/wiki/Category:Articles_with_a_promotional_tone_from_June_2021" title="Category:Articles with a promotional tone from June 2021">Articles with a promotional tone from June 2021</a></li><li><a href="/wiki/Category:All_articles_with_a_promotional_tone" title="Category:All articles with a promotional tone">All articles with a promotional tone</a></li></ul></div></div>
+	</div>
+</div>
+<div id='mw-data-after-content'>
+	<div class="read-more-container"></div>
+</div>
+
+<div id="mw-navigation">
+	<h2>Navigation menu</h2>
+	<div id="mw-head">
+		
+<nav id="p-personal" class="mw-portlet mw-portlet-personal vector-user-menu-legacy vector-menu" aria-labelledby="p-personal-label" role="navigation" 
+	 >
+	<label id="p-personal-label" aria-label="" class="vector-menu-heading">
+		<span class="vector-menu-heading-label">Personal tools</span>
+	</label>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="pt-anonuserpage" class="mw-list-item"><span>Not logged in</span></li><li id="pt-anontalk" class="mw-list-item"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n"><span>Talk</span></a></li><li id="pt-anoncontribs" class="mw-list-item"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y"><span>Contributions</span></a></li><li id="pt-createaccount" class="mw-list-item"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Feature+engineering&amp;returntoquery=lxml%3D" title="You are encouraged to create an account and log in; however, it is not mandatory"><span>Create account</span></a></li><li id="pt-login" class="mw-list-item"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Feature+engineering&amp;returntoquery=lxml%3D" title="You&#039;re encouraged to log in; however, it&#039;s not mandatory. [o]" accesskey="o"><span>Log in</span></a></li></ul>
+		
+	</div>
+</nav>
+
+		<div id="left-navigation">
+			
+<nav id="p-namespaces" class="mw-portlet mw-portlet-namespaces vector-menu vector-menu-tabs" aria-labelledby="p-namespaces-label" role="navigation" 
+	 >
+	<label id="p-namespaces-label" aria-label="" class="vector-menu-heading">
+		<span class="vector-menu-heading-label">Namespaces</span>
+	</label>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="ca-nstab-main" class="selected mw-list-item"><a href="/wiki/Feature_engineering" title="View the content page [c]" accesskey="c"><span>Article</span></a></li><li id="ca-talk" class="mw-list-item"><a href="/wiki/Talk:Feature_engineering" rel="discussion" title="Discuss improvements to the content page [t]" accesskey="t"><span>Talk</span></a></li></ul>
+		
+	</div>
+</nav>
+
+			
+<nav id="p-variants" class="mw-portlet mw-portlet-variants emptyPortlet vector-menu-dropdown-noicon vector-menu vector-menu-dropdown" aria-labelledby="p-variants-label" role="navigation" 
+	 >
+	<input type="checkbox"
+		id="p-variants-checkbox"
+		role="button"
+		aria-haspopup="true"
+		data-event-name="ui.dropdown-p-variants"
+		class="vector-menu-checkbox" aria-labelledby="p-variants-label" />
+	<label id="p-variants-label" aria-label="Change language variant" class="vector-menu-heading">
+		<span class="vector-menu-heading-label">English</span>
+			<span class="vector-menu-checkbox-expanded">expanded</span>
+			<span class="vector-menu-checkbox-collapsed">collapsed</span>
+	</label>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"></ul>
+		
+	</div>
+</nav>
+
+		</div>
+		<div id="right-navigation">
+			
+<nav id="p-views" class="mw-portlet mw-portlet-views vector-menu vector-menu-tabs" aria-labelledby="p-views-label" role="navigation" 
+	 >
+	<label id="p-views-label" aria-label="" class="vector-menu-heading">
+		<span class="vector-menu-heading-label">Views</span>
+	</label>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="ca-view" class="selected mw-list-item"><a href="/wiki/Feature_engineering"><span>Read</span></a></li><li id="ca-edit" class="mw-list-item"><a href="/w/index.php?title=Feature_engineering&amp;action=edit" title="Edit this page [e]" accesskey="e"><span>Edit</span></a></li><li id="ca-history" class="mw-list-item"><a href="/w/index.php?title=Feature_engineering&amp;action=history" title="Past revisions of this page [h]" accesskey="h"><span>View history</span></a></li></ul>
+		
+	</div>
+</nav>
+
+			
+<nav id="p-cactions" class="mw-portlet mw-portlet-cactions emptyPortlet vector-menu-dropdown-noicon vector-menu vector-menu-dropdown" aria-labelledby="p-cactions-label" role="navigation"  title="More options"
+	 >
+	<input type="checkbox"
+		id="p-cactions-checkbox"
+		role="button"
+		aria-haspopup="true"
+		data-event-name="ui.dropdown-p-cactions"
+		class="vector-menu-checkbox" aria-labelledby="p-cactions-label" />
+	<label id="p-cactions-label" aria-label="" class="vector-menu-heading">
+		<span class="vector-menu-heading-label">More</span>
+			<span class="vector-menu-checkbox-expanded">expanded</span>
+			<span class="vector-menu-checkbox-collapsed">collapsed</span>
+	</label>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"></ul>
+		
+	</div>
+</nav>
+
+			
+<div id="p-search" role="search" class="vector-search-box-vue  vector-search-box-show-thumbnail vector-search-box-auto-expand-width vector-search-box">
+	<div>
+			<h3 >
+				<label for="searchInput">Search</label>
+			</h3>
+		<form action="/w/index.php" id="searchform"
+			class="vector-search-box-form">
+			<div id="simpleSearch"
+				class="vector-search-box-inner"
+				 data-search-loc="header-navigation">
+				<input class="vector-search-box-input"
+					 type="search" name="search" placeholder="Search Wikipedia" aria-label="Search Wikipedia" autocapitalize="sentences" title="Search Wikipedia [f]" accesskey="f" id="searchInput"
+				/>
+				<input type="hidden" name="title" value="Special:Search"/>
+				<input id="mw-searchButton"
+					 class="searchButton mw-fallbackSearchButton" type="submit" name="fulltext" title="Search Wikipedia for this text" value="Search" />
+				<input id="searchButton"
+					 class="searchButton" type="submit" name="go" title="Go to a page with this exact name if it exists" value="Go" />
+			</div>
+		</form>
+	</div>
+</div>
+
+		</div>
+	</div>
+	
+
+<div id="mw-panel">
+	<div id="p-logo" role="banner">
+		<a class="mw-wiki-logo" href="/wiki/Main_Page"
+			title="Visit the main page"></a>
+	</div>
+	
+<nav id="p-navigation" class="mw-portlet mw-portlet-navigation vector-menu vector-menu-portal portal" aria-labelledby="p-navigation-label" role="navigation" 
+	 >
+	<label id="p-navigation-label" aria-label="" class="vector-menu-heading">
+		<span class="vector-menu-heading-label">Navigation</span>
+	</label>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="n-mainpage-description" class="mw-list-item"><a href="/wiki/Main_Page" icon="home" title="Visit the main page [z]" accesskey="z"><span>Main page</span></a></li><li id="n-contents" class="mw-list-item"><a href="/wiki/Wikipedia:Contents" title="Guides to browsing Wikipedia"><span>Contents</span></a></li><li id="n-currentevents" class="mw-list-item"><a href="/wiki/Portal:Current_events" title="Articles related to current events"><span>Current events</span></a></li><li id="n-randompage" class="mw-list-item"><a href="/wiki/Special:Random" icon="die" title="Visit a randomly selected article [x]" accesskey="x"><span>Random article</span></a></li><li id="n-aboutsite" class="mw-list-item"><a href="/wiki/Wikipedia:About" title="Learn about Wikipedia and how it works"><span>About Wikipedia</span></a></li><li id="n-contactpage" class="mw-list-item"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia"><span>Contact us</span></a></li><li id="n-sitesupport" class="mw-list-item"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us by donating to the Wikimedia Foundation"><span>Donate</span></a></li></ul>
+		
+	</div>
+</nav>
+
+	
+<nav id="p-interaction" class="mw-portlet mw-portlet-interaction vector-menu vector-menu-portal portal" aria-labelledby="p-interaction-label" role="navigation" 
+	 >
+	<label id="p-interaction-label" aria-label="" class="vector-menu-heading">
+		<span class="vector-menu-heading-label">Contribute</span>
+	</label>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="n-help" class="mw-list-item"><a href="/wiki/Help:Contents" icon="help" title="Guidance on how to use and edit Wikipedia"><span>Help</span></a></li><li id="n-introduction" class="mw-list-item"><a href="/wiki/Help:Introduction" title="Learn how to edit Wikipedia"><span>Learn to edit</span></a></li><li id="n-portal" class="mw-list-item"><a href="/wiki/Wikipedia:Community_portal" title="The hub for editors"><span>Community portal</span></a></li><li id="n-recentchanges" class="mw-list-item"><a href="/wiki/Special:RecentChanges" icon="recentChanges" title="A list of recent changes to Wikipedia [r]" accesskey="r"><span>Recent changes</span></a></li><li id="n-upload" class="mw-list-item"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Add images or other media for use on Wikipedia"><span>Upload file</span></a></li></ul>
+		
+	</div>
+</nav>
+
+<nav id="p-tb" class="mw-portlet mw-portlet-tb vector-menu vector-menu-portal portal" aria-labelledby="p-tb-label" role="navigation" 
+	 >
+	<label id="p-tb-label" aria-label="" class="vector-menu-heading">
+		<span class="vector-menu-heading-label">Tools</span>
+	</label>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="t-whatlinkshere" class="mw-list-item"><a href="/wiki/Special:WhatLinksHere/Feature_engineering" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j"><span>What links here</span></a></li><li id="t-recentchangeslinked" class="mw-list-item"><a href="/wiki/Special:RecentChangesLinked/Feature_engineering" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k"><span>Related changes</span></a></li><li id="t-upload" class="mw-list-item"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u"><span>Upload file</span></a></li><li id="t-specialpages" class="mw-list-item"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q"><span>Special pages</span></a></li><li id="t-permalink" class="mw-list-item"><a href="/w/index.php?title=Feature_engineering&amp;oldid=1069237301" title="Permanent link to this revision of this page"><span>Permanent link</span></a></li><li id="t-info" class="mw-list-item"><a href="/w/index.php?title=Feature_engineering&amp;action=info" title="More information about this page"><span>Page information</span></a></li><li id="t-cite" class="mw-list-item"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Feature_engineering&amp;id=1069237301&amp;wpFormIdentifier=titleform" title="Information on how to cite this page"><span>Cite this page</span></a></li><li id="t-wikibase" class="mw-list-item"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q22245680" title="Structured data on this page hosted by Wikidata [g]" accesskey="g"><span>Wikidata item</span></a></li></ul>
+		
+	</div>
+</nav>
+
+<nav id="p-coll-print_export" class="mw-portlet mw-portlet-coll-print_export vector-menu vector-menu-portal portal" aria-labelledby="p-coll-print_export-label" role="navigation" 
+	 >
+	<label id="p-coll-print_export-label" aria-label="" class="vector-menu-heading">
+		<span class="vector-menu-heading-label">Print/export</span>
+	</label>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="coll-download-as-rl" class="mw-list-item"><a href="/w/index.php?title=Special:DownloadAsPdf&amp;page=Feature_engineering&amp;action=show-download-screen" title="Download this page as a PDF file"><span>Download as PDF</span></a></li><li id="t-print" class="mw-list-item"><a href="/w/index.php?title=Feature_engineering&amp;printable=yes" title="Printable version of this page [p]" accesskey="p"><span>Printable version</span></a></li></ul>
+		
+	</div>
+</nav>
+
+	
+<nav id="p-lang" class="mw-portlet mw-portlet-lang vector-menu vector-menu-portal portal" aria-labelledby="p-lang-label" role="navigation" 
+	 >
+	<label id="p-lang-label" aria-label="" class="vector-menu-heading">
+		<span class="vector-menu-heading-label">Languages</span>
+	</label>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li class="interlanguage-link interwiki-ko mw-list-item"><a href="https://ko.wikipedia.org/wiki/%ED%8A%B9%EC%A7%95_%EA%B3%B5%ED%95%99" title="특징 공학 – Korean" lang="ko" hreflang="ko" class="interlanguage-link-target"><span>한국어</span></a></li><li class="interlanguage-link interwiki-he mw-list-item"><a href="https://he.wikipedia.org/wiki/%D7%94%D7%A0%D7%93%D7%A1%D7%AA_%D7%9E%D7%90%D7%A4%D7%99%D7%99%D7%A0%D7%99%D7%9D" title="הנדסת מאפיינים – Hebrew" lang="he" hreflang="he" class="interlanguage-link-target"><span>עברית</span></a></li><li class="interlanguage-link interwiki-ru mw-list-item"><a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%BE%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5_%D0%BF%D1%80%D0%B8%D0%B7%D0%BD%D0%B0%D0%BA%D0%BE%D0%B2" title="Конструирование признаков – Russian" lang="ru" hreflang="ru" class="interlanguage-link-target"><span>Русский</span></a></li><li class="interlanguage-link interwiki-uk mw-list-item"><a href="https://uk.wikipedia.org/wiki/%D0%9A%D0%BE%D0%BD%D1%81%D1%82%D1%80%D1%83%D1%8E%D0%B2%D0%B0%D0%BD%D0%BD%D1%8F_%D0%BE%D0%B7%D0%BD%D0%B0%D0%BA" title="Конструювання ознак – Ukrainian" lang="uk" hreflang="uk" class="interlanguage-link-target"><span>Українська</span></a></li></ul>
+		<div class="after-portlet after-portlet-lang"><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q22245680#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>
+	</div>
+</nav>
+
+</div>
+
+</div>
+
+<footer id="footer" class="mw-footer" role="contentinfo" >
+	<ul id="footer-info">
+	<li id="footer-info-lastmod"> This page was last edited on 1 February 2022, at 08:14<span class="anonymous-show">&#160;(UTC)</span>.</li>
+	<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License 3.0</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//foundation.wikimedia.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//foundation.wikimedia.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+</ul>
+
+	<ul id="footer-places">
+	<li id="footer-places-privacy"><a href="https://foundation.wikimedia.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+	<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+	<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+	<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+	<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Feature_engineering&amp;lxml=&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+	<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+	<li id="footer-places-statslink"><a href="https://stats.wikimedia.org/#/en.wikipedia.org">Statistics</a></li>
+	<li id="footer-places-cookiestatement"><a href="https://foundation.wikimedia.org/wiki/Cookie_statement">Cookie statement</a></li>
+</ul>
+
+	<ul id="footer-icons" class="noprint">
+	<li id="footer-copyrightico"><a href="https://wikimediafoundation.org/"><img src="/static/images/footer/wikimedia-button.png" srcset="/static/images/footer/wikimedia-button-1.5x.png 1.5x, /static/images/footer/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation" loading="lazy" /></a></li>
+	<li id="footer-poweredbyico"><a href="https://www.mediawiki.org/"><img src="/static/images/footer/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/footer/poweredby_mediawiki_132x47.png 1.5x, /static/images/footer/poweredby_mediawiki_176x62.png 2x" width="88" height="31" loading="lazy"/></a></li>
+</ul>
+
+</footer>
+
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.549","walltime":"0.636","ppvisitednodes":{"value":1833,"limit":1000000},"postexpandincludesize":{"value":82110,"limit":2097152},"templateargumentsize":{"value":3435,"limit":2097152},"expansiondepth":{"value":12,"limit":100},"expensivefunctioncount":{"value":3,"limit":500},"unstrip-depth":{"value":1,"limit":20},"unstrip-size":{"value":81467,"limit":5000000},"entityaccesscount":{"value":0,"limit":400},"timingprofile":["100.00%  543.519      1 -total"," 48.03%  261.054      1 Template:Reflist"," 27.29%  148.347     15 Template:Cite_web"," 24.10%  131.014      1 Template:Machine_learning"," 23.14%  125.771      1 Template:Sidebar_with_collapsible_lists"," 12.53%   68.102      1 Template:Citation_needed"," 11.20%   60.877      2 Template:Fix"," 10.43%   56.706      7 Template:Cite_book","  6.58%   35.742      3 Template:Category_handler","  3.58%   19.445      1 Template:Longitem"]},"scribunto":{"limitreport-timeusage":{"value":"0.305","limit":"10.000"},"limitreport-memusage":{"value":6418240,"limit":52428800}},"cachereport":{"origin":"mw1407","timestamp":"20220302164958","ttl":1814400,"transientcontent":false}}});});</script>
+<script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"Article","name":"Feature engineering","url":"https:\/\/en.wikipedia.org\/wiki\/Feature_engineering","sameAs":"http:\/\/www.wikidata.org\/entity\/Q22245680","mainEntity":"http:\/\/www.wikidata.org\/entity\/Q22245680","author":{"@type":"Organization","name":"Contributors to Wikimedia projects"},"publisher":{"@type":"Organization","name":"Wikimedia Foundation, Inc.","logo":{"@type":"ImageObject","url":"https:\/\/www.wikimedia.org\/static\/images\/wmf-hor-googpub.png"}},"datePublished":"2015-03-23T19:54:42Z","dateModified":"2022-02-01T08:14:03Z","image":"https:\/\/upload.wikimedia.org\/wikipedia\/commons\/f\/fe\/Kernel_Machine.svg","headline":"process that creates features for machine learning by transforming or combining existing features"}</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":160,"wgHostname":"mw1321"});});</script>
+</body>
+</html>

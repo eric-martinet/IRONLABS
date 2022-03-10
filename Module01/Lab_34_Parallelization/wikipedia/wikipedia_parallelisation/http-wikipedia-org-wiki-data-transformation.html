@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Data transformation - Wikipedia</title>
+<script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"c9ca2ae5-1752-4b2d-8eba-b58cc4fa6085","wgCSPNonce":false,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Data_transformation","wgTitle":"Data transformation","wgCurRevisionId":1061024345,"wgRevisionId":1061024345,"wgArticleId":4080917,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Articles with short description","Short description is different from Wikidata","Wikipedia articles with possible conflicts of interest from October 2017","Articles with Curlie links","Articles with example C++ code","Metadata","Data management","Data warehousing"],
+"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"Data_transformation","wgRelevantArticleId":4080917,"wgIsProbablyEditable":true,"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgFlaggedRevsParams":{"tags":{"status":{"levels":-1}}},"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en"},"wgMFDisplayWikibaseDescriptions":{"search":true,"nearby":true,"watchlist":true,"tagline":false},"wgWMESchemaEditAttemptStepOversample":false,"wgWMEPageLength":20000,"wgNoticeProject":"wikipedia","wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgPopupsFlags":10,"wgULSCurrentAutonym":"English","wgEditSubmitButtonLabelPublish":true,"wgCentralAuthMobileDomain":false,"wgULSPosition":"interlanguage","wgULSisCompactLinksEnabled":true,"wgWikibaseItemId":"Q4272815","wgGENewcomerTasksGuidanceEnabled":true,"wgGEAskQuestionEnabled":false,"wgGELinkRecommendationsFrontendEnabled":false};
+RLSTATE={"ext.globalCssJs.user.styles":"ready","site.styles":"ready","user.styles":"ready","ext.globalCssJs.user":"ready","user":"ready","user.options":"loading","ext.cite.styles":"ready","skins.vector.styles.legacy":"ready","jquery.makeCollapsible.styles":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.wikimediaBadges":"ready","ext.uls.interlanguage":"ready","wikibase.client.init":"ready"};RLPAGEMODULES=["ext.cite.ux-enhancements","site","mediawiki.page.ready","jquery.makeCollapsible","mediawiki.toc","skins.vector.legacy.js","ext.gadget.ReferenceTooltips","ext.gadget.charinsert","ext.gadget.extra-toolbar-buttons","ext.gadget.refToolbar","ext.gadget.switcher","mmv.head","mmv.bootstrap.autostart","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging","ext.wikimediaEvents","ext.navigationTiming","ext.cx.eventlogging.campaigns","ext.centralNotice.geoIP","ext.centralNotice.startUp","ext.centralauth.centralautologin",
+"ext.popups","ext.uls.compactlinks","ext.uls.interface","ext.growthExperiments.SuggestedEditSession"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@1i9g4",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});});});</script>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=ext.cite.styles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cjquery.makeCollapsible.styles%7Cskins.vector.styles.legacy%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.38.0-wmf.25"/>
+<meta name="referrer" content="origin"/>
+<meta name="referrer" content="origin-when-crossorigin"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta property="og:title" content="Data transformation - Wikipedia"/>
+<meta property="og:type" content="website"/>
+<link rel="preconnect" href="//upload.wikimedia.org"/>
+<link rel="alternate" media="only screen and (max-width: 720px)" href="//en.m.wikipedia.org/wiki/Data_transformation"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Data_transformation&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="license" href="https://creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Data_transformation"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject mw-editable page-Data_transformation rootpage-Data_transformation skin-vector action-view skin-vector-legacy"><div id="mw-page-base" class="noprint"></div>
+<div id="mw-head-base" class="noprint"></div>
+<div id="content" class="mw-body" role="main">
+	<a id="top"></a>
+	<div id="siteNotice"><!-- CentralNotice --></div>
+	<div class="mw-indicators">
+	</div>
+	<h1 id="firstHeading" class="firstHeading mw-first-heading">Data transformation</h1>
+	<div id="bodyContent" class="vector-body">
+		<div id="siteSub" class="noprint">From Wikipedia, the free encyclopedia</div>
+		<div id="contentSub"></div>
+		<div id="contentSub2"></div>
+		
+		<div id="jump-to-nav"></div>
+		<a class="mw-jump-link" href="#mw-head">Jump to navigation</a>
+		<a class="mw-jump-link" href="#searchInput">Jump to search</a>
+		<div id="mw-content-text" class="mw-body-content mw-content-ltr" lang="en" dir="ltr"><div class="mw-parser-output"><div class="shortdescription nomobile noexcerpt noprint searchaux" style="display:none">Resolution Data analysis ML automation</div>
+<style data-mw-deduplicate="TemplateStyles:r1033289096">.mw-parser-output .hatnote{font-style:italic}.mw-parser-output div.hatnote{padding-left:1.6em;margin-bottom:0.5em}.mw-parser-output .hatnote i{font-style:normal}.mw-parser-output .hatnote+link+.hatnote{margin-top:-0.5em}</style><div role="note" class="hatnote navigation-not-searchable">This article is about metadata transformation in computer science. For the statistical concept, see <a href="/wiki/Data_transformation_(statistics)" title="Data transformation (statistics)">Data transformation (statistics)</a>.</div>
+<table class="box-COI plainlinks metadata ambox ambox-content ambox-COI" role="presentation"><tbody><tr><td class="mbox-image"><div style="width:52px"><img alt="Unbalanced scales.svg" src="//upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Unbalanced_scales.svg/45px-Unbalanced_scales.svg.png" decoding="async" width="45" height="40" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Unbalanced_scales.svg/68px-Unbalanced_scales.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Unbalanced_scales.svg/90px-Unbalanced_scales.svg.png 2x" data-file-width="400" data-file-height="354" /></div></td><td class="mbox-text"><div class="mbox-text-span"><b> A major contributor to this article appears to have a <a href="/wiki/Wikipedia:Conflict_of_interest" title="Wikipedia:Conflict of interest">close connection</a> with its subject.</b><span class="hide-when-compact"> It may require cleanup to comply with Wikipedia's content policies, particularly <a href="/wiki/Wikipedia:Neutral_point_of_view" title="Wikipedia:Neutral point of view">neutral point of view</a>. Please discuss further on the <a href="/wiki/Talk:Data_transformation" title="Talk:Data transformation">talk page</a>.</span>  <span class="date-container"><i>(<span class="date">October 2017</span>)</i></span><span class="hide-when-compact"><i> (<small><a href="/wiki/Help:Maintenance_template_removal" title="Help:Maintenance template removal">Learn how and when to remove this template message</a></small>)</i></span></div></td></tr></tbody></table>
+<style data-mw-deduplicate="TemplateStyles:r1045330069">.mw-parser-output .sidebar{width:22em;float:right;clear:right;margin:0.5em 0 1em 1em;background:#f8f9fa;border:1px solid #aaa;padding:0.2em;text-align:center;line-height:1.4em;font-size:88%;border-collapse:collapse;display:table}body.skin-minerva .mw-parser-output .sidebar{display:table!important;float:right!important;margin:0.5em 0 1em 1em!important}.mw-parser-output .sidebar-subgroup{width:100%;margin:0;border-spacing:0}.mw-parser-output .sidebar-left{float:left;clear:left;margin:0.5em 1em 1em 0}.mw-parser-output .sidebar-none{float:none;clear:both;margin:0.5em 1em 1em 0}.mw-parser-output .sidebar-outer-title{padding:0 0.4em 0.2em;font-size:125%;line-height:1.2em;font-weight:bold}.mw-parser-output .sidebar-top-image{padding:0.4em}.mw-parser-output .sidebar-top-caption,.mw-parser-output .sidebar-pretitle-with-top-image,.mw-parser-output .sidebar-caption{padding:0.2em 0.4em 0;line-height:1.2em}.mw-parser-output .sidebar-pretitle{padding:0.4em 0.4em 0;line-height:1.2em}.mw-parser-output .sidebar-title,.mw-parser-output .sidebar-title-with-pretitle{padding:0.2em 0.8em;font-size:145%;line-height:1.2em}.mw-parser-output .sidebar-title-with-pretitle{padding:0.1em 0.4em}.mw-parser-output .sidebar-image{padding:0.2em 0.4em 0.4em}.mw-parser-output .sidebar-heading{padding:0.1em 0.4em}.mw-parser-output .sidebar-content{padding:0 0.5em 0.4em}.mw-parser-output .sidebar-content-with-subgroup{padding:0.1em 0.4em 0.2em}.mw-parser-output .sidebar-above,.mw-parser-output .sidebar-below{padding:0.3em 0.8em;font-weight:bold}.mw-parser-output .sidebar-collapse .sidebar-above,.mw-parser-output .sidebar-collapse .sidebar-below{border-top:1px solid #aaa;border-bottom:1px solid #aaa}.mw-parser-output .sidebar-navbar{text-align:right;font-size:115%;padding:0 0.4em 0.4em}.mw-parser-output .sidebar-list-title{padding:0 0.4em;text-align:left;font-weight:bold;line-height:1.6em;font-size:105%}.mw-parser-output .sidebar-list-title-c{padding:0 0.4em;text-align:center;margin:0 3.3em}@media(max-width:720px){body.mediawiki .mw-parser-output .sidebar{width:100%!important;clear:both;float:none!important;margin-left:0!important;margin-right:0!important}}</style><table class="sidebar nomobile nowraplinks"><tbody><tr><th class="sidebar-title"><a class="mw-selflink selflink">Data transformation</a></th></tr><tr><th class="sidebar-heading" style="background:#E7C6A5; padding:2px">
+Concepts</th></tr><tr><td class="sidebar-content hlist">
+<ul><li><a href="/wiki/Metadata" title="Metadata">Metadata</a></li>
+<li><a href="/wiki/Data_element" title="Data element">Data element</a></li>
+<li><a href="/wiki/Data_mapping" title="Data mapping">Data mapping</a></li>
+<li><a href="/wiki/Data_migration" title="Data migration">Data migration</a></li>
+<li><a class="mw-selflink selflink">Data transformation</a></li>
+<li><a href="/wiki/Model_transformation" title="Model transformation">Model transformation</a></li>
+<li><a href="/wiki/Macro_(computer_science)" title="Macro (computer science)">Macro</a></li>
+<li><a href="/wiki/Preprocessor" title="Preprocessor">Preprocessor</a></li></ul></td>
+</tr><tr><th class="sidebar-heading" style="background:#E7C6A5; padding:2px">
+<a href="/wiki/Transformation_language" title="Transformation language">Transformation languages</a></th></tr><tr><td class="sidebar-content hlist">
+<ul><li><a href="/wiki/ATLAS_Transformation_Language" title="ATLAS Transformation Language">ATL</a></li>
+<li><a href="/wiki/AWK" title="AWK">AWK</a></li>
+<li><a href="/wiki/MOFM2T" class="mw-redirect" title="MOFM2T">MOFM2T</a></li>
+<li><a href="/wiki/QVT" title="QVT">QVT</a></li>
+<li><a href="/wiki/XML_transformation_language" title="XML transformation language">XML languages</a></li></ul></td>
+</tr><tr><th class="sidebar-heading" style="background:#E7C6A5; padding:2px">
+Techniques and transforms</th></tr><tr><td class="sidebar-content hlist">
+<ul><li><a href="/wiki/Identity_transform" title="Identity transform">Identity transform</a></li>
+<li><a href="/wiki/Data_refinement" class="mw-redirect" title="Data refinement">Data refinement</a></li></ul></td>
+</tr><tr><th class="sidebar-heading" style="background:#E7C6A5; padding:2px">
+Applications</th></tr><tr><td class="sidebar-content hlist">
+<ul><li><a href="/wiki/Data_conversion" title="Data conversion">Data conversion</a></li>
+<li><a href="/wiki/Data_migration" title="Data migration">Data migration</a></li>
+<li><a href="/wiki/Data_integration" title="Data integration">Data integration</a></li>
+<li><a href="/wiki/Extract,_transform,_load" title="Extract, transform, load">Extract, transform, load</a> (ETL)</li>
+<li><a href="/wiki/Web_template_system" title="Web template system">Web template system</a></li></ul></td>
+</tr><tr><th class="sidebar-heading" style="background:#E7C6A5; padding:2px">
+Related</th></tr><tr><td class="sidebar-content hlist">
+<ul><li><a href="/wiki/Data_wrangling" title="Data wrangling">Data wrangling</a></li>
+<li><a href="/wiki/Transformation_language" title="Transformation language">Transformation languages</a></li></ul></td>
+</tr><tr><td class="sidebar-navbar"><style data-mw-deduplicate="TemplateStyles:r1063604349">.mw-parser-output .navbar{display:inline;font-size:88%;font-weight:normal}.mw-parser-output .navbar-collapse{float:left;text-align:left}.mw-parser-output .navbar-boxtext{word-spacing:0}.mw-parser-output .navbar ul{display:inline-block;white-space:nowrap;line-height:inherit}.mw-parser-output .navbar-brackets::before{margin-right:-0.125em;content:"[ "}.mw-parser-output .navbar-brackets::after{margin-left:-0.125em;content:" ]"}.mw-parser-output .navbar li{word-spacing:-0.125em}.mw-parser-output .navbar a>span,.mw-parser-output .navbar a>abbr{text-decoration:inherit}.mw-parser-output .navbar-mini abbr{font-variant:small-caps;border-bottom:none;text-decoration:none;cursor:inherit}.mw-parser-output .navbar-ct-full{font-size:114%;margin:0 7em}.mw-parser-output .navbar-ct-mini{font-size:114%;margin:0 4em}</style><div class="navbar plainlinks hlist navbar-mini"><ul><li class="nv-view"><a href="/wiki/Template:Data_transformation" title="Template:Data transformation"><abbr title="View this template">v</abbr></a></li><li class="nv-talk"><a href="/wiki/Template_talk:Data_transformation" title="Template talk:Data transformation"><abbr title="Discuss this template">t</abbr></a></li><li class="nv-edit"><a class="external text" href="https://en.wikipedia.org/w/index.php?title=Template:Data_transformation&amp;action=edit"><abbr title="Edit this template">e</abbr></a></li></ul></div></td></tr></tbody></table>
+<p>In computing, <b>Data transformation</b> is the process of converting data from one format or structure into another format or structure. It is a fundamental aspect of most <a href="/wiki/Data_integration" title="Data integration">data integration</a><sup id="cite_ref-cio.com_1-0" class="reference"><a href="#cite_note-cio.com-1">&#91;1&#93;</a></sup> and <a href="/wiki/Data_management" title="Data management">data management</a> tasks such as <a href="/wiki/Data_wrangling" title="Data wrangling">data wrangling</a>, <a href="/wiki/Data_warehousing" class="mw-redirect" title="Data warehousing">data warehousing</a>, <a href="/wiki/Data_integration" title="Data integration">data integration</a> and application integration.
+</p><p>Data transformation can be simple or complex based on the required changes to the data between the source (initial) data and the target (final) data. Data transformation is typically performed via a mixture of manual and automated steps.<sup id="cite_ref-livinglab.mit.edu_2-0" class="reference"><a href="#cite_note-livinglab.mit.edu-2">&#91;2&#93;</a></sup> Tools and technologies used for data transformation can vary widely based on the format, structure, complexity, and volume of the data being transformed.
+</p><p>A master data recast is another form of data transformation where the entire database of data values is transformed or recast without extracting the data from the database.  All data in a well designed database is directly or indirectly related to a limited set of master <a href="/wiki/Database_table" class="mw-redirect" title="Database table">database tables</a> by a network of foreign key constraints.  Each foreign key constraint is dependent upon a unique <a href="/wiki/Database_index" title="Database index">database index</a> from the parent database table.  Therefore, when the proper master database table is recast with a different unique index, the directly and indirectly related data are also recast or restated.  The directly and indirectly related data may also still be viewed in the original form since the original unique index still exists with the master data.  Also, the database recast must be done in such a way as to not impact the <a href="/wiki/Applications_architecture" title="Applications architecture">applications architecture</a> software.
+</p><p>When the data mapping is indirect via a mediating <a href="/wiki/Data_model" title="Data model">data model</a>, the process is also called <b>data mediation</b>.
+</p>
+<div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2 id="mw-toc-heading">Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Data_Transformation_Process"><span class="tocnumber">1</span> <span class="toctext">Data Transformation Process</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Types_of_Data_Transformation"><span class="tocnumber">2</span> <span class="toctext">Types of Data Transformation</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="#Batch_Data_Transformation"><span class="tocnumber">2.1</span> <span class="toctext">Batch Data Transformation</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Benefits_of_Batch_Data_Transformation"><span class="tocnumber">2.2</span> <span class="toctext">Benefits of Batch Data Transformation</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Limitations_of_Traditional_Data_Transformation"><span class="tocnumber">2.3</span> <span class="toctext">Limitations of Traditional Data Transformation</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Interactive_Data_Transformation"><span class="tocnumber">2.4</span> <span class="toctext">Interactive Data Transformation</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-7"><a href="#Transformational_languages"><span class="tocnumber">3</span> <span class="toctext">Transformational languages</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="#See_also"><span class="tocnumber">4</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-9"><a href="#References"><span class="tocnumber">5</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-10"><a href="#External_links"><span class="tocnumber">6</span> <span class="toctext">External links</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Data_Transformation_Process">Data Transformation Process</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Data_transformation&amp;action=edit&amp;section=1" title="Edit section: Data Transformation Process">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Data transformation can be divided into the following steps, each applicable as needed based on the complexity of the transformation required.<br />
+</p>
+<ul><li>Data discovery</li>
+<li>Data mapping</li>
+<li><a href="/wiki/Code_generation_(compiler)" title="Code generation (compiler)">Code generation</a></li>
+<li>Code execution</li>
+<li>Data review</li></ul>
+<p>These steps are often the focus of developers or technical data analysts who may use multiple specialized tools to perform their tasks.
+</p><p>The steps can be described as follows:
+</p><p><b>Data discovery</b> is the first step in the data transformation process. Typically the data is profiled using profiling tools or sometimes using manually written profiling scripts to better understand the structure and characteristics of the data and decide how it needs to be transformed.
+</p><p><b>Data mapping</b> is the process of defining how individual fields are mapped, modified, joined, filtered, aggregated etc. to produce the final desired output. Developers or technical data analysts traditionally perform data mapping since they work in the specific technologies to define the transformation rules (e.g. visual <a href="/wiki/Extract,_transform,_load" title="Extract, transform, load">ETL</a> tools,<sup id="cite_ref-3" class="reference"><a href="#cite_note-3">&#91;3&#93;</a></sup> transformation languages).
+</p><p><b>Code generation</b> is the process of generating executable code (e.g. SQL, Python, R, or other executable instructions) that will transform the data based on the desired and defined data mapping rules.<sup id="cite_ref-4" class="reference"><a href="#cite_note-4">&#91;4&#93;</a></sup> Typically, the data transformation technologies generate this code<sup id="cite_ref-5" class="reference"><a href="#cite_note-5">&#91;5&#93;</a></sup> based on the definitions or metadata defined by the developers.
+</p><p><b>Code execution</b> is the step whereby the generated code is executed against the data to create the desired output. The executed code may be tightly integrated into the transformation tool, or it may require separate steps by the developer to manually execute the generated code.
+</p><p><b>Data review</b> is the final step in the process, which focuses on ensuring the output data meets the transformation requirements. It is typically the business user or final end-user of the data that performs this step. Any anomalies or errors in the data that are found and communicated back to the developer or data analyst as new requirements to be implemented in the transformation process.<sup id="cite_ref-cio.com_1-1" class="reference"><a href="#cite_note-cio.com-1">&#91;1&#93;</a></sup>
+</p>
+<h2><span class="mw-headline" id="Types_of_Data_Transformation">Types of Data Transformation</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Data_transformation&amp;action=edit&amp;section=2" title="Edit section: Types of Data Transformation">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<h3><span class="mw-headline" id="Batch_Data_Transformation">Batch Data Transformation</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Data_transformation&amp;action=edit&amp;section=3" title="Edit section: Batch Data Transformation">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Traditionally, data transformation has been a bulk or batch process,<sup id="cite_ref-tdwi.org_6-0" class="reference"><a href="#cite_note-tdwi.org-6">&#91;6&#93;</a></sup> whereby developers write code or implement transformation rules in a data integration tool, and then execute that code or those rules on large volumes of data.<sup id="cite_ref-andrefreitas.org_7-0" class="reference"><a href="#cite_note-andrefreitas.org-7">&#91;7&#93;</a></sup> This process can follow the linear set of steps as described in the data transformation process above.
+</p><p>Batch data transformation is the cornerstone of virtually all data integration technologies such as data warehousing, data migration and application integration.<sup id="cite_ref-cio.com_1-2" class="reference"><a href="#cite_note-cio.com-1">&#91;1&#93;</a></sup>
+</p><p>When data must be transformed and delivered with low latency, the term “microbatch” is often used.<sup id="cite_ref-tdwi.org_6-1" class="reference"><a href="#cite_note-tdwi.org-6">&#91;6&#93;</a></sup>  This refers to small batches of data (e.g. a small number of rows or small set of data objects) that can be processed very quickly and delivered to the target system when needed.
+</p>
+<h3><span class="mw-headline" id="Benefits_of_Batch_Data_Transformation">Benefits of Batch Data Transformation</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Data_transformation&amp;action=edit&amp;section=4" title="Edit section: Benefits of Batch Data Transformation">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Traditional data transformation processes have served companies well for decades. The various tools and technologies (data profiling, data visualization, data cleansing, data integration etc.) have matured and most (if not all) enterprises transform enormous volumes of data that feed internal and external applications, data warehouses and other data stores.<sup id="cite_ref-The_Value_of_Data_Transformation_8-0" class="reference"><a href="#cite_note-The_Value_of_Data_Transformation-8">&#91;8&#93;</a></sup>
+</p>
+<h3><span class="mw-headline" id="Limitations_of_Traditional_Data_Transformation">Limitations of Traditional Data Transformation</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Data_transformation&amp;action=edit&amp;section=5" title="Edit section: Limitations of Traditional Data Transformation">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>This traditional process also has limitations that hamper its overall efficiency and effectiveness.<sup id="cite_ref-cio.com_1-3" class="reference"><a href="#cite_note-cio.com-1">&#91;1&#93;</a></sup><sup id="cite_ref-livinglab.mit.edu_2-1" class="reference"><a href="#cite_note-livinglab.mit.edu-2">&#91;2&#93;</a></sup><sup id="cite_ref-andrefreitas.org_7-1" class="reference"><a href="#cite_note-andrefreitas.org-7">&#91;7&#93;</a></sup>
+</p><p>The people who need to use the data (e.g. business users) do not play a direct role in the data transformation process.<sup id="cite_ref-digital.lib.washington.edu_9-0" class="reference"><a href="#cite_note-digital.lib.washington.edu-9">&#91;9&#93;</a></sup> Typically, users hand over the data transformation task to developers who have the necessary coding or technical skills to define the transformations and execute them on the data.<sup id="cite_ref-The_Value_of_Data_Transformation_8-1" class="reference"><a href="#cite_note-The_Value_of_Data_Transformation-8">&#91;8&#93;</a></sup>
+</p><p>This process leaves the bulk of the work of defining the required transformations to the developer.  The developer interprets the business user requirements and implements the related code/logic. This has the potential of introducing errors into the process (through misinterpreted requirements), and also increases the time to arrive at a solution.<sup id="cite_ref-digital.lib.washington.edu_9-1" class="reference"><a href="#cite_note-digital.lib.washington.edu-9">&#91;9&#93;</a></sup><sup id="cite_ref-ReferenceA_10-0" class="reference"><a href="#cite_note-ReferenceA-10">&#91;10&#93;</a></sup>
+</p><p>This problem has given rise to the need for agility and self-service in data integration (i.e. empowering the user of the data and enabling them to transform the data themselves interactively).<sup id="cite_ref-andrefreitas.org_7-2" class="reference"><a href="#cite_note-andrefreitas.org-7">&#91;7&#93;</a></sup><sup id="cite_ref-ReferenceA_10-1" class="reference"><a href="#cite_note-ReferenceA-10">&#91;10&#93;</a></sup>
+</p><p>There are companies that provide self-service data transformation tools. They are aiming to efficiently analyze, map and transform large volumes of data without the technical and process complexity that currently exists. While these companies use traditional batch transformation, their tools enable more interactivity for users through visual platforms and easily repeated scripts.<sup id="cite_ref-11" class="reference"><a href="#cite_note-11">&#91;11&#93;</a></sup>
+</p>
+<h3><span class="mw-headline" id="Interactive_Data_Transformation">Interactive Data Transformation</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Data_transformation&amp;action=edit&amp;section=6" title="Edit section: Interactive Data Transformation">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Interactive data transformation (IDT)<sup id="cite_ref-12" class="reference"><a href="#cite_note-12">&#91;12&#93;</a></sup> is an emerging capability that allows business analysts and business users the ability to directly interact with large datasets through a visual interface,<sup id="cite_ref-digital.lib.washington.edu_9-2" class="reference"><a href="#cite_note-digital.lib.washington.edu-9">&#91;9&#93;</a></sup> understand the characteristics of the data (via automated data profiling or visualization), and change or correct the data through simple interactions such as clicking or selecting certain elements of the data.<sup id="cite_ref-livinglab.mit.edu_2-2" class="reference"><a href="#cite_note-livinglab.mit.edu-2">&#91;2&#93;</a></sup>
+</p><p>Although IDT follows the same data integration process steps as batch data integration, the key difference is that the steps are not necessarily followed in a linear fashion and typically don't require significant technical skills for completion.<sup id="cite_ref-13" class="reference"><a href="#cite_note-13">&#91;13&#93;</a></sup>
+</p><p>A number of companies, primarily start-ups such as Trifacta, Alteryx and Paxata provide interactive data transformation tools. They are aiming to efficiently analyze, map and transform large volumes of data without the technical and process complexity that currently exists.
+</p><p>IDT solutions provide an integrated visual interface that combines the previously disparate steps of data analysis, data mapping and code generation/execution and data inspection.<sup id="cite_ref-The_Value_of_Data_Transformation_8-2" class="reference"><a href="#cite_note-The_Value_of_Data_Transformation-8">&#91;8&#93;</a></sup> IDT interfaces incorporate visualization to show the user patterns and anomalies in the data so they can identify erroneous or outlying values.<sup id="cite_ref-digital.lib.washington.edu_9-3" class="reference"><a href="#cite_note-digital.lib.washington.edu-9">&#91;9&#93;</a></sup>
+</p><p>Once they've finished transforming the data, the system can generate executable code/logic, which can be executed or applied to subsequent similar data sets.
+</p><p>By removing the developer from the process, IDT systems shorten the time needed to prepare and transform the data, eliminate costly errors in interpretation of user requirements and empower business users and analysts to control their data and interact with it as needed.<sup id="cite_ref-ReferenceA_10-2" class="reference"><a href="#cite_note-ReferenceA-10">&#91;10&#93;</a></sup>
+</p>
+<h2><span class="mw-headline" id="Transformational_languages">Transformational languages</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Data_transformation&amp;action=edit&amp;section=7" title="Edit section: Transformational languages">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>There are numerous languages available for performing data transformation. Many <a href="/wiki/Transformation_language" title="Transformation language">transformation languages</a> require a <a href="/wiki/Grammar" title="Grammar">grammar</a> to be provided. In many cases, the grammar is structured using something closely resembling <a href="/wiki/Backus%E2%80%93Naur_form" title="Backus–Naur form">Backus–Naur Form (BNF)</a>. There are numerous languages available for such purposes varying in their accessibility (cost) and general usefulness.<sup id="cite_ref-14" class="reference"><a href="#cite_note-14">&#91;14&#93;</a></sup> Examples of such languages include:
+</p>
+<ul><li><a href="/wiki/AWK" title="AWK">AWK</a> - one of the oldest and popular textual data transformation language;</li>
+<li><a href="/wiki/Perl" title="Perl">Perl</a> - a high-level language with both procedural and object-oriented syntax capable of powerful operations on binary or text data.</li>
+<li><a href="/wiki/Web_template" class="mw-redirect" title="Web template">Template languages</a> - specialized to transform data into documents (see also <a href="/wiki/Template_processor" title="Template processor">template processor</a>);</li>
+<li><a href="/wiki/TXL_(programming_language)" title="TXL (programming language)">TXL</a> - prototyping language-based descriptions, used for source code or data transformation.</li>
+<li><a href="/wiki/XSLT" title="XSLT">XSLT</a> - the standard XML data transformation language (suitable by <a href="/wiki/XQuery" title="XQuery">XQuery</a> in many applications);</li></ul>
+<p>Additionally, companies such as Trifacta and Paxata have developed domain-specific transformational languages (DSL) for servicing and transforming datasets. The development of domain-specific languages has been linked to increased productivity and accessibility for non-technical users.<sup id="cite_ref-15" class="reference"><a href="#cite_note-15">&#91;15&#93;</a></sup> Trifacta's “Wrangle” is an example of such a domain specific language.<sup id="cite_ref-:0_16-0" class="reference"><a href="#cite_note-:0-16">&#91;16&#93;</a></sup>
+</p><p>Another advantage of the recent DSL trend is that a DSL can abstract the underlying execution of the logic defined in the DSL, but it can also utilize that same logic in various processing engines, such as <a href="/wiki/SPARK_(programming_language)" title="SPARK (programming language)">Spark</a>, <a href="/wiki/MapReduce" title="MapReduce">MapReduce</a>, and Dataflow. With a DSL, the transformation language is not tied to the engine.<sup id="cite_ref-:0_16-1" class="reference"><a href="#cite_note-:0-16">&#91;16&#93;</a></sup>
+</p><p>Although transformational languages are typically best suited for transformation, something as simple as regular expressions can be used to achieve useful transformation. A <a href="/wiki/Text_editor" title="Text editor">text editor</a> like <a href="/wiki/Vim_(text_editor)" title="Vim (text editor)">vim</a>, <a href="/wiki/Emacs" title="Emacs">emacs</a> or <a href="/wiki/Textpad" class="mw-redirect" title="Textpad">TextPad</a> supports the use of regular expressions with arguments. This would allow all instances of a particular pattern to be replaced with another pattern using parts of the original pattern. For example:
+</p>
+<pre>foo ("some string", 42, gCommon);
+bar (someObj, anotherObj);
+
+foo ("another string", 24, gCommon);
+bar (myObj, myOtherObj);
+</pre>
+<p>could both be transformed into a more compact form like:
+</p>
+<pre>foobar("some string", 42, someObj, anotherObj);
+foobar("another string", 24, myObj, myOtherObj);
+</pre>
+<p>In other words, all instances of a function invocation of foo with three arguments, followed by a function invocation with two arguments would be replaced with a single function invocation using some or all of the original set of arguments.
+</p><p>Another advantage to using regular expressions is that they will not fail the null transform test. That is, using your transformational language of choice, run a sample program through a transformation that doesn't perform any transformations. Many transformational languages will fail this test.
+</p>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Data_transformation&amp;action=edit&amp;section=8" title="Edit section: See also">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul><li><a class="external text" href="https://en.wikiversity.org/wiki/Digital_Libraries/File_formats,_transformation,_migration">File Formats, Transformation, and Migration</a> (related wikiversity article)</li>
+<li><a href="/wiki/Data_cleansing" title="Data cleansing">Data Cleansing</a></li>
+<li><a href="/wiki/Data_mapping" title="Data mapping">Data Mapping</a></li>
+<li><a href="/wiki/Data_integration" title="Data integration">Data Integration</a></li>
+<li><a href="/wiki/Data_preparation" title="Data preparation">Data Preparation</a></li>
+<li><a href="/wiki/Data_wrangling" title="Data wrangling">Data Wrangling</a></li>
+<li><a href="/wiki/Extract,_transform,_load" title="Extract, transform, load">Extract Transform Load</a></li>
+<li><a href="/wiki/Information_integration" title="Information integration">Information Integration</a></li></ul>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Data_transformation&amp;action=edit&amp;section=9" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<style data-mw-deduplicate="TemplateStyles:r1011085734">.mw-parser-output .reflist{font-size:90%;margin-bottom:0.5em;list-style-type:decimal}.mw-parser-output .reflist .references{font-size:100%;margin-bottom:0;list-style-type:inherit}.mw-parser-output .reflist-columns-2{column-width:30em}.mw-parser-output .reflist-columns-3{column-width:25em}.mw-parser-output .reflist-columns{margin-top:0.3em}.mw-parser-output .reflist-columns ol{margin-top:0}.mw-parser-output .reflist-columns li{page-break-inside:avoid;break-inside:avoid-column}.mw-parser-output .reflist-upper-alpha{list-style-type:upper-alpha}.mw-parser-output .reflist-upper-roman{list-style-type:upper-roman}.mw-parser-output .reflist-lower-alpha{list-style-type:lower-alpha}.mw-parser-output .reflist-lower-greek{list-style-type:lower-greek}.mw-parser-output .reflist-lower-roman{list-style-type:lower-roman}</style><div class="reflist">
+<div class="mw-references-wrap mw-references-columns"><ol class="references">
+<li id="cite_note-cio.com-1"><span class="mw-cite-backlink">^ <a href="#cite_ref-cio.com_1-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-cio.com_1-1"><sup><i><b>b</b></i></sup></a> <a href="#cite_ref-cio.com_1-2"><sup><i><b>c</b></i></sup></a> <a href="#cite_ref-cio.com_1-3"><sup><i><b>d</b></i></sup></a></span> <span class="reference-text">CIO.com. Agile Comes to Data Integration. Retrieved from: <a rel="nofollow" class="external free" href="https://www.cio.com/article/2378615/data-management/agile-comes-to-data-integration.html">https://www.cio.com/article/2378615/data-management/agile-comes-to-data-integration.html</a></span>
+</li>
+<li id="cite_note-livinglab.mit.edu-2"><span class="mw-cite-backlink">^ <a href="#cite_ref-livinglab.mit.edu_2-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-livinglab.mit.edu_2-1"><sup><i><b>b</b></i></sup></a> <a href="#cite_ref-livinglab.mit.edu_2-2"><sup><i><b>c</b></i></sup></a></span> <span class="reference-text">DataXFormer. Morcos, Abedjan, Ilyas, Ouzzani, Papotti, Stonebraker. An interactive data transformation tool. Retrieved from: <a rel="nofollow" class="external free" href="http://livinglab.mit.edu/wp-content/uploads/2015/12/DataXFormer-An-Interactive-Data-Transformation-Tool.pdf">http://livinglab.mit.edu/wp-content/uploads/2015/12/DataXFormer-An-Interactive-Data-Transformation-Tool.pdf</a></span>
+</li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><b><a href="#cite_ref-3">^</a></b></span> <span class="reference-text">DWBIMASTER. Top 10 ETL Tools. Retrieved from: <a rel="nofollow" class="external free" href="http://dwbimaster.com/top-10-etl-tools/">http://dwbimaster.com/top-10-etl-tools/</a></span>
+</li>
+<li id="cite_note-4"><span class="mw-cite-backlink"><b><a href="#cite_ref-4">^</a></b></span> <span class="reference-text">Petr Aubrecht, Zdenek Kouba. Metadata driven data transformation. Retrieved from: <a rel="nofollow" class="external free" href="http://labe.felk.cvut.cz/~aubrech/bin/Sumatra.pdf">http://labe.felk.cvut.cz/~aubrech/bin/Sumatra.pdf</a></span>
+</li>
+<li id="cite_note-5"><span class="mw-cite-backlink"><b><a href="#cite_ref-5">^</a></b></span> <span class="reference-text">LearnDataModeling.com. Code Generators. Retrieved from: <a rel="nofollow" class="external free" href="http://www.learndatamodeling.com/tm_code_generator.php">http://www.learndatamodeling.com/tm_code_generator.php</a></span>
+</li>
+<li id="cite_note-tdwi.org-6"><span class="mw-cite-backlink">^ <a href="#cite_ref-tdwi.org_6-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-tdwi.org_6-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text">TDWI. 10 Rules for Real-Time Data Integration. Retrieved from: <a rel="nofollow" class="external free" href="https://tdwi.org/Articles/2012/12/11/10-Rules-Real-Time-Data-Integration.aspx?Page=1">https://tdwi.org/Articles/2012/12/11/10-Rules-Real-Time-Data-Integration.aspx?Page=1</a></span>
+</li>
+<li id="cite_note-andrefreitas.org-7"><span class="mw-cite-backlink">^ <a href="#cite_ref-andrefreitas.org_7-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-andrefreitas.org_7-1"><sup><i><b>b</b></i></sup></a> <a href="#cite_ref-andrefreitas.org_7-2"><sup><i><b>c</b></i></sup></a></span> <span class="reference-text">Tope Omitola, Andr´e Freitas, Edward Curry, Sean O'Riain, Nicholas Gibbins, and Nigel Shadbolt. Capturing Interactive Data Transformation Operations using Provenance Workflows Retrieved from: <a rel="nofollow" class="external free" href="http://andrefreitas.org/papers/preprint_capturing%20interactive_data_transformation_eswc_highlights.pdf">http://andrefreitas.org/papers/preprint_capturing%20interactive_data_transformation_eswc_highlights.pdf</a></span>
+</li>
+<li id="cite_note-The_Value_of_Data_Transformation-8"><span class="mw-cite-backlink">^ <a href="#cite_ref-The_Value_of_Data_Transformation_8-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-The_Value_of_Data_Transformation_8-1"><sup><i><b>b</b></i></sup></a> <a href="#cite_ref-The_Value_of_Data_Transformation_8-2"><sup><i><b>c</b></i></sup></a></span> <span class="reference-text">The Value of Data Transformation</span>
+</li>
+<li id="cite_note-digital.lib.washington.edu-9"><span class="mw-cite-backlink">^ <a href="#cite_ref-digital.lib.washington.edu_9-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-digital.lib.washington.edu_9-1"><sup><i><b>b</b></i></sup></a> <a href="#cite_ref-digital.lib.washington.edu_9-2"><sup><i><b>c</b></i></sup></a> <a href="#cite_ref-digital.lib.washington.edu_9-3"><sup><i><b>d</b></i></sup></a></span> <span class="reference-text">Morton, Kristi -- Interactive Data Integration and Entity Resolution for Exploratory Visual Data Analytics. Retrieved from: <a rel="nofollow" class="external free" href="https://digital.lib.washington.edu/researchworks/handle/1773/35165">https://digital.lib.washington.edu/researchworks/handle/1773/35165</a></span>
+</li>
+<li id="cite_note-ReferenceA-10"><span class="mw-cite-backlink">^ <a href="#cite_ref-ReferenceA_10-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-ReferenceA_10-1"><sup><i><b>b</b></i></sup></a> <a href="#cite_ref-ReferenceA_10-2"><sup><i><b>c</b></i></sup></a></span> <span class="reference-text">McKinsey.com. Using Agile to Accelerate Data Transformation</span>
+</li>
+<li id="cite_note-11"><span class="mw-cite-backlink"><b><a href="#cite_ref-11">^</a></b></span> <span class="reference-text"><style data-mw-deduplicate="TemplateStyles:r1067248974">.mw-parser-output cite.citation{font-style:inherit;word-wrap:break-word}.mw-parser-output .citation q{quotes:"\"""\"""'""'"}.mw-parser-output .citation:target{background-color:rgba(0,127,255,0.133)}.mw-parser-output .id-lock-free a,.mw-parser-output .citation .cs1-lock-free a{background:linear-gradient(transparent,transparent),url("//upload.wikimedia.org/wikipedia/commons/6/65/Lock-green.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-limited a,.mw-parser-output .id-lock-registration a,.mw-parser-output .citation .cs1-lock-limited a,.mw-parser-output .citation .cs1-lock-registration a{background:linear-gradient(transparent,transparent),url("//upload.wikimedia.org/wikipedia/commons/d/d6/Lock-gray-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-subscription a,.mw-parser-output .citation .cs1-lock-subscription a{background:linear-gradient(transparent,transparent),url("//upload.wikimedia.org/wikipedia/commons/a/aa/Lock-red-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .cs1-ws-icon a{background:linear-gradient(transparent,transparent),url("//upload.wikimedia.org/wikipedia/commons/4/4c/Wikisource-logo.svg")right 0.1em center/12px no-repeat}.mw-parser-output .cs1-code{color:inherit;background:inherit;border:none;padding:inherit}.mw-parser-output .cs1-hidden-error{display:none;color:#d33}.mw-parser-output .cs1-visible-error{color:#d33}.mw-parser-output .cs1-maint{display:none;color:#3a3;margin-left:0.3em}.mw-parser-output .cs1-format{font-size:95%}.mw-parser-output .cs1-kern-left{padding-left:0.2em}.mw-parser-output .cs1-kern-right{padding-right:0.2em}.mw-parser-output .citation .mw-selflink{font-weight:inherit}</style><cite class="citation news cs1"><a rel="nofollow" class="external text" href="https://www.datanami.com/2016/05/31/self-service-prep-killer-app-big-data/">"Why Self-Service Prep Is a Killer App for Big Data"</a>. <i>Datanami</i>. 2016-05-31<span class="reference-accessdate">. Retrieved <span class="nowrap">2017-09-20</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Datanami&amp;rft.atitle=Why+Self-Service+Prep+Is+a+Killer+App+for+Big+Data&amp;rft.date=2016-05-31&amp;rft_id=https%3A%2F%2Fwww.datanami.com%2F2016%2F05%2F31%2Fself-service-prep-killer-app-big-data%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AData+transformation" class="Z3988"></span></span>
+</li>
+<li id="cite_note-12"><span class="mw-cite-backlink"><b><a href="#cite_ref-12">^</a></b></span> <span class="reference-text">Tope Omitola , Andr´e Freitas , Edward Curry , Sean O’Riain , Nicholas Gibbins , and Nigel Shadbolt. Capturing Interactive Data Transformation Operations using Provenance Workflows Retrieved from: <a rel="nofollow" class="external free" href="http://andrefreitas.org/papers/preprint_capturing%20interactive_data_transformation_eswc_highlights.pdf">http://andrefreitas.org/papers/preprint_capturing%20interactive_data_transformation_eswc_highlights.pdf</a></span>
+</li>
+<li id="cite_note-13"><span class="mw-cite-backlink"><b><a href="#cite_ref-13">^</a></b></span> <span class="reference-text">Peng Cong, Zhang Xiaoyi. Research and Design of Interactive Data Transformation and Migration System for Heterogeneous Data Sources. Retrieved from: <a rel="nofollow" class="external free" href="https://ieeexplore.ieee.org/document/5211525/">https://ieeexplore.ieee.org/document/5211525/</a></span>
+</li>
+<li id="cite_note-14"><span class="mw-cite-backlink"><b><a href="#cite_ref-14">^</a></b></span> <span class="reference-text">DMOZ. Extraction and Transformation. Retrieved from: <a rel="nofollow" class="external free" href="https://dmoztools.net/Computers/Software/Databases/Data_Warehousing/Extraction_and_Transformation/">https://dmoztools.net/Computers/Software/Databases/Data_Warehousing/Extraction_and_Transformation/</a></span>
+</li>
+<li id="cite_note-15"><span class="mw-cite-backlink"><b><a href="#cite_ref-15">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><cite class="citation web cs1"><a rel="nofollow" class="external text" href="https://docs.trifacta.com/display/PE/Wrangle+Language">"Wrangle Language - Trifacta Wrangler - Trifacta Documentation"</a>. <i>docs.trifacta.com</i><span class="reference-accessdate">. Retrieved <span class="nowrap">2017-09-20</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=docs.trifacta.com&amp;rft.atitle=Wrangle+Language+-+Trifacta+Wrangler+-+Trifacta+Documentation&amp;rft_id=https%3A%2F%2Fdocs.trifacta.com%2Fdisplay%2FPE%2FWrangle%2BLanguage&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AData+transformation" class="Z3988"></span></span>
+</li>
+<li id="cite_note-:0-16"><span class="mw-cite-backlink">^ <a href="#cite_ref-:0_16-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-:0_16-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><cite id="CITEREFKandel" class="citation web cs1">Kandel, Joe Hellerstein, Sean. <a rel="nofollow" class="external text" href="https://conferences.oreilly.com/strata/stratany2014/public/schedule/detail/36612">"Advantages of a Domain-Specific Language Approach to Data Transformation - Strata + Hadoop World in New York 2014"</a>. <i>conferences.oreilly.com</i><span class="reference-accessdate">. Retrieved <span class="nowrap">2017-09-20</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=conferences.oreilly.com&amp;rft.atitle=Advantages+of+a+Domain-Specific+Language+Approach+to+Data+Transformation+-+Strata+%2B+Hadoop+World+in+New+York+2014&amp;rft.aulast=Kandel&amp;rft.aufirst=Joe+Hellerstein%2C+Sean&amp;rft_id=https%3A%2F%2Fconferences.oreilly.com%2Fstrata%2Fstratany2014%2Fpublic%2Fschedule%2Fdetail%2F36612&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AData+transformation" class="Z3988"></span></span>
+</li>
+</ol></div></div>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Data_transformation&amp;action=edit&amp;section=10" title="Edit section: External links">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul><li><a rel="nofollow" class="external text" href="https://curlie.org/Computers/Software/Databases/Data_Warehousing/Extraction_and_Transformation">Extraction and Transformation</a> at <a href="/wiki/Curlie" class="mw-redirect" title="Curlie">Curlie</a></li></ul>
+<div class="navbox-styles nomobile"><style data-mw-deduplicate="TemplateStyles:r1061467846">.mw-parser-output .navbox{box-sizing:border-box;border:1px solid #a2a9b1;width:100%;clear:both;font-size:88%;text-align:center;padding:1px;margin:1em auto 0}.mw-parser-output .navbox .navbox{margin-top:0}.mw-parser-output .navbox+.navbox,.mw-parser-output .navbox+.navbox-styles+.navbox{margin-top:-1px}.mw-parser-output .navbox-inner,.mw-parser-output .navbox-subgroup{width:100%}.mw-parser-output .navbox-group,.mw-parser-output .navbox-title,.mw-parser-output .navbox-abovebelow{padding:0.25em 1em;line-height:1.5em;text-align:center}.mw-parser-output .navbox-group{white-space:nowrap;text-align:right}.mw-parser-output .navbox,.mw-parser-output .navbox-subgroup{background-color:#fdfdfd}.mw-parser-output .navbox-list{line-height:1.5em;border-color:#fdfdfd}.mw-parser-output .navbox-list-with-group{text-align:left;border-left-width:2px;border-left-style:solid}.mw-parser-output tr+tr>.navbox-abovebelow,.mw-parser-output tr+tr>.navbox-group,.mw-parser-output tr+tr>.navbox-image,.mw-parser-output tr+tr>.navbox-list{border-top:2px solid #fdfdfd}.mw-parser-output .navbox-title{background-color:#ccf}.mw-parser-output .navbox-abovebelow,.mw-parser-output .navbox-group,.mw-parser-output .navbox-subgroup .navbox-title{background-color:#ddf}.mw-parser-output .navbox-subgroup .navbox-group,.mw-parser-output .navbox-subgroup .navbox-abovebelow{background-color:#e6e6ff}.mw-parser-output .navbox-even{background-color:#f7f7f7}.mw-parser-output .navbox-odd{background-color:transparent}.mw-parser-output .navbox .hlist td dl,.mw-parser-output .navbox .hlist td ol,.mw-parser-output .navbox .hlist td ul,.mw-parser-output .navbox td.hlist dl,.mw-parser-output .navbox td.hlist ol,.mw-parser-output .navbox td.hlist ul{padding:0.125em 0}.mw-parser-output .navbox .navbar{display:block;font-size:100%}.mw-parser-output .navbox-title .navbar{float:left;text-align:left;margin-right:0.5em}</style></div><div role="navigation" class="navbox" aria-labelledby="Data_warehouses" style="padding:3px"><table class="nowraplinks hlist mw-collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit"><tbody><tr><th scope="col" class="navbox-title" colspan="2"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1063604349"/><div class="navbar plainlinks hlist navbar-mini"><ul><li class="nv-view"><a href="/wiki/Template:Data_warehouses" title="Template:Data warehouses"><abbr title="View this template" style=";;background:none transparent;border:none;box-shadow:none;padding:0;">v</abbr></a></li><li class="nv-talk"><a href="/wiki/Template_talk:Data_warehouses" title="Template talk:Data warehouses"><abbr title="Discuss this template" style=";;background:none transparent;border:none;box-shadow:none;padding:0;">t</abbr></a></li><li class="nv-edit"><a class="external text" href="https://en.wikipedia.org/w/index.php?title=Template:Data_warehouses&amp;action=edit"><abbr title="Edit this template" style=";;background:none transparent;border:none;box-shadow:none;padding:0;">e</abbr></a></li></ul></div><div id="Data_warehouses" style="font-size:114%;margin:0 4em"><a href="/wiki/Data_warehouse" title="Data warehouse">Data warehouses</a></div></th></tr><tr><td colspan="2" class="navbox-list navbox-odd" style="width:100%;padding:0"><div style="padding:0 0.25em"></div><table class="nowraplinks mw-collapsible mw-collapsed navbox-subgroup" style="border-spacing:0"><tbody><tr><th scope="col" class="navbox-title" colspan="2"><div id="Creating_a_data_warehouse" style="font-size:114%;margin:0 4em">Creating a data warehouse</div></th></tr><tr><td colspan="2" class="navbox-list navbox-odd" style="width:100%;padding:0"><div style="padding:0 0.25em"></div><table class="nowraplinks navbox-subgroup" style="border-spacing:0"><tbody><tr><th scope="row" class="navbox-group" style="width:1%">Concepts</th><td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Database" title="Database">Database</a></li>
+<li><a href="/wiki/Dimension_(data_warehouse)" title="Dimension (data warehouse)">Dimension</a></li>
+<li><a href="/wiki/Dimensional_modeling" title="Dimensional modeling">Dimensional modeling</a></li>
+<li><a href="/wiki/Fact_(data_warehouse)" class="mw-redirect" title="Fact (data warehouse)">Fact</a></li>
+<li><a href="/wiki/Online_analytical_processing" title="Online analytical processing">OLAP</a></li>
+<li><a href="/wiki/Star_schema" title="Star schema">Star schema</a></li>
+<li><a href="/wiki/Snowflake_schema" title="Snowflake schema">Snowflake schema</a></li>
+<li><a href="/wiki/Reverse_star_schema" title="Reverse star schema">Reverse star schema</a></li>
+<li><a href="/wiki/Aggregate_(Data_Warehouse)" class="mw-redirect" title="Aggregate (Data Warehouse)">Aggregate</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Variants</th><td class="navbox-list-with-group navbox-list navbox-even" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Anchor_modeling" title="Anchor modeling">Anchor modeling</a></li>
+<li><a href="/wiki/Column-oriented_DBMS" title="Column-oriented DBMS">Column-oriented DBMS</a></li>
+<li><a href="/wiki/Data_vault_modeling" title="Data vault modeling">Data vault modeling</a></li>
+<li><a href="/wiki/HOLAP" class="mw-redirect" title="HOLAP">HOLAP</a></li>
+<li><a href="/wiki/MOLAP" class="mw-redirect" title="MOLAP">MOLAP</a></li>
+<li><a href="/wiki/ROLAP" class="mw-redirect" title="ROLAP">ROLAP</a></li>
+<li><a href="/wiki/Operational_data_store" title="Operational data store">Operational data store</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Elements</th><td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Data_dictionary" title="Data dictionary">Data dictionary</a>/<a href="/wiki/Metadata" title="Metadata">Metadata</a></li>
+<li><a href="/wiki/Data_mart" title="Data mart">Data mart</a></li>
+<li><a href="/wiki/Sixth_normal_form" title="Sixth normal form">Sixth normal form</a></li>
+<li><a href="/wiki/Surrogate_key" title="Surrogate key">Surrogate key</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Fact</th><td class="navbox-list-with-group navbox-list navbox-even" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Fact_table" title="Fact table">Fact table</a></li>
+<li><a href="/wiki/Early-arriving_fact" title="Early-arriving fact">Early-arriving fact</a></li>
+<li><a href="/wiki/Measure_(data_warehouse)" title="Measure (data warehouse)">Measure</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Dimension</th><td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Dimension_table" class="mw-redirect" title="Dimension table">Dimension table</a></li>
+<li><a href="/wiki/Degenerate_dimension" title="Degenerate dimension">Degenerate</a></li>
+<li><a href="/wiki/Slowly_changing_dimension" title="Slowly changing dimension">Slowly changing</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Filling</th><td class="navbox-list-with-group navbox-list navbox-even" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Extract,_transform,_load" title="Extract, transform, load">Extract-Transform-Load (ETL)</a></li>
+<li><a href="/wiki/Data_extraction" title="Data extraction">Extract</a></li>
+<li><a class="mw-selflink selflink">Transform</a></li>
+<li><a href="/wiki/Data_loading" class="mw-redirect" title="Data loading">Load</a></li></ul>
+</div></td></tr></tbody></table><div></div></td></tr></tbody></table><div></div></td></tr><tr><td colspan="2" class="navbox-list navbox-odd" style="width:100%;padding:0"><div style="padding:0 0.25em"></div><table class="nowraplinks mw-collapsible mw-collapsed navbox-subgroup" style="border-spacing:0"><tbody><tr><th scope="col" class="navbox-title" colspan="2"><div id="Using_a_data_warehouse" style="font-size:114%;margin:0 4em">Using a data warehouse</div></th></tr><tr><td colspan="2" class="navbox-list navbox-odd" style="width:100%;padding:0"><div style="padding:0 0.25em"></div><table class="nowraplinks navbox-subgroup" style="border-spacing:0"><tbody><tr><th scope="row" class="navbox-group" style="width:1%">Concepts</th><td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Business_intelligence" title="Business intelligence">Business intelligence</a></li>
+<li><a href="/wiki/Dashboard_(business)" title="Dashboard (business)">Dashboard</a></li>
+<li><a href="/wiki/Data_mining" title="Data mining">Data mining</a></li>
+<li><a href="/wiki/Decision_support_system" title="Decision support system">Decision support system (DSS)</a></li>
+<li><a href="/wiki/OLAP_cube" title="OLAP cube">OLAP cube</a></li>
+<li><a href="/wiki/Data_warehouse_automation" title="Data warehouse automation">Data warehouse automation</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Languages</th><td class="navbox-list-with-group navbox-list navbox-even" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Data_Mining_Extensions" title="Data Mining Extensions">Data Mining Extensions (DMX)</a></li>
+<li><a href="/wiki/MultiDimensional_eXpressions" title="MultiDimensional eXpressions">MultiDimensional eXpressions (MDX)</a></li>
+<li><a href="/wiki/XML_for_Analysis" title="XML for Analysis">XML for Analysis (XMLA)</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Tools</th><td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Business_intelligence_software" title="Business intelligence software">Business intelligence software</a></li>
+<li><a href="/wiki/List_of_reporting_software" title="List of reporting software">Reporting software</a></li>
+<li><a href="/wiki/Spreadsheets" class="mw-redirect" title="Spreadsheets">Spreadsheet</a></li></ul>
+</div></td></tr></tbody></table><div></div></td></tr></tbody></table><div></div></td></tr><tr><td colspan="2" class="navbox-list navbox-odd" style="width:100%;padding:0"><div style="padding:0 0.25em"></div><table class="nowraplinks mw-collapsible mw-collapsed navbox-subgroup" style="border-spacing:0"><tbody><tr><th scope="col" class="navbox-title" colspan="2"><div id="Related" style="font-size:114%;margin:0 4em">Related</div></th></tr><tr><td colspan="2" class="navbox-list navbox-odd" style="width:100%;padding:0"><div style="padding:0 0.25em"></div><table class="nowraplinks navbox-subgroup" style="border-spacing:0"><tbody><tr><th scope="row" class="navbox-group" style="width:1%">People</th><td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Bill_Inmon" title="Bill Inmon">Bill Inmon</a></li>
+<li><a href="/wiki/Ralph_Kimball" title="Ralph Kimball">Ralph Kimball</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Products</th><td class="navbox-list-with-group navbox-list navbox-even" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Comparison_of_OLAP_servers" title="Comparison of OLAP servers">Comparison of OLAP servers</a></li>
+<li><a href="/wiki/Category:Data_warehousing_products" title="Category:Data warehousing products">Data warehousing products and their producers</a></li></ul>
+</div></td></tr></tbody></table><div></div></td></tr></tbody></table><div></div></td></tr></tbody></table></div>
+<!-- 
+NewPP limit report
+Parsed by mw1353
+Cached time: 20220302152022
+Cache expiry: 1814400
+Reduced expiry: false
+Complications: [vary‐revision‐sha1]
+CPU time usage: 0.468 seconds
+Real time usage: 0.570 seconds
+Preprocessor visited node count: 892/1000000
+Post‐expand include size: 44655/2097152 bytes
+Template argument size: 655/2097152 bytes
+Highest expansion depth: 8/100
+Expensive parser function count: 2/500
+Unstrip recursion depth: 1/20
+Unstrip post‐expand size: 26325/5000000 bytes
+Lua time usage: 0.275/10.000 seconds
+Lua memory usage: 4252633/52428800 bytes
+Number of Wikibase entities loaded: 0/400
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  498.334      1 -total
+ 33.99%  169.392      1 Template:Reflist
+ 21.72%  108.257      1 Template:Cite_news
+ 16.74%   83.425      1 Template:Short_description
+ 14.98%   74.660      1 Template:Data_transformation
+ 14.07%   70.132      1 Template:Data_warehouse
+ 13.80%   68.777      1 Template:Sidebar
+ 13.05%   65.053      1 Template:Navbox_with_collapsible_groups
+  8.97%   44.686      1 Template:Pagetype
+  8.56%   42.641      1 Template:COI
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:4080917-0!canonical and timestamp 20220302152022 and revision id 1061024345. Serialized with JSON.
+ -->
+</div><noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript>
+<div class="printfooter">Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Data_transformation&amp;oldid=1061024345">https://en.wikipedia.org/w/index.php?title=Data_transformation&amp;oldid=1061024345</a>"</div></div>
+		<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Metadata" title="Category:Metadata">Metadata</a></li><li><a href="/wiki/Category:Data_management" title="Category:Data management">Data management</a></li><li><a href="/wiki/Category:Data_warehousing" title="Category:Data warehousing">Data warehousing</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:Articles_with_short_description" title="Category:Articles with short description">Articles with short description</a></li><li><a href="/wiki/Category:Short_description_is_different_from_Wikidata" title="Category:Short description is different from Wikidata">Short description is different from Wikidata</a></li><li><a href="/wiki/Category:Wikipedia_articles_with_possible_conflicts_of_interest_from_October_2017" title="Category:Wikipedia articles with possible conflicts of interest from October 2017">Wikipedia articles with possible conflicts of interest from October 2017</a></li><li><a href="/wiki/Category:Articles_with_Curlie_links" title="Category:Articles with Curlie links">Articles with Curlie links</a></li><li><a href="/wiki/Category:Articles_with_example_C%2B%2B_code" title="Category:Articles with example C++ code">Articles with example C++ code</a></li></ul></div></div>
+	</div>
+</div>
+<div id='mw-data-after-content'>
+	<div class="read-more-container"></div>
+</div>
+
+<div id="mw-navigation">
+	<h2>Navigation menu</h2>
+	<div id="mw-head">
+		
+<nav id="p-personal" class="mw-portlet mw-portlet-personal vector-user-menu-legacy vector-menu" aria-labelledby="p-personal-label" role="navigation" 
+	 >
+	<label id="p-personal-label" aria-label="" class="vector-menu-heading">
+		<span class="vector-menu-heading-label">Personal tools</span>
+	</label>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="pt-anonuserpage" class="mw-list-item"><span>Not logged in</span></li><li id="pt-anontalk" class="mw-list-item"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n"><span>Talk</span></a></li><li id="pt-anoncontribs" class="mw-list-item"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y"><span>Contributions</span></a></li><li id="pt-createaccount" class="mw-list-item"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Data+transformation&amp;returntoquery=lxml%3D" title="You are encouraged to create an account and log in; however, it is not mandatory"><span>Create account</span></a></li><li id="pt-login" class="mw-list-item"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Data+transformation&amp;returntoquery=lxml%3D" title="You&#039;re encouraged to log in; however, it&#039;s not mandatory. [o]" accesskey="o"><span>Log in</span></a></li></ul>
+		
+	</div>
+</nav>
+
+		<div id="left-navigation">
+			
+<nav id="p-namespaces" class="mw-portlet mw-portlet-namespaces vector-menu vector-menu-tabs" aria-labelledby="p-namespaces-label" role="navigation" 
+	 >
+	<label id="p-namespaces-label" aria-label="" class="vector-menu-heading">
+		<span class="vector-menu-heading-label">Namespaces</span>
+	</label>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="ca-nstab-main" class="selected mw-list-item"><a href="/wiki/Data_transformation" title="View the content page [c]" accesskey="c"><span>Article</span></a></li><li id="ca-talk" class="mw-list-item"><a href="/wiki/Talk:Data_transformation" rel="discussion" title="Discuss improvements to the content page [t]" accesskey="t"><span>Talk</span></a></li></ul>
+		
+	</div>
+</nav>
+
+			
+<nav id="p-variants" class="mw-portlet mw-portlet-variants emptyPortlet vector-menu-dropdown-noicon vector-menu vector-menu-dropdown" aria-labelledby="p-variants-label" role="navigation" 
+	 >
+	<input type="checkbox"
+		id="p-variants-checkbox"
+		role="button"
+		aria-haspopup="true"
+		data-event-name="ui.dropdown-p-variants"
+		class="vector-menu-checkbox" aria-labelledby="p-variants-label" />
+	<label id="p-variants-label" aria-label="Change language variant" class="vector-menu-heading">
+		<span class="vector-menu-heading-label">English</span>
+			<span class="vector-menu-checkbox-expanded">expanded</span>
+			<span class="vector-menu-checkbox-collapsed">collapsed</span>
+	</label>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"></ul>
+		
+	</div>
+</nav>
+
+		</div>
+		<div id="right-navigation">
+			
+<nav id="p-views" class="mw-portlet mw-portlet-views vector-menu vector-menu-tabs" aria-labelledby="p-views-label" role="navigation" 
+	 >
+	<label id="p-views-label" aria-label="" class="vector-menu-heading">
+		<span class="vector-menu-heading-label">Views</span>
+	</label>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="ca-view" class="selected mw-list-item"><a href="/wiki/Data_transformation"><span>Read</span></a></li><li id="ca-edit" class="mw-list-item"><a href="/w/index.php?title=Data_transformation&amp;action=edit" title="Edit this page [e]" accesskey="e"><span>Edit</span></a></li><li id="ca-history" class="mw-list-item"><a href="/w/index.php?title=Data_transformation&amp;action=history" title="Past revisions of this page [h]" accesskey="h"><span>View history</span></a></li></ul>
+		
+	</div>
+</nav>
+
+			
+<nav id="p-cactions" class="mw-portlet mw-portlet-cactions emptyPortlet vector-menu-dropdown-noicon vector-menu vector-menu-dropdown" aria-labelledby="p-cactions-label" role="navigation"  title="More options"
+	 >
+	<input type="checkbox"
+		id="p-cactions-checkbox"
+		role="button"
+		aria-haspopup="true"
+		data-event-name="ui.dropdown-p-cactions"
+		class="vector-menu-checkbox" aria-labelledby="p-cactions-label" />
+	<label id="p-cactions-label" aria-label="" class="vector-menu-heading">
+		<span class="vector-menu-heading-label">More</span>
+			<span class="vector-menu-checkbox-expanded">expanded</span>
+			<span class="vector-menu-checkbox-collapsed">collapsed</span>
+	</label>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"></ul>
+		
+	</div>
+</nav>
+
+			
+<div id="p-search" role="search" class="vector-search-box-vue  vector-search-box-show-thumbnail vector-search-box-auto-expand-width vector-search-box">
+	<div>
+			<h3 >
+				<label for="searchInput">Search</label>
+			</h3>
+		<form action="/w/index.php" id="searchform"
+			class="vector-search-box-form">
+			<div id="simpleSearch"
+				class="vector-search-box-inner"
+				 data-search-loc="header-navigation">
+				<input class="vector-search-box-input"
+					 type="search" name="search" placeholder="Search Wikipedia" aria-label="Search Wikipedia" autocapitalize="sentences" title="Search Wikipedia [f]" accesskey="f" id="searchInput"
+				/>
+				<input type="hidden" name="title" value="Special:Search"/>
+				<input id="mw-searchButton"
+					 class="searchButton mw-fallbackSearchButton" type="submit" name="fulltext" title="Search Wikipedia for this text" value="Search" />
+				<input id="searchButton"
+					 class="searchButton" type="submit" name="go" title="Go to a page with this exact name if it exists" value="Go" />
+			</div>
+		</form>
+	</div>
+</div>
+
+		</div>
+	</div>
+	
+
+<div id="mw-panel">
+	<div id="p-logo" role="banner">
+		<a class="mw-wiki-logo" href="/wiki/Main_Page"
+			title="Visit the main page"></a>
+	</div>
+	
+<nav id="p-navigation" class="mw-portlet mw-portlet-navigation vector-menu vector-menu-portal portal" aria-labelledby="p-navigation-label" role="navigation" 
+	 >
+	<label id="p-navigation-label" aria-label="" class="vector-menu-heading">
+		<span class="vector-menu-heading-label">Navigation</span>
+	</label>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="n-mainpage-description" class="mw-list-item"><a href="/wiki/Main_Page" icon="home" title="Visit the main page [z]" accesskey="z"><span>Main page</span></a></li><li id="n-contents" class="mw-list-item"><a href="/wiki/Wikipedia:Contents" title="Guides to browsing Wikipedia"><span>Contents</span></a></li><li id="n-currentevents" class="mw-list-item"><a href="/wiki/Portal:Current_events" title="Articles related to current events"><span>Current events</span></a></li><li id="n-randompage" class="mw-list-item"><a href="/wiki/Special:Random" icon="die" title="Visit a randomly selected article [x]" accesskey="x"><span>Random article</span></a></li><li id="n-aboutsite" class="mw-list-item"><a href="/wiki/Wikipedia:About" title="Learn about Wikipedia and how it works"><span>About Wikipedia</span></a></li><li id="n-contactpage" class="mw-list-item"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia"><span>Contact us</span></a></li><li id="n-sitesupport" class="mw-list-item"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us by donating to the Wikimedia Foundation"><span>Donate</span></a></li></ul>
+		
+	</div>
+</nav>
+
+	
+<nav id="p-interaction" class="mw-portlet mw-portlet-interaction vector-menu vector-menu-portal portal" aria-labelledby="p-interaction-label" role="navigation" 
+	 >
+	<label id="p-interaction-label" aria-label="" class="vector-menu-heading">
+		<span class="vector-menu-heading-label">Contribute</span>
+	</label>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="n-help" class="mw-list-item"><a href="/wiki/Help:Contents" icon="help" title="Guidance on how to use and edit Wikipedia"><span>Help</span></a></li><li id="n-introduction" class="mw-list-item"><a href="/wiki/Help:Introduction" title="Learn how to edit Wikipedia"><span>Learn to edit</span></a></li><li id="n-portal" class="mw-list-item"><a href="/wiki/Wikipedia:Community_portal" title="The hub for editors"><span>Community portal</span></a></li><li id="n-recentchanges" class="mw-list-item"><a href="/wiki/Special:RecentChanges" icon="recentChanges" title="A list of recent changes to Wikipedia [r]" accesskey="r"><span>Recent changes</span></a></li><li id="n-upload" class="mw-list-item"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Add images or other media for use on Wikipedia"><span>Upload file</span></a></li></ul>
+		
+	</div>
+</nav>
+
+<nav id="p-tb" class="mw-portlet mw-portlet-tb vector-menu vector-menu-portal portal" aria-labelledby="p-tb-label" role="navigation" 
+	 >
+	<label id="p-tb-label" aria-label="" class="vector-menu-heading">
+		<span class="vector-menu-heading-label">Tools</span>
+	</label>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="t-whatlinkshere" class="mw-list-item"><a href="/wiki/Special:WhatLinksHere/Data_transformation" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j"><span>What links here</span></a></li><li id="t-recentchangeslinked" class="mw-list-item"><a href="/wiki/Special:RecentChangesLinked/Data_transformation" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k"><span>Related changes</span></a></li><li id="t-upload" class="mw-list-item"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u"><span>Upload file</span></a></li><li id="t-specialpages" class="mw-list-item"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q"><span>Special pages</span></a></li><li id="t-permalink" class="mw-list-item"><a href="/w/index.php?title=Data_transformation&amp;oldid=1061024345" title="Permanent link to this revision of this page"><span>Permanent link</span></a></li><li id="t-info" class="mw-list-item"><a href="/w/index.php?title=Data_transformation&amp;action=info" title="More information about this page"><span>Page information</span></a></li><li id="t-cite" class="mw-list-item"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Data_transformation&amp;id=1061024345&amp;wpFormIdentifier=titleform" title="Information on how to cite this page"><span>Cite this page</span></a></li><li id="t-wikibase" class="mw-list-item"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q4272815" title="Structured data on this page hosted by Wikidata [g]" accesskey="g"><span>Wikidata item</span></a></li></ul>
+		
+	</div>
+</nav>
+
+<nav id="p-coll-print_export" class="mw-portlet mw-portlet-coll-print_export vector-menu vector-menu-portal portal" aria-labelledby="p-coll-print_export-label" role="navigation" 
+	 >
+	<label id="p-coll-print_export-label" aria-label="" class="vector-menu-heading">
+		<span class="vector-menu-heading-label">Print/export</span>
+	</label>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="coll-download-as-rl" class="mw-list-item"><a href="/w/index.php?title=Special:DownloadAsPdf&amp;page=Data_transformation&amp;action=show-download-screen" title="Download this page as a PDF file"><span>Download as PDF</span></a></li><li id="t-print" class="mw-list-item"><a href="/w/index.php?title=Data_transformation&amp;printable=yes" title="Printable version of this page [p]" accesskey="p"><span>Printable version</span></a></li></ul>
+		
+	</div>
+</nav>
+
+	
+<nav id="p-lang" class="mw-portlet mw-portlet-lang vector-menu vector-menu-portal portal" aria-labelledby="p-lang-label" role="navigation" 
+	 >
+	<label id="p-lang-label" aria-label="" class="vector-menu-heading">
+		<span class="vector-menu-heading-label">Languages</span>
+	</label>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li class="interlanguage-link interwiki-id mw-list-item"><a href="https://id.wikipedia.org/wiki/Transformasi_data" title="Transformasi data – Indonesian" lang="id" hreflang="id" class="interlanguage-link-target"><span>Bahasa Indonesia</span></a></li></ul>
+		<div class="after-portlet after-portlet-lang"><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q4272815#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>
+	</div>
+</nav>
+
+</div>
+
+</div>
+
+<footer id="footer" class="mw-footer" role="contentinfo" >
+	<ul id="footer-info">
+	<li id="footer-info-lastmod"> This page was last edited on 19 December 2021, at 04:34<span class="anonymous-show">&#160;(UTC)</span>.</li>
+	<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License 3.0</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//foundation.wikimedia.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//foundation.wikimedia.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+</ul>
+
+	<ul id="footer-places">
+	<li id="footer-places-privacy"><a href="https://foundation.wikimedia.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+	<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+	<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+	<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+	<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Data_transformation&amp;lxml=&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+	<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+	<li id="footer-places-statslink"><a href="https://stats.wikimedia.org/#/en.wikipedia.org">Statistics</a></li>
+	<li id="footer-places-cookiestatement"><a href="https://foundation.wikimedia.org/wiki/Cookie_statement">Cookie statement</a></li>
+</ul>
+
+	<ul id="footer-icons" class="noprint">
+	<li id="footer-copyrightico"><a href="https://wikimediafoundation.org/"><img src="/static/images/footer/wikimedia-button.png" srcset="/static/images/footer/wikimedia-button-1.5x.png 1.5x, /static/images/footer/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation" loading="lazy" /></a></li>
+	<li id="footer-poweredbyico"><a href="https://www.mediawiki.org/"><img src="/static/images/footer/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/footer/poweredby_mediawiki_132x47.png 1.5x, /static/images/footer/poweredby_mediawiki_176x62.png 2x" width="88" height="31" loading="lazy"/></a></li>
+</ul>
+
+</footer>
+
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.468","walltime":"0.570","ppvisitednodes":{"value":892,"limit":1000000},"postexpandincludesize":{"value":44655,"limit":2097152},"templateargumentsize":{"value":655,"limit":2097152},"expansiondepth":{"value":8,"limit":100},"expensivefunctioncount":{"value":2,"limit":500},"unstrip-depth":{"value":1,"limit":20},"unstrip-size":{"value":26325,"limit":5000000},"entityaccesscount":{"value":0,"limit":400},"timingprofile":["100.00%  498.334      1 -total"," 33.99%  169.392      1 Template:Reflist"," 21.72%  108.257      1 Template:Cite_news"," 16.74%   83.425      1 Template:Short_description"," 14.98%   74.660      1 Template:Data_transformation"," 14.07%   70.132      1 Template:Data_warehouse"," 13.80%   68.777      1 Template:Sidebar"," 13.05%   65.053      1 Template:Navbox_with_collapsible_groups","  8.97%   44.686      1 Template:Pagetype","  8.56%   42.641      1 Template:COI"]},"scribunto":{"limitreport-timeusage":{"value":"0.275","limit":"10.000"},"limitreport-memusage":{"value":4252633,"limit":52428800}},"cachereport":{"origin":"mw1353","timestamp":"20220302152022","ttl":1814400,"transientcontent":false}}});});</script>
+<script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"Article","name":"Data transformation","url":"https:\/\/en.wikipedia.org\/wiki\/Data_transformation","sameAs":"http:\/\/www.wikidata.org\/entity\/Q4272815","mainEntity":"http:\/\/www.wikidata.org\/entity\/Q4272815","author":{"@type":"Organization","name":"Contributors to Wikimedia projects"},"publisher":{"@type":"Organization","name":"Wikimedia Foundation, Inc.","logo":{"@type":"ImageObject","url":"https:\/\/www.wikimedia.org\/static\/images\/wmf-hor-googpub.png"}},"datePublished":"2006-02-15T13:38:14Z","dateModified":"2021-12-19T04:34:09Z","headline":"process which converts a set of data values from the data format of a source data system into the data format of a destination data system"}</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":153,"wgHostname":"mw1415"});});</script>
+</body>
+</html>

@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Data wrangling - Wikipedia</title>
+<script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"d80be1a2-ba29-4910-8632-62746c51f5f9","wgCSPNonce":false,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Data_wrangling","wgTitle":"Data wrangling","wgCurRevisionId":1068006981,"wgRevisionId":1068006981,"wgArticleId":12487489,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Webarchive template wayback links","Articles with short description","Short description is different from Wikidata","Computer occupations","Data mapping"],"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"Data_wrangling","wgRelevantArticleId":12487489,
+"wgIsProbablyEditable":true,"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgFlaggedRevsParams":{"tags":{"status":{"levels":-1}}},"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en"},"wgMFDisplayWikibaseDescriptions":{"search":true,"nearby":true,"watchlist":true,"tagline":false},"wgWMESchemaEditAttemptStepOversample":false,"wgWMEPageLength":10000,"wgNoticeProject":"wikipedia","wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgPopupsFlags":10,"wgULSCurrentAutonym":"English","wgEditSubmitButtonLabelPublish":true,"wgCentralAuthMobileDomain":false,"wgULSPosition":"interlanguage","wgULSisCompactLinksEnabled":true,"wgWikibaseItemId":"Q5227374","wgGENewcomerTasksGuidanceEnabled":true,"wgGEAskQuestionEnabled":false,"wgGELinkRecommendationsFrontendEnabled":false};RLSTATE={"ext.globalCssJs.user.styles":"ready","site.styles":"ready","user.styles":"ready","ext.globalCssJs.user":"ready","user":"ready"
+,"user.options":"loading","ext.cite.styles":"ready","skins.vector.styles.legacy":"ready","jquery.makeCollapsible.styles":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.wikimediaBadges":"ready","ext.uls.interlanguage":"ready","wikibase.client.init":"ready"};RLPAGEMODULES=["ext.cite.ux-enhancements","site","mediawiki.page.ready","jquery.makeCollapsible","mediawiki.toc","skins.vector.legacy.js","ext.gadget.ReferenceTooltips","ext.gadget.charinsert","ext.gadget.extra-toolbar-buttons","ext.gadget.refToolbar","ext.gadget.switcher","mmv.head","mmv.bootstrap.autostart","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging","ext.wikimediaEvents","ext.navigationTiming","ext.cx.eventlogging.campaigns","ext.centralNotice.geoIP","ext.centralNotice.startUp","ext.centralauth.centralautologin","ext.popups","ext.uls.compactlinks","ext.uls.interface","ext.growthExperiments.SuggestedEditSession"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@1i9g4",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});});});</script>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=ext.cite.styles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cjquery.makeCollapsible.styles%7Cskins.vector.styles.legacy%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.38.0-wmf.25"/>
+<meta name="referrer" content="origin"/>
+<meta name="referrer" content="origin-when-crossorigin"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta property="og:title" content="Data wrangling - Wikipedia"/>
+<meta property="og:type" content="website"/>
+<link rel="preconnect" href="//upload.wikimedia.org"/>
+<link rel="alternate" media="only screen and (max-width: 720px)" href="//en.m.wikipedia.org/wiki/Data_wrangling"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Data_wrangling&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="license" href="https://creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Data_wrangling"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject mw-editable page-Data_wrangling rootpage-Data_wrangling skin-vector action-view skin-vector-legacy"><div id="mw-page-base" class="noprint"></div>
+<div id="mw-head-base" class="noprint"></div>
+<div id="content" class="mw-body" role="main">
+	<a id="top"></a>
+	<div id="siteNotice"><!-- CentralNotice --></div>
+	<div class="mw-indicators">
+	</div>
+	<h1 id="firstHeading" class="firstHeading mw-first-heading">Data wrangling</h1>
+	<div id="bodyContent" class="vector-body">
+		<div id="siteSub" class="noprint">From Wikipedia, the free encyclopedia</div>
+		<div id="contentSub"></div>
+		<div id="contentSub2"></div>
+		
+		<div id="jump-to-nav"></div>
+		<a class="mw-jump-link" href="#mw-head">Jump to navigation</a>
+		<a class="mw-jump-link" href="#searchInput">Jump to search</a>
+		<div id="mw-content-text" class="mw-body-content mw-content-ltr" lang="en" dir="ltr"><div class="mw-parser-output"><div class="shortdescription nomobile noexcerpt noprint searchaux" style="display:none">Restructuring data into a desired format</div>
+<p><b>Data wrangling</b>, sometimes referred to as <b>data munging</b>, is the process of transforming and <a href="/wiki/Data_mapping" title="Data mapping">mapping data</a> from one "<a href="/wiki/Raw_data" title="Raw data">raw</a>" data form into another <a href="/wiki/Content_format" title="Content format">format</a> with the intent of making it more appropriate and valuable for a variety of downstream purposes such as analytics. The goal of data wrangling is to assure quality and useful data. Data analysts typically spend the majority of their time in the process of data wrangling compared to the actual analysis of the data.
+</p><p>The process of data wrangling may include further <a href="/wiki/Mung_(computer_term)" title="Mung (computer term)">munging</a>, <a href="/wiki/Data_visualization" title="Data visualization">data visualization</a>, data aggregation, training a <a href="/wiki/Statistical_model" title="Statistical model">statistical model</a>, as well as many other potential uses. Data wrangling typically follows a set of general steps which begin with extracting the data in a raw form from the data source, "munging" the raw data (e.g. sorting) or parsing the data into predefined data structures, and finally depositing the resulting content into a data sink for storage and future use.<sup id="cite_ref-eduunix_1-0" class="reference"><a href="#cite_note-eduunix-1">&#91;1&#93;</a></sup>
+</p>
+<div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2 id="mw-toc-heading">Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Background"><span class="tocnumber">1</span> <span class="toctext">Background</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Connection_to_data_mining"><span class="tocnumber">2</span> <span class="toctext">Connection to data mining</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Benefits"><span class="tocnumber">3</span> <span class="toctext">Benefits</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Core_Ideas"><span class="tocnumber">4</span> <span class="toctext">Core Ideas</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#Typical_use"><span class="tocnumber">5</span> <span class="toctext">Typical use</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#Modus_operandi"><span class="tocnumber">6</span> <span class="toctext">Modus operandi</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#Example"><span class="tocnumber">7</span> <span class="toctext">Example</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="#See_also"><span class="tocnumber">8</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-9"><a href="#References"><span class="tocnumber">9</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-10"><a href="#External_links"><span class="tocnumber">10</span> <span class="toctext">External links</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Background">Background</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Data_wrangling&amp;action=edit&amp;section=1" title="Edit section: Background">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The "wrangler" non-technical term is often said to derive from work done by the <a href="/wiki/United_States_Library_of_Congress" class="mw-redirect" title="United States Library of Congress">United States Library of Congress</a>'s <a href="/wiki/National_Digital_Information_Infrastructure_and_Preservation_Program" title="National Digital Information Infrastructure and Preservation Program">National Digital Information Infrastructure and Preservation Program</a> (NDIIPP) and their program partner the <a href="/wiki/Emory_University" title="Emory University">Emory University</a> Libraries based MetaArchive Partnership. The term "mung" has roots in <a href="/wiki/Mung_(computer_term)" title="Mung (computer term)">munging</a> as described in the <a href="/wiki/Jargon_File" title="Jargon File">Jargon File</a>.<sup id="cite_ref-jargon_2-0" class="reference"><a href="#cite_note-jargon-2">&#91;2&#93;</a></sup> The term "data wrangler" was also suggested as the best analogy to describe someone working with data.<sup id="cite_ref-3" class="reference"><a href="#cite_note-3">&#91;3&#93;</a></sup>
+</p><p>One of the first mentions of data wrangling in a scientific context was by Donald Cline during the NASA/NOAA Cold Lands Processes Experiment.<sup id="cite_ref-4" class="reference"><a href="#cite_note-4">&#91;4&#93;</a></sup> Cline stated the data wranglers "coordinate the acquisition of the entire collection of the experiment data." Cline also specifies duties typically handled by a <b>storage administrator</b> for working with large amounts of <a href="/wiki/Data" title="Data">data</a>. This can occur in areas like major <a href="/wiki/Research" title="Research">research</a> projects and the making of <a href="/wiki/Film" title="Film">films</a> with a large amount of complex <a href="/wiki/Computer-generated_imagery" title="Computer-generated imagery">computer-generated imagery</a>. In research, this involves both <a href="/wiki/Data_transfer" class="mw-redirect" title="Data transfer">data transfer</a> from research instrument to storage grid or storage facility as well as data manipulation for re-analysis via high-performance computing instruments or access via cyberinfrastructure-based <a href="/wiki/Digital_library" title="Digital library">digital libraries</a>.
+</p><p>With the upcoming of artificial intelligence in <a href="/wiki/Data_science" title="Data science">data science</a> it has become increasingly important for automation of data wrangling to have very strict checks and balances, which is why the munging process of data has not been automated by <a href="/wiki/Machine_learning" title="Machine learning">machine learning</a>. Data munging requires more than just an automated solution, it requires knowledge of what information should be removed and artificial intelligence is not to the point of understanding such things.<sup id="cite_ref-5" class="reference"><a href="#cite_note-5">&#91;5&#93;</a></sup>
+</p>
+<h2><span class="mw-headline" id="Connection_to_data_mining">Connection to data mining</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Data_wrangling&amp;action=edit&amp;section=2" title="Edit section: Connection to data mining">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Data wrangling is a superset of <a href="/wiki/Data_mining" title="Data mining">data mining</a> and requires processes that some data mining uses, but not always. The process of data mining is to find patterns within large data sets, where data wrangling transforms data in order to deliver insights about that data. Even though data wrangling is a superset of data mining does not mean that data mining does not use it, there are many use cases for data wrangling in data mining. Data wrangling can benefit data mining by removing data that does not benefit the overall set, or is not formatted properly, which will yield better results for the overall data mining process.
+</p><p>An example of data mining that is closely related to data wrangling is ignoring data from a set that is not connected to the goal: say there is a data set related to the state of Texas and the goal is to get statistics on the residents of Houston, the data in the set related to the residents of Dallas is not useful to the overall set and can be removed before processing to improve the efficiency of the data mining process.
+</p>
+<h2><span class="mw-headline" id="Benefits">Benefits</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Data_wrangling&amp;action=edit&amp;section=3" title="Edit section: Benefits">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>With an increase of raw data comes an increase in the amount of data that is not inherently useful, this increases time spent on cleaning and organizing data before it can be analyzed which is where data wrangling comes into play. The result of data wrangling can provide important metadata statistics for further insights about the data, it is important to ensure metadata is consistent otherwise it can cause roadblocks. Data wrangling allows analysts to analyze more complex data more quickly, achieve more accurate results, and because of this better decisions can be made. Many businesses have moved to data wrangling because of the success that it has brought.
+</p>
+<h2><span class="mw-headline" id="Core_Ideas">Core Ideas</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Data_wrangling&amp;action=edit&amp;section=4" title="Edit section: Core Ideas">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="thumb tright"><div class="thumbinner" style="width:731px;"><a href="/wiki/File:Data_Wrangling_From_Messy_To_Clean_Data_Management.jpg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Data_Wrangling_From_Messy_To_Clean_Data_Management.jpg/729px-Data_Wrangling_From_Messy_To_Clean_Data_Management.jpg" decoding="async" width="729" height="156" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Data_Wrangling_From_Messy_To_Clean_Data_Management.jpg/1094px-Data_Wrangling_From_Messy_To_Clean_Data_Management.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/a/a9/Data_Wrangling_From_Messy_To_Clean_Data_Management.jpg 2x" data-file-width="1404" data-file-height="301" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/File:Data_Wrangling_From_Messy_To_Clean_Data_Management.jpg" class="internal" title="Enlarge"></a></div>Turning messy data into useful statistics</div></div></div>
+<p>The main steps in data wrangling are as follows:
+</p>
+<div><ol><li>
+<dl><dt>Data Discovery</dt></dl>
+<p>This all-encompassing term describes how to understand your data. This is the first step to familiarize yourself with your data.
+</p>
+</li><li>
+<dl><dt>Structuring</dt>
+<dd>The next step is to organize the data. Raw data is typically unorganized and much of it may not be useful for the end product. This step is important for easier computation and analysis in the later steps.</dd></dl>
+
+</li><li>
+<dl><dt>Cleaning</dt>
+<dd>There are many different forms of cleaning data, for example one form of cleaning data is catching dates formatted in a different way and another form is removing outliers that will skew results and also formatting null values. This step is important in assuring the overall quality of the data.</dd></dl>
+
+</li><li>
+<dl><dt>Enriching</dt>
+<dd>At this step determine whether or not additional data would benefit the data set that could be easily added.</dd></dl>
+
+</li><li>
+<dl><dt>Validating</dt>
+<dd>This step is similar to structuring and cleaning. Use repetitive sequences of validation rules to assure data consistency as well as quality and security. An example of a validation rule is confirming the accuracy of fields via cross checking data.</dd></dl>
+
+</li><li>
+<dl><dt>Publishing</dt>
+<dd>Prepare the data set for use downstream, which could include use for users or software. Be sure to document any steps and logic during wrangling.</dd></dl>
+</li></ol></div>
+<p>These steps are an iterative process that should yield a clean and usable data set that can then be used for analysis. This process is tedious but rewarding as it allows analysts to get the information they need out of a large set of data that would otherwise be unreadable.
+</p>
+<table class="wikitable">
+<caption>Starting Data
+</caption>
+<tbody><tr>
+<th>Name
+</th>
+<th>Phone
+</th>
+<th>Birth Date
+</th>
+<th>State
+</th></tr>
+<tr>
+<td>John, Smith
+</td>
+<td>445-881-4478
+</td>
+<td>August 12, 1989
+</td>
+<td>Maine
+</td></tr>
+<tr>
+<td>Jennifer Tal
+</td>
+<td>+1-189-456-4513
+</td>
+<td>11/12/1965
+</td>
+<td>Tx
+</td></tr>
+<tr>
+<td>Gates, Bill
+</td>
+<td>(876)546-8165
+</td>
+<td>June 15, 72
+</td>
+<td>Kansas
+</td></tr>
+<tr>
+<td>Alan Fitch
+</td>
+<td>5493156648
+</td>
+<td>2-6-1985
+</td>
+<td>Oh
+</td></tr>
+<tr>
+<td>Jacob Alan
+</td>
+<td>156-4896
+</td>
+<td>January 3
+</td>
+<td>Alabama
+</td></tr></tbody></table>
+<table class="wikitable">
+<caption>Result
+</caption>
+<tbody><tr>
+<th>Name
+</th>
+<th>Phone
+</th>
+<th>Birth Date
+</th>
+<th>State
+</th></tr>
+<tr>
+<td>John Smith
+</td>
+<td>445-881-4478
+</td>
+<td>1989-08-12
+</td>
+<td>Maine
+</td></tr>
+<tr>
+<td>Jennifer Tal
+</td>
+<td>189-456-4513
+</td>
+<td>1965-11-12
+</td>
+<td>Texas
+</td></tr>
+<tr>
+<td>Bill Gates
+</td>
+<td>876-546-8165
+</td>
+<td>1972-06-15
+</td>
+<td>Kansas
+</td></tr>
+<tr>
+<td>Alan Fitch
+</td>
+<td>549-315-6648
+</td>
+<td>1985-02-06
+</td>
+<td>Ohio
+</td></tr></tbody></table>
+<p>The result of using the data wrangling process on this small data set shows a significantly easier data set to read. All names are now formatted the same way, {first name last name}, phone numbers are also formatted the same way {area code-XXX-XXXX}, dates are formatted numerically {YYYY-mm-dd}, and states are no longer abbreviated. The entry for Jacob Alan did not have fully formed data (the area code on the phone number is missing and the birth date had no year), so it was discarded from the data set. Now that the resulting data set is cleaned and readable, it is ready to be either deployed or evaluated.
+</p>
+<h2><span class="mw-headline" id="Typical_use">Typical use</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Data_wrangling&amp;action=edit&amp;section=5" title="Edit section: Typical use">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The data transformations are typically applied to distinct entities (e.g. fields, rows, columns, data values, etc.) within a data set, and could include such actions as extractions, parsing, joining, standardizing, augmenting, cleansing, consolidating, and filtering to create desired wrangling outputs that can be leveraged downstream.
+</p><p>The recipients could be individuals, such as <a href="/wiki/Data_architect" title="Data architect">data architects</a> or <a href="/wiki/Data_science" title="Data science">data scientists</a> who will investigate the data further, business users who will consume the data directly in reports, or systems that will further process the data and write it into targets such as <a href="/wiki/Data_warehouse" title="Data warehouse">data warehouses</a>, <a href="/wiki/Data_lake" title="Data lake">data lakes</a>, or downstream applications.
+</p>
+<h2><span class="mw-headline" id="Modus_operandi">Modus operandi</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Data_wrangling&amp;action=edit&amp;section=6" title="Edit section: Modus operandi">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Depending on the amount and format of the incoming data, data wrangling has traditionally been performed manually (e.g. via spreadsheets such as Excel), tools like <a href="/wiki/KNIME" title="KNIME">KNIME</a> or via scripts in languages such as <a href="/wiki/Python_(programming_language)" title="Python (programming language)">Python</a> or <a href="/wiki/SQL" title="SQL">SQL</a>. <a href="/wiki/R_(programming_language)" title="R (programming language)">R</a>, a language often used in data mining and statistical data analysis, is now also sometimes used for data wrangling.<sup id="cite_ref-r4ds_6-0" class="reference"><a href="#cite_note-r4ds-6">&#91;6&#93;</a></sup> Data wranglers typically have skills sets within: R or Python, SQL, PHP, Scala, and more languages typically used for analyzing data.
+</p><p>Visual data wrangling systems were developed to make data wrangling accessible for non-programmers, and simpler for programmers. Some of these also include embedded AI <a href="/wiki/Recommender_system" title="Recommender system">recommenders</a> and <a href="/wiki/Programming_by_example" title="Programming by example">programming by example</a> facilities to provide user assistance, and <a href="/wiki/Program_synthesis" title="Program synthesis">program synthesis</a> techniques to autogenerate scalable dataflow code. Early prototypes of visual data wrangling tools include <a href="/wiki/OpenRefine" title="OpenRefine">OpenRefine</a> and the Stanford/Berkeley <a rel="nofollow" class="external text" href="http://vis.stanford.edu/wrangler/">Wrangler</a> research system;<sup id="cite_ref-wrangler-paper_7-0" class="reference"><a href="#cite_note-wrangler-paper-7">&#91;7&#93;</a></sup> the latter evolved into <a href="/wiki/Trifacta" title="Trifacta">Trifacta</a>.
+</p><p>Other terms for these processes have included data franchising,<sup id="cite_ref-8" class="reference"><a href="#cite_note-8">&#91;8&#93;</a></sup> <a href="/wiki/Data_preparation" title="Data preparation">data preparation</a>, and data munging.
+</p>
+<h2><span class="mw-headline" id="Example">Example</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Data_wrangling&amp;action=edit&amp;section=7" title="Edit section: Example">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Given a set of data that contains information on medical patients your goal is to find correlation for a disease. Before you can start iterating through the data ensure that you have an understanding of the result, are you looking for patients who have the disease? Are there other diseases that can be the cause? Once an understanding of the outcome is achieved then the data wrangling process can begin.
+</p><p>Start by determining the structure of the outcome, what is important to understand the disease diagnosis.
+</p><p>Once a final structure is determined, clean the data by removing any data points that are not helpful or are malformed, this could include patients that have not been diagnosed with any disease.
+</p><p>After cleaning look at the data again, is there anything that can be added to the data set that is already known that would benefit it? An example could be most common diseases in the area, America and India are very different when it comes to most common diseases.
+</p><p>Now comes the validation step, determine validation rules for which data points need to be checked for validity, this could include date of birth or checking for specific diseases.
+</p><p>After the validation step the data should now be organized and prepared for either deployment or evaluation. This process can be beneficial for determining correlations for disease diagnosis as it will reduce the vast amount of data into something that can be easily analyzed for an accurate result.
+</p>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Data_wrangling&amp;action=edit&amp;section=8" title="Edit section: See also">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul><li><a href="/wiki/Alteryx" title="Alteryx">Alteryx</a></li>
+<li><a href="/wiki/Data_preparation" title="Data preparation">Data preparation</a></li>
+<li><a href="/wiki/OpenRefine" title="OpenRefine">OpenRefine</a></li>
+<li><a href="/wiki/Trifacta" title="Trifacta">Trifacta</a></li></ul>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Data_wrangling&amp;action=edit&amp;section=9" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<style data-mw-deduplicate="TemplateStyles:r1011085734">.mw-parser-output .reflist{font-size:90%;margin-bottom:0.5em;list-style-type:decimal}.mw-parser-output .reflist .references{font-size:100%;margin-bottom:0;list-style-type:inherit}.mw-parser-output .reflist-columns-2{column-width:30em}.mw-parser-output .reflist-columns-3{column-width:25em}.mw-parser-output .reflist-columns{margin-top:0.3em}.mw-parser-output .reflist-columns ol{margin-top:0}.mw-parser-output .reflist-columns li{page-break-inside:avoid;break-inside:avoid-column}.mw-parser-output .reflist-upper-alpha{list-style-type:upper-alpha}.mw-parser-output .reflist-upper-roman{list-style-type:upper-roman}.mw-parser-output .reflist-lower-alpha{list-style-type:lower-alpha}.mw-parser-output .reflist-lower-greek{list-style-type:lower-greek}.mw-parser-output .reflist-lower-roman{list-style-type:lower-roman}</style><div class="reflist">
+<div class="mw-references-wrap"><ol class="references">
+<li id="cite_note-eduunix-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-eduunix_1-0">^</a></b></span> <span class="reference-text"><style data-mw-deduplicate="TemplateStyles:r1067248974">.mw-parser-output cite.citation{font-style:inherit;word-wrap:break-word}.mw-parser-output .citation q{quotes:"\"""\"""'""'"}.mw-parser-output .citation:target{background-color:rgba(0,127,255,0.133)}.mw-parser-output .id-lock-free a,.mw-parser-output .citation .cs1-lock-free a{background:linear-gradient(transparent,transparent),url("//upload.wikimedia.org/wikipedia/commons/6/65/Lock-green.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-limited a,.mw-parser-output .id-lock-registration a,.mw-parser-output .citation .cs1-lock-limited a,.mw-parser-output .citation .cs1-lock-registration a{background:linear-gradient(transparent,transparent),url("//upload.wikimedia.org/wikipedia/commons/d/d6/Lock-gray-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-subscription a,.mw-parser-output .citation .cs1-lock-subscription a{background:linear-gradient(transparent,transparent),url("//upload.wikimedia.org/wikipedia/commons/a/aa/Lock-red-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .cs1-ws-icon a{background:linear-gradient(transparent,transparent),url("//upload.wikimedia.org/wikipedia/commons/4/4c/Wikisource-logo.svg")right 0.1em center/12px no-repeat}.mw-parser-output .cs1-code{color:inherit;background:inherit;border:none;padding:inherit}.mw-parser-output .cs1-hidden-error{display:none;color:#d33}.mw-parser-output .cs1-visible-error{color:#d33}.mw-parser-output .cs1-maint{display:none;color:#3a3;margin-left:0.3em}.mw-parser-output .cs1-format{font-size:95%}.mw-parser-output .cs1-kern-left{padding-left:0.2em}.mw-parser-output .cs1-kern-right{padding-right:0.2em}.mw-parser-output .citation .mw-selflink{font-weight:inherit}</style><cite class="citation web cs1"><a rel="nofollow" class="external text" href="http://eduunix.ccut.edu.cn/index2/html/oracle/O%27Reilly%20-%20Perl.For.Oracle.DBAs.eBook-LiB/oracleperl-APP-D-SECT-1.html">"What Is Data Munging?"</a>. <a rel="nofollow" class="external text" href="https://web.archive.org/web/20130818111618/http://eduunix.ccut.edu.cn/index2/html/oracle/O%27Reilly%20-%20Perl.For.Oracle.DBAs.eBook-LiB/oracleperl-APP-D-SECT-1.html">Archived</a> from the original on 2013-08-18<span class="reference-accessdate">. Retrieved <span class="nowrap">2022-01-21</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=What+Is+Data+Munging%3F&amp;rft_id=http%3A%2F%2Feduunix.ccut.edu.cn%2Findex2%2Fhtml%2Foracle%2FO%2527Reilly%2520-%2520Perl.For.Oracle.DBAs.eBook-LiB%2Foracleperl-APP-D-SECT-1.html&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AData+wrangling" class="Z3988"></span></span>
+</li>
+<li id="cite_note-jargon-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-jargon_2-0">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><cite class="citation encyclopaedia cs1"><a rel="nofollow" class="external text" href="http://catb.org/jargon/html/index.html">"mung"</a>. <a rel="nofollow" class="external text" href="http://catb.org/jargon/html/M/mung.html"><i>Jargon File</i></a>. <a rel="nofollow" class="external text" href="https://web.archive.org/web/20120918005339/http://www.catb.org/jargon/html/M/mung.html">Archived</a> from the original on 2012-09-18<span class="reference-accessdate">. Retrieved <span class="nowrap">2012-10-10</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.atitle=mung&amp;rft.btitle=Jargon+File&amp;rft_id=http%3A%2F%2Fcatb.org%2Fjargon%2Fhtml%2Findex.html&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AData+wrangling" class="Z3988"></span></span>
+</li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><b><a href="#cite_ref-3">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://blog.okfn.org/2011/02/11/as-coder-is-for-code-x-is-for-data/">As coder is for code, X is for data</a> <a rel="nofollow" class="external text" href="https://web.archive.org/web/20210415175407/https://blog.okfn.org/2011/02/11/as-coder-is-for-code-x-is-for-data/">Archived</a> 2021-04-15 at the <a href="/wiki/Wayback_Machine" title="Wayback Machine">Wayback Machine</a>, Open Knowledge Foundation blog post</span>
+</li>
+<li id="cite_note-4"><span class="mw-cite-backlink"><b><a href="#cite_ref-4">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><cite id="CITEREFParsonsBrodzikRutter2004" class="citation journal cs1">Parsons, M. A.; Brodzik, M. J.; Rutter, N. J. (2004). "Data management for the Cold Land Processes Experiment: improving hydrological science". <i>Hydrological Processes</i>. <b>18</b> (18): 3637–3653. <a href="/wiki/Bibcode_(identifier)" class="mw-redirect" title="Bibcode (identifier)">Bibcode</a>:<a rel="nofollow" class="external text" href="https://ui.adsabs.harvard.edu/abs/2004HyPr...18.3637P">2004HyPr...18.3637P</a>. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1002%2Fhyp.5801">10.1002/hyp.5801</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Hydrological+Processes&amp;rft.atitle=Data+management+for+the+Cold+Land+Processes+Experiment%3A+improving+hydrological+science&amp;rft.volume=18&amp;rft.issue=18&amp;rft.pages=3637-3653&amp;rft.date=2004&amp;rft_id=info%3Adoi%2F10.1002%2Fhyp.5801&amp;rft_id=info%3Abibcode%2F2004HyPr...18.3637P&amp;rft.aulast=Parsons&amp;rft.aufirst=M.+A.&amp;rft.au=Brodzik%2C+M.+J.&amp;rft.au=Rutter%2C+N.+J.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AData+wrangling" class="Z3988"></span></span>
+</li>
+<li id="cite_note-5"><span class="mw-cite-backlink"><b><a href="#cite_ref-5">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><cite class="citation web cs1"><a rel="nofollow" class="external text" href="https://expressanalytics.com/blog/what-is-data-wrangling-what-are-the-steps-in-data-wrangling/">"What Is Data Wrangling? What are the steps in data wrangling?"</a>. <i>Express Analytics</i>. 2020-04-22. <a rel="nofollow" class="external text" href="https://web.archive.org/web/20201101035026/https://expressanalytics.com/blog/what-is-data-wrangling-what-are-the-steps-in-data-wrangling/">Archived</a> from the original on 2020-11-01<span class="reference-accessdate">. Retrieved <span class="nowrap">2020-12-06</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=Express+Analytics&amp;rft.atitle=What+Is+Data+Wrangling%3F+What+are+the+steps+in+data+wrangling%3F&amp;rft.date=2020-04-22&amp;rft_id=https%3A%2F%2Fexpressanalytics.com%2Fblog%2Fwhat-is-data-wrangling-what-are-the-steps-in-data-wrangling%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AData+wrangling" class="Z3988"></span></span>
+</li>
+<li id="cite_note-r4ds-6"><span class="mw-cite-backlink"><b><a href="#cite_ref-r4ds_6-0">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><cite id="CITEREFWickhamGrolemund2016" class="citation book cs1">Wickham, Hadley; Grolemund, Garrett (2016). "Chapter 9: Data Wrangling Introduction". <a rel="nofollow" class="external text" href="https://r4ds.had.co.nz/wrangle-intro.html"><i>R for data science&#160;: import, tidy, transform, visualize, and model data</i></a> (First&#160;ed.). Sebastopol, CA. <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-1491910399" title="Special:BookSources/978-1491910399"><bdi>978-1491910399</bdi></a>. <a rel="nofollow" class="external text" href="https://web.archive.org/web/20211011025448/https://r4ds.had.co.nz/wrangle-intro.html">Archived</a> from the original on 2021-10-11<span class="reference-accessdate">. Retrieved <span class="nowrap">2022-01-12</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.atitle=Chapter+9%3A+Data+Wrangling+Introduction&amp;rft.btitle=R+for+data+science+%3A+import%2C+tidy%2C+transform%2C+visualize%2C+and+model+data&amp;rft.place=Sebastopol%2C+CA&amp;rft.edition=First&amp;rft.date=2016&amp;rft.isbn=978-1491910399&amp;rft.aulast=Wickham&amp;rft.aufirst=Hadley&amp;rft.au=Grolemund%2C+Garrett&amp;rft_id=https%3A%2F%2Fr4ds.had.co.nz%2Fwrangle-intro.html&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AData+wrangling" class="Z3988"></span></span>
+</li>
+<li id="cite_note-wrangler-paper-7"><span class="mw-cite-backlink"><b><a href="#cite_ref-wrangler-paper_7-0">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><cite id="CITEREFKandelPaepcke2011" class="citation journal cs1">Kandel, Sean; Paepcke, Andreas (May 2011). "Wrangler: Interactive Visual Specification of Data Transformation Scripts". <i>SIGCHI</i>. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1145%2F1978942.1979444">10.1145/1978942.1979444</a>. <a href="/wiki/S2CID_(identifier)" class="mw-redirect" title="S2CID (identifier)">S2CID</a>&#160;<a rel="nofollow" class="external text" href="https://api.semanticscholar.org/CorpusID:11133756">11133756</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=SIGCHI&amp;rft.atitle=Wrangler%3A+Interactive+Visual+Specification+of+Data+Transformation+Scripts&amp;rft.date=2011-05&amp;rft_id=info%3Adoi%2F10.1145%2F1978942.1979444&amp;rft_id=https%3A%2F%2Fapi.semanticscholar.org%2FCorpusID%3A11133756%23id-name%3DS2CID&amp;rft.aulast=Kandel&amp;rft.aufirst=Sean&amp;rft.au=Paepcke%2C+Andreas&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AData+wrangling" class="Z3988"></span></span>
+</li>
+<li id="cite_note-8"><span class="mw-cite-backlink"><b><a href="#cite_ref-8">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://www.iri.com/blog/business-intelligence/data-franchising/">[https://web.archive.org/web/20210415175408/https://www.iri.com/blog/business-intelligence/data-franchising/ Archived</a> 2021-04-15 at the <a href="/wiki/Wayback_Machine" title="Wayback Machine">Wayback Machine</a> What is Data Franchising? (2003 and 2017 <a href="/wiki/Innovative_Routines_International" title="Innovative Routines International">IRI</a>])</span>
+</li>
+</ol></div></div>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Data_wrangling&amp;action=edit&amp;section=10" title="Edit section: External links">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul><li><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><cite class="citation web cs1"><a rel="nofollow" class="external text" href="https://myinfluencerjourney.com/what-is-data-wrangling-benefits-tools-and-skills/">"What is Data Wrangling? Benefits, tools, and skills?"</a>. My Influencer Journey<span class="reference-accessdate">. Retrieved <span class="nowrap">2022-01-26</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=What+is+Data+Wrangling%3F+Benefits%2C+tools%2C+and+skills%3F&amp;rft.pub=My+Influencer+Journey&amp;rft_id=https%3A%2F%2Fmyinfluencerjourney.com%2Fwhat-is-data-wrangling-benefits-tools-and-skills%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AData+wrangling" class="Z3988"></span></li></ul>
+<div class="navbox-styles nomobile"><style data-mw-deduplicate="TemplateStyles:r1061467846">.mw-parser-output .navbox{box-sizing:border-box;border:1px solid #a2a9b1;width:100%;clear:both;font-size:88%;text-align:center;padding:1px;margin:1em auto 0}.mw-parser-output .navbox .navbox{margin-top:0}.mw-parser-output .navbox+.navbox,.mw-parser-output .navbox+.navbox-styles+.navbox{margin-top:-1px}.mw-parser-output .navbox-inner,.mw-parser-output .navbox-subgroup{width:100%}.mw-parser-output .navbox-group,.mw-parser-output .navbox-title,.mw-parser-output .navbox-abovebelow{padding:0.25em 1em;line-height:1.5em;text-align:center}.mw-parser-output .navbox-group{white-space:nowrap;text-align:right}.mw-parser-output .navbox,.mw-parser-output .navbox-subgroup{background-color:#fdfdfd}.mw-parser-output .navbox-list{line-height:1.5em;border-color:#fdfdfd}.mw-parser-output .navbox-list-with-group{text-align:left;border-left-width:2px;border-left-style:solid}.mw-parser-output tr+tr>.navbox-abovebelow,.mw-parser-output tr+tr>.navbox-group,.mw-parser-output tr+tr>.navbox-image,.mw-parser-output tr+tr>.navbox-list{border-top:2px solid #fdfdfd}.mw-parser-output .navbox-title{background-color:#ccf}.mw-parser-output .navbox-abovebelow,.mw-parser-output .navbox-group,.mw-parser-output .navbox-subgroup .navbox-title{background-color:#ddf}.mw-parser-output .navbox-subgroup .navbox-group,.mw-parser-output .navbox-subgroup .navbox-abovebelow{background-color:#e6e6ff}.mw-parser-output .navbox-even{background-color:#f7f7f7}.mw-parser-output .navbox-odd{background-color:transparent}.mw-parser-output .navbox .hlist td dl,.mw-parser-output .navbox .hlist td ol,.mw-parser-output .navbox .hlist td ul,.mw-parser-output .navbox td.hlist dl,.mw-parser-output .navbox td.hlist ol,.mw-parser-output .navbox td.hlist ul{padding:0.125em 0}.mw-parser-output .navbox .navbar{display:block;font-size:100%}.mw-parser-output .navbox-title .navbar{float:left;text-align:left;margin-right:0.5em}</style></div><div role="navigation" class="navbox" aria-labelledby="Data" style="padding:3px"><table class="nowraplinks mw-collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit"><tbody><tr><th scope="col" class="navbox-title" colspan="2"><style data-mw-deduplicate="TemplateStyles:r1063604349">.mw-parser-output .navbar{display:inline;font-size:88%;font-weight:normal}.mw-parser-output .navbar-collapse{float:left;text-align:left}.mw-parser-output .navbar-boxtext{word-spacing:0}.mw-parser-output .navbar ul{display:inline-block;white-space:nowrap;line-height:inherit}.mw-parser-output .navbar-brackets::before{margin-right:-0.125em;content:"[ "}.mw-parser-output .navbar-brackets::after{margin-left:-0.125em;content:" ]"}.mw-parser-output .navbar li{word-spacing:-0.125em}.mw-parser-output .navbar a>span,.mw-parser-output .navbar a>abbr{text-decoration:inherit}.mw-parser-output .navbar-mini abbr{font-variant:small-caps;border-bottom:none;text-decoration:none;cursor:inherit}.mw-parser-output .navbar-ct-full{font-size:114%;margin:0 7em}.mw-parser-output .navbar-ct-mini{font-size:114%;margin:0 4em}</style><div class="navbar plainlinks hlist navbar-mini"><ul><li class="nv-view"><a href="/wiki/Template:Data" title="Template:Data"><abbr title="View this template" style=";;background:none transparent;border:none;box-shadow:none;padding:0;">v</abbr></a></li><li class="nv-talk"><a href="/wiki/Template_talk:Data" title="Template talk:Data"><abbr title="Discuss this template" style=";;background:none transparent;border:none;box-shadow:none;padding:0;">t</abbr></a></li><li class="nv-edit"><a class="external text" href="https://en.wikipedia.org/w/index.php?title=Template:Data&amp;action=edit"><abbr title="Edit this template" style=";;background:none transparent;border:none;box-shadow:none;padding:0;">e</abbr></a></li></ul></div><div id="Data" style="font-size:114%;margin:0 4em"><a href="/wiki/Data_(computing)" title="Data (computing)">Data</a></div></th></tr><tr><td colspan="2" class="navbox-list navbox-odd hlist" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Data_augmentation" title="Data augmentation">Augmentation</a></li>
+<li><a href="/wiki/Data_analysis" title="Data analysis">Analysis</a></li>
+<li><a href="/wiki/Data_archaeology" title="Data archaeology">Archaeology</a></li>
+<li><a href="/wiki/Data_cleansing" title="Data cleansing">Cleansing</a></li>
+<li><a href="/wiki/Data_collection" title="Data collection">Collection</a></li>
+<li><a href="/wiki/Data_compression" title="Data compression">Compression</a></li>
+<li><a href="/wiki/Data_corruption" title="Data corruption">Corruption</a></li>
+<li><a href="/wiki/Data_curation" title="Data curation">Curation</a></li>
+<li><a href="/wiki/Data_degradation" title="Data degradation">Degradation</a></li>
+<li><a href="/wiki/Data_editing" title="Data editing">Editing</a></li>
+<li><a href="/wiki/Extract,_transform,_load" title="Extract, transform, load">ETL</a>/<a href="/wiki/Extract,_load,_transform" title="Extract, load, transform">ELT</a>
+<ul><li><a href="/wiki/Data_extraction" title="Data extraction">Extract</a></li>
+<li><a href="/wiki/Data_transformation" title="Data transformation">Transform</a></li>
+<li><a href="/wiki/Data_loading" class="mw-redirect" title="Data loading">Load</a></li></ul></li>
+<li><a href="/wiki/Data_farming" title="Data farming">Farming</a></li>
+<li><a href="/wiki/Data_format_management" title="Data format management">Format management</a></li>
+<li><a href="/wiki/Data_fusion" title="Data fusion">Fusion</a></li>
+<li><a href="/wiki/Data_integration" title="Data integration">Integration</a></li>
+<li><a href="/wiki/Data_integrity" title="Data integrity">Integrity</a></li>
+<li><a href="/wiki/Data_library" title="Data library">Library</a></li>
+<li><a href="/wiki/Data_loss" title="Data loss">Loss</a></li>
+<li><a href="/wiki/Data_management" title="Data management">Management</a></li>
+<li><a href="/wiki/Data_migration" title="Data migration">Migration</a></li>
+<li><a href="/wiki/Data_mining" title="Data mining">Mining</a></li>
+<li><a href="/wiki/Data_pre-processing" title="Data pre-processing">Pre-processing</a></li>
+<li><a href="/wiki/Data_preservation" title="Data preservation">Preservation</a></li>
+<li><a href="/wiki/Information_privacy" title="Information privacy">Protection (privacy)</a></li>
+<li><a href="/wiki/Data_recovery" title="Data recovery">Recovery</a></li>
+<li><a href="/wiki/Data_reduction" title="Data reduction">Reduction</a></li>
+<li><a href="/wiki/Data_retention" title="Data retention">Retention</a></li>
+<li><a href="/wiki/Data_quality" title="Data quality">Quality</a></li>
+<li><a href="/wiki/Data_science" title="Data science">Science</a></li>
+<li><a href="/wiki/Data_scraping" title="Data scraping">Scraping</a></li>
+<li><a href="/wiki/Data_scrubbing" title="Data scrubbing">Scrubbing</a></li>
+<li><a href="/wiki/Data_security" title="Data security">Security</a></li>
+<li><a href="/wiki/Data_steward" title="Data steward">Stewardship</a></li>
+<li><a href="/wiki/Data_storage" title="Data storage">Storage</a></li>
+<li><a href="/wiki/Data_validation" title="Data validation">Validation</a></li>
+<li><a href="/wiki/Data_warehouse" title="Data warehouse">Warehouse</a></li>
+<li><a class="mw-selflink selflink">Wrangling/munging</a></li></ul>
+</div></td></tr></tbody></table></div>
+<!-- 
+NewPP limit report
+Parsed by mw1401
+Cached time: 20220305014802
+Cache expiry: 1814400
+Reduced expiry: false
+Complications: [vary‐revision‐sha1]
+CPU time usage: 0.333 seconds
+Real time usage: 0.408 seconds
+Preprocessor visited node count: 614/1000000
+Post‐expand include size: 25072/2097152 bytes
+Template argument size: 504/2097152 bytes
+Highest expansion depth: 8/100
+Expensive parser function count: 0/500
+Unstrip recursion depth: 1/20
+Unstrip post‐expand size: 25711/5000000 bytes
+Lua time usage: 0.194/10.000 seconds
+Lua memory usage: 5039194/52428800 bytes
+Number of Wikibase entities loaded: 0/400
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  361.613      1 -total
+ 48.39%  174.994      1 Template:Reflist
+ 26.62%   96.269      1 Template:Short_description
+ 24.28%   87.794      3 Template:Cite_web
+ 19.53%   70.607      1 Template:Data
+ 18.88%   68.280      1 Template:Navbox
+ 13.06%   47.224      1 Template:Pagetype
+  8.48%   30.661      3 Template:Main_other
+  6.46%   23.358      1 Template:SDcat
+  5.84%   21.121      2 Template:Cite_journal
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:12487489-0!canonical and timestamp 20220305014802 and revision id 1068006981. Serialized with JSON.
+ -->
+</div><noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript>
+<div class="printfooter">Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Data_wrangling&amp;oldid=1068006981">https://en.wikipedia.org/w/index.php?title=Data_wrangling&amp;oldid=1068006981</a>"</div></div>
+		<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Computer_occupations" title="Category:Computer occupations">Computer occupations</a></li><li><a href="/wiki/Category:Data_mapping" title="Category:Data mapping">Data mapping</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:Webarchive_template_wayback_links" title="Category:Webarchive template wayback links">Webarchive template wayback links</a></li><li><a href="/wiki/Category:Articles_with_short_description" title="Category:Articles with short description">Articles with short description</a></li><li><a href="/wiki/Category:Short_description_is_different_from_Wikidata" title="Category:Short description is different from Wikidata">Short description is different from Wikidata</a></li></ul></div></div>
+	</div>
+</div>
+<div id='mw-data-after-content'>
+	<div class="read-more-container"></div>
+</div>
+
+<div id="mw-navigation">
+	<h2>Navigation menu</h2>
+	<div id="mw-head">
+		
+<nav id="p-personal" class="mw-portlet mw-portlet-personal vector-user-menu-legacy vector-menu" aria-labelledby="p-personal-label" role="navigation" 
+	 >
+	<label id="p-personal-label" aria-label="" class="vector-menu-heading">
+		<span class="vector-menu-heading-label">Personal tools</span>
+	</label>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="pt-anonuserpage" class="mw-list-item"><span>Not logged in</span></li><li id="pt-anontalk" class="mw-list-item"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n"><span>Talk</span></a></li><li id="pt-anoncontribs" class="mw-list-item"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y"><span>Contributions</span></a></li><li id="pt-createaccount" class="mw-list-item"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Data+wrangling&amp;returntoquery=lxml%3D" title="You are encouraged to create an account and log in; however, it is not mandatory"><span>Create account</span></a></li><li id="pt-login" class="mw-list-item"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Data+wrangling&amp;returntoquery=lxml%3D" title="You&#039;re encouraged to log in; however, it&#039;s not mandatory. [o]" accesskey="o"><span>Log in</span></a></li></ul>
+		
+	</div>
+</nav>
+
+		<div id="left-navigation">
+			
+<nav id="p-namespaces" class="mw-portlet mw-portlet-namespaces vector-menu vector-menu-tabs" aria-labelledby="p-namespaces-label" role="navigation" 
+	 >
+	<label id="p-namespaces-label" aria-label="" class="vector-menu-heading">
+		<span class="vector-menu-heading-label">Namespaces</span>
+	</label>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="ca-nstab-main" class="selected mw-list-item"><a href="/wiki/Data_wrangling" title="View the content page [c]" accesskey="c"><span>Article</span></a></li><li id="ca-talk" class="mw-list-item"><a href="/wiki/Talk:Data_wrangling" rel="discussion" title="Discuss improvements to the content page [t]" accesskey="t"><span>Talk</span></a></li></ul>
+		
+	</div>
+</nav>
+
+			
+<nav id="p-variants" class="mw-portlet mw-portlet-variants emptyPortlet vector-menu-dropdown-noicon vector-menu vector-menu-dropdown" aria-labelledby="p-variants-label" role="navigation" 
+	 >
+	<input type="checkbox"
+		id="p-variants-checkbox"
+		role="button"
+		aria-haspopup="true"
+		data-event-name="ui.dropdown-p-variants"
+		class="vector-menu-checkbox" aria-labelledby="p-variants-label" />
+	<label id="p-variants-label" aria-label="Change language variant" class="vector-menu-heading">
+		<span class="vector-menu-heading-label">English</span>
+			<span class="vector-menu-checkbox-expanded">expanded</span>
+			<span class="vector-menu-checkbox-collapsed">collapsed</span>
+	</label>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"></ul>
+		
+	</div>
+</nav>
+
+		</div>
+		<div id="right-navigation">
+			
+<nav id="p-views" class="mw-portlet mw-portlet-views vector-menu vector-menu-tabs" aria-labelledby="p-views-label" role="navigation" 
+	 >
+	<label id="p-views-label" aria-label="" class="vector-menu-heading">
+		<span class="vector-menu-heading-label">Views</span>
+	</label>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="ca-view" class="selected mw-list-item"><a href="/wiki/Data_wrangling"><span>Read</span></a></li><li id="ca-edit" class="mw-list-item"><a href="/w/index.php?title=Data_wrangling&amp;action=edit" title="Edit this page [e]" accesskey="e"><span>Edit</span></a></li><li id="ca-history" class="mw-list-item"><a href="/w/index.php?title=Data_wrangling&amp;action=history" title="Past revisions of this page [h]" accesskey="h"><span>View history</span></a></li></ul>
+		
+	</div>
+</nav>
+
+			
+<nav id="p-cactions" class="mw-portlet mw-portlet-cactions emptyPortlet vector-menu-dropdown-noicon vector-menu vector-menu-dropdown" aria-labelledby="p-cactions-label" role="navigation"  title="More options"
+	 >
+	<input type="checkbox"
+		id="p-cactions-checkbox"
+		role="button"
+		aria-haspopup="true"
+		data-event-name="ui.dropdown-p-cactions"
+		class="vector-menu-checkbox" aria-labelledby="p-cactions-label" />
+	<label id="p-cactions-label" aria-label="" class="vector-menu-heading">
+		<span class="vector-menu-heading-label">More</span>
+			<span class="vector-menu-checkbox-expanded">expanded</span>
+			<span class="vector-menu-checkbox-collapsed">collapsed</span>
+	</label>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"></ul>
+		
+	</div>
+</nav>
+
+			
+<div id="p-search" role="search" class="vector-search-box-vue  vector-search-box-show-thumbnail vector-search-box-auto-expand-width vector-search-box">
+	<div>
+			<h3 >
+				<label for="searchInput">Search</label>
+			</h3>
+		<form action="/w/index.php" id="searchform"
+			class="vector-search-box-form">
+			<div id="simpleSearch"
+				class="vector-search-box-inner"
+				 data-search-loc="header-navigation">
+				<input class="vector-search-box-input"
+					 type="search" name="search" placeholder="Search Wikipedia" aria-label="Search Wikipedia" autocapitalize="sentences" title="Search Wikipedia [f]" accesskey="f" id="searchInput"
+				/>
+				<input type="hidden" name="title" value="Special:Search"/>
+				<input id="mw-searchButton"
+					 class="searchButton mw-fallbackSearchButton" type="submit" name="fulltext" title="Search Wikipedia for this text" value="Search" />
+				<input id="searchButton"
+					 class="searchButton" type="submit" name="go" title="Go to a page with this exact name if it exists" value="Go" />
+			</div>
+		</form>
+	</div>
+</div>
+
+		</div>
+	</div>
+	
+
+<div id="mw-panel">
+	<div id="p-logo" role="banner">
+		<a class="mw-wiki-logo" href="/wiki/Main_Page"
+			title="Visit the main page"></a>
+	</div>
+	
+<nav id="p-navigation" class="mw-portlet mw-portlet-navigation vector-menu vector-menu-portal portal" aria-labelledby="p-navigation-label" role="navigation" 
+	 >
+	<label id="p-navigation-label" aria-label="" class="vector-menu-heading">
+		<span class="vector-menu-heading-label">Navigation</span>
+	</label>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="n-mainpage-description" class="mw-list-item"><a href="/wiki/Main_Page" icon="home" title="Visit the main page [z]" accesskey="z"><span>Main page</span></a></li><li id="n-contents" class="mw-list-item"><a href="/wiki/Wikipedia:Contents" title="Guides to browsing Wikipedia"><span>Contents</span></a></li><li id="n-currentevents" class="mw-list-item"><a href="/wiki/Portal:Current_events" title="Articles related to current events"><span>Current events</span></a></li><li id="n-randompage" class="mw-list-item"><a href="/wiki/Special:Random" icon="die" title="Visit a randomly selected article [x]" accesskey="x"><span>Random article</span></a></li><li id="n-aboutsite" class="mw-list-item"><a href="/wiki/Wikipedia:About" title="Learn about Wikipedia and how it works"><span>About Wikipedia</span></a></li><li id="n-contactpage" class="mw-list-item"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia"><span>Contact us</span></a></li><li id="n-sitesupport" class="mw-list-item"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us by donating to the Wikimedia Foundation"><span>Donate</span></a></li></ul>
+		
+	</div>
+</nav>
+
+	
+<nav id="p-interaction" class="mw-portlet mw-portlet-interaction vector-menu vector-menu-portal portal" aria-labelledby="p-interaction-label" role="navigation" 
+	 >
+	<label id="p-interaction-label" aria-label="" class="vector-menu-heading">
+		<span class="vector-menu-heading-label">Contribute</span>
+	</label>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="n-help" class="mw-list-item"><a href="/wiki/Help:Contents" icon="help" title="Guidance on how to use and edit Wikipedia"><span>Help</span></a></li><li id="n-introduction" class="mw-list-item"><a href="/wiki/Help:Introduction" title="Learn how to edit Wikipedia"><span>Learn to edit</span></a></li><li id="n-portal" class="mw-list-item"><a href="/wiki/Wikipedia:Community_portal" title="The hub for editors"><span>Community portal</span></a></li><li id="n-recentchanges" class="mw-list-item"><a href="/wiki/Special:RecentChanges" icon="recentChanges" title="A list of recent changes to Wikipedia [r]" accesskey="r"><span>Recent changes</span></a></li><li id="n-upload" class="mw-list-item"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Add images or other media for use on Wikipedia"><span>Upload file</span></a></li></ul>
+		
+	</div>
+</nav>
+
+<nav id="p-tb" class="mw-portlet mw-portlet-tb vector-menu vector-menu-portal portal" aria-labelledby="p-tb-label" role="navigation" 
+	 >
+	<label id="p-tb-label" aria-label="" class="vector-menu-heading">
+		<span class="vector-menu-heading-label">Tools</span>
+	</label>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="t-whatlinkshere" class="mw-list-item"><a href="/wiki/Special:WhatLinksHere/Data_wrangling" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j"><span>What links here</span></a></li><li id="t-recentchangeslinked" class="mw-list-item"><a href="/wiki/Special:RecentChangesLinked/Data_wrangling" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k"><span>Related changes</span></a></li><li id="t-upload" class="mw-list-item"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u"><span>Upload file</span></a></li><li id="t-specialpages" class="mw-list-item"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q"><span>Special pages</span></a></li><li id="t-permalink" class="mw-list-item"><a href="/w/index.php?title=Data_wrangling&amp;oldid=1068006981" title="Permanent link to this revision of this page"><span>Permanent link</span></a></li><li id="t-info" class="mw-list-item"><a href="/w/index.php?title=Data_wrangling&amp;action=info" title="More information about this page"><span>Page information</span></a></li><li id="t-cite" class="mw-list-item"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Data_wrangling&amp;id=1068006981&amp;wpFormIdentifier=titleform" title="Information on how to cite this page"><span>Cite this page</span></a></li><li id="t-wikibase" class="mw-list-item"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q5227374" title="Structured data on this page hosted by Wikidata [g]" accesskey="g"><span>Wikidata item</span></a></li></ul>
+		
+	</div>
+</nav>
+
+<nav id="p-coll-print_export" class="mw-portlet mw-portlet-coll-print_export vector-menu vector-menu-portal portal" aria-labelledby="p-coll-print_export-label" role="navigation" 
+	 >
+	<label id="p-coll-print_export-label" aria-label="" class="vector-menu-heading">
+		<span class="vector-menu-heading-label">Print/export</span>
+	</label>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="coll-download-as-rl" class="mw-list-item"><a href="/w/index.php?title=Special:DownloadAsPdf&amp;page=Data_wrangling&amp;action=show-download-screen" title="Download this page as a PDF file"><span>Download as PDF</span></a></li><li id="t-print" class="mw-list-item"><a href="/w/index.php?title=Data_wrangling&amp;printable=yes" title="Printable version of this page [p]" accesskey="p"><span>Printable version</span></a></li></ul>
+		
+	</div>
+</nav>
+
+	
+<nav id="p-lang" class="mw-portlet mw-portlet-lang vector-menu vector-menu-portal portal" aria-labelledby="p-lang-label" role="navigation" 
+	 >
+	<label id="p-lang-label" aria-label="" class="vector-menu-heading">
+		<span class="vector-menu-heading-label">Languages</span>
+	</label>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li class="interlanguage-link interwiki-fa mw-list-item"><a href="https://fa.wikipedia.org/wiki/%D8%A2%D9%85%D8%A7%D8%AF%D9%87%E2%80%8C%D8%B3%D8%A7%D8%B2%DB%8C_%D8%AF%D8%A7%D8%AF%D9%87" title="آماده‌سازی داده – Persian" lang="fa" hreflang="fa" class="interlanguage-link-target"><span>فارسی</span></a></li><li class="interlanguage-link interwiki-ko mw-list-item"><a href="https://ko.wikipedia.org/wiki/%EB%8D%B0%EC%9D%B4%ED%84%B0_%EB%9E%AD%EA%B8%80%EB%A7%81" title="데이터 랭글링 – Korean" lang="ko" hreflang="ko" class="interlanguage-link-target"><span>한국어</span></a></li><li class="interlanguage-link interwiki-is mw-list-item"><a href="https://is.wikipedia.org/wiki/Gagnahir%C3%B0ir" title="Gagnahirðir – Icelandic" lang="is" hreflang="is" class="interlanguage-link-target"><span>Íslenska</span></a></li><li class="interlanguage-link interwiki-no mw-list-item"><a href="https://no.wikipedia.org/wiki/Dataavstemming" title="Dataavstemming – Norwegian Bokmål" lang="nb" hreflang="nb" class="interlanguage-link-target"><span>Norsk bokmål</span></a></li></ul>
+		<div class="after-portlet after-portlet-lang"><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q5227374#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>
+	</div>
+</nav>
+
+</div>
+
+</div>
+
+<footer id="footer" class="mw-footer" role="contentinfo" >
+	<ul id="footer-info">
+	<li id="footer-info-lastmod"> This page was last edited on 26 January 2022, at 06:18<span class="anonymous-show">&#160;(UTC)</span>.</li>
+	<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License 3.0</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//foundation.wikimedia.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//foundation.wikimedia.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+</ul>
+
+	<ul id="footer-places">
+	<li id="footer-places-privacy"><a href="https://foundation.wikimedia.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+	<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+	<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+	<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+	<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Data_wrangling&amp;lxml=&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+	<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+	<li id="footer-places-statslink"><a href="https://stats.wikimedia.org/#/en.wikipedia.org">Statistics</a></li>
+	<li id="footer-places-cookiestatement"><a href="https://foundation.wikimedia.org/wiki/Cookie_statement">Cookie statement</a></li>
+</ul>
+
+	<ul id="footer-icons" class="noprint">
+	<li id="footer-copyrightico"><a href="https://wikimediafoundation.org/"><img src="/static/images/footer/wikimedia-button.png" srcset="/static/images/footer/wikimedia-button-1.5x.png 1.5x, /static/images/footer/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation" loading="lazy" /></a></li>
+	<li id="footer-poweredbyico"><a href="https://www.mediawiki.org/"><img src="/static/images/footer/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/footer/poweredby_mediawiki_132x47.png 1.5x, /static/images/footer/poweredby_mediawiki_176x62.png 2x" width="88" height="31" loading="lazy"/></a></li>
+</ul>
+
+</footer>
+
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.333","walltime":"0.408","ppvisitednodes":{"value":614,"limit":1000000},"postexpandincludesize":{"value":25072,"limit":2097152},"templateargumentsize":{"value":504,"limit":2097152},"expansiondepth":{"value":8,"limit":100},"expensivefunctioncount":{"value":0,"limit":500},"unstrip-depth":{"value":1,"limit":20},"unstrip-size":{"value":25711,"limit":5000000},"entityaccesscount":{"value":0,"limit":400},"timingprofile":["100.00%  361.613      1 -total"," 48.39%  174.994      1 Template:Reflist"," 26.62%   96.269      1 Template:Short_description"," 24.28%   87.794      3 Template:Cite_web"," 19.53%   70.607      1 Template:Data"," 18.88%   68.280      1 Template:Navbox"," 13.06%   47.224      1 Template:Pagetype","  8.48%   30.661      3 Template:Main_other","  6.46%   23.358      1 Template:SDcat","  5.84%   21.121      2 Template:Cite_journal"]},"scribunto":{"limitreport-timeusage":{"value":"0.194","limit":"10.000"},"limitreport-memusage":{"value":5039194,"limit":52428800}},"cachereport":{"origin":"mw1401","timestamp":"20220305014802","ttl":1814400,"transientcontent":false}}});});</script>
+<script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"Article","name":"Data wrangling","url":"https:\/\/en.wikipedia.org\/wiki\/Data_wrangling","sameAs":"http:\/\/www.wikidata.org\/entity\/Q5227374","mainEntity":"http:\/\/www.wikidata.org\/entity\/Q5227374","author":{"@type":"Organization","name":"Contributors to Wikimedia projects"},"publisher":{"@type":"Organization","name":"Wikimedia Foundation, Inc.","logo":{"@type":"ImageObject","url":"https:\/\/www.wikimedia.org\/static\/images\/wmf-hor-googpub.png"}},"datePublished":"2007-07-27T21:42:27Z","dateModified":"2022-01-26T06:18:57Z","headline":"process of transforming and mapping data from one \"raw\" data form into another format with the intent of making it more appropriate and valuable for a variety of downstream purposes such as analytics"}</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":169,"wgHostname":"mw1431"});});</script>
+</body>
+</html>

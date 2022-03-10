@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Data pre-processing - Wikipedia</title>
+<script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"4dd4d231-2001-4825-8419-c69b3b9a9520","wgCSPNonce":false,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Data_pre-processing","wgTitle":"Data pre-processing","wgCurRevisionId":1068139365,"wgRevisionId":1068139365,"wgArticleId":12386904,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["CS1 maint: multiple names: authors list","All articles with unsourced statements","Articles with unsourced statements from March 2021","Machine learning"],"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"Data_pre-processing","wgRelevantArticleId":
+12386904,"wgIsProbablyEditable":true,"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgFlaggedRevsParams":{"tags":{"status":{"levels":-1}}},"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en"},"wgMFDisplayWikibaseDescriptions":{"search":true,"nearby":true,"watchlist":true,"tagline":false},"wgWMESchemaEditAttemptStepOversample":false,"wgWMEPageLength":20000,"wgNoticeProject":"wikipedia","wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgPopupsFlags":10,"wgULSCurrentAutonym":"English","wgEditSubmitButtonLabelPublish":true,"wgCentralAuthMobileDomain":false,"wgULSPosition":"interlanguage","wgULSisCompactLinksEnabled":true,"wgWikibaseItemId":"Q5227332","wgGENewcomerTasksGuidanceEnabled":true,"wgGEAskQuestionEnabled":false,"wgGELinkRecommendationsFrontendEnabled":false};RLSTATE={"ext.globalCssJs.user.styles":"ready","site.styles":"ready","user.styles":"ready","ext.globalCssJs.user":"ready",
+"user":"ready","user.options":"loading","ext.cite.styles":"ready","skins.vector.styles.legacy":"ready","jquery.makeCollapsible.styles":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.wikimediaBadges":"ready","ext.uls.interlanguage":"ready","wikibase.client.init":"ready"};RLPAGEMODULES=["ext.cite.ux-enhancements","site","mediawiki.page.ready","jquery.makeCollapsible","mediawiki.toc","skins.vector.legacy.js","ext.gadget.ReferenceTooltips","ext.gadget.charinsert","ext.gadget.extra-toolbar-buttons","ext.gadget.refToolbar","ext.gadget.switcher","mmv.head","mmv.bootstrap.autostart","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging","ext.wikimediaEvents","ext.navigationTiming","ext.cx.eventlogging.campaigns","ext.centralNotice.geoIP","ext.centralNotice.startUp","ext.centralauth.centralautologin","ext.popups","ext.uls.compactlinks","ext.uls.interface","ext.growthExperiments.SuggestedEditSession"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@1i9g4",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});});});</script>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=ext.cite.styles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cjquery.makeCollapsible.styles%7Cskins.vector.styles.legacy%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.38.0-wmf.25"/>
+<meta name="referrer" content="origin"/>
+<meta name="referrer" content="origin-when-crossorigin"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta property="og:title" content="Data pre-processing - Wikipedia"/>
+<meta property="og:type" content="website"/>
+<link rel="preconnect" href="//upload.wikimedia.org"/>
+<link rel="alternate" media="only screen and (max-width: 720px)" href="//en.m.wikipedia.org/wiki/Data_pre-processing"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Data_pre-processing&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="license" href="https://creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Data_pre-processing"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject mw-editable page-Data_pre-processing rootpage-Data_pre-processing skin-vector action-view skin-vector-legacy"><div id="mw-page-base" class="noprint"></div>
+<div id="mw-head-base" class="noprint"></div>
+<div id="content" class="mw-body" role="main">
+	<a id="top"></a>
+	<div id="siteNotice"><!-- CentralNotice --></div>
+	<div class="mw-indicators">
+	</div>
+	<h1 id="firstHeading" class="firstHeading mw-first-heading">Data pre-processing</h1>
+	<div id="bodyContent" class="vector-body">
+		<div id="siteSub" class="noprint">From Wikipedia, the free encyclopedia</div>
+		<div id="contentSub"></div>
+		<div id="contentSub2"></div>
+		
+		<div id="jump-to-nav"></div>
+		<a class="mw-jump-link" href="#mw-head">Jump to navigation</a>
+		<a class="mw-jump-link" href="#searchInput">Jump to search</a>
+		<div id="mw-content-text" class="mw-body-content mw-content-ltr" lang="en" dir="ltr"><div class="mw-parser-output"><p><b>Data preprocessing</b> can refer to manipulation or dropping of data before it is used in order to ensure or enhance performance,<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">&#91;1&#93;</a></sup> and is an important step in the <a href="/wiki/Data_mining" title="Data mining">data mining</a> process. The phrase <a href="/wiki/GIGO" class="mw-redirect" title="GIGO">"garbage in, garbage out"</a> is particularly applicable to <a href="/wiki/Data_mining" title="Data mining">data mining</a> and <a href="/wiki/Machine_learning" title="Machine learning">machine learning</a> projects. <a href="/wiki/Data_collection" title="Data collection">Data-gathering</a> methods are often loosely controlled, resulting in <a href="/w/index.php?title=Range_error&amp;action=edit&amp;redlink=1" class="new" title="Range error (page does not exist)">out-of-range</a> values (e.g., Income: −100), impossible data combinations (e.g., Sex: Male, Pregnant: Yes), and <a href="/wiki/Missing_values" class="mw-redirect" title="Missing values">missing values</a>, etc. Analyzing data that has not been carefully screened for such problems can produce misleading results. Thus, the representation and <a href="/wiki/Data_quality" title="Data quality">quality of data</a> is first and foremost before running any analysis.<sup id="cite_ref-2" class="reference"><a href="#cite_note-2">&#91;2&#93;</a></sup> 
+Often, data preprocessing is the most important phase of a <a href="/wiki/Machine_learning" title="Machine learning">machine learning</a> project, especially in <a href="/wiki/Computational_biology" title="Computational biology">computational biology</a>.<sup id="cite_ref-3" class="reference"><a href="#cite_note-3">&#91;3&#93;</a></sup>
+</p><p>If there is much irrelevant and redundant information present or noisy and unreliable data, then <a href="/wiki/Knowledge_discovery" class="mw-redirect" title="Knowledge discovery">knowledge discovery</a> during the training phase is more difficult. Data preparation and filtering steps can take considerable amount of processing time. Examples of data preprocessing include <a href="/wiki/Data_cleaning" class="mw-redirect" title="Data cleaning">cleaning</a>, <a href="/wiki/Instance_selection" title="Instance selection">instance selection</a>, <a href="/wiki/Data_normalization" class="mw-redirect" title="Data normalization">normalization</a>, <a href="/wiki/One-hot" title="One-hot">one hot encoding</a>, <a href="/wiki/Data_transformation" title="Data transformation">transformation</a>, <a href="/wiki/Feature_extraction" title="Feature extraction">feature extraction</a> and <a href="/wiki/Feature_selection" title="Feature selection">selection</a>, etc. The product of data preprocessing is the final <a href="/wiki/Training_set" class="mw-redirect" title="Training set">training set</a>.
+</p><p>Data preprocessing may affect the way in which outcomes of the final data processing can be interpreted.<sup id="cite_ref-4" class="reference"><a href="#cite_note-4">&#91;4&#93;</a></sup> This aspect should be carefully considered when interpretation of the results is a key point, such in the multivariate processing of chemical data (<a href="/wiki/Chemometrics" title="Chemometrics">chemometrics</a>).
+</p>
+<div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2 id="mw-toc-heading">Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Tasks_of_data_preprocessing"><span class="tocnumber">1</span> <span class="toctext">Tasks of data preprocessing</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Example"><span class="tocnumber">2</span> <span class="toctext">Example</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Data_mining"><span class="tocnumber">3</span> <span class="toctext">Data mining</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Semantic_data_preprocessing"><span class="tocnumber">4</span> <span class="toctext">Semantic data preprocessing</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#References"><span class="tocnumber">5</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#External_links"><span class="tocnumber">6</span> <span class="toctext">External links</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Tasks_of_data_preprocessing">Tasks of data preprocessing</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Data_pre-processing&amp;action=edit&amp;section=1" title="Edit section: Tasks of data preprocessing">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul><li><a href="/wiki/Data_cleansing" title="Data cleansing">Data cleansing</a></li>
+<li><a href="/wiki/Data_editing" title="Data editing">Data editing</a></li>
+<li><a href="/wiki/Data_reduction" title="Data reduction">Data reduction</a></li>
+<li><a href="/wiki/Data_wrangling" title="Data wrangling">Data wrangling</a></li></ul>
+<h2><span class="mw-headline" id="Example">Example</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Data_pre-processing&amp;action=edit&amp;section=2" title="Edit section: Example">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>In this example we have 5 Adults in our dataset who have the Sex of Male or Female and whether they are pregnant or not. We can detect that Adult 3 and 5 are impossible data combinations.
+</p>
+<table>
+
+<tbody><tr>
+<td>
+<table class="wikitable" style="border:none; float:left; margin-top:0; text-align:center;">
+<tbody><tr>
+<th style="background:white; border:none;" colspan="2" rowspan="2">
+</th>
+<th colspan="2" style="background:none;">
+</th></tr>
+<tr>
+<th>Sex
+</th>
+<th>Pregnant
+</th></tr>
+<tr>
+<th rowspan="5" style="height:6em;background:none;"><div>Adult </div>
+</th>
+<th>1
+</th>
+<td>Male
+</td>
+<td>No
+</td></tr>
+<tr>
+<th>2
+</th>
+<td>Female
+</td>
+<td>Yes
+</td></tr>
+<tr>
+<th><span style="color:red">3</span>
+</th>
+<td><b>Male</b>
+</td>
+<td><b>Yes</b>
+</td></tr>
+<tr>
+<th>4
+</th>
+<td>Female
+</td>
+<td>No
+</td></tr>
+<tr>
+<th><span style="color:red">5</span>
+</th>
+<td><b>Male</b>
+</td>
+<td><b>Yes</b>
+</td></tr>
+</tbody></table>
+</td>
+<td>
+</td></tr></tbody></table>
+<p>We can perform a <a href="/wiki/Data_cleansing" title="Data cleansing">Data cleansing</a> and choose to delete such data from our table. We remove such data because we can determine that such data existing in the dataset is caused by user entry errors or data corruption. A reason that one might have to delete such data is because the impossible data will affect the calculation or data manipulation process in the later steps of the data mining process. 
+</p>
+<table>
+
+<tbody><tr>
+<td>
+<table class="wikitable" style="border:none; float:left; margin-top:0; text-align:center;">
+<tbody><tr>
+<th style="background:white; border:none;" colspan="2" rowspan="2">
+</th>
+<th colspan="2" style="background:none;">
+</th></tr>
+<tr>
+<th>Sex
+</th>
+<th>Pregnant
+</th></tr>
+<tr>
+<th rowspan="3" style="height:6em;background:none;"><div>Adult </div>
+</th>
+<th>1
+</th>
+<td>Male
+</td>
+<td>No
+</td></tr>
+<tr>
+<th>2
+</th>
+<td>Female
+</td>
+<td>Yes
+</td></tr>
+<tr>
+<th>4
+</th>
+<td>Female
+</td>
+<td>No
+</td></tr>
+</tbody></table>
+</td>
+<td>
+</td></tr></tbody></table>
+<p>We can perform a <a href="/wiki/Data_editing" title="Data editing">Data editing</a> and change the Sex of the Adult by knowing that the Adult is Pregnant we can make the assumption that the Adult is Female and make changes accordingly. We edit the dataset to have a clearer analysis of the data when performing data manipulation in the later steps within the data mining process.
+</p>
+<table>
+
+<tbody><tr>
+<td>
+<table class="wikitable" style="border:none; float:left; margin-top:0; text-align:center;">
+<tbody><tr>
+<th style="background:white; border:none;" colspan="2" rowspan="2">
+</th>
+<th colspan="2" style="background:none;">
+</th></tr>
+<tr>
+<th>Sex
+</th>
+<th>Pregnant
+</th></tr>
+<tr>
+<th rowspan="5" style="height:6em;background:none;"><div>Adult </div>
+</th>
+<th>1
+</th>
+<td>Male
+</td>
+<td>No
+</td></tr>
+<tr>
+<th>2
+</th>
+<td>Female
+</td>
+<td>Yes
+</td></tr>
+<tr>
+<th><span style="color:blue">3</span>
+</th>
+<td><b>Female</b>
+</td>
+<td><b>Yes</b>
+</td></tr>
+<tr>
+<th>4
+</th>
+<td>Female
+</td>
+<td>No
+</td></tr>
+<tr>
+<th><span style="color:blue">5</span>
+</th>
+<td><b>Female</b>
+</td>
+<td><b>Yes</b>
+</td></tr>
+</tbody></table>
+</td>
+<td>
+</td></tr></tbody></table>
+<p>We can use a form of <a href="/wiki/Data_reduction" title="Data reduction">Data reduction</a> and sort the data by Sex and by doing this we can simplify our dataset and choose what Sex we want to focus on more.
+</p>
+<table>
+
+<tbody><tr>
+<td>
+<table class="wikitable" style="border:none; float:left; margin-top:0; text-align:center;">
+<tbody><tr>
+<th style="background:white; border:none;" colspan="2" rowspan="2">
+</th>
+<th colspan="2" style="background:none;">
+</th></tr>
+<tr>
+<th>Sex
+</th>
+<th>Pregnant
+</th></tr>
+<tr>
+<th rowspan="5" style="height:6em;background:none;"><div>Adult </div>
+</th>
+<th>2
+</th>
+<td>Female
+</td>
+<td>Yes
+</td></tr>
+<tr>
+<th>4
+</th>
+<td>Female
+</td>
+<td>No
+</td></tr>
+<tr>
+<th>1
+</th>
+<td>Male
+</td>
+<td>No
+</td></tr>
+<tr>
+<th>3
+</th>
+<td>Male
+</td>
+<td>Yes
+</td></tr>
+<tr>
+<th>5
+</th>
+<td>Male
+</td>
+<td>Yes
+</td></tr>
+</tbody></table>
+</td>
+<td>
+</td></tr></tbody></table>
+<h2><span class="mw-headline" id="Data_mining">Data mining</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Data_pre-processing&amp;action=edit&amp;section=3" title="Edit section: Data mining">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The origins of data preprocessing are located in <a href="/wiki/Data_mining" title="Data mining">data mining</a>.<sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">&#91;<i><a href="/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources. (March 2021)">citation needed</span></a></i>&#93;</sup> The idea is to aggregate existing information and search in the content. Later it was recognized, that for machine learning and neural networks a data preprocessing step is needed too. So it has become to a universal technique which is used in computing in general.
+</p><p>Data preprocessing allows for the removal of unwanted data with the use of data cleaning, this allows the user to have a dataset to contain more valuable information after the preprocessing stage for data manipulation later in the data mining process. Editing such dataset to either correct data corruption or human error is a crucial step to get accurate quantifiers like true positives, true negatives, <a href="/wiki/False_positives_and_false_negatives" title="False positives and false negatives">False positives and false negatives</a> found in a <a href="/wiki/Confusion_matrix" title="Confusion matrix">Confusion matrix</a> that are commonly used for a medical diagnosis. Users are able to join data files together and use preprocessing to filter any unnecessary noise from the data which can allow for higher accuracy. Users use Python programming scripts accompanied by the pandas library which gives them the ability to import data from a <a href="/wiki/Comma-separated_values" title="Comma-separated values">Comma-separated values</a> as a data-frame. The data-frame is then used to manipulate data that can be challenging otherwise to do in Excel. <a href="/wiki/Pandas_(software)" title="Pandas (software)">pandas (software)</a> which is a powerful tool that allows for data analysis and manipulation; which makes data visualizations, statistical operations and much more, a lot easier. Many also use the <a href="/wiki/R_(programming_language)" title="R (programming language)">R (programming language)</a> to do such tasks as well. 
+</p><p>The reason why a user transforms existing files into a new one is because of many reasons. Data preprocessing has the objective to add missing values, aggregate information, label data with categories (<a href="/wiki/Data_binning" title="Data binning">Data binning</a>) and smooth a trajectory.<sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">&#91;<i><a href="/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources. (March 2021)">citation needed</span></a></i>&#93;</sup> More advanced techniques like principal component analysis and <a href="/wiki/Feature_selection" title="Feature selection">feature selection</a> are working with statistical formulas and are applied to complex datasets which are recorded by GPS trackers and motion capture devices.
+</p>
+<h2><span class="mw-headline" id="Semantic_data_preprocessing">Semantic data preprocessing</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Data_pre-processing&amp;action=edit&amp;section=4" title="Edit section: Semantic data preprocessing">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Semantic data mining is a subset of data mining that specifically seeks to incorporate domain knowledge, such as formal semantics, into the data mining process. Domain knowledge is the knowledge of the environment the data was processed in. Domain knowledge can have a positive influence on many aspects of data mining, such as filtering out redundant or inconsistent data during the preprocessing phase.<sup id="cite_ref-5" class="reference"><a href="#cite_note-5">&#91;5&#93;</a></sup> Domain knowledge also works as constraint. It does this by using working as set of prior knowledge to reduce the space required for searching and acting as a guide to the data. Simply put, semantic preprocessing seeks to filter data using the original environment of said data more correctly and efficiently.
+</p><p>There are increasingly complex problems which are asking to be solved by more elaborate techniques to better analyze existing information. Instead of creating a simple script for aggregating different numerical values into a single value, it make sense to focus on semantic based data preprocessing.<sup id="cite_ref-6" class="reference"><a href="#cite_note-6">&#91;6&#93;</a></sup> The idea is to build a dedicated <a href="/wiki/Ontology_(information_science)" title="Ontology (information science)">ontology</a>, which explains on a higher level what the problem is about.<sup id="cite_ref-7" class="reference"><a href="#cite_note-7">&#91;7&#93;</a></sup> In regards to semantic data mining and semantic pre-processing, ontologies are a way to conceptualize and formally define semantic knowledge and data. The <a href="/wiki/Prot%C3%A9g%C3%A9_(software)" title="Protégé (software)">Protégé (software)</a> is the standard tool for constructing an ontology.<sup id="cite_ref-8" class="reference"><a href="#cite_note-8">&#91;8&#93;</a></sup> In general, the use of ontologies bridges the gaps between data, applications, algorithms, and results that occur from semantic mismatches. As a result, semantic data mining combined with ontology has many applications where semantic ambiguity can impact the usefulness and efficiency of data systems. Applications include the medical field, language processing, banking,<sup id="cite_ref-9" class="reference"><a href="#cite_note-9">&#91;9&#93;</a></sup> and even tutoring,<sup id="cite_ref-10" class="reference"><a href="#cite_note-10">&#91;10&#93;</a></sup> among many more.
+</p><p>There are various strengths to using a semantic data mining and ontological based approach. As previously mentioned, these tools can help during the per-processing phase by filtering out non-desirable data from the data set. Additionally, well-structured formal semantics integrated into well designed ontologies can return powerful data that can be easily read and processed by machines.<sup id="cite_ref-11" class="reference"><a href="#cite_note-11">&#91;11&#93;</a></sup> A specifically useful example of this exists in the medical use of semantic data processing. As an example, a patient is having a medical emergency and is being rushed to hospital. The emergency responders are trying to figure out the best medicine to administer to help the patient. Under normal data processing, scouring all the patient’s medical data to ensure they are getting the best treatment could take too long and risk the patients’ health or even life. However, using semantically processed ontologies, the first responders could save the patient’s life. Tools like a semantic reasoner can use <a href="/wiki/Ontology_(information_science)" title="Ontology (information science)">ontology</a> to infer the what best medicine to administer to the patient is based on their medical history, such as if they have a certain cancer or other conditions, simply by examining the natural language used in the patient's medical records.<sup id="cite_ref-12" class="reference"><a href="#cite_note-12">&#91;12&#93;</a></sup> This would allow the first responders to quickly and efficiently search for medicine without having worry about the patient’s medical history themselves, as the semantic reasoner would already have analyzed this data and found solutions. In general, this illustrates the incredible strength of using semantic data mining and ontologies. They allow for quicker and more efficient data extraction on the user side, as the user has fewer variables to account for, since the semantically pre-processed data and ontology built for the data have already accounted for many of these variables. However, there are some drawbacks to this approach. Namely, it requires  a high amount of computational power and complexity, even with relatively small data sets.<sup id="cite_ref-13" class="reference"><a href="#cite_note-13">&#91;13&#93;</a></sup> This could result in higher costs and increased difficulties in building and maintaining semantic data processing systems. This can be mitigated somewhat if the data set is already well organized and formatted, but even then, the complexity is still higher when compared to standard data processing.
+</p><p>Below is a simple a diagram combining some of the processes, in particular semantic data mining and their use in ontology.
+</p><p><a href="/wiki/File:SimpleSemanticDataMiningDiagram.png" class="image" title="SimpleSemanticDataMiningDiagram"><img alt="SimpleSemanticDataMiningDiagram" src="//upload.wikimedia.org/wikipedia/commons/a/a2/SimpleSemanticDataMiningDiagram.png" decoding="async" width="645" height="589" data-file-width="645" data-file-height="589" /></a>
+</p><p>The diagram depicts a data set being broken up into two parts: the characteristics of its domain, or domain knowledge, and then the actual acquired data. The domain characteristics are then processed to become user understood domain knowledge that can be applied to the data. Meanwhile, the data set is processed and stored so that the domain knowledge can applied to it, so that the process may continue. This application forms the ontology. From there, the ontology can be used to analyze data and process results.
+</p><p>Fuzzy preprocessing is another, more advanced technique for solving complex problems. Fuzzy preprocessing and Fuzzy data mining make use of <a href="/wiki/Fuzzy_sets" class="mw-redirect" title="Fuzzy sets">fuzzy sets</a>. These data sets are composed of two elements: a set and a membership function for the set which comprises 0 and 1. Fuzzy preprocessing uses this fuzzy data set to ground numerical values with linguistic information. Raw data is then transformed into <a href="/wiki/Natural_language" title="Natural language">natural language</a>. Ultimately, fuzzy data mining's goal is to help deal with inexact information, such as an incomplete database. Currently fuzzy preprocessing, as well as other fuzzy based data mining techniques see frequent use with neural networks and artificial intelligence.<sup id="cite_ref-14" class="reference"><a href="#cite_note-14">&#91;14&#93;</a></sup>
+</p>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Data_pre-processing&amp;action=edit&amp;section=5" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<style data-mw-deduplicate="TemplateStyles:r1011085734">.mw-parser-output .reflist{font-size:90%;margin-bottom:0.5em;list-style-type:decimal}.mw-parser-output .reflist .references{font-size:100%;margin-bottom:0;list-style-type:inherit}.mw-parser-output .reflist-columns-2{column-width:30em}.mw-parser-output .reflist-columns-3{column-width:25em}.mw-parser-output .reflist-columns{margin-top:0.3em}.mw-parser-output .reflist-columns ol{margin-top:0}.mw-parser-output .reflist-columns li{page-break-inside:avoid;break-inside:avoid-column}.mw-parser-output .reflist-upper-alpha{list-style-type:upper-alpha}.mw-parser-output .reflist-upper-roman{list-style-type:upper-roman}.mw-parser-output .reflist-lower-alpha{list-style-type:lower-alpha}.mw-parser-output .reflist-lower-greek{list-style-type:lower-greek}.mw-parser-output .reflist-lower-roman{list-style-type:lower-roman}</style><div class="reflist">
+<div class="mw-references-wrap mw-references-columns"><ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-1">^</a></b></span> <span class="reference-text"><style data-mw-deduplicate="TemplateStyles:r1067248974">.mw-parser-output cite.citation{font-style:inherit;word-wrap:break-word}.mw-parser-output .citation q{quotes:"\"""\"""'""'"}.mw-parser-output .citation:target{background-color:rgba(0,127,255,0.133)}.mw-parser-output .id-lock-free a,.mw-parser-output .citation .cs1-lock-free a{background:linear-gradient(transparent,transparent),url("//upload.wikimedia.org/wikipedia/commons/6/65/Lock-green.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-limited a,.mw-parser-output .id-lock-registration a,.mw-parser-output .citation .cs1-lock-limited a,.mw-parser-output .citation .cs1-lock-registration a{background:linear-gradient(transparent,transparent),url("//upload.wikimedia.org/wikipedia/commons/d/d6/Lock-gray-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-subscription a,.mw-parser-output .citation .cs1-lock-subscription a{background:linear-gradient(transparent,transparent),url("//upload.wikimedia.org/wikipedia/commons/a/aa/Lock-red-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .cs1-ws-icon a{background:linear-gradient(transparent,transparent),url("//upload.wikimedia.org/wikipedia/commons/4/4c/Wikisource-logo.svg")right 0.1em center/12px no-repeat}.mw-parser-output .cs1-code{color:inherit;background:inherit;border:none;padding:inherit}.mw-parser-output .cs1-hidden-error{display:none;color:#d33}.mw-parser-output .cs1-visible-error{color:#d33}.mw-parser-output .cs1-maint{display:none;color:#3a3;margin-left:0.3em}.mw-parser-output .cs1-format{font-size:95%}.mw-parser-output .cs1-kern-left{padding-left:0.2em}.mw-parser-output .cs1-kern-right{padding-right:0.2em}.mw-parser-output .citation .mw-selflink{font-weight:inherit}</style><cite class="citation web cs1"><a rel="nofollow" class="external text" href="https://www.tableau.com/learn/articles/what-is-data-cleaning">"Guide To Data Cleaning: Definition, Benefits, Components, And How To Clean Your Data"</a>. <i>Tableau</i><span class="reference-accessdate">. Retrieved <span class="nowrap">2021-10-17</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=Tableau&amp;rft.atitle=Guide+To+Data+Cleaning%3A+Definition%2C+Benefits%2C+Components%2C+And+How+To+Clean+Your+Data&amp;rft_id=https%3A%2F%2Fwww.tableau.com%2Flearn%2Farticles%2Fwhat-is-data-cleaning&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AData+pre-processing" class="Z3988"></span></span>
+</li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-2">^</a></b></span> <span class="reference-text">Pyle, D., 1999. <i>Data Preparation for Data Mining.</i> Morgan Kaufmann Publishers, <a href="/wiki/Los_Altos,_California" title="Los Altos, California">Los Altos, California</a>.</span>
+</li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><b><a href="#cite_ref-3">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><cite id="CITEREFChicco2017" class="citation journal cs1">Chicco D (December 2017). <a rel="nofollow" class="external text" href="//www.ncbi.nlm.nih.gov/pmc/articles/PMC5721660">"Ten quick tips for machine learning in computational biology"</a>. <i>BioData Mining</i>. <b>10</b> (35): 35. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1186%2Fs13040-017-0155-3">10.1186/s13040-017-0155-3</a>. <a href="/wiki/PMC_(identifier)" class="mw-redirect" title="PMC (identifier)">PMC</a>&#160;<span class="cs1-lock-free" title="Freely accessible"><a rel="nofollow" class="external text" href="//www.ncbi.nlm.nih.gov/pmc/articles/PMC5721660">5721660</a></span>. <a href="/wiki/PMID_(identifier)" class="mw-redirect" title="PMID (identifier)">PMID</a>&#160;<a rel="nofollow" class="external text" href="//pubmed.ncbi.nlm.nih.gov/29234465">29234465</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=BioData+Mining&amp;rft.atitle=Ten+quick+tips+for+machine+learning+in+computational+biology&amp;rft.volume=10&amp;rft.issue=35&amp;rft.pages=35&amp;rft.date=2017-12&amp;rft_id=%2F%2Fwww.ncbi.nlm.nih.gov%2Fpmc%2Farticles%2FPMC5721660%23id-name%3DPMC&amp;rft_id=info%3Apmid%2F29234465&amp;rft_id=info%3Adoi%2F10.1186%2Fs13040-017-0155-3&amp;rft.aulast=Chicco&amp;rft.aufirst=D&amp;rft_id=%2F%2Fwww.ncbi.nlm.nih.gov%2Fpmc%2Farticles%2FPMC5721660&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AData+pre-processing" class="Z3988"></span></span>
+</li>
+<li id="cite_note-4"><span class="mw-cite-backlink"><b><a href="#cite_ref-4">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><cite id="CITEREFOliveriMalegoriSimonettiCasale2019" class="citation journal cs1">Oliveri, Paolo; Malegori, Cristina; Simonetti, Remo; Casale, Monica (2019). "The impact of signal preprocessing on the final interpretation of analytical outcomes – A tutorial". <i>Analytica Chimica Acta</i>. <b>1058</b>: 9–17. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1016%2Fj.aca.2018.10.055">10.1016/j.aca.2018.10.055</a>. <a href="/wiki/PMID_(identifier)" class="mw-redirect" title="PMID (identifier)">PMID</a>&#160;<a rel="nofollow" class="external text" href="//pubmed.ncbi.nlm.nih.gov/30851858">30851858</a>. <a href="/wiki/S2CID_(identifier)" class="mw-redirect" title="S2CID (identifier)">S2CID</a>&#160;<a rel="nofollow" class="external text" href="https://api.semanticscholar.org/CorpusID:73727614">73727614</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Analytica+Chimica+Acta&amp;rft.atitle=The+impact+of+signal+preprocessing+on+the+final+interpretation+of+analytical+outcomes+%E2%80%93+A+tutorial&amp;rft.volume=1058&amp;rft.pages=9-17&amp;rft.date=2019&amp;rft_id=https%3A%2F%2Fapi.semanticscholar.org%2FCorpusID%3A73727614%23id-name%3DS2CID&amp;rft_id=info%3Apmid%2F30851858&amp;rft_id=info%3Adoi%2F10.1016%2Fj.aca.2018.10.055&amp;rft.aulast=Oliveri&amp;rft.aufirst=Paolo&amp;rft.au=Malegori%2C+Cristina&amp;rft.au=Simonetti%2C+Remo&amp;rft.au=Casale%2C+Monica&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AData+pre-processing" class="Z3988"></span></span>
+</li>
+<li id="cite_note-5"><span class="mw-cite-backlink"><b><a href="#cite_ref-5">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><cite id="CITEREFDou,_Deijing_and_Wang,_Hao_and_Liu,_Haishan" class="citation web cs1">Dou, Deijing and Wang, Hao and Liu, Haishan. <a rel="nofollow" class="external text" href="http://ix.cs.uoregon.edu/~dou/research/papers/icsc15_invited.pdf">"Semantic Data Mining: A Survey of Ontology-based Approaches"</a> <span class="cs1-format">(PDF)</span>. University of Oregon.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Semantic+Data+Mining%3A+A+Survey+of+Ontology-based+Approaches&amp;rft.pub=University+of+Oregon&amp;rft.au=Dou%2C+Deijing+and+Wang%2C+Hao+and+Liu%2C+Haishan&amp;rft_id=http%3A%2F%2Fix.cs.uoregon.edu%2F~dou%2Fresearch%2Fpapers%2Ficsc15_invited.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AData+pre-processing" class="Z3988"></span><span class="cs1-maint citation-comment"><code class="cs1-code">{{<a href="/wiki/Template:Cite_web" title="Template:Cite web">cite web</a>}}</code>:  CS1 maint: multiple names: authors list (<a href="/wiki/Category:CS1_maint:_multiple_names:_authors_list" title="Category:CS1 maint: multiple names: authors list">link</a>)</span></span>
+</li>
+<li id="cite_note-6"><span class="mw-cite-backlink"><b><a href="#cite_ref-6">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><cite id="CITEREFCulmone,_Rosario_and_Falcioni,_Marco_and_Quadrini,_Michela2014" class="citation conference cs1">Culmone, Rosario and Falcioni, Marco and Quadrini, Michela (2014). <i>An ontology-based framework for semantic data preprocessing aimed at human activity recognition</i>. SEMAPRO 2014: The Eighth International Conference on Advances in Semantic Processing. Alexey Cheptsov, High Performance Computing Center Stuttgart (HLRS). <a href="/wiki/S2CID_(identifier)" class="mw-redirect" title="S2CID (identifier)">S2CID</a>&#160;<a rel="nofollow" class="external text" href="https://api.semanticscholar.org/CorpusID:196091422">196091422</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=conference&amp;rft.btitle=An+ontology-based+framework+for+semantic+data+preprocessing+aimed+at+human+activity+recognition&amp;rft.date=2014&amp;rft_id=https%3A%2F%2Fapi.semanticscholar.org%2FCorpusID%3A196091422%23id-name%3DS2CID&amp;rft.au=Culmone%2C+Rosario+and+Falcioni%2C+Marco+and+Quadrini%2C+Michela&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AData+pre-processing" class="Z3988"></span><span class="cs1-maint citation-comment"><code class="cs1-code">{{<a href="/wiki/Template:Cite_conference" title="Template:Cite conference">cite conference</a>}}</code>:  CS1 maint: multiple names: authors list (<a href="/wiki/Category:CS1_maint:_multiple_names:_authors_list" title="Category:CS1 maint: multiple names: authors list">link</a>)</span></span>
+</li>
+<li id="cite_note-7"><span class="mw-cite-backlink"><b><a href="#cite_ref-7">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><cite id="CITEREFDavid_Perez-Rey_and_Alberto_Anguita_and_Jose_Crespo2006" class="citation conference cs1">David Perez-Rey and Alberto Anguita and Jose Crespo (2006). <i>OntoDataClean: Ontology-Based Integration and Preprocessing of Distributed Data</i>. Biological and Medical Data Analysis. Springer Berlin Heidelberg. pp.&#160;262–272. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1007%2F11946465_24">10.1007/11946465_24</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=conference&amp;rft.btitle=OntoDataClean%3A+Ontology-Based+Integration+and+Preprocessing+of+Distributed+Data&amp;rft.pages=262-272&amp;rft.pub=Springer+Berlin+Heidelberg&amp;rft.date=2006&amp;rft_id=info%3Adoi%2F10.1007%2F11946465_24&amp;rft.au=David+Perez-Rey+and+Alberto+Anguita+and+Jose+Crespo&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AData+pre-processing" class="Z3988"></span></span>
+</li>
+<li id="cite_note-8"><span class="mw-cite-backlink"><b><a href="#cite_ref-8">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><cite id="CITEREFF._Mary_Harin_Fernandez_and_R._Ponnusamy2016" class="citation journal cs1">F. Mary Harin Fernandez and R. Ponnusamy (2016). <a rel="nofollow" class="external text" href="https://doi.org/10.17485%2Fijst%2F2016%2Fv9i10%2F88899">"Data Preprocessing and Cleansing in Web Log on Ontology for Enhanced Decision Making"</a>. <i>Indian Journal of Science and Technology</i>. Indian Society for Education and Environment. <b>9</b> (10). <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<span class="cs1-lock-free" title="Freely accessible"><a rel="nofollow" class="external text" href="https://doi.org/10.17485%2Fijst%2F2016%2Fv9i10%2F88899">10.17485/ijst/2016/v9i10/88899</a></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Indian+Journal+of+Science+and+Technology&amp;rft.atitle=Data+Preprocessing+and+Cleansing+in+Web+Log+on+Ontology+for+Enhanced+Decision+Making&amp;rft.volume=9&amp;rft.issue=10&amp;rft.date=2016&amp;rft_id=info%3Adoi%2F10.17485%2Fijst%2F2016%2Fv9i10%2F88899&amp;rft.au=F.+Mary+Harin+Fernandez+and+R.+Ponnusamy&amp;rft_id=%2F%2Fdoi.org%2F10.17485%252Fijst%252F2016%252Fv9i10%252F88899&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AData+pre-processing" class="Z3988"></span></span>
+</li>
+<li id="cite_note-9"><span class="mw-cite-backlink"><b><a href="#cite_ref-9">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><cite id="CITEREFYerashenia,_Natalia_and_Bolotov,_Alexander_and_Chan,_David_and_Pierantoni,_Gabriele2020" class="citation book cs1">Yerashenia, Natalia and Bolotov, Alexander and Chan, David and Pierantoni, Gabriele (2020). <a rel="nofollow" class="external text" href="https://ieeexplore.ieee.org/document/9140238">"Semantic Data Pre-Processing for Machine Learning Based Bankruptcy Prediction Computational Model"</a>. <a rel="nofollow" class="external text" href="https://westminsterresearch.westminster.ac.uk/download/6b3387bc3e53e8c935cb4267be3c7b04fe410b5e5019edbc692a53d0b6ae4d65/3538863/CBI_2020_Yereashenia_et_al.pdf"><i>2020 IEEE 22nd Conference on Business Informatics (CBI)</i></a> <span class="cs1-format">(PDF)</span>. IEEE. pp.&#160;66–75. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1109%2FCBI49978.2020.00015">10.1109/CBI49978.2020.00015</a>. <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-1-7281-9926-9" title="Special:BookSources/978-1-7281-9926-9"><bdi>978-1-7281-9926-9</bdi></a>. <a href="/wiki/S2CID_(identifier)" class="mw-redirect" title="S2CID (identifier)">S2CID</a>&#160;<a rel="nofollow" class="external text" href="https://api.semanticscholar.org/CorpusID:219499599">219499599</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.atitle=Semantic+Data+Pre-Processing+for+Machine+Learning+Based+Bankruptcy+Prediction+Computational+Model&amp;rft.btitle=2020+IEEE+22nd+Conference+on+Business+Informatics+%28CBI%29&amp;rft.pages=66-75&amp;rft.pub=IEEE&amp;rft.date=2020&amp;rft_id=https%3A%2F%2Fapi.semanticscholar.org%2FCorpusID%3A219499599%23id-name%3DS2CID&amp;rft_id=info%3Adoi%2F10.1109%2FCBI49978.2020.00015&amp;rft.isbn=978-1-7281-9926-9&amp;rft.au=Yerashenia%2C+Natalia+and+Bolotov%2C+Alexander+and+Chan%2C+David+and+Pierantoni%2C+Gabriele&amp;rft_id=https%3A%2F%2Fieeexplore.ieee.org%2Fdocument%2F9140238&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AData+pre-processing" class="Z3988"></span><span class="cs1-maint citation-comment"><code class="cs1-code">{{<a href="/wiki/Template:Cite_book" title="Template:Cite book">cite book</a>}}</code>:  CS1 maint: multiple names: authors list (<a href="/wiki/Category:CS1_maint:_multiple_names:_authors_list" title="Category:CS1 maint: multiple names: authors list">link</a>)</span></span>
+</li>
+<li id="cite_note-10"><span class="mw-cite-backlink"><b><a href="#cite_ref-10">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><cite id="CITEREFChang,_Maiga_and_D&#39;Aniello,_Giuseppe_and_Gaeta,_Matteo_and_Orciuoli,_Franceso_and_Sampson,_Demetrois_and_Simonelli,_Carmine2020" class="citation journal cs1">Chang, Maiga and D'Aniello, Giuseppe and Gaeta, Matteo and Orciuoli, Franceso and Sampson, Demetrois and Simonelli, Carmine (2020). <a rel="nofollow" class="external text" href="https://ieeexplore.ieee.org/document/9031710">"Building Ontology-Driven Tutoring Models for Intelligent Tutoring Systems Using Data Mining"</a>. <i>IEEE Access</i>. IEEE. <b>8</b>: 48151–48162. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1109%2FACCESS.2020.2979281">10.1109/ACCESS.2020.2979281</a>. <a href="/wiki/S2CID_(identifier)" class="mw-redirect" title="S2CID (identifier)">S2CID</a>&#160;<a rel="nofollow" class="external text" href="https://api.semanticscholar.org/CorpusID:214594754">214594754</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=IEEE+Access&amp;rft.atitle=Building+Ontology-Driven+Tutoring+Models+for+Intelligent+Tutoring+Systems+Using+Data+Mining&amp;rft.volume=8&amp;rft.pages=48151-48162&amp;rft.date=2020&amp;rft_id=info%3Adoi%2F10.1109%2FACCESS.2020.2979281&amp;rft_id=https%3A%2F%2Fapi.semanticscholar.org%2FCorpusID%3A214594754%23id-name%3DS2CID&amp;rft.au=Chang%2C+Maiga+and+D%27Aniello%2C+Giuseppe+and+Gaeta%2C+Matteo+and+Orciuoli%2C+Franceso+and+Sampson%2C+Demetrois+and+Simonelli%2C+Carmine&amp;rft_id=https%3A%2F%2Fieeexplore.ieee.org%2Fdocument%2F9031710&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AData+pre-processing" class="Z3988"></span><span class="cs1-maint citation-comment"><code class="cs1-code">{{<a href="/wiki/Template:Cite_journal" title="Template:Cite journal">cite journal</a>}}</code>:  CS1 maint: multiple names: authors list (<a href="/wiki/Category:CS1_maint:_multiple_names:_authors_list" title="Category:CS1 maint: multiple names: authors list">link</a>)</span></span>
+</li>
+<li id="cite_note-11"><span class="mw-cite-backlink"><b><a href="#cite_ref-11">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><cite id="CITEREFDou,_Deijing_and_Wang,_Hao_and_Liu,_Haishan" class="citation web cs1">Dou, Deijing and Wang, Hao and Liu, Haishan. <a rel="nofollow" class="external text" href="http://ix.cs.uoregon.edu/~dou/research/papers/icsc15_invited.pdf">"Semantic Data Mining: A Survey of Ontology-based Approaches"</a> <span class="cs1-format">(PDF)</span>. University of Oregon.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Semantic+Data+Mining%3A+A+Survey+of+Ontology-based+Approaches&amp;rft.pub=University+of+Oregon&amp;rft.au=Dou%2C+Deijing+and+Wang%2C+Hao+and+Liu%2C+Haishan&amp;rft_id=http%3A%2F%2Fix.cs.uoregon.edu%2F~dou%2Fresearch%2Fpapers%2Ficsc15_invited.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AData+pre-processing" class="Z3988"></span><span class="cs1-maint citation-comment"><code class="cs1-code">{{<a href="/wiki/Template:Cite_web" title="Template:Cite web">cite web</a>}}</code>:  CS1 maint: multiple names: authors list (<a href="/wiki/Category:CS1_maint:_multiple_names:_authors_list" title="Category:CS1 maint: multiple names: authors list">link</a>)</span></span>
+</li>
+<li id="cite_note-12"><span class="mw-cite-backlink"><b><a href="#cite_ref-12">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><cite id="CITEREFKahn,_Atif_and_Doucette,_John_A._and_Jin,_Changjiu_and_Fu_Lijie_and_Cohen,_Robin" class="citation web cs1">Kahn, Atif and Doucette, John A. and Jin, Changjiu and Fu Lijie and Cohen, Robin. <a rel="nofollow" class="external text" href="https://cs.uwaterloo.ca/~j3doucet/papers/OntApproachToDataMining.pdf">"AN ONTOLOGICAL APPROACH TO DATA MINING FOR EMERGENCY MEDICINE"</a> <span class="cs1-format">(PDF)</span>. University of Waterloo.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=AN+ONTOLOGICAL+APPROACH+TO+DATA+MINING+FOR+EMERGENCY+MEDICINE&amp;rft.pub=University+of+Waterloo&amp;rft.au=Kahn%2C+Atif+and+Doucette%2C+John+A.+and+Jin%2C+Changjiu+and+Fu+Lijie+and+Cohen%2C+Robin&amp;rft_id=https%3A%2F%2Fcs.uwaterloo.ca%2F~j3doucet%2Fpapers%2FOntApproachToDataMining.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AData+pre-processing" class="Z3988"></span><span class="cs1-maint citation-comment"><code class="cs1-code">{{<a href="/wiki/Template:Cite_web" title="Template:Cite web">cite web</a>}}</code>:  CS1 maint: multiple names: authors list (<a href="/wiki/Category:CS1_maint:_multiple_names:_authors_list" title="Category:CS1 maint: multiple names: authors list">link</a>)</span></span>
+</li>
+<li id="cite_note-13"><span class="mw-cite-backlink"><b><a href="#cite_ref-13">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><cite id="CITEREFSirichanya,_Chanmee_and_Kraisak_Kesorn2021" class="citation journal cs1">Sirichanya, Chanmee and Kraisak Kesorn (2021). <a rel="nofollow" class="external text" href="https://onlinelibrary.wiley.com/doi/10.1002/int.22443">"Semantic data mining in the information age: A systematic review"</a>. <i>International Journal of Intelligent Systems</i>. <b>36</b> (8): 3880–3916. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1002%2Fint.22443">10.1002/int.22443</a>. <a href="/wiki/S2CID_(identifier)" class="mw-redirect" title="S2CID (identifier)">S2CID</a>&#160;<a rel="nofollow" class="external text" href="https://api.semanticscholar.org/CorpusID:235506360">235506360</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=International+Journal+of+Intelligent+Systems&amp;rft.atitle=Semantic+data+mining+in+the+information+age%3A+A+systematic+review&amp;rft.volume=36&amp;rft.issue=8&amp;rft.pages=3880-3916&amp;rft.date=2021&amp;rft_id=info%3Adoi%2F10.1002%2Fint.22443&amp;rft_id=https%3A%2F%2Fapi.semanticscholar.org%2FCorpusID%3A235506360%23id-name%3DS2CID&amp;rft.au=Sirichanya%2C+Chanmee+and+Kraisak+Kesorn&amp;rft_id=https%3A%2F%2Fonlinelibrary.wiley.com%2Fdoi%2F10.1002%2Fint.22443&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AData+pre-processing" class="Z3988"></span></span>
+</li>
+<li id="cite_note-14"><span class="mw-cite-backlink"><b><a href="#cite_ref-14">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><cite id="CITEREFWong,_Kok_Wai_and_Fung,_Chun_Che_and_Law,_Kok_Way2000" class="citation book cs1">Wong, Kok Wai and Fung, Chun Che and Law, Kok Way (2000). <a rel="nofollow" class="external text" href="https://ieeexplore.ieee.org/document/893697">"Fuzzy preprocessing rules for the improvement of an artificial neural network well log interpretation model"</a>. <i>2000 TENCON Proceedings. Intelligent Systems and Technologies for the New Millennium (Cat. No.00CH37119)</i>. Vol.&#160;1. IEEE. pp.&#160;400–405. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1109%2FTENCON.2000.893697">10.1109/TENCON.2000.893697</a>. <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-7803-6355-8" title="Special:BookSources/0-7803-6355-8"><bdi>0-7803-6355-8</bdi></a>. <a href="/wiki/S2CID_(identifier)" class="mw-redirect" title="S2CID (identifier)">S2CID</a>&#160;<a rel="nofollow" class="external text" href="https://api.semanticscholar.org/CorpusID:10384426">10384426</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.atitle=Fuzzy+preprocessing+rules+for+the+improvement+of+an+artificial+neural+network+well+log+interpretation+model&amp;rft.btitle=2000+TENCON+Proceedings.+Intelligent+Systems+and+Technologies+for+the+New+Millennium+%28Cat.+No.00CH37119%29&amp;rft.pages=400-405&amp;rft.pub=IEEE&amp;rft.date=2000&amp;rft_id=https%3A%2F%2Fapi.semanticscholar.org%2FCorpusID%3A10384426%23id-name%3DS2CID&amp;rft_id=info%3Adoi%2F10.1109%2FTENCON.2000.893697&amp;rft.isbn=0-7803-6355-8&amp;rft.au=Wong%2C+Kok+Wai+and+Fung%2C+Chun+Che+and+Law%2C+Kok+Way&amp;rft_id=https%3A%2F%2Fieeexplore.ieee.org%2Fdocument%2F893697&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AData+pre-processing" class="Z3988"></span><span class="cs1-maint citation-comment"><code class="cs1-code">{{<a href="/wiki/Template:Cite_book" title="Template:Cite book">cite book</a>}}</code>:  CS1 maint: multiple names: authors list (<a href="/wiki/Category:CS1_maint:_multiple_names:_authors_list" title="Category:CS1 maint: multiple names: authors list">link</a>)</span></span>
+</li>
+</ol></div></div>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Data_pre-processing&amp;action=edit&amp;section=6" title="Edit section: External links">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul><li><a rel="nofollow" class="external text" href="http://dataprocessing.aixcape.org">Online Data Processing Compendium</a></li>
+<li><a rel="nofollow" class="external text" href="https://www.cambridge.org/core/journals/knowledge-engineering-review/article/data-preprocessing-in-predictive-data-mining/F7F2D7AC540D2815C613BA6575359AAA/share/92b3b50e7ed7363e5946baf406025281d2eb8c02">Data preprocessing in predictive data mining. Knowledge Eng. Review 34: e1 (2019)</a></li></ul>
+<div class="navbox-styles nomobile"><style data-mw-deduplicate="TemplateStyles:r1061467846">.mw-parser-output .navbox{box-sizing:border-box;border:1px solid #a2a9b1;width:100%;clear:both;font-size:88%;text-align:center;padding:1px;margin:1em auto 0}.mw-parser-output .navbox .navbox{margin-top:0}.mw-parser-output .navbox+.navbox,.mw-parser-output .navbox+.navbox-styles+.navbox{margin-top:-1px}.mw-parser-output .navbox-inner,.mw-parser-output .navbox-subgroup{width:100%}.mw-parser-output .navbox-group,.mw-parser-output .navbox-title,.mw-parser-output .navbox-abovebelow{padding:0.25em 1em;line-height:1.5em;text-align:center}.mw-parser-output .navbox-group{white-space:nowrap;text-align:right}.mw-parser-output .navbox,.mw-parser-output .navbox-subgroup{background-color:#fdfdfd}.mw-parser-output .navbox-list{line-height:1.5em;border-color:#fdfdfd}.mw-parser-output .navbox-list-with-group{text-align:left;border-left-width:2px;border-left-style:solid}.mw-parser-output tr+tr>.navbox-abovebelow,.mw-parser-output tr+tr>.navbox-group,.mw-parser-output tr+tr>.navbox-image,.mw-parser-output tr+tr>.navbox-list{border-top:2px solid #fdfdfd}.mw-parser-output .navbox-title{background-color:#ccf}.mw-parser-output .navbox-abovebelow,.mw-parser-output .navbox-group,.mw-parser-output .navbox-subgroup .navbox-title{background-color:#ddf}.mw-parser-output .navbox-subgroup .navbox-group,.mw-parser-output .navbox-subgroup .navbox-abovebelow{background-color:#e6e6ff}.mw-parser-output .navbox-even{background-color:#f7f7f7}.mw-parser-output .navbox-odd{background-color:transparent}.mw-parser-output .navbox .hlist td dl,.mw-parser-output .navbox .hlist td ol,.mw-parser-output .navbox .hlist td ul,.mw-parser-output .navbox td.hlist dl,.mw-parser-output .navbox td.hlist ol,.mw-parser-output .navbox td.hlist ul{padding:0.125em 0}.mw-parser-output .navbox .navbar{display:block;font-size:100%}.mw-parser-output .navbox-title .navbar{float:left;text-align:left;margin-right:0.5em}</style></div><div role="navigation" class="navbox" aria-labelledby="Data" style="padding:3px"><table class="nowraplinks mw-collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit"><tbody><tr><th scope="col" class="navbox-title" colspan="2"><style data-mw-deduplicate="TemplateStyles:r1063604349">.mw-parser-output .navbar{display:inline;font-size:88%;font-weight:normal}.mw-parser-output .navbar-collapse{float:left;text-align:left}.mw-parser-output .navbar-boxtext{word-spacing:0}.mw-parser-output .navbar ul{display:inline-block;white-space:nowrap;line-height:inherit}.mw-parser-output .navbar-brackets::before{margin-right:-0.125em;content:"[ "}.mw-parser-output .navbar-brackets::after{margin-left:-0.125em;content:" ]"}.mw-parser-output .navbar li{word-spacing:-0.125em}.mw-parser-output .navbar a>span,.mw-parser-output .navbar a>abbr{text-decoration:inherit}.mw-parser-output .navbar-mini abbr{font-variant:small-caps;border-bottom:none;text-decoration:none;cursor:inherit}.mw-parser-output .navbar-ct-full{font-size:114%;margin:0 7em}.mw-parser-output .navbar-ct-mini{font-size:114%;margin:0 4em}</style><div class="navbar plainlinks hlist navbar-mini"><ul><li class="nv-view"><a href="/wiki/Template:Data" title="Template:Data"><abbr title="View this template" style=";;background:none transparent;border:none;box-shadow:none;padding:0;">v</abbr></a></li><li class="nv-talk"><a href="/wiki/Template_talk:Data" title="Template talk:Data"><abbr title="Discuss this template" style=";;background:none transparent;border:none;box-shadow:none;padding:0;">t</abbr></a></li><li class="nv-edit"><a class="external text" href="https://en.wikipedia.org/w/index.php?title=Template:Data&amp;action=edit"><abbr title="Edit this template" style=";;background:none transparent;border:none;box-shadow:none;padding:0;">e</abbr></a></li></ul></div><div id="Data" style="font-size:114%;margin:0 4em"><a href="/wiki/Data_(computing)" title="Data (computing)">Data</a></div></th></tr><tr><td colspan="2" class="navbox-list navbox-odd hlist" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Data_augmentation" title="Data augmentation">Augmentation</a></li>
+<li><a href="/wiki/Data_analysis" title="Data analysis">Analysis</a></li>
+<li><a href="/wiki/Data_archaeology" title="Data archaeology">Archaeology</a></li>
+<li><a href="/wiki/Data_cleansing" title="Data cleansing">Cleansing</a></li>
+<li><a href="/wiki/Data_collection" title="Data collection">Collection</a></li>
+<li><a href="/wiki/Data_compression" title="Data compression">Compression</a></li>
+<li><a href="/wiki/Data_corruption" title="Data corruption">Corruption</a></li>
+<li><a href="/wiki/Data_curation" title="Data curation">Curation</a></li>
+<li><a href="/wiki/Data_degradation" title="Data degradation">Degradation</a></li>
+<li><a href="/wiki/Data_editing" title="Data editing">Editing</a></li>
+<li><a href="/wiki/Extract,_transform,_load" title="Extract, transform, load">ETL</a>/<a href="/wiki/Extract,_load,_transform" title="Extract, load, transform">ELT</a>
+<ul><li><a href="/wiki/Data_extraction" title="Data extraction">Extract</a></li>
+<li><a href="/wiki/Data_transformation" title="Data transformation">Transform</a></li>
+<li><a href="/wiki/Data_loading" class="mw-redirect" title="Data loading">Load</a></li></ul></li>
+<li><a href="/wiki/Data_farming" title="Data farming">Farming</a></li>
+<li><a href="/wiki/Data_format_management" title="Data format management">Format management</a></li>
+<li><a href="/wiki/Data_fusion" title="Data fusion">Fusion</a></li>
+<li><a href="/wiki/Data_integration" title="Data integration">Integration</a></li>
+<li><a href="/wiki/Data_integrity" title="Data integrity">Integrity</a></li>
+<li><a href="/wiki/Data_library" title="Data library">Library</a></li>
+<li><a href="/wiki/Data_loss" title="Data loss">Loss</a></li>
+<li><a href="/wiki/Data_management" title="Data management">Management</a></li>
+<li><a href="/wiki/Data_migration" title="Data migration">Migration</a></li>
+<li><a href="/wiki/Data_mining" title="Data mining">Mining</a></li>
+<li><a class="mw-selflink selflink">Pre-processing</a></li>
+<li><a href="/wiki/Data_preservation" title="Data preservation">Preservation</a></li>
+<li><a href="/wiki/Information_privacy" title="Information privacy">Protection (privacy)</a></li>
+<li><a href="/wiki/Data_recovery" title="Data recovery">Recovery</a></li>
+<li><a href="/wiki/Data_reduction" title="Data reduction">Reduction</a></li>
+<li><a href="/wiki/Data_retention" title="Data retention">Retention</a></li>
+<li><a href="/wiki/Data_quality" title="Data quality">Quality</a></li>
+<li><a href="/wiki/Data_science" title="Data science">Science</a></li>
+<li><a href="/wiki/Data_scraping" title="Data scraping">Scraping</a></li>
+<li><a href="/wiki/Data_scrubbing" title="Data scrubbing">Scrubbing</a></li>
+<li><a href="/wiki/Data_security" title="Data security">Security</a></li>
+<li><a href="/wiki/Data_steward" title="Data steward">Stewardship</a></li>
+<li><a href="/wiki/Data_storage" title="Data storage">Storage</a></li>
+<li><a href="/wiki/Data_validation" title="Data validation">Validation</a></li>
+<li><a href="/wiki/Data_warehouse" title="Data warehouse">Warehouse</a></li>
+<li><a href="/wiki/Data_wrangling" title="Data wrangling">Wrangling/munging</a></li></ul>
+</div></td></tr></tbody></table></div>
+<!-- 
+NewPP limit report
+Parsed by mw1353
+Cached time: 20220309214045
+Cache expiry: 1814400
+Reduced expiry: false
+Complications: [vary‐revision‐sha1]
+CPU time usage: 0.388 seconds
+Real time usage: 0.446 seconds
+Preprocessor visited node count: 1039/1000000
+Post‐expand include size: 45495/2097152 bytes
+Template argument size: 1241/2097152 bytes
+Highest expansion depth: 12/100
+Expensive parser function count: 1/500
+Unstrip recursion depth: 1/20
+Unstrip post‐expand size: 48270/5000000 bytes
+Lua time usage: 0.234/10.000 seconds
+Lua memory usage: 5545156/52428800 bytes
+Number of Wikibase entities loaded: 0/400
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  385.622      1 -total
+ 59.95%  231.198      1 Template:Reflist
+ 29.58%  114.074      4 Template:Cite_web
+ 24.20%   93.302      2 Template:Cn
+ 17.04%   65.729      2 Template:Fix
+ 14.19%   54.709      1 Template:Data
+ 13.58%   52.372      1 Template:Navbox
+ 11.21%   43.213      5 Template:Cite_journal
+ 10.04%   38.725      4 Template:Category_handler
+  4.58%   17.666      2 Template:Cite_book
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:12386904-0!canonical and timestamp 20220309214044 and revision id 1068139365. Serialized with JSON.
+ -->
+</div><noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript>
+<div class="printfooter">Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Data_pre-processing&amp;oldid=1068139365">https://en.wikipedia.org/w/index.php?title=Data_pre-processing&amp;oldid=1068139365</a>"</div></div>
+		<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Machine_learning" title="Category:Machine learning">Machine learning</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:CS1_maint:_multiple_names:_authors_list" title="Category:CS1 maint: multiple names: authors list">CS1 maint: multiple names: authors list</a></li><li><a href="/wiki/Category:All_articles_with_unsourced_statements" title="Category:All articles with unsourced statements">All articles with unsourced statements</a></li><li><a href="/wiki/Category:Articles_with_unsourced_statements_from_March_2021" title="Category:Articles with unsourced statements from March 2021">Articles with unsourced statements from March 2021</a></li></ul></div></div>
+	</div>
+</div>
+<div id='mw-data-after-content'>
+	<div class="read-more-container"></div>
+</div>
+
+<div id="mw-navigation">
+	<h2>Navigation menu</h2>
+	<div id="mw-head">
+		
+<nav id="p-personal" class="mw-portlet mw-portlet-personal vector-user-menu-legacy vector-menu" aria-labelledby="p-personal-label" role="navigation" 
+	 >
+	<label id="p-personal-label" aria-label="" class="vector-menu-heading">
+		<span class="vector-menu-heading-label">Personal tools</span>
+	</label>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="pt-anonuserpage" class="mw-list-item"><span>Not logged in</span></li><li id="pt-anontalk" class="mw-list-item"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n"><span>Talk</span></a></li><li id="pt-anoncontribs" class="mw-list-item"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y"><span>Contributions</span></a></li><li id="pt-createaccount" class="mw-list-item"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Data+pre-processing&amp;returntoquery=lxml%3D" title="You are encouraged to create an account and log in; however, it is not mandatory"><span>Create account</span></a></li><li id="pt-login" class="mw-list-item"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Data+pre-processing&amp;returntoquery=lxml%3D" title="You&#039;re encouraged to log in; however, it&#039;s not mandatory. [o]" accesskey="o"><span>Log in</span></a></li></ul>
+		
+	</div>
+</nav>
+
+		<div id="left-navigation">
+			
+<nav id="p-namespaces" class="mw-portlet mw-portlet-namespaces vector-menu vector-menu-tabs" aria-labelledby="p-namespaces-label" role="navigation" 
+	 >
+	<label id="p-namespaces-label" aria-label="" class="vector-menu-heading">
+		<span class="vector-menu-heading-label">Namespaces</span>
+	</label>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="ca-nstab-main" class="selected mw-list-item"><a href="/wiki/Data_pre-processing" title="View the content page [c]" accesskey="c"><span>Article</span></a></li><li id="ca-talk" class="mw-list-item"><a href="/wiki/Talk:Data_pre-processing" rel="discussion" title="Discuss improvements to the content page [t]" accesskey="t"><span>Talk</span></a></li></ul>
+		
+	</div>
+</nav>
+
+			
+<nav id="p-variants" class="mw-portlet mw-portlet-variants emptyPortlet vector-menu-dropdown-noicon vector-menu vector-menu-dropdown" aria-labelledby="p-variants-label" role="navigation" 
+	 >
+	<input type="checkbox"
+		id="p-variants-checkbox"
+		role="button"
+		aria-haspopup="true"
+		data-event-name="ui.dropdown-p-variants"
+		class="vector-menu-checkbox" aria-labelledby="p-variants-label" />
+	<label id="p-variants-label" aria-label="Change language variant" class="vector-menu-heading">
+		<span class="vector-menu-heading-label">English</span>
+			<span class="vector-menu-checkbox-expanded">expanded</span>
+			<span class="vector-menu-checkbox-collapsed">collapsed</span>
+	</label>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"></ul>
+		
+	</div>
+</nav>
+
+		</div>
+		<div id="right-navigation">
+			
+<nav id="p-views" class="mw-portlet mw-portlet-views vector-menu vector-menu-tabs" aria-labelledby="p-views-label" role="navigation" 
+	 >
+	<label id="p-views-label" aria-label="" class="vector-menu-heading">
+		<span class="vector-menu-heading-label">Views</span>
+	</label>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="ca-view" class="selected mw-list-item"><a href="/wiki/Data_pre-processing"><span>Read</span></a></li><li id="ca-edit" class="mw-list-item"><a href="/w/index.php?title=Data_pre-processing&amp;action=edit" title="Edit this page [e]" accesskey="e"><span>Edit</span></a></li><li id="ca-history" class="mw-list-item"><a href="/w/index.php?title=Data_pre-processing&amp;action=history" title="Past revisions of this page [h]" accesskey="h"><span>View history</span></a></li></ul>
+		
+	</div>
+</nav>
+
+			
+<nav id="p-cactions" class="mw-portlet mw-portlet-cactions emptyPortlet vector-menu-dropdown-noicon vector-menu vector-menu-dropdown" aria-labelledby="p-cactions-label" role="navigation"  title="More options"
+	 >
+	<input type="checkbox"
+		id="p-cactions-checkbox"
+		role="button"
+		aria-haspopup="true"
+		data-event-name="ui.dropdown-p-cactions"
+		class="vector-menu-checkbox" aria-labelledby="p-cactions-label" />
+	<label id="p-cactions-label" aria-label="" class="vector-menu-heading">
+		<span class="vector-menu-heading-label">More</span>
+			<span class="vector-menu-checkbox-expanded">expanded</span>
+			<span class="vector-menu-checkbox-collapsed">collapsed</span>
+	</label>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"></ul>
+		
+	</div>
+</nav>
+
+			
+<div id="p-search" role="search" class="vector-search-box-vue  vector-search-box-show-thumbnail vector-search-box-auto-expand-width vector-search-box">
+	<div>
+			<h3 >
+				<label for="searchInput">Search</label>
+			</h3>
+		<form action="/w/index.php" id="searchform"
+			class="vector-search-box-form">
+			<div id="simpleSearch"
+				class="vector-search-box-inner"
+				 data-search-loc="header-navigation">
+				<input class="vector-search-box-input"
+					 type="search" name="search" placeholder="Search Wikipedia" aria-label="Search Wikipedia" autocapitalize="sentences" title="Search Wikipedia [f]" accesskey="f" id="searchInput"
+				/>
+				<input type="hidden" name="title" value="Special:Search"/>
+				<input id="mw-searchButton"
+					 class="searchButton mw-fallbackSearchButton" type="submit" name="fulltext" title="Search Wikipedia for this text" value="Search" />
+				<input id="searchButton"
+					 class="searchButton" type="submit" name="go" title="Go to a page with this exact name if it exists" value="Go" />
+			</div>
+		</form>
+	</div>
+</div>
+
+		</div>
+	</div>
+	
+
+<div id="mw-panel">
+	<div id="p-logo" role="banner">
+		<a class="mw-wiki-logo" href="/wiki/Main_Page"
+			title="Visit the main page"></a>
+	</div>
+	
+<nav id="p-navigation" class="mw-portlet mw-portlet-navigation vector-menu vector-menu-portal portal" aria-labelledby="p-navigation-label" role="navigation" 
+	 >
+	<label id="p-navigation-label" aria-label="" class="vector-menu-heading">
+		<span class="vector-menu-heading-label">Navigation</span>
+	</label>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="n-mainpage-description" class="mw-list-item"><a href="/wiki/Main_Page" icon="home" title="Visit the main page [z]" accesskey="z"><span>Main page</span></a></li><li id="n-contents" class="mw-list-item"><a href="/wiki/Wikipedia:Contents" title="Guides to browsing Wikipedia"><span>Contents</span></a></li><li id="n-currentevents" class="mw-list-item"><a href="/wiki/Portal:Current_events" title="Articles related to current events"><span>Current events</span></a></li><li id="n-randompage" class="mw-list-item"><a href="/wiki/Special:Random" icon="die" title="Visit a randomly selected article [x]" accesskey="x"><span>Random article</span></a></li><li id="n-aboutsite" class="mw-list-item"><a href="/wiki/Wikipedia:About" title="Learn about Wikipedia and how it works"><span>About Wikipedia</span></a></li><li id="n-contactpage" class="mw-list-item"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia"><span>Contact us</span></a></li><li id="n-sitesupport" class="mw-list-item"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us by donating to the Wikimedia Foundation"><span>Donate</span></a></li></ul>
+		
+	</div>
+</nav>
+
+	
+<nav id="p-interaction" class="mw-portlet mw-portlet-interaction vector-menu vector-menu-portal portal" aria-labelledby="p-interaction-label" role="navigation" 
+	 >
+	<label id="p-interaction-label" aria-label="" class="vector-menu-heading">
+		<span class="vector-menu-heading-label">Contribute</span>
+	</label>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="n-help" class="mw-list-item"><a href="/wiki/Help:Contents" icon="help" title="Guidance on how to use and edit Wikipedia"><span>Help</span></a></li><li id="n-introduction" class="mw-list-item"><a href="/wiki/Help:Introduction" title="Learn how to edit Wikipedia"><span>Learn to edit</span></a></li><li id="n-portal" class="mw-list-item"><a href="/wiki/Wikipedia:Community_portal" title="The hub for editors"><span>Community portal</span></a></li><li id="n-recentchanges" class="mw-list-item"><a href="/wiki/Special:RecentChanges" icon="recentChanges" title="A list of recent changes to Wikipedia [r]" accesskey="r"><span>Recent changes</span></a></li><li id="n-upload" class="mw-list-item"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Add images or other media for use on Wikipedia"><span>Upload file</span></a></li></ul>
+		
+	</div>
+</nav>
+
+<nav id="p-tb" class="mw-portlet mw-portlet-tb vector-menu vector-menu-portal portal" aria-labelledby="p-tb-label" role="navigation" 
+	 >
+	<label id="p-tb-label" aria-label="" class="vector-menu-heading">
+		<span class="vector-menu-heading-label">Tools</span>
+	</label>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="t-whatlinkshere" class="mw-list-item"><a href="/wiki/Special:WhatLinksHere/Data_pre-processing" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j"><span>What links here</span></a></li><li id="t-recentchangeslinked" class="mw-list-item"><a href="/wiki/Special:RecentChangesLinked/Data_pre-processing" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k"><span>Related changes</span></a></li><li id="t-upload" class="mw-list-item"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u"><span>Upload file</span></a></li><li id="t-specialpages" class="mw-list-item"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q"><span>Special pages</span></a></li><li id="t-permalink" class="mw-list-item"><a href="/w/index.php?title=Data_pre-processing&amp;oldid=1068139365" title="Permanent link to this revision of this page"><span>Permanent link</span></a></li><li id="t-info" class="mw-list-item"><a href="/w/index.php?title=Data_pre-processing&amp;action=info" title="More information about this page"><span>Page information</span></a></li><li id="t-cite" class="mw-list-item"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Data_pre-processing&amp;id=1068139365&amp;wpFormIdentifier=titleform" title="Information on how to cite this page"><span>Cite this page</span></a></li><li id="t-wikibase" class="mw-list-item"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q5227332" title="Structured data on this page hosted by Wikidata [g]" accesskey="g"><span>Wikidata item</span></a></li></ul>
+		
+	</div>
+</nav>
+
+<nav id="p-coll-print_export" class="mw-portlet mw-portlet-coll-print_export vector-menu vector-menu-portal portal" aria-labelledby="p-coll-print_export-label" role="navigation" 
+	 >
+	<label id="p-coll-print_export-label" aria-label="" class="vector-menu-heading">
+		<span class="vector-menu-heading-label">Print/export</span>
+	</label>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="coll-download-as-rl" class="mw-list-item"><a href="/w/index.php?title=Special:DownloadAsPdf&amp;page=Data_pre-processing&amp;action=show-download-screen" title="Download this page as a PDF file"><span>Download as PDF</span></a></li><li id="t-print" class="mw-list-item"><a href="/w/index.php?title=Data_pre-processing&amp;printable=yes" title="Printable version of this page [p]" accesskey="p"><span>Printable version</span></a></li></ul>
+		
+	</div>
+</nav>
+
+	
+<nav id="p-lang" class="mw-portlet mw-portlet-lang vector-menu vector-menu-portal portal" aria-labelledby="p-lang-label" role="navigation" 
+	 >
+	<label id="p-lang-label" aria-label="" class="vector-menu-heading">
+		<span class="vector-menu-heading-label">Languages</span>
+	</label>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li class="interlanguage-link interwiki-ar mw-list-item"><a href="https://ar.wikipedia.org/wiki/%D9%85%D8%B9%D8%A7%D9%84%D8%AC%D8%A9_%D9%85%D8%B3%D8%A8%D9%82%D8%A9_%D9%84%D9%84%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA" title="معالجة مسبقة للبيانات – Arabic" lang="ar" hreflang="ar" class="interlanguage-link-target"><span>العربية</span></a></li><li class="interlanguage-link interwiki-he mw-list-item"><a href="https://he.wikipedia.org/wiki/%D7%A2%D7%99%D7%91%D7%95%D7%93_%D7%A0%D7%AA%D7%95%D7%A0%D7%99%D7%9D_%D7%9E%D7%A7%D7%93%D7%99%D7%9D" title="עיבוד נתונים מקדים – Hebrew" lang="he" hreflang="he" class="interlanguage-link-target"><span>עברית</span></a></li><li class="interlanguage-link interwiki-ms mw-list-item"><a href="https://ms.wikipedia.org/wiki/Prapemprosesan_data" title="Prapemprosesan data – Malay" lang="ms" hreflang="ms" class="interlanguage-link-target"><span>Bahasa Melayu</span></a></li><li class="interlanguage-link interwiki-ja mw-list-item"><a href="https://ja.wikipedia.org/wiki/%E3%83%87%E3%83%BC%E3%82%BF%E5%89%8D%E5%87%A6%E7%90%86" title="データ前処理 – Japanese" lang="ja" hreflang="ja" class="interlanguage-link-target"><span>日本語</span></a></li><li class="interlanguage-link interwiki-pt mw-list-item"><a href="https://pt.wikipedia.org/wiki/Pr%C3%A9-processamento_de_dados" title="Pré-processamento de dados – Portuguese" lang="pt" hreflang="pt" class="interlanguage-link-target"><span>Português</span></a></li><li class="interlanguage-link interwiki-ru mw-list-item"><a href="https://ru.wikipedia.org/wiki/%D0%9F%D1%80%D0%B5%D0%B4%D0%B2%D0%B0%D1%80%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F_%D0%BE%D0%B1%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B0_%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85" title="Предварительная обработка данных – Russian" lang="ru" hreflang="ru" class="interlanguage-link-target"><span>Русский</span></a></li><li class="interlanguage-link interwiki-uk mw-list-item"><a href="https://uk.wikipedia.org/wiki/%D0%9F%D0%BE%D0%BF%D0%B5%D1%80%D0%B5%D0%B4%D0%BD%D1%8F_%D0%BE%D0%B1%D1%80%D0%BE%D0%B1%D0%BA%D0%B0_%D0%B4%D0%B0%D0%BD%D0%B8%D1%85" title="Попередня обробка даних – Ukrainian" lang="uk" hreflang="uk" class="interlanguage-link-target"><span>Українська</span></a></li><li class="interlanguage-link interwiki-zh-yue mw-list-item"><a href="https://zh-yue.wikipedia.org/wiki/%E4%BA%8B%E5%89%8D%E6%95%B8%E6%93%9A%E8%99%95%E7%90%86" title="事前數據處理 – Cantonese" lang="yue" hreflang="yue" class="interlanguage-link-target"><span>粵語</span></a></li></ul>
+		<div class="after-portlet after-portlet-lang"><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q5227332#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>
+	</div>
+</nav>
+
+</div>
+
+</div>
+
+<footer id="footer" class="mw-footer" role="contentinfo" >
+	<ul id="footer-info">
+	<li id="footer-info-lastmod"> This page was last edited on 26 January 2022, at 20:56<span class="anonymous-show">&#160;(UTC)</span>.</li>
+	<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License 3.0</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//foundation.wikimedia.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//foundation.wikimedia.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+</ul>
+
+	<ul id="footer-places">
+	<li id="footer-places-privacy"><a href="https://foundation.wikimedia.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+	<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+	<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+	<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+	<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Data_pre-processing&amp;lxml=&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+	<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+	<li id="footer-places-statslink"><a href="https://stats.wikimedia.org/#/en.wikipedia.org">Statistics</a></li>
+	<li id="footer-places-cookiestatement"><a href="https://foundation.wikimedia.org/wiki/Cookie_statement">Cookie statement</a></li>
+</ul>
+
+	<ul id="footer-icons" class="noprint">
+	<li id="footer-copyrightico"><a href="https://wikimediafoundation.org/"><img src="/static/images/footer/wikimedia-button.png" srcset="/static/images/footer/wikimedia-button-1.5x.png 1.5x, /static/images/footer/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation" loading="lazy" /></a></li>
+	<li id="footer-poweredbyico"><a href="https://www.mediawiki.org/"><img src="/static/images/footer/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/footer/poweredby_mediawiki_132x47.png 1.5x, /static/images/footer/poweredby_mediawiki_176x62.png 2x" width="88" height="31" loading="lazy"/></a></li>
+</ul>
+
+</footer>
+
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.388","walltime":"0.446","ppvisitednodes":{"value":1039,"limit":1000000},"postexpandincludesize":{"value":45495,"limit":2097152},"templateargumentsize":{"value":1241,"limit":2097152},"expansiondepth":{"value":12,"limit":100},"expensivefunctioncount":{"value":1,"limit":500},"unstrip-depth":{"value":1,"limit":20},"unstrip-size":{"value":48270,"limit":5000000},"entityaccesscount":{"value":0,"limit":400},"timingprofile":["100.00%  385.622      1 -total"," 59.95%  231.198      1 Template:Reflist"," 29.58%  114.074      4 Template:Cite_web"," 24.20%   93.302      2 Template:Cn"," 17.04%   65.729      2 Template:Fix"," 14.19%   54.709      1 Template:Data"," 13.58%   52.372      1 Template:Navbox"," 11.21%   43.213      5 Template:Cite_journal"," 10.04%   38.725      4 Template:Category_handler","  4.58%   17.666      2 Template:Cite_book"]},"scribunto":{"limitreport-timeusage":{"value":"0.234","limit":"10.000"},"limitreport-memusage":{"value":5545156,"limit":52428800}},"cachereport":{"origin":"mw1353","timestamp":"20220309214045","ttl":1814400,"transientcontent":false}}});});</script>
+<script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"Article","name":"Data pre-processing","url":"https:\/\/en.wikipedia.org\/wiki\/Data_pre-processing","sameAs":"http:\/\/www.wikidata.org\/entity\/Q5227332","mainEntity":"http:\/\/www.wikidata.org\/entity\/Q5227332","author":{"@type":"Organization","name":"Contributors to Wikimedia projects"},"publisher":{"@type":"Organization","name":"Wikimedia Foundation, Inc.","logo":{"@type":"ImageObject","url":"https:\/\/www.wikimedia.org\/static\/images\/wmf-hor-googpub.png"}},"datePublished":"2007-07-22T21:17:36Z","dateModified":"2022-01-26T20:56:42Z"}</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":144,"wgHostname":"mw1373"});});</script>
+</body>
+</html>

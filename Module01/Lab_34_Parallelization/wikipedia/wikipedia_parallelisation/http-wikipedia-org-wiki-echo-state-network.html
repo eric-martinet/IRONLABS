@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Echo state network - Wikipedia</title>
+<script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"76bf661e-8f15-47a8-93c7-2175e8ab83b0","wgCSPNonce":false,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Echo_state_network","wgTitle":"Echo state network","wgCurRevisionId":1068682994,"wgRevisionId":1068682994,"wgArticleId":8887731,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["CS1 maint: multiple names: authors list","Articles with short description","Short description is different from Wikidata","Artificial neural networks"],"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"Echo_state_network","wgRelevantArticleId":8887731,
+"wgIsProbablyEditable":true,"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgFlaggedRevsParams":{"tags":{"status":{"levels":-1}}},"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en"},"wgMFDisplayWikibaseDescriptions":{"search":true,"nearby":true,"watchlist":true,"tagline":false},"wgWMESchemaEditAttemptStepOversample":false,"wgWMEPageLength":10000,"wgNoticeProject":"wikipedia","wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgPopupsFlags":10,"wgULSCurrentAutonym":"English","wgEditSubmitButtonLabelPublish":true,"wgCentralAuthMobileDomain":false,"wgULSPosition":"interlanguage","wgULSisCompactLinksEnabled":true,"wgWikibaseItemId":"Q5332763","wgGENewcomerTasksGuidanceEnabled":true,"wgGEAskQuestionEnabled":false,"wgGELinkRecommendationsFrontendEnabled":false};RLSTATE={"ext.globalCssJs.user.styles":"ready","site.styles":"ready","user.styles":"ready","ext.globalCssJs.user":"ready","user":"ready"
+,"user.options":"loading","ext.cite.styles":"ready","skins.vector.styles.legacy":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.wikimediaBadges":"ready","ext.uls.interlanguage":"ready","wikibase.client.init":"ready"};RLPAGEMODULES=["ext.cite.ux-enhancements","site","mediawiki.page.ready","mediawiki.toc","skins.vector.legacy.js","ext.gadget.ReferenceTooltips","ext.gadget.charinsert","ext.gadget.extra-toolbar-buttons","ext.gadget.refToolbar","ext.gadget.switcher","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging","ext.wikimediaEvents","ext.navigationTiming","ext.cx.eventlogging.campaigns","ext.centralNotice.geoIP","ext.centralNotice.startUp","ext.centralauth.centralautologin","ext.popups","ext.uls.compactlinks","ext.uls.interface","ext.growthExperiments.SuggestedEditSession"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@1i9g4",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});});});</script>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=ext.cite.styles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cskins.vector.styles.legacy%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.38.0-wmf.25"/>
+<meta name="referrer" content="origin"/>
+<meta name="referrer" content="origin-when-crossorigin"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta property="og:title" content="Echo state network - Wikipedia"/>
+<meta property="og:type" content="website"/>
+<link rel="alternate" media="only screen and (max-width: 720px)" href="//en.m.wikipedia.org/wiki/Echo_state_network"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Echo_state_network&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="license" href="https://creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Echo_state_network"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject mw-editable page-Echo_state_network rootpage-Echo_state_network skin-vector action-view skin-vector-legacy"><div id="mw-page-base" class="noprint"></div>
+<div id="mw-head-base" class="noprint"></div>
+<div id="content" class="mw-body" role="main">
+	<a id="top"></a>
+	<div id="siteNotice"><!-- CentralNotice --></div>
+	<div class="mw-indicators">
+	</div>
+	<h1 id="firstHeading" class="firstHeading mw-first-heading">Echo state network</h1>
+	<div id="bodyContent" class="vector-body">
+		<div id="siteSub" class="noprint">From Wikipedia, the free encyclopedia</div>
+		<div id="contentSub"></div>
+		<div id="contentSub2"></div>
+		
+		<div id="jump-to-nav"></div>
+		<a class="mw-jump-link" href="#mw-head">Jump to navigation</a>
+		<a class="mw-jump-link" href="#searchInput">Jump to search</a>
+		<div id="mw-content-text" class="mw-body-content mw-content-ltr" lang="en" dir="ltr"><div class="mw-parser-output"><div class="shortdescription nomobile noexcerpt noprint searchaux" style="display:none">Type of reservoir computer</div>
+<p>The <b>echo state network</b> (<b>ESN</b>)<sup id="cite_ref-:0_1-0" class="reference"><a href="#cite_note-:0-1">&#91;1&#93;</a></sup><sup id="cite_ref-:1_2-0" class="reference"><a href="#cite_note-:1-2">&#91;2&#93;</a></sup> is a type of <a href="/wiki/Reservoir_computing" title="Reservoir computing">reservoir computer</a> that uses a <a href="/wiki/Recurrent_neural_network" title="Recurrent neural network">recurrent neural network</a> with a sparsely connected hidden layer (with typically 1% connectivity). The connectivity and weights of hidden <a href="/wiki/Artificial_neuron" title="Artificial neuron">neurons</a> are fixed and randomly assigned. The weights of output neurons can be learned so that the network can produce or reproduce specific temporal patterns. The main interest of this network is that although its behaviour is non-linear, the only weights that are modified during training are for the synapses that connect the hidden neurons to output neurons. Thus, the error function is quadratic with respect to the parameter vector and can be differentiated easily to a linear system.
+</p><p>Alternatively, one may consider a nonparametric Bayesian formulation of the output layer, under which: (i) a prior distribution is imposed over the output weights; and (ii) the output weights are marginalized out in the context of prediction generation, given the training data. This idea has been demonstrated in<sup id="cite_ref-3" class="reference"><a href="#cite_note-3">&#91;3&#93;</a></sup> by using Gaussian priors, whereby a Gaussian process model with ESN-driven kernel function is obtained. Such a solution was shown to outperform ESNs with trainable (finite) sets of weights in several benchmarks.
+</p><p>Some publicly available implementations of ESNs are: (i) <a rel="nofollow" class="external text" href="http://aureservoir.sourceforge.net/">aureservoir</a>: an efficient C++ library for various kinds of echo state networks with python/numpy bindings; and (ii) <a rel="nofollow" class="external text" href="https://web.archive.org/web/20140414030239/http://p-apex-g.jimdo.com/matlab-file">Matlab code</a>: an efficient matlab for an echo state network, (iii) <a rel="nofollow" class="external text" href="https://github.com/SciML/ReservoirComputing.jl">ReservoirComputing.jl</a>: an efficient Julia-based implementation of various types of echo state networks, and (iv) <a rel="nofollow" class="external text" href="https://github.com/cknd/pyESN">pyESN</a>: simple echo state networks in Python.
+</p><p>The Echo State Network (ESN)<sup id="cite_ref-:2_4-0" class="reference"><a href="#cite_note-:2-4">&#91;4&#93;</a></sup> belongs to the Recurrent Neural Network (RNN) family and provide their architecture and supervised learning principle. Unlike Feedforward Neural Networks, Recurrent Neural Networks are dynamic systems and not functions. Recurrent Neural Networks are typically used for: Learn dynamical process: signal treatment in engineering and telecommunications, vibration analysis, seismology, control of engines and generators. Signal forecasting and generation: text, music, electric signals. Modeling of biological systems, neurosciences (cognitive neurodynamics), memory modeling, brain-computer Interfaces (BCIs), filtering and Kalman processes, military applications, volatility modeling etc.
+</p><p>For the training of RNN a number of learning algorithms are available: backpropagation through time, real-time recurrent learning. Convergence is not guaranteed due to instability and bifurcation phenomena.<sup id="cite_ref-:2_4-1" class="reference"><a href="#cite_note-:2-4">&#91;4&#93;</a></sup> &#160;
+</p><p>The main approach of the ESN is firstly to operate a random, large, fixed, recurring neural network with the input signal, which induces a nonlinear response signal in each neuron within this "reservoir" network, and secondly connect a desired output signal by a trainable linear combination of all these response signals.<sup id="cite_ref-:1_2-1" class="reference"><a href="#cite_note-:1-2">&#91;2&#93;</a></sup>
+</p><p>Another feature of the ESN is the autonomous operation in prediction: if the Echo State Network is trained with an input that is a backshifted version of the output, then it can be used for signal generation/prediction by using the previous output as input.<sup id="cite_ref-:2_4-2" class="reference"><a href="#cite_note-:2-4">&#91;4&#93;</a></sup>
+</p><p>The main idea of ESNs is tied to Liquid State Machines (LSM), which were independently and simultaneously developed with ESNs by Wolfgang Maass.<sup id="cite_ref-5" class="reference"><a href="#cite_note-5">&#91;5&#93;</a></sup> LSMs, ESNs and the newly researched Backpropagation Decorrelation learning rule for RNNs<sup id="cite_ref-:3_6-0" class="reference"><a href="#cite_note-:3-6">&#91;6&#93;</a></sup> are more and more summarized under the name Reservoir Computing.
+</p><p>Schiller and Steil<sup id="cite_ref-:3_6-1" class="reference"><a href="#cite_note-:3-6">&#91;6&#93;</a></sup> also demonstrated that in conventional training approaches for RNNs, in which all weights (not only output weights) are adapted, the dominant changes are in output weights. In cognitive neuroscience, Peter F. Dominey analysed a related process related to the modelling of sequence processing in the mammalian brain, in particular speech recognition in the human brain.<sup id="cite_ref-7" class="reference"><a href="#cite_note-7">&#91;7&#93;</a></sup> The basic idea also included a model of temporal input discrimination in biological neuronal networks.<sup id="cite_ref-8" class="reference"><a href="#cite_note-8">&#91;8&#93;</a></sup> An early clear formulation of the reservoir computing idea is due to K. Kirby, who disclosed this concept in a largely forgotten conference contribution.<sup id="cite_ref-9" class="reference"><a href="#cite_note-9">&#91;9&#93;</a></sup> The first formulation of the reservoir computing idea known today stems from L. Schomaker,<sup id="cite_ref-10" class="reference"><a href="#cite_note-10">&#91;10&#93;</a></sup> who described how a desired target output can be obtained from an RNN by learning to combine signals from a randomly configured ensemble of spiking neural oscillators.<sup id="cite_ref-:1_2-2" class="reference"><a href="#cite_note-:1-2">&#91;2&#93;</a></sup>
+</p>
+<div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2 id="mw-toc-heading">Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Variants"><span class="tocnumber">1</span> <span class="toctext">Variants</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Significance"><span class="tocnumber">2</span> <span class="toctext">Significance</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#See_also"><span class="tocnumber">3</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#References"><span class="tocnumber">4</span> <span class="toctext">References</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Variants">Variants</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Echo_state_network&amp;action=edit&amp;section=1" title="Edit section: Variants">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Echo state networks can be built in different ways. They can be set up with or without directly trainable input-to-output connections, with or without output reservation feedback, with different neurotypes, different reservoir internal connectivity patterns etc. The output weight can be calculated for linear regression with all algorithms whether they are online or offline. In addition to the solutions for errors with smallest squares, margin maximization criteria, so-called training support vector machines, are used to determine the output values.<sup id="cite_ref-11" class="reference"><a href="#cite_note-11">&#91;11&#93;</a></sup> Other variants of echo state networks seek to change the formulation to better match common models of physical systems, such as those typically those defined by differential equations. Work in this direction includes echo state networks which partially include physical models,<sup id="cite_ref-12" class="reference"><a href="#cite_note-12">&#91;12&#93;</a></sup> hybrid echo state networks,<sup id="cite_ref-13" class="reference"><a href="#cite_note-13">&#91;13&#93;</a></sup> and continuous-time echo state networks.<sup id="cite_ref-14" class="reference"><a href="#cite_note-14">&#91;14&#93;</a></sup>
+</p><p>The fixed RNN acts as a random, nonlinear medium whose dynamic response, the "echo", is used as a signal base.  The linear combination of this base can be trained to reconstruct the desired output by minimizing some error criteria.<sup id="cite_ref-:1_2-3" class="reference"><a href="#cite_note-:1-2">&#91;2&#93;</a></sup>
+</p>
+<h2><span class="mw-headline" id="Significance">Significance</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Echo_state_network&amp;action=edit&amp;section=2" title="Edit section: Significance">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>RNNs were rarely used in practice before the introduction of the ESN, because of the complexity involved in adjusting their connections (e.g., lack of autodifferentiation, susceptibility to vanishing/exploding gradients, etc.). RNN training algorithms were slow and often vulnerable to issues, such as branching errors.<sup id="cite_ref-15" class="reference"><a href="#cite_note-15">&#91;15&#93;</a></sup> &#160;Convergence could therefore not be guaranteed. On the other hand, ESN training does not have the problem with branching and is easy to implement. In early studies, ESNs were shown to perform well on time series prediction tasks from synthetic datasets.<sup id="cite_ref-:0_1-1" class="reference"><a href="#cite_note-:0-1">&#91;1&#93;</a></sup><sup id="cite_ref-16" class="reference"><a href="#cite_note-16">&#91;16&#93;</a></sup>
+</p><p>However, today many of the problems that made RNNs slow and error-prone have been addressed with the advent of autodifferentiation (deep learning) libraries, as well as more stable architectures such as LSTM and GRU—thus, the unique selling point of ESNs has been lost. In addition, RNNs have proven themselves in several practical areas such as language processing. To cope with tasks of similar complexity using reservoir calculation methods, it would require memory of excessive size.
+</p><p>However, ESNs are used in some areas such as many signal processing applications. In particular, they have been widely used as a computing principle that mixes well with non-digital computer substrates. Since ESNs do not need to modify the parameters of the RNN, they make it possible to use many different objects as their nonlinear "reservoir″. For example: optical microchips, mechanical nanooscillators, polymer mixtures, or even artificial soft limbs.<sup id="cite_ref-:1_2-4" class="reference"><a href="#cite_note-:1-2">&#91;2&#93;</a></sup>
+</p>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Echo_state_network&amp;action=edit&amp;section=3" title="Edit section: See also">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul><li><a href="/wiki/Liquid-state_machine" class="mw-redirect" title="Liquid-state machine">Liquid-state machine</a>: a similar concept with generalized signal and network.</li>
+<li><a href="/wiki/Reservoir_computing" title="Reservoir computing">Reservoir computing</a></li></ul>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Echo_state_network&amp;action=edit&amp;section=4" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="mw-references-wrap mw-references-columns"><ol class="references">
+<li id="cite_note-:0-1"><span class="mw-cite-backlink">^ <a href="#cite_ref-:0_1-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-:0_1-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><style data-mw-deduplicate="TemplateStyles:r1067248974">.mw-parser-output cite.citation{font-style:inherit;word-wrap:break-word}.mw-parser-output .citation q{quotes:"\"""\"""'""'"}.mw-parser-output .citation:target{background-color:rgba(0,127,255,0.133)}.mw-parser-output .id-lock-free a,.mw-parser-output .citation .cs1-lock-free a{background:linear-gradient(transparent,transparent),url("//upload.wikimedia.org/wikipedia/commons/6/65/Lock-green.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-limited a,.mw-parser-output .id-lock-registration a,.mw-parser-output .citation .cs1-lock-limited a,.mw-parser-output .citation .cs1-lock-registration a{background:linear-gradient(transparent,transparent),url("//upload.wikimedia.org/wikipedia/commons/d/d6/Lock-gray-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-subscription a,.mw-parser-output .citation .cs1-lock-subscription a{background:linear-gradient(transparent,transparent),url("//upload.wikimedia.org/wikipedia/commons/a/aa/Lock-red-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .cs1-ws-icon a{background:linear-gradient(transparent,transparent),url("//upload.wikimedia.org/wikipedia/commons/4/4c/Wikisource-logo.svg")right 0.1em center/12px no-repeat}.mw-parser-output .cs1-code{color:inherit;background:inherit;border:none;padding:inherit}.mw-parser-output .cs1-hidden-error{display:none;color:#d33}.mw-parser-output .cs1-visible-error{color:#d33}.mw-parser-output .cs1-maint{display:none;color:#3a3;margin-left:0.3em}.mw-parser-output .cs1-format{font-size:95%}.mw-parser-output .cs1-kern-left{padding-left:0.2em}.mw-parser-output .cs1-kern-right{padding-right:0.2em}.mw-parser-output .citation .mw-selflink{font-weight:inherit}</style><cite id="CITEREFJaegerHaas2004" class="citation journal cs1">Jaeger, H.; Haas, H. (2004). <a rel="nofollow" class="external text" href="http://www.columbia.edu/cu/biology/courses/w4070/Reading_List_Yuste/haas_04.pdf">"Harnessing Nonlinearity: Predicting Chaotic Systems and Saving Energy in Wireless Communication"</a> <span class="cs1-format">(PDF)</span>. <i>Science</i>. <b>304</b> (5667): 78–80. <a href="/wiki/Bibcode_(identifier)" class="mw-redirect" title="Bibcode (identifier)">Bibcode</a>:<a rel="nofollow" class="external text" href="https://ui.adsabs.harvard.edu/abs/2004Sci...304...78J">2004Sci...304...78J</a>. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1126%2Fscience.1091277">10.1126/science.1091277</a>. <a href="/wiki/PMID_(identifier)" class="mw-redirect" title="PMID (identifier)">PMID</a>&#160;<a rel="nofollow" class="external text" href="//pubmed.ncbi.nlm.nih.gov/15064413">15064413</a>. <a href="/wiki/S2CID_(identifier)" class="mw-redirect" title="S2CID (identifier)">S2CID</a>&#160;<a rel="nofollow" class="external text" href="https://api.semanticscholar.org/CorpusID:2184251">2184251</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Science&amp;rft.atitle=Harnessing+Nonlinearity%3A+Predicting+Chaotic+Systems+and+Saving+Energy+in+Wireless+Communication&amp;rft.volume=304&amp;rft.issue=5667&amp;rft.pages=78-80&amp;rft.date=2004&amp;rft_id=info%3Adoi%2F10.1126%2Fscience.1091277&amp;rft_id=https%3A%2F%2Fapi.semanticscholar.org%2FCorpusID%3A2184251%23id-name%3DS2CID&amp;rft_id=info%3Apmid%2F15064413&amp;rft_id=info%3Abibcode%2F2004Sci...304...78J&amp;rft.aulast=Jaeger&amp;rft.aufirst=H.&amp;rft.au=Haas%2C+H.&amp;rft_id=http%3A%2F%2Fwww.columbia.edu%2Fcu%2Fbiology%2Fcourses%2Fw4070%2FReading_List_Yuste%2Fhaas_04.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AEcho+state+network" class="Z3988"></span></span>
+</li>
+<li id="cite_note-:1-2"><span class="mw-cite-backlink">^ <a href="#cite_ref-:1_2-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-:1_2-1"><sup><i><b>b</b></i></sup></a> <a href="#cite_ref-:1_2-2"><sup><i><b>c</b></i></sup></a> <a href="#cite_ref-:1_2-3"><sup><i><b>d</b></i></sup></a> <a href="#cite_ref-:1_2-4"><sup><i><b>e</b></i></sup></a></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><cite id="CITEREFJaeger2007" class="citation journal cs1">Jaeger, Herbert (2007). <a rel="nofollow" class="external text" href="https://doi.org/10.4249%2Fscholarpedia.2330">"Echo state network"</a>. <i>Scholarpedia</i>. <b>2</b> (9): 2330. <a href="/wiki/Bibcode_(identifier)" class="mw-redirect" title="Bibcode (identifier)">Bibcode</a>:<a rel="nofollow" class="external text" href="https://ui.adsabs.harvard.edu/abs/2007SchpJ...2.2330J">2007SchpJ...2.2330J</a>. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<span class="cs1-lock-free" title="Freely accessible"><a rel="nofollow" class="external text" href="https://doi.org/10.4249%2Fscholarpedia.2330">10.4249/scholarpedia.2330</a></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Scholarpedia&amp;rft.atitle=Echo+state+network&amp;rft.volume=2&amp;rft.issue=9&amp;rft.pages=2330&amp;rft.date=2007&amp;rft_id=info%3Adoi%2F10.4249%2Fscholarpedia.2330&amp;rft_id=info%3Abibcode%2F2007SchpJ...2.2330J&amp;rft.aulast=Jaeger&amp;rft.aufirst=Herbert&amp;rft_id=%2F%2Fdoi.org%2F10.4249%252Fscholarpedia.2330&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AEcho+state+network" class="Z3988"></span></span>
+</li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><b><a href="#cite_ref-3">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><cite id="CITEREFChatzisDemiris2011" class="citation journal cs1">Chatzis, S. P.; Demiris, Y. (2011). "Echo State Gaussian Process". <i>IEEE Transactions on Neural Networks</i>. <b>22</b> (9): 1435–1445. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1109%2FTNN.2011.2162109">10.1109/TNN.2011.2162109</a>. <a href="/wiki/PMID_(identifier)" class="mw-redirect" title="PMID (identifier)">PMID</a>&#160;<a rel="nofollow" class="external text" href="//pubmed.ncbi.nlm.nih.gov/21803684">21803684</a>. <a href="/wiki/S2CID_(identifier)" class="mw-redirect" title="S2CID (identifier)">S2CID</a>&#160;<a rel="nofollow" class="external text" href="https://api.semanticscholar.org/CorpusID:8553623">8553623</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=IEEE+Transactions+on+Neural+Networks&amp;rft.atitle=Echo+State+Gaussian+Process&amp;rft.volume=22&amp;rft.issue=9&amp;rft.pages=1435-1445&amp;rft.date=2011&amp;rft_id=https%3A%2F%2Fapi.semanticscholar.org%2FCorpusID%3A8553623%23id-name%3DS2CID&amp;rft_id=info%3Apmid%2F21803684&amp;rft_id=info%3Adoi%2F10.1109%2FTNN.2011.2162109&amp;rft.aulast=Chatzis&amp;rft.aufirst=S.+P.&amp;rft.au=Demiris%2C+Y.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AEcho+state+network" class="Z3988"></span></span>
+</li>
+<li id="cite_note-:2-4"><span class="mw-cite-backlink">^ <a href="#cite_ref-:2_4-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-:2_4-1"><sup><i><b>b</b></i></sup></a> <a href="#cite_ref-:2_4-2"><sup><i><b>c</b></i></sup></a></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><cite id="CITEREFJaeger2002" class="citation book cs1">Jaeger, Herbert (2002). <i>A tutorial on training recurrent neural networks, covering BPPT, RTRL, EKF and the "echo state network" approach</i>. Germany: German National Research Center for Information Technology. pp.&#160;1–45.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=A+tutorial+on+training+recurrent+neural+networks%2C+covering+BPPT%2C+RTRL%2C+EKF+and+the+%22echo+state+network%22+approach&amp;rft.place=Germany&amp;rft.pages=1-45&amp;rft.pub=German+National+Research+Center+for+Information+Technology&amp;rft.date=2002&amp;rft.aulast=Jaeger&amp;rft.aufirst=Herbert&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AEcho+state+network" class="Z3988"></span></span>
+</li>
+<li id="cite_note-5"><span class="mw-cite-backlink"><b><a href="#cite_ref-5">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><cite id="CITEREFMaass_W.,_Natschlaeger_T.,_and_Markram_H.2002" class="citation journal cs1">Maass W., Natschlaeger T., and Markram H. (2002). "Real-time computing without stable states: A new framework for neural computation based on perturbations". <i>Neural Computation</i>. <b>14</b> (11): 2531–2560. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1162%2F089976602760407955">10.1162/089976602760407955</a>. <a href="/wiki/PMID_(identifier)" class="mw-redirect" title="PMID (identifier)">PMID</a>&#160;<a rel="nofollow" class="external text" href="//pubmed.ncbi.nlm.nih.gov/12433288">12433288</a>. <a href="/wiki/S2CID_(identifier)" class="mw-redirect" title="S2CID (identifier)">S2CID</a>&#160;<a rel="nofollow" class="external text" href="https://api.semanticscholar.org/CorpusID:1045112">1045112</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Neural+Computation&amp;rft.atitle=Real-time+computing+without+stable+states%3A+A+new+framework+for+neural+computation+based+on+perturbations&amp;rft.volume=14&amp;rft.issue=11&amp;rft.pages=2531-2560&amp;rft.date=2002&amp;rft_id=https%3A%2F%2Fapi.semanticscholar.org%2FCorpusID%3A1045112%23id-name%3DS2CID&amp;rft_id=info%3Apmid%2F12433288&amp;rft_id=info%3Adoi%2F10.1162%2F089976602760407955&amp;rft.au=Maass+W.%2C+Natschlaeger+T.%2C+and+Markram+H.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AEcho+state+network" class="Z3988"></span><span class="cs1-maint citation-comment"><code class="cs1-code">{{<a href="/wiki/Template:Cite_journal" title="Template:Cite journal">cite journal</a>}}</code>:  CS1 maint: multiple names: authors list (<a href="/wiki/Category:CS1_maint:_multiple_names:_authors_list" title="Category:CS1 maint: multiple names: authors list">link</a>)</span></span>
+</li>
+<li id="cite_note-:3-6"><span class="mw-cite-backlink">^ <a href="#cite_ref-:3_6-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-:3_6-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><cite id="CITEREFSchiller_U.D._and_Steil_J._J.2005" class="citation journal cs1">Schiller U.D. and Steil J. J. (2005). "Analyzing the weight dynamics of recurrent learning algorithms". <i>Neurocomputing</i>. <b>63</b>: 5–23. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1016%2Fj.neucom.2004.04.006">10.1016/j.neucom.2004.04.006</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Neurocomputing&amp;rft.atitle=Analyzing+the+weight+dynamics+of+recurrent+learning+algorithms&amp;rft.volume=63&amp;rft.pages=5-23&amp;rft.date=2005&amp;rft_id=info%3Adoi%2F10.1016%2Fj.neucom.2004.04.006&amp;rft.au=Schiller+U.D.+and+Steil+J.+J.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AEcho+state+network" class="Z3988"></span></span>
+</li>
+<li id="cite_note-7"><span class="mw-cite-backlink"><b><a href="#cite_ref-7">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><cite id="CITEREFDominey_P.F.1995" class="citation journal cs1">Dominey P.F. (1995). "Complex sensory-motor sequence learning based on recurrent state representation and reinforcement learning". <i>Biol. Cybernetics</i>. <b>73</b> (3): 265–274. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1007%2FBF00201428">10.1007/BF00201428</a>. <a href="/wiki/PMID_(identifier)" class="mw-redirect" title="PMID (identifier)">PMID</a>&#160;<a rel="nofollow" class="external text" href="//pubmed.ncbi.nlm.nih.gov/7548314">7548314</a>. <a href="/wiki/S2CID_(identifier)" class="mw-redirect" title="S2CID (identifier)">S2CID</a>&#160;<a rel="nofollow" class="external text" href="https://api.semanticscholar.org/CorpusID:1603500">1603500</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Biol.+Cybernetics&amp;rft.atitle=Complex+sensory-motor+sequence+learning+based+on+recurrent+state+representation+and+reinforcement+learning&amp;rft.volume=73&amp;rft.issue=3&amp;rft.pages=265-274&amp;rft.date=1995&amp;rft_id=https%3A%2F%2Fapi.semanticscholar.org%2FCorpusID%3A1603500%23id-name%3DS2CID&amp;rft_id=info%3Apmid%2F7548314&amp;rft_id=info%3Adoi%2F10.1007%2FBF00201428&amp;rft.au=Dominey+P.F.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AEcho+state+network" class="Z3988"></span></span>
+</li>
+<li id="cite_note-8"><span class="mw-cite-backlink"><b><a href="#cite_ref-8">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><cite id="CITEREFBuonomano,_D.V._and_Merzenich,_M.M.1995" class="citation journal cs1">Buonomano, D.V. and Merzenich, M.M. (1995). "Temporal Information Transformed into a Spatial Code by a Neural Network with Realistic Properties". <i>Science</i>. <b>267</b> (5200): 1028–1030. <a href="/wiki/Bibcode_(identifier)" class="mw-redirect" title="Bibcode (identifier)">Bibcode</a>:<a rel="nofollow" class="external text" href="https://ui.adsabs.harvard.edu/abs/1995Sci...267.1028B">1995Sci...267.1028B</a>. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1126%2Fscience.7863330">10.1126/science.7863330</a>. <a href="/wiki/PMID_(identifier)" class="mw-redirect" title="PMID (identifier)">PMID</a>&#160;<a rel="nofollow" class="external text" href="//pubmed.ncbi.nlm.nih.gov/7863330">7863330</a>. <a href="/wiki/S2CID_(identifier)" class="mw-redirect" title="S2CID (identifier)">S2CID</a>&#160;<a rel="nofollow" class="external text" href="https://api.semanticscholar.org/CorpusID:12880807">12880807</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Science&amp;rft.atitle=Temporal+Information+Transformed+into+a+Spatial+Code+by+a+Neural+Network+with+Realistic+Properties&amp;rft.volume=267&amp;rft.issue=5200&amp;rft.pages=1028-1030&amp;rft.date=1995&amp;rft_id=info%3Adoi%2F10.1126%2Fscience.7863330&amp;rft_id=https%3A%2F%2Fapi.semanticscholar.org%2FCorpusID%3A12880807%23id-name%3DS2CID&amp;rft_id=info%3Apmid%2F7863330&amp;rft_id=info%3Abibcode%2F1995Sci...267.1028B&amp;rft.au=Buonomano%2C+D.V.+and+Merzenich%2C+M.M.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AEcho+state+network" class="Z3988"></span><span class="cs1-maint citation-comment"><code class="cs1-code">{{<a href="/wiki/Template:Cite_journal" title="Template:Cite journal">cite journal</a>}}</code>:  CS1 maint: multiple names: authors list (<a href="/wiki/Category:CS1_maint:_multiple_names:_authors_list" title="Category:CS1 maint: multiple names: authors list">link</a>)</span></span>
+</li>
+<li id="cite_note-9"><span class="mw-cite-backlink"><b><a href="#cite_ref-9">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><cite id="CITEREFKirby,_K.1991" class="citation journal cs1">Kirby, K. (1991). "Context dynamics in neural sequential learning. Proc". <i>Florida AI Research Symposium</i>: 66–70.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Florida+AI+Research+Symposium&amp;rft.atitle=Context+dynamics+in+neural+sequential+learning.+Proc&amp;rft.pages=66-70&amp;rft.date=1991&amp;rft.au=Kirby%2C+K.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AEcho+state+network" class="Z3988"></span></span>
+</li>
+<li id="cite_note-10"><span class="mw-cite-backlink"><b><a href="#cite_ref-10">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><cite id="CITEREFSchomaker,_L.1992" class="citation journal cs1">Schomaker, L. (1992). "A neural oscillator-network model of temporal pattern generation". <i>Human Movement Science</i>. <b>11</b> (1–2): 181–192. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1016%2F0167-9457%2892%2990059-K">10.1016/0167-9457(92)90059-K</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Human+Movement+Science&amp;rft.atitle=A+neural+oscillator-network+model+of+temporal+pattern+generation&amp;rft.volume=11&amp;rft.issue=1%E2%80%932&amp;rft.pages=181-192&amp;rft.date=1992&amp;rft_id=info%3Adoi%2F10.1016%2F0167-9457%2892%2990059-K&amp;rft.au=Schomaker%2C+L.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AEcho+state+network" class="Z3988"></span></span>
+</li>
+<li id="cite_note-11"><span class="mw-cite-backlink"><b><a href="#cite_ref-11">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><cite id="CITEREFSchmidhuber_J.,_Gomez_F.,_Wierstra_D.,_and_Gagliolo_M.2007" class="citation journal cs1">Schmidhuber J., Gomez F., Wierstra D., and Gagliolo M. (2007). "Training recurrent networks by evolino". <i>Neural Computation</i>. <b>19</b> (3): 757–779. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1162%2Fneco.2007.19.3.757">10.1162/neco.2007.19.3.757</a>. <a href="/wiki/PMID_(identifier)" class="mw-redirect" title="PMID (identifier)">PMID</a>&#160;<a rel="nofollow" class="external text" href="//pubmed.ncbi.nlm.nih.gov/17298232">17298232</a>. <a href="/wiki/S2CID_(identifier)" class="mw-redirect" title="S2CID (identifier)">S2CID</a>&#160;<a rel="nofollow" class="external text" href="https://api.semanticscholar.org/CorpusID:11745761">11745761</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Neural+Computation&amp;rft.atitle=Training+recurrent+networks+by+evolino&amp;rft.volume=19&amp;rft.issue=3&amp;rft.pages=757-779&amp;rft.date=2007&amp;rft_id=https%3A%2F%2Fapi.semanticscholar.org%2FCorpusID%3A11745761%23id-name%3DS2CID&amp;rft_id=info%3Apmid%2F17298232&amp;rft_id=info%3Adoi%2F10.1162%2Fneco.2007.19.3.757&amp;rft.au=Schmidhuber+J.%2C+Gomez+F.%2C+Wierstra+D.%2C+and+Gagliolo+M.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AEcho+state+network" class="Z3988"></span><span class="cs1-maint citation-comment"><code class="cs1-code">{{<a href="/wiki/Template:Cite_journal" title="Template:Cite journal">cite journal</a>}}</code>:  CS1 maint: multiple names: authors list (<a href="/wiki/Category:CS1_maint:_multiple_names:_authors_list" title="Category:CS1 maint: multiple names: authors list">link</a>)</span></span>
+</li>
+<li id="cite_note-12"><span class="mw-cite-backlink"><b><a href="#cite_ref-12">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><cite id="CITEREFDoan_N,_Polifke_W,_Magri_L2020" class="citation journal cs1">Doan N, Polifke W, Magri L (2020). "Physics-Informed Echo State Networks". <i>Journal of Computational Science</i>. <b>47</b>: 101237. <a href="/wiki/ArXiv_(identifier)" class="mw-redirect" title="ArXiv (identifier)">arXiv</a>:<span class="cs1-lock-free" title="Freely accessible"><a rel="nofollow" class="external text" href="//arxiv.org/abs/2011.02280">2011.02280</a></span>. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1016%2Fj.jocs.2020.101237">10.1016/j.jocs.2020.101237</a>. <a href="/wiki/S2CID_(identifier)" class="mw-redirect" title="S2CID (identifier)">S2CID</a>&#160;<a rel="nofollow" class="external text" href="https://api.semanticscholar.org/CorpusID:226246385">226246385</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Journal+of+Computational+Science&amp;rft.atitle=Physics-Informed+Echo+State+Networks&amp;rft.volume=47&amp;rft.pages=101237&amp;rft.date=2020&amp;rft_id=info%3Aarxiv%2F2011.02280&amp;rft_id=https%3A%2F%2Fapi.semanticscholar.org%2FCorpusID%3A226246385%23id-name%3DS2CID&amp;rft_id=info%3Adoi%2F10.1016%2Fj.jocs.2020.101237&amp;rft.au=Doan+N%2C+Polifke+W%2C+Magri+L&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AEcho+state+network" class="Z3988"></span><span class="cs1-maint citation-comment"><code class="cs1-code">{{<a href="/wiki/Template:Cite_journal" title="Template:Cite journal">cite journal</a>}}</code>:  CS1 maint: multiple names: authors list (<a href="/wiki/Category:CS1_maint:_multiple_names:_authors_list" title="Category:CS1 maint: multiple names: authors list">link</a>)</span></span>
+</li>
+<li id="cite_note-13"><span class="mw-cite-backlink"><b><a href="#cite_ref-13">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><cite id="CITEREFPathak_J,_Wikner_A,_Russel_R,_Chandra_S,_Hunt_B,_Girvan_M,_Ott_E2018" class="citation journal cs1">Pathak J, Wikner A, Russel R, Chandra S, Hunt B, Girvan M, Ott E (2018). "Hybrid Forecasting of Chaotic Processes: Using Machine Learning in Conjunction with a Knowledge-Based Model". <i>Chaos</i>. <b>28</b> (4): 041101. <a href="/wiki/ArXiv_(identifier)" class="mw-redirect" title="ArXiv (identifier)">arXiv</a>:<span class="cs1-lock-free" title="Freely accessible"><a rel="nofollow" class="external text" href="//arxiv.org/abs/1803.04779">1803.04779</a></span>. <a href="/wiki/Bibcode_(identifier)" class="mw-redirect" title="Bibcode (identifier)">Bibcode</a>:<a rel="nofollow" class="external text" href="https://ui.adsabs.harvard.edu/abs/2018Chaos..28d1101P">2018Chaos..28d1101P</a>. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1063%2F1.5028373">10.1063/1.5028373</a>. <a href="/wiki/PMID_(identifier)" class="mw-redirect" title="PMID (identifier)">PMID</a>&#160;<a rel="nofollow" class="external text" href="//pubmed.ncbi.nlm.nih.gov/31906641">31906641</a>. <a href="/wiki/S2CID_(identifier)" class="mw-redirect" title="S2CID (identifier)">S2CID</a>&#160;<a rel="nofollow" class="external text" href="https://api.semanticscholar.org/CorpusID:3883587">3883587</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Chaos&amp;rft.atitle=Hybrid+Forecasting+of+Chaotic+Processes%3A+Using+Machine+Learning+in+Conjunction+with+a+Knowledge-Based+Model&amp;rft.volume=28&amp;rft.issue=4&amp;rft.pages=041101&amp;rft.date=2018&amp;rft_id=https%3A%2F%2Fapi.semanticscholar.org%2FCorpusID%3A3883587%23id-name%3DS2CID&amp;rft_id=info%3Abibcode%2F2018Chaos..28d1101P&amp;rft_id=info%3Aarxiv%2F1803.04779&amp;rft_id=info%3Apmid%2F31906641&amp;rft_id=info%3Adoi%2F10.1063%2F1.5028373&amp;rft.au=Pathak+J%2C+Wikner+A%2C+Russel+R%2C+Chandra+S%2C+Hunt+B%2C+Girvan+M%2C+Ott+E&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AEcho+state+network" class="Z3988"></span><span class="cs1-maint citation-comment"><code class="cs1-code">{{<a href="/wiki/Template:Cite_journal" title="Template:Cite journal">cite journal</a>}}</code>:  CS1 maint: multiple names: authors list (<a href="/wiki/Category:CS1_maint:_multiple_names:_authors_list" title="Category:CS1 maint: multiple names: authors list">link</a>)</span></span>
+</li>
+<li id="cite_note-14"><span class="mw-cite-backlink"><b><a href="#cite_ref-14">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><cite id="CITEREFAnantharamanMaGowdaLaughman2020" class="citation arxiv cs1">Anantharaman, Ranjan; Ma, Yingbo; Gowda, Shashi; Laughman, Chris; Shah, Viral; Edelman, Alan; Rackauckas, Chris (2020). "Accelerating Simulation of Stiff Nonlinear Systems using Continuous-Time Echo State Networks". <a href="/wiki/ArXiv_(identifier)" class="mw-redirect" title="ArXiv (identifier)">arXiv</a>:<span class="cs1-lock-free" title="Freely accessible"><a rel="nofollow" class="external text" href="//arxiv.org/abs/2010.04004">2010.04004</a></span> [<a rel="nofollow" class="external text" href="//arxiv.org/archive/cs.LG">cs.LG</a>].</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=preprint&amp;rft.jtitle=arXiv&amp;rft.atitle=Accelerating+Simulation+of+Stiff+Nonlinear+Systems+using+Continuous-Time+Echo+State+Networks&amp;rft.date=2020&amp;rft_id=info%3Aarxiv%2F2010.04004&amp;rft.aulast=Anantharaman&amp;rft.aufirst=Ranjan&amp;rft.au=Ma%2C+Yingbo&amp;rft.au=Gowda%2C+Shashi&amp;rft.au=Laughman%2C+Chris&amp;rft.au=Shah%2C+Viral&amp;rft.au=Edelman%2C+Alan&amp;rft.au=Rackauckas%2C+Chris&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AEcho+state+network" class="Z3988"></span></span>
+</li>
+<li id="cite_note-15"><span class="mw-cite-backlink"><b><a href="#cite_ref-15">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><cite id="CITEREFDoya_K.1992" class="citation journal cs1">Doya K. (1992). "Bifurcations in the learning of recurrent neural networks". <i>In Proceedings of 1992 IEEE Int. Symp. On Circuits and Systems</i>. <b>6</b>: 2777–2780. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1109%2FISCAS.1992.230622">10.1109/ISCAS.1992.230622</a>. <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-7803-0593-0" title="Special:BookSources/0-7803-0593-0"><bdi>0-7803-0593-0</bdi></a>. <a href="/wiki/S2CID_(identifier)" class="mw-redirect" title="S2CID (identifier)">S2CID</a>&#160;<a rel="nofollow" class="external text" href="https://api.semanticscholar.org/CorpusID:15069221">15069221</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=In+Proceedings+of+1992+IEEE+Int.+Symp.+On+Circuits+and+Systems&amp;rft.atitle=Bifurcations+in+the+learning+of+recurrent+neural+networks&amp;rft.volume=6&amp;rft.pages=2777-2780&amp;rft.date=1992&amp;rft_id=https%3A%2F%2Fapi.semanticscholar.org%2FCorpusID%3A15069221%23id-name%3DS2CID&amp;rft_id=info%3Adoi%2F10.1109%2FISCAS.1992.230622&amp;rft.isbn=0-7803-0593-0&amp;rft.au=Doya+K.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AEcho+state+network" class="Z3988"></span></span>
+</li>
+<li id="cite_note-16"><span class="mw-cite-backlink"><b><a href="#cite_ref-16">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><cite id="CITEREFJaeger_H.2007" class="citation journal cs1">Jaeger H. (2007). "Discovering multiscale dynamical features with hierarchical echo state networks". <i>Technical Report 10, School of Engineering and Science, Jacobs University</i>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Technical+Report+10%2C+School+of+Engineering+and+Science%2C+Jacobs+University&amp;rft.atitle=Discovering+multiscale+dynamical+features+with+hierarchical+echo+state+networks&amp;rft.date=2007&amp;rft.au=Jaeger+H.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AEcho+state+network" class="Z3988"></span></span>
+</li>
+</ol></div>
+<!-- 
+NewPP limit report
+Parsed by mw1351
+Cached time: 20220305090437
+Cache expiry: 1814400
+Reduced expiry: false
+Complications: [vary‐revision‐sha1]
+CPU time usage: 0.337 seconds
+Real time usage: 0.376 seconds
+Preprocessor visited node count: 881/1000000
+Post‐expand include size: 38129/2097152 bytes
+Template argument size: 436/2097152 bytes
+Highest expansion depth: 8/100
+Expensive parser function count: 0/500
+Unstrip recursion depth: 1/20
+Unstrip post‐expand size: 53754/5000000 bytes
+Lua time usage: 0.223/10.000 seconds
+Lua memory usage: 5395914/52428800 bytes
+Number of Wikibase entities loaded: 0/400
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  329.575      1 -total
+ 64.57%  212.822     14 Template:Cite_journal
+ 21.94%   72.315      1 Template:Short_description
+ 12.22%   40.285      1 Template:Pagetype
+  5.01%   16.528      2 Template:Main_other
+  4.14%   13.633      1 Template:SDcat
+  3.00%    9.882      1 Template:Cite_book
+  2.61%    8.618      1 Template:Cite_arXiv
+  1.13%    3.715      1 Template:Short_description/lowercasecheck
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:8887731-0!canonical and timestamp 20220305090437 and revision id 1068682994. Serialized with JSON.
+ -->
+</div><noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript>
+<div class="printfooter">Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Echo_state_network&amp;oldid=1068682994">https://en.wikipedia.org/w/index.php?title=Echo_state_network&amp;oldid=1068682994</a>"</div></div>
+		<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Artificial_neural_networks" title="Category:Artificial neural networks">Artificial neural networks</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:CS1_maint:_multiple_names:_authors_list" title="Category:CS1 maint: multiple names: authors list">CS1 maint: multiple names: authors list</a></li><li><a href="/wiki/Category:Articles_with_short_description" title="Category:Articles with short description">Articles with short description</a></li><li><a href="/wiki/Category:Short_description_is_different_from_Wikidata" title="Category:Short description is different from Wikidata">Short description is different from Wikidata</a></li></ul></div></div>
+	</div>
+</div>
+<div id='mw-data-after-content'>
+	<div class="read-more-container"></div>
+</div>
+
+<div id="mw-navigation">
+	<h2>Navigation menu</h2>
+	<div id="mw-head">
+		
+<nav id="p-personal" class="mw-portlet mw-portlet-personal vector-user-menu-legacy vector-menu" aria-labelledby="p-personal-label" role="navigation" 
+	 >
+	<label id="p-personal-label" aria-label="" class="vector-menu-heading">
+		<span class="vector-menu-heading-label">Personal tools</span>
+	</label>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="pt-anonuserpage" class="mw-list-item"><span>Not logged in</span></li><li id="pt-anontalk" class="mw-list-item"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n"><span>Talk</span></a></li><li id="pt-anoncontribs" class="mw-list-item"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y"><span>Contributions</span></a></li><li id="pt-createaccount" class="mw-list-item"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Echo+state+network&amp;returntoquery=lxml%3D" title="You are encouraged to create an account and log in; however, it is not mandatory"><span>Create account</span></a></li><li id="pt-login" class="mw-list-item"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Echo+state+network&amp;returntoquery=lxml%3D" title="You&#039;re encouraged to log in; however, it&#039;s not mandatory. [o]" accesskey="o"><span>Log in</span></a></li></ul>
+		
+	</div>
+</nav>
+
+		<div id="left-navigation">
+			
+<nav id="p-namespaces" class="mw-portlet mw-portlet-namespaces vector-menu vector-menu-tabs" aria-labelledby="p-namespaces-label" role="navigation" 
+	 >
+	<label id="p-namespaces-label" aria-label="" class="vector-menu-heading">
+		<span class="vector-menu-heading-label">Namespaces</span>
+	</label>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="ca-nstab-main" class="selected mw-list-item"><a href="/wiki/Echo_state_network" title="View the content page [c]" accesskey="c"><span>Article</span></a></li><li id="ca-talk" class="mw-list-item"><a href="/wiki/Talk:Echo_state_network" rel="discussion" title="Discuss improvements to the content page [t]" accesskey="t"><span>Talk</span></a></li></ul>
+		
+	</div>
+</nav>
+
+			
+<nav id="p-variants" class="mw-portlet mw-portlet-variants emptyPortlet vector-menu-dropdown-noicon vector-menu vector-menu-dropdown" aria-labelledby="p-variants-label" role="navigation" 
+	 >
+	<input type="checkbox"
+		id="p-variants-checkbox"
+		role="button"
+		aria-haspopup="true"
+		data-event-name="ui.dropdown-p-variants"
+		class="vector-menu-checkbox" aria-labelledby="p-variants-label" />
+	<label id="p-variants-label" aria-label="Change language variant" class="vector-menu-heading">
+		<span class="vector-menu-heading-label">English</span>
+			<span class="vector-menu-checkbox-expanded">expanded</span>
+			<span class="vector-menu-checkbox-collapsed">collapsed</span>
+	</label>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"></ul>
+		
+	</div>
+</nav>
+
+		</div>
+		<div id="right-navigation">
+			
+<nav id="p-views" class="mw-portlet mw-portlet-views vector-menu vector-menu-tabs" aria-labelledby="p-views-label" role="navigation" 
+	 >
+	<label id="p-views-label" aria-label="" class="vector-menu-heading">
+		<span class="vector-menu-heading-label">Views</span>
+	</label>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="ca-view" class="selected mw-list-item"><a href="/wiki/Echo_state_network"><span>Read</span></a></li><li id="ca-edit" class="mw-list-item"><a href="/w/index.php?title=Echo_state_network&amp;action=edit" title="Edit this page [e]" accesskey="e"><span>Edit</span></a></li><li id="ca-history" class="mw-list-item"><a href="/w/index.php?title=Echo_state_network&amp;action=history" title="Past revisions of this page [h]" accesskey="h"><span>View history</span></a></li></ul>
+		
+	</div>
+</nav>
+
+			
+<nav id="p-cactions" class="mw-portlet mw-portlet-cactions emptyPortlet vector-menu-dropdown-noicon vector-menu vector-menu-dropdown" aria-labelledby="p-cactions-label" role="navigation"  title="More options"
+	 >
+	<input type="checkbox"
+		id="p-cactions-checkbox"
+		role="button"
+		aria-haspopup="true"
+		data-event-name="ui.dropdown-p-cactions"
+		class="vector-menu-checkbox" aria-labelledby="p-cactions-label" />
+	<label id="p-cactions-label" aria-label="" class="vector-menu-heading">
+		<span class="vector-menu-heading-label">More</span>
+			<span class="vector-menu-checkbox-expanded">expanded</span>
+			<span class="vector-menu-checkbox-collapsed">collapsed</span>
+	</label>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"></ul>
+		
+	</div>
+</nav>
+
+			
+<div id="p-search" role="search" class="vector-search-box-vue  vector-search-box-show-thumbnail vector-search-box-auto-expand-width vector-search-box">
+	<div>
+			<h3 >
+				<label for="searchInput">Search</label>
+			</h3>
+		<form action="/w/index.php" id="searchform"
+			class="vector-search-box-form">
+			<div id="simpleSearch"
+				class="vector-search-box-inner"
+				 data-search-loc="header-navigation">
+				<input class="vector-search-box-input"
+					 type="search" name="search" placeholder="Search Wikipedia" aria-label="Search Wikipedia" autocapitalize="sentences" title="Search Wikipedia [f]" accesskey="f" id="searchInput"
+				/>
+				<input type="hidden" name="title" value="Special:Search"/>
+				<input id="mw-searchButton"
+					 class="searchButton mw-fallbackSearchButton" type="submit" name="fulltext" title="Search Wikipedia for this text" value="Search" />
+				<input id="searchButton"
+					 class="searchButton" type="submit" name="go" title="Go to a page with this exact name if it exists" value="Go" />
+			</div>
+		</form>
+	</div>
+</div>
+
+		</div>
+	</div>
+	
+
+<div id="mw-panel">
+	<div id="p-logo" role="banner">
+		<a class="mw-wiki-logo" href="/wiki/Main_Page"
+			title="Visit the main page"></a>
+	</div>
+	
+<nav id="p-navigation" class="mw-portlet mw-portlet-navigation vector-menu vector-menu-portal portal" aria-labelledby="p-navigation-label" role="navigation" 
+	 >
+	<label id="p-navigation-label" aria-label="" class="vector-menu-heading">
+		<span class="vector-menu-heading-label">Navigation</span>
+	</label>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="n-mainpage-description" class="mw-list-item"><a href="/wiki/Main_Page" icon="home" title="Visit the main page [z]" accesskey="z"><span>Main page</span></a></li><li id="n-contents" class="mw-list-item"><a href="/wiki/Wikipedia:Contents" title="Guides to browsing Wikipedia"><span>Contents</span></a></li><li id="n-currentevents" class="mw-list-item"><a href="/wiki/Portal:Current_events" title="Articles related to current events"><span>Current events</span></a></li><li id="n-randompage" class="mw-list-item"><a href="/wiki/Special:Random" icon="die" title="Visit a randomly selected article [x]" accesskey="x"><span>Random article</span></a></li><li id="n-aboutsite" class="mw-list-item"><a href="/wiki/Wikipedia:About" title="Learn about Wikipedia and how it works"><span>About Wikipedia</span></a></li><li id="n-contactpage" class="mw-list-item"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia"><span>Contact us</span></a></li><li id="n-sitesupport" class="mw-list-item"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us by donating to the Wikimedia Foundation"><span>Donate</span></a></li></ul>
+		
+	</div>
+</nav>
+
+	
+<nav id="p-interaction" class="mw-portlet mw-portlet-interaction vector-menu vector-menu-portal portal" aria-labelledby="p-interaction-label" role="navigation" 
+	 >
+	<label id="p-interaction-label" aria-label="" class="vector-menu-heading">
+		<span class="vector-menu-heading-label">Contribute</span>
+	</label>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="n-help" class="mw-list-item"><a href="/wiki/Help:Contents" icon="help" title="Guidance on how to use and edit Wikipedia"><span>Help</span></a></li><li id="n-introduction" class="mw-list-item"><a href="/wiki/Help:Introduction" title="Learn how to edit Wikipedia"><span>Learn to edit</span></a></li><li id="n-portal" class="mw-list-item"><a href="/wiki/Wikipedia:Community_portal" title="The hub for editors"><span>Community portal</span></a></li><li id="n-recentchanges" class="mw-list-item"><a href="/wiki/Special:RecentChanges" icon="recentChanges" title="A list of recent changes to Wikipedia [r]" accesskey="r"><span>Recent changes</span></a></li><li id="n-upload" class="mw-list-item"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Add images or other media for use on Wikipedia"><span>Upload file</span></a></li></ul>
+		
+	</div>
+</nav>
+
+<nav id="p-tb" class="mw-portlet mw-portlet-tb vector-menu vector-menu-portal portal" aria-labelledby="p-tb-label" role="navigation" 
+	 >
+	<label id="p-tb-label" aria-label="" class="vector-menu-heading">
+		<span class="vector-menu-heading-label">Tools</span>
+	</label>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="t-whatlinkshere" class="mw-list-item"><a href="/wiki/Special:WhatLinksHere/Echo_state_network" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j"><span>What links here</span></a></li><li id="t-recentchangeslinked" class="mw-list-item"><a href="/wiki/Special:RecentChangesLinked/Echo_state_network" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k"><span>Related changes</span></a></li><li id="t-upload" class="mw-list-item"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u"><span>Upload file</span></a></li><li id="t-specialpages" class="mw-list-item"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q"><span>Special pages</span></a></li><li id="t-permalink" class="mw-list-item"><a href="/w/index.php?title=Echo_state_network&amp;oldid=1068682994" title="Permanent link to this revision of this page"><span>Permanent link</span></a></li><li id="t-info" class="mw-list-item"><a href="/w/index.php?title=Echo_state_network&amp;action=info" title="More information about this page"><span>Page information</span></a></li><li id="t-cite" class="mw-list-item"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Echo_state_network&amp;id=1068682994&amp;wpFormIdentifier=titleform" title="Information on how to cite this page"><span>Cite this page</span></a></li><li id="t-wikibase" class="mw-list-item"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q5332763" title="Structured data on this page hosted by Wikidata [g]" accesskey="g"><span>Wikidata item</span></a></li></ul>
+		
+	</div>
+</nav>
+
+<nav id="p-coll-print_export" class="mw-portlet mw-portlet-coll-print_export vector-menu vector-menu-portal portal" aria-labelledby="p-coll-print_export-label" role="navigation" 
+	 >
+	<label id="p-coll-print_export-label" aria-label="" class="vector-menu-heading">
+		<span class="vector-menu-heading-label">Print/export</span>
+	</label>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="coll-download-as-rl" class="mw-list-item"><a href="/w/index.php?title=Special:DownloadAsPdf&amp;page=Echo_state_network&amp;action=show-download-screen" title="Download this page as a PDF file"><span>Download as PDF</span></a></li><li id="t-print" class="mw-list-item"><a href="/w/index.php?title=Echo_state_network&amp;printable=yes" title="Printable version of this page [p]" accesskey="p"><span>Printable version</span></a></li></ul>
+		
+	</div>
+</nav>
+
+	
+<nav id="p-lang" class="mw-portlet mw-portlet-lang vector-menu vector-menu-portal portal" aria-labelledby="p-lang-label" role="navigation" 
+	 >
+	<label id="p-lang-label" aria-label="" class="vector-menu-heading">
+		<span class="vector-menu-heading-label">Languages</span>
+	</label>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li class="interlanguage-link interwiki-fa mw-list-item"><a href="https://fa.wikipedia.org/wiki/%D8%B4%D8%A8%DA%A9%D9%87_%D8%AD%D8%A7%D9%84%D8%AA_%D9%BE%DA%98%D9%88%D8%A7%DA%A9" title="شبکه حالت پژواک – Persian" lang="fa" hreflang="fa" class="interlanguage-link-target"><span>فارسی</span></a></li><li class="interlanguage-link interwiki-no mw-list-item"><a href="https://no.wikipedia.org/wiki/Echo_state_network" title="Echo state network – Norwegian Bokmål" lang="nb" hreflang="nb" class="interlanguage-link-target"><span>Norsk bokmål</span></a></li><li class="interlanguage-link interwiki-uk mw-list-item"><a href="https://uk.wikipedia.org/wiki/%D0%9C%D0%B5%D1%80%D0%B5%D0%B6%D0%B0_%D0%B7_%D0%B2%D1%96%D0%B4%D0%BB%D1%83%D0%BD%D0%BD%D1%8F%D0%BC_%D1%81%D1%82%D0%B0%D0%BD%D1%83" title="Мережа з відлунням стану – Ukrainian" lang="uk" hreflang="uk" class="interlanguage-link-target"><span>Українська</span></a></li><li class="interlanguage-link interwiki-zh-yue mw-list-item"><a href="https://zh-yue.wikipedia.org/wiki/%E8%BF%B4%E9%9F%BF%E7%8B%80%E6%85%8B%E7%B6%B2%E7%B5%A1" title="迴響狀態網絡 – Cantonese" lang="yue" hreflang="yue" class="interlanguage-link-target"><span>粵語</span></a></li></ul>
+		<div class="after-portlet after-portlet-lang"><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q5332763#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>
+	</div>
+</nav>
+
+</div>
+
+</div>
+
+<footer id="footer" class="mw-footer" role="contentinfo" >
+	<ul id="footer-info">
+	<li id="footer-info-lastmod"> This page was last edited on 29 January 2022, at 19:55<span class="anonymous-show">&#160;(UTC)</span>.</li>
+	<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License 3.0</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//foundation.wikimedia.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//foundation.wikimedia.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+</ul>
+
+	<ul id="footer-places">
+	<li id="footer-places-privacy"><a href="https://foundation.wikimedia.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+	<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+	<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+	<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+	<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Echo_state_network&amp;lxml=&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+	<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+	<li id="footer-places-statslink"><a href="https://stats.wikimedia.org/#/en.wikipedia.org">Statistics</a></li>
+	<li id="footer-places-cookiestatement"><a href="https://foundation.wikimedia.org/wiki/Cookie_statement">Cookie statement</a></li>
+</ul>
+
+	<ul id="footer-icons" class="noprint">
+	<li id="footer-copyrightico"><a href="https://wikimediafoundation.org/"><img src="/static/images/footer/wikimedia-button.png" srcset="/static/images/footer/wikimedia-button-1.5x.png 1.5x, /static/images/footer/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation" loading="lazy" /></a></li>
+	<li id="footer-poweredbyico"><a href="https://www.mediawiki.org/"><img src="/static/images/footer/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/footer/poweredby_mediawiki_132x47.png 1.5x, /static/images/footer/poweredby_mediawiki_176x62.png 2x" width="88" height="31" loading="lazy"/></a></li>
+</ul>
+
+</footer>
+
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.337","walltime":"0.376","ppvisitednodes":{"value":881,"limit":1000000},"postexpandincludesize":{"value":38129,"limit":2097152},"templateargumentsize":{"value":436,"limit":2097152},"expansiondepth":{"value":8,"limit":100},"expensivefunctioncount":{"value":0,"limit":500},"unstrip-depth":{"value":1,"limit":20},"unstrip-size":{"value":53754,"limit":5000000},"entityaccesscount":{"value":0,"limit":400},"timingprofile":["100.00%  329.575      1 -total"," 64.57%  212.822     14 Template:Cite_journal"," 21.94%   72.315      1 Template:Short_description"," 12.22%   40.285      1 Template:Pagetype","  5.01%   16.528      2 Template:Main_other","  4.14%   13.633      1 Template:SDcat","  3.00%    9.882      1 Template:Cite_book","  2.61%    8.618      1 Template:Cite_arXiv","  1.13%    3.715      1 Template:Short_description/lowercasecheck"]},"scribunto":{"limitreport-timeusage":{"value":"0.223","limit":"10.000"},"limitreport-memusage":{"value":5395914,"limit":52428800}},"cachereport":{"origin":"mw1351","timestamp":"20220305090437","ttl":1814400,"transientcontent":false}}});});</script>
+<script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"Article","name":"Echo state network","url":"https:\/\/en.wikipedia.org\/wiki\/Echo_state_network","sameAs":"http:\/\/www.wikidata.org\/entity\/Q5332763","mainEntity":"http:\/\/www.wikidata.org\/entity\/Q5332763","author":{"@type":"Organization","name":"Contributors to Wikimedia projects"},"publisher":{"@type":"Organization","name":"Wikimedia Foundation, Inc.","logo":{"@type":"ImageObject","url":"https:\/\/www.wikimedia.org\/static\/images\/wmf-hor-googpub.png"}},"datePublished":"2007-01-12T15:47:25Z","dateModified":"2022-01-29T19:55:40Z","headline":"recurrent neural network with a sparsely connected hidden layer"}</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":169,"wgHostname":"mw1320"});});</script>
+</body>
+</html>

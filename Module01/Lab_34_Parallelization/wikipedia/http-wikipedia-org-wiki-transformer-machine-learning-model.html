@@ -1,0 +1,1317 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Transformer (machine learning model) - Wikipedia</title>
+<script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"de91e086-12fa-4241-80e4-14c47f94eb65","wgCSPNonce":false,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Transformer_(machine_learning_model)","wgTitle":"Transformer (machine learning model)","wgCurRevisionId":1074172579,"wgRevisionId":1074172579,"wgArticleId":61603971,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["CS1 maint: multiple names: authors list","CS1 errors: missing periodical","CS1 maint: url-status","Articles with short description","Short description is different from Wikidata","Artificial neural networks"],"wgPageContentLanguage":"en",
+"wgPageContentModel":"wikitext","wgRelevantPageName":"Transformer_(machine_learning_model)","wgRelevantArticleId":61603971,"wgIsProbablyEditable":true,"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgFlaggedRevsParams":{"tags":{"status":{"levels":-1}}},"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en"},"wgMFDisplayWikibaseDescriptions":{"search":true,"nearby":true,"watchlist":true,"tagline":false},"wgWMESchemaEditAttemptStepOversample":false,"wgWMEPageLength":20000,"wgNoticeProject":"wikipedia","wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgPopupsFlags":10,"wgULSCurrentAutonym":"English","wgEditSubmitButtonLabelPublish":true,"wgCentralAuthMobileDomain":false,"wgULSPosition":"interlanguage","wgULSisCompactLinksEnabled":true,"wgWikibaseItemId":"Q85810444","wgGENewcomerTasksGuidanceEnabled":true,"wgGEAskQuestionEnabled":false,"wgGELinkRecommendationsFrontendEnabled":false};RLSTATE={
+"ext.globalCssJs.user.styles":"ready","site.styles":"ready","user.styles":"ready","ext.globalCssJs.user":"ready","user":"ready","user.options":"loading","ext.cite.styles":"ready","ext.math.styles":"ready","skins.vector.styles.legacy":"ready","jquery.makeCollapsible.styles":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.wikimediaBadges":"ready","ext.uls.interlanguage":"ready","wikibase.client.init":"ready"};RLPAGEMODULES=["ext.cite.ux-enhancements","ext.math.scripts","site","mediawiki.page.ready","jquery.makeCollapsible","mediawiki.toc","skins.vector.legacy.js","ext.gadget.ReferenceTooltips","ext.gadget.charinsert","ext.gadget.extra-toolbar-buttons","ext.gadget.refToolbar","ext.gadget.switcher","mmv.head","mmv.bootstrap.autostart","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging","ext.wikimediaEvents","ext.navigationTiming","ext.cx.eventlogging.campaigns","ext.centralNotice.geoIP","ext.centralNotice.startUp",
+"ext.centralauth.centralautologin","ext.popups","ext.uls.compactlinks","ext.uls.interface","ext.growthExperiments.SuggestedEditSession"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@1i9g4",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});});});</script>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=ext.cite.styles%7Cext.math.styles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cjquery.makeCollapsible.styles%7Cskins.vector.styles.legacy%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.38.0-wmf.25"/>
+<meta name="referrer" content="origin"/>
+<meta name="referrer" content="origin-when-crossorigin"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Kernel_Machine.svg/1200px-Kernel_Machine.svg.png"/>
+<meta property="og:image:width" content="1200"/>
+<meta property="og:image:height" content="546"/>
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Kernel_Machine.svg/800px-Kernel_Machine.svg.png"/>
+<meta property="og:image:width" content="800"/>
+<meta property="og:image:height" content="364"/>
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Kernel_Machine.svg/640px-Kernel_Machine.svg.png"/>
+<meta property="og:image:width" content="640"/>
+<meta property="og:image:height" content="291"/>
+<meta property="og:title" content="Transformer (machine learning model) - Wikipedia"/>
+<meta property="og:type" content="website"/>
+<link rel="preconnect" href="//upload.wikimedia.org"/>
+<link rel="alternate" media="only screen and (max-width: 720px)" href="//en.m.wikipedia.org/wiki/Transformer_(machine_learning_model)"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Transformer_(machine_learning_model)&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="license" href="https://creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Transformer_(machine_learning_model)"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject mw-editable page-Transformer_machine_learning_model rootpage-Transformer_machine_learning_model skin-vector action-view skin-vector-legacy"><div id="mw-page-base" class="noprint"></div>
+<div id="mw-head-base" class="noprint"></div>
+<div id="content" class="mw-body" role="main">
+	<a id="top"></a>
+	<div id="siteNotice"><!-- CentralNotice --></div>
+	<div class="mw-indicators">
+	</div>
+	<h1 id="firstHeading" class="firstHeading mw-first-heading">Transformer (machine learning model)</h1>
+	<div id="bodyContent" class="vector-body">
+		<div id="siteSub" class="noprint">From Wikipedia, the free encyclopedia</div>
+		<div id="contentSub"></div>
+		<div id="contentSub2"></div>
+		
+		<div id="jump-to-nav"></div>
+		<a class="mw-jump-link" href="#mw-head">Jump to navigation</a>
+		<a class="mw-jump-link" href="#searchInput">Jump to search</a>
+		<div id="mw-content-text" class="mw-body-content mw-content-ltr" lang="en" dir="ltr"><div class="mw-parser-output"><div class="shortdescription nomobile noexcerpt noprint searchaux" style="display:none">Machine learning algorithm used for natural language processing</div>
+<style data-mw-deduplicate="TemplateStyles:r1045330069">.mw-parser-output .sidebar{width:22em;float:right;clear:right;margin:0.5em 0 1em 1em;background:#f8f9fa;border:1px solid #aaa;padding:0.2em;text-align:center;line-height:1.4em;font-size:88%;border-collapse:collapse;display:table}body.skin-minerva .mw-parser-output .sidebar{display:table!important;float:right!important;margin:0.5em 0 1em 1em!important}.mw-parser-output .sidebar-subgroup{width:100%;margin:0;border-spacing:0}.mw-parser-output .sidebar-left{float:left;clear:left;margin:0.5em 1em 1em 0}.mw-parser-output .sidebar-none{float:none;clear:both;margin:0.5em 1em 1em 0}.mw-parser-output .sidebar-outer-title{padding:0 0.4em 0.2em;font-size:125%;line-height:1.2em;font-weight:bold}.mw-parser-output .sidebar-top-image{padding:0.4em}.mw-parser-output .sidebar-top-caption,.mw-parser-output .sidebar-pretitle-with-top-image,.mw-parser-output .sidebar-caption{padding:0.2em 0.4em 0;line-height:1.2em}.mw-parser-output .sidebar-pretitle{padding:0.4em 0.4em 0;line-height:1.2em}.mw-parser-output .sidebar-title,.mw-parser-output .sidebar-title-with-pretitle{padding:0.2em 0.8em;font-size:145%;line-height:1.2em}.mw-parser-output .sidebar-title-with-pretitle{padding:0.1em 0.4em}.mw-parser-output .sidebar-image{padding:0.2em 0.4em 0.4em}.mw-parser-output .sidebar-heading{padding:0.1em 0.4em}.mw-parser-output .sidebar-content{padding:0 0.5em 0.4em}.mw-parser-output .sidebar-content-with-subgroup{padding:0.1em 0.4em 0.2em}.mw-parser-output .sidebar-above,.mw-parser-output .sidebar-below{padding:0.3em 0.8em;font-weight:bold}.mw-parser-output .sidebar-collapse .sidebar-above,.mw-parser-output .sidebar-collapse .sidebar-below{border-top:1px solid #aaa;border-bottom:1px solid #aaa}.mw-parser-output .sidebar-navbar{text-align:right;font-size:115%;padding:0 0.4em 0.4em}.mw-parser-output .sidebar-list-title{padding:0 0.4em;text-align:left;font-weight:bold;line-height:1.6em;font-size:105%}.mw-parser-output .sidebar-list-title-c{padding:0 0.4em;text-align:center;margin:0 3.3em}@media(max-width:720px){body.mediawiki .mw-parser-output .sidebar{width:100%!important;clear:both;float:none!important;margin-left:0!important;margin-right:0!important}}</style><table class="sidebar sidebar-collapse nomobile nowraplinks"><tbody><tr><td class="sidebar-pretitle">Part of a series on</td></tr><tr><th class="sidebar-title-with-pretitle"><a href="/wiki/Machine_learning" title="Machine learning">Machine learning</a><br />and <a href="/wiki/Data_mining" title="Data mining">data mining</a></th></tr><tr><td class="sidebar-image"><a href="/wiki/File:Kernel_Machine.svg" class="image" title="Scatterplot featuring a linear support vector machine&#39;s decision boundary (dashed line)"><img alt="Scatterplot featuring a linear support vector machine&#39;s decision boundary (dashed line)" src="//upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Kernel_Machine.svg/220px-Kernel_Machine.svg.png" decoding="async" width="220" height="100" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Kernel_Machine.svg/330px-Kernel_Machine.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Kernel_Machine.svg/440px-Kernel_Machine.svg.png 2x" data-file-width="512" data-file-height="233" /></a></td></tr><tr><td class="sidebar-content">
+<div class="sidebar-list mw-collapsible mw-collapsed"><div class="sidebar-list-title" style="border-top:1px solid #aaa;text-align:center; background:#ddd;">Problems</div><div class="sidebar-list-content mw-collapsible-content hlist">
+<ul><li><a href="/wiki/Statistical_classification" title="Statistical classification">Classification</a></li>
+<li><a href="/wiki/Cluster_analysis" title="Cluster analysis">Clustering</a></li>
+<li><a href="/wiki/Regression_analysis" title="Regression analysis">Regression</a></li>
+<li><a href="/wiki/Anomaly_detection" title="Anomaly detection">Anomaly detection</a></li>
+<li><a href="/wiki/Data_Cleaning" class="mw-redirect" title="Data Cleaning">Data Cleaning</a></li>
+<li><a href="/wiki/Automated_machine_learning" title="Automated machine learning">AutoML</a></li>
+<li><a href="/wiki/Association_rule_learning" title="Association rule learning">Association rules</a></li>
+<li><a href="/wiki/Reinforcement_learning" title="Reinforcement learning">Reinforcement learning</a></li>
+<li><a href="/wiki/Structured_prediction" title="Structured prediction">Structured prediction</a></li>
+<li><a href="/wiki/Feature_engineering" title="Feature engineering">Feature engineering</a></li>
+<li><a href="/wiki/Feature_learning" title="Feature learning">Feature learning</a></li>
+<li><a href="/wiki/Online_machine_learning" title="Online machine learning">Online learning</a></li>
+<li><a href="/wiki/Semi-supervised_learning" title="Semi-supervised learning">Semi-supervised learning</a></li>
+<li><a href="/wiki/Unsupervised_learning" title="Unsupervised learning">Unsupervised learning</a></li>
+<li><a href="/wiki/Learning_to_rank" title="Learning to rank">Learning to rank</a></li>
+<li><a href="/wiki/Grammar_induction" title="Grammar induction">Grammar induction</a></li></ul></div></div></td>
+</tr><tr><td class="sidebar-content">
+<div class="sidebar-list mw-collapsible mw-collapsed"><div class="sidebar-list-title" style="border-top:1px solid #aaa;text-align:center; background:#ddd;"><div style="display:inline-block; padding:0.1em 0;line-height:1.2em;"><a href="/wiki/Supervised_learning" title="Supervised learning">Supervised learning</a><br /><style data-mw-deduplicate="TemplateStyles:r886047488">.mw-parser-output .nobold{font-weight:normal}</style><span class="nobold"><span style="font-size:85%;">(<b><a href="/wiki/Statistical_classification" title="Statistical classification">classification</a></b>&#160;&#8226;&#32;<b><a href="/wiki/Regression_analysis" title="Regression analysis">regression</a></b>)</span></span> </div></div><div class="sidebar-list-content mw-collapsible-content hlist">
+<ul><li><a href="/wiki/Decision_tree_learning" title="Decision tree learning">Decision trees</a></li>
+<li><a href="/wiki/Ensemble_learning" title="Ensemble learning">Ensembles</a>
+<ul><li><a href="/wiki/Bootstrap_aggregating" title="Bootstrap aggregating">Bagging</a></li>
+<li><a href="/wiki/Boosting_(machine_learning)" title="Boosting (machine learning)">Boosting</a></li>
+<li><a href="/wiki/Random_forest" title="Random forest">Random forest</a></li></ul></li>
+<li><a href="/wiki/K-nearest_neighbors_algorithm" title="K-nearest neighbors algorithm"><i>k</i>-NN</a></li>
+<li><a href="/wiki/Linear_regression" title="Linear regression">Linear regression</a></li>
+<li><a href="/wiki/Naive_Bayes_classifier" title="Naive Bayes classifier">Naive Bayes</a></li>
+<li><a href="/wiki/Artificial_neural_network" title="Artificial neural network">Artificial neural networks</a></li>
+<li><a href="/wiki/Logistic_regression" title="Logistic regression">Logistic regression</a></li>
+<li><a href="/wiki/Perceptron" title="Perceptron">Perceptron</a></li>
+<li><a href="/wiki/Relevance_vector_machine" title="Relevance vector machine">Relevance vector machine (RVM)</a></li>
+<li><a href="/wiki/Support-vector_machine" title="Support-vector machine">Support vector machine (SVM)</a></li></ul></div></div></td>
+</tr><tr><td class="sidebar-content">
+<div class="sidebar-list mw-collapsible mw-collapsed"><div class="sidebar-list-title" style="border-top:1px solid #aaa;text-align:center; background:#ddd;"><a href="/wiki/Cluster_analysis" title="Cluster analysis">Clustering</a></div><div class="sidebar-list-content mw-collapsible-content hlist">
+<ul><li><a href="/wiki/BIRCH" title="BIRCH">BIRCH</a></li>
+<li><a href="/wiki/CURE_algorithm" title="CURE algorithm">CURE</a></li>
+<li><a href="/wiki/Hierarchical_clustering" title="Hierarchical clustering">Hierarchical</a></li>
+<li><a href="/wiki/K-means_clustering" title="K-means clustering"><i>k</i>-means</a></li>
+<li><a href="/wiki/Expectation%E2%80%93maximization_algorithm" title="Expectation–maximization algorithm">Expectation–maximization (EM)</a></li>
+<li><br /><a href="/wiki/DBSCAN" title="DBSCAN">DBSCAN</a></li>
+<li><a href="/wiki/OPTICS_algorithm" title="OPTICS algorithm">OPTICS</a></li>
+<li><a href="/wiki/Mean_shift" title="Mean shift">Mean shift</a></li></ul></div></div></td>
+</tr><tr><td class="sidebar-content">
+<div class="sidebar-list mw-collapsible mw-collapsed"><div class="sidebar-list-title" style="border-top:1px solid #aaa;text-align:center; background:#ddd;"><a href="/wiki/Dimensionality_reduction" title="Dimensionality reduction">Dimensionality reduction</a></div><div class="sidebar-list-content mw-collapsible-content hlist">
+<ul><li><a href="/wiki/Factor_analysis" title="Factor analysis">Factor analysis</a></li>
+<li><a href="/wiki/Canonical_correlation" title="Canonical correlation">CCA</a></li>
+<li><a href="/wiki/Independent_component_analysis" title="Independent component analysis">ICA</a></li>
+<li><a href="/wiki/Linear_discriminant_analysis" title="Linear discriminant analysis">LDA</a></li>
+<li><a href="/wiki/Non-negative_matrix_factorization" title="Non-negative matrix factorization">NMF</a></li>
+<li><a href="/wiki/Principal_component_analysis" title="Principal component analysis">PCA</a></li>
+<li><a href="/wiki/Proper_generalized_decomposition" title="Proper generalized decomposition">PGD</a></li>
+<li><a href="/wiki/T-distributed_stochastic_neighbor_embedding" title="T-distributed stochastic neighbor embedding">t-SNE</a></li></ul></div></div></td>
+</tr><tr><td class="sidebar-content">
+<div class="sidebar-list mw-collapsible mw-collapsed"><div class="sidebar-list-title" style="border-top:1px solid #aaa;text-align:center; background:#ddd;"><a href="/wiki/Structured_prediction" title="Structured prediction">Structured prediction</a></div><div class="sidebar-list-content mw-collapsible-content hlist">
+<ul><li><a href="/wiki/Graphical_model" title="Graphical model">Graphical models</a>
+<ul><li><a href="/wiki/Bayesian_network" title="Bayesian network">Bayes net</a></li>
+<li><a href="/wiki/Conditional_random_field" title="Conditional random field">Conditional random field</a></li>
+<li><a href="/wiki/Hidden_Markov_model" title="Hidden Markov model">Hidden Markov</a></li></ul></li></ul></div></div></td>
+</tr><tr><td class="sidebar-content">
+<div class="sidebar-list mw-collapsible mw-collapsed"><div class="sidebar-list-title" style="border-top:1px solid #aaa;text-align:center; background:#ddd;"><a href="/wiki/Anomaly_detection" title="Anomaly detection">Anomaly detection</a></div><div class="sidebar-list-content mw-collapsible-content hlist">
+<ul><li><a href="/wiki/K-nearest_neighbors_algorithm" title="K-nearest neighbors algorithm"><i>k</i>-NN</a></li>
+<li><a href="/wiki/Local_outlier_factor" title="Local outlier factor">Local outlier factor</a></li></ul></div></div></td>
+</tr><tr><td class="sidebar-content">
+<div class="sidebar-list mw-collapsible"><div class="sidebar-list-title" style="border-top:1px solid #aaa;text-align:center; background:#ddd;"><a href="/wiki/Artificial_neural_network" title="Artificial neural network">Artificial neural network</a></div><div class="sidebar-list-content mw-collapsible-content hlist">
+<ul><li><a href="/wiki/Autoencoder" title="Autoencoder">Autoencoder</a></li>
+<li><a href="/wiki/Cognitive_computing" title="Cognitive computing">Cognitive computing</a></li>
+<li><a href="/wiki/Deep_learning" title="Deep learning">Deep learning</a></li>
+<li><a href="/wiki/DeepDream" title="DeepDream">DeepDream</a></li>
+<li><a href="/wiki/Multilayer_perceptron" title="Multilayer perceptron">Multilayer perceptron</a></li>
+<li><a href="/wiki/Recurrent_neural_network" title="Recurrent neural network">RNN</a>
+<ul><li><a href="/wiki/Long_short-term_memory" title="Long short-term memory">LSTM</a></li>
+<li><a href="/wiki/Gated_recurrent_unit" title="Gated recurrent unit">GRU</a></li>
+<li><a href="/wiki/Echo_state_network" title="Echo state network">ESN</a></li></ul></li>
+<li><a href="/wiki/Restricted_Boltzmann_machine" title="Restricted Boltzmann machine">Restricted Boltzmann machine</a></li>
+<li><a href="/wiki/Generative_adversarial_network" title="Generative adversarial network">GAN</a></li>
+<li><a href="/wiki/Self-organizing_map" title="Self-organizing map">SOM</a></li>
+<li><a href="/wiki/Convolutional_neural_network" title="Convolutional neural network">Convolutional neural network</a>
+<ul><li><a href="/wiki/U-Net" title="U-Net">U-Net</a></li></ul></li>
+<li><a class="mw-selflink selflink">Transformer</a>
+<ul><li><a href="/wiki/Vision_transformer" title="Vision transformer">Vision</a></li></ul></li>
+<li><a href="/wiki/Spiking_neural_network" title="Spiking neural network">Spiking neural network</a></li>
+<li><a href="/wiki/Memtransistor" title="Memtransistor">Memtransistor</a></li>
+<li><a href="/wiki/Electrochemical_RAM" title="Electrochemical RAM">Electrochemical RAM</a> (ECRAM)</li></ul></div></div></td>
+</tr><tr><td class="sidebar-content">
+<div class="sidebar-list mw-collapsible mw-collapsed"><div class="sidebar-list-title" style="border-top:1px solid #aaa;text-align:center; background:#ddd;"><a href="/wiki/Reinforcement_learning" title="Reinforcement learning">Reinforcement learning</a></div><div class="sidebar-list-content mw-collapsible-content hlist">
+<ul><li><a href="/wiki/Q-learning" title="Q-learning">Q-learning</a></li>
+<li><a href="/wiki/State%E2%80%93action%E2%80%93reward%E2%80%93state%E2%80%93action" title="State–action–reward–state–action">SARSA</a></li>
+<li><a href="/wiki/Temporal_difference_learning" title="Temporal difference learning">Temporal difference (TD)</a></li></ul></div></div></td>
+</tr><tr><td class="sidebar-content">
+<div class="sidebar-list mw-collapsible mw-collapsed"><div class="sidebar-list-title" style="border-top:1px solid #aaa;text-align:center; background:#ddd;">Theory</div><div class="sidebar-list-content mw-collapsible-content hlist">
+<ul><li><a href="/wiki/Kernel_machines" class="mw-redirect" title="Kernel machines">Kernel machines</a></li>
+<li><a href="/wiki/Bias%E2%80%93variance_tradeoff" title="Bias–variance tradeoff">Bias–variance tradeoff</a></li>
+<li><a href="/wiki/Computational_learning_theory" title="Computational learning theory">Computational learning theory</a></li>
+<li><a href="/wiki/Empirical_risk_minimization" title="Empirical risk minimization">Empirical risk minimization</a></li>
+<li><a href="/wiki/Occam_learning" title="Occam learning">Occam learning</a></li>
+<li><a href="/wiki/Probably_approximately_correct_learning" title="Probably approximately correct learning">PAC learning</a></li>
+<li><a href="/wiki/Statistical_learning_theory" title="Statistical learning theory">Statistical learning</a></li>
+<li><a href="/wiki/Vapnik%E2%80%93Chervonenkis_theory" title="Vapnik–Chervonenkis theory">VC theory</a></li></ul></div></div></td>
+</tr><tr><td class="sidebar-content">
+<div class="sidebar-list mw-collapsible mw-collapsed"><div class="sidebar-list-title" style="border-top:1px solid #aaa;text-align:center; background:#ddd;">Machine-learning venues</div><div class="sidebar-list-content mw-collapsible-content hlist">
+<ul><li><a href="/wiki/Conference_on_Neural_Information_Processing_Systems" title="Conference on Neural Information Processing Systems">NeurIPS</a></li>
+<li><a href="/wiki/International_Conference_on_Machine_Learning" title="International Conference on Machine Learning">ICML</a></li>
+<li><a href="/wiki/Machine_Learning_(journal)" title="Machine Learning (journal)">ML</a></li>
+<li><a href="/wiki/Journal_of_Machine_Learning_Research" title="Journal of Machine Learning Research">JMLR</a></li>
+<li><a rel="nofollow" class="external text" href="https://arxiv.org/list/cs.LG/recent">ArXiv:cs.LG</a></li></ul></div></div></td>
+</tr><tr><td class="sidebar-content">
+<div class="sidebar-list mw-collapsible mw-collapsed"><div class="sidebar-list-title" style="border-top:1px solid #aaa;text-align:center; background:#ddd;">Related articles</div><div class="sidebar-list-content mw-collapsible-content hlist">
+<ul><li><a href="/wiki/Glossary_of_artificial_intelligence" title="Glossary of artificial intelligence">Glossary of artificial intelligence</a></li>
+<li><a href="/wiki/List_of_datasets_for_machine-learning_research" title="List of datasets for machine-learning research">List of datasets for machine-learning research</a></li>
+<li><a href="/wiki/Outline_of_machine_learning" title="Outline of machine learning">Outline of machine learning</a></li></ul></div></div></td>
+</tr><tr><td class="sidebar-navbar"><style data-mw-deduplicate="TemplateStyles:r1063604349">.mw-parser-output .navbar{display:inline;font-size:88%;font-weight:normal}.mw-parser-output .navbar-collapse{float:left;text-align:left}.mw-parser-output .navbar-boxtext{word-spacing:0}.mw-parser-output .navbar ul{display:inline-block;white-space:nowrap;line-height:inherit}.mw-parser-output .navbar-brackets::before{margin-right:-0.125em;content:"[ "}.mw-parser-output .navbar-brackets::after{margin-left:-0.125em;content:" ]"}.mw-parser-output .navbar li{word-spacing:-0.125em}.mw-parser-output .navbar a>span,.mw-parser-output .navbar a>abbr{text-decoration:inherit}.mw-parser-output .navbar-mini abbr{font-variant:small-caps;border-bottom:none;text-decoration:none;cursor:inherit}.mw-parser-output .navbar-ct-full{font-size:114%;margin:0 7em}.mw-parser-output .navbar-ct-mini{font-size:114%;margin:0 4em}</style><div class="navbar plainlinks hlist navbar-mini"><ul><li class="nv-view"><a href="/wiki/Template:Machine_learning" title="Template:Machine learning"><abbr title="View this template">v</abbr></a></li><li class="nv-talk"><a href="/wiki/Template_talk:Machine_learning" title="Template talk:Machine learning"><abbr title="Discuss this template">t</abbr></a></li><li class="nv-edit"><a class="external text" href="https://en.wikipedia.org/w/index.php?title=Template:Machine_learning&amp;action=edit"><abbr title="Edit this template">e</abbr></a></li></ul></div></td></tr></tbody></table>
+<p>A <b>transformer</b> is a <a href="/wiki/Deep_learning" title="Deep learning">deep learning</a> model that adopts the mechanism of <a href="/wiki/Attention_(machine_learning)" title="Attention (machine learning)">self-attention</a>, differentially weighting the significance of each part of the input data. It is used primarily in the fields of <a href="/wiki/Natural_language_processing" title="Natural language processing">natural language processing</a> (NLP)<sup id="cite_ref-:0_1-0" class="reference"><a href="#cite_note-:0-1">&#91;1&#93;</a></sup> and <a href="/wiki/Computer_vision" title="Computer vision">computer vision</a> (CV).<sup id="cite_ref-2" class="reference"><a href="#cite_note-2">&#91;2&#93;</a></sup>
+</p><p>Like <a href="/wiki/Recurrent_neural_networks" class="mw-redirect" title="Recurrent neural networks">recurrent neural networks</a> (RNNs), transformers are designed to handle sequential input data, such as natural language, for tasks such as <a href="/wiki/Statistical_machine_translation" title="Statistical machine translation">translation</a> and <a href="/wiki/Automatic_summarization" title="Automatic summarization">text summarization</a>. However, unlike RNNs, transformers do not necessarily process the data in order. Rather, the attention mechanism provides context for any position in the input sequence. For example, if the input data is a natural language sentence, the transformer does not need to process the beginning of the sentence before the end. Rather, it identifies the context that confers meaning to each word in the sentence. This feature allows for more <a href="/wiki/Parallel_computing" title="Parallel computing">parallelization</a> than RNNs and therefore reduces training times.<sup id="cite_ref-:0_1-1" class="reference"><a href="#cite_note-:0-1">&#91;1&#93;</a></sup>
+</p><p>Transformers were introduced in 2017 by a team at <a href="/wiki/Google_Brain" title="Google Brain">Google Brain</a><sup id="cite_ref-:0_1-2" class="reference"><a href="#cite_note-:0-1">&#91;1&#93;</a></sup> and are increasingly the model of choice for NLP problems,<sup id="cite_ref-wolf2020_3-0" class="reference"><a href="#cite_note-wolf2020-3">&#91;3&#93;</a></sup> replacing RNN models such as <a href="/wiki/Long_short-term_memory" title="Long short-term memory">long short-term memory</a> (LSTM). The additional training parallelization allows training on larger datasets than was once possible. This led to the development of <a href="/wiki/Transfer_learning" title="Transfer learning">pretrained systems</a> such as <a href="/wiki/BERT_(language_model)" title="BERT (language model)">BERT</a> (Bidirectional Encoder Representations from Transformers) and <a href="/wiki/OpenAI#Generative_models" title="OpenAI">GPT</a> (Generative Pre-trained Transformer), which were trained with large language datasets, such as the <a href="/wiki/Wikipedia" title="Wikipedia">Wikipedia</a> Corpus and <a href="/wiki/Common_Crawl" title="Common Crawl">Common Crawl</a>, and can be fine-tuned for specific tasks.<sup id="cite_ref-:6_4-0" class="reference"><a href="#cite_note-:6-4">&#91;4&#93;</a></sup><sup id="cite_ref-:7_5-0" class="reference"><a href="#cite_note-:7-5">&#91;5&#93;</a></sup>
+</p>
+<style data-mw-deduplicate="TemplateStyles:r886046785">.mw-parser-output .toclimit-2 .toclevel-1 ul,.mw-parser-output .toclimit-3 .toclevel-2 ul,.mw-parser-output .toclimit-4 .toclevel-3 ul,.mw-parser-output .toclimit-5 .toclevel-4 ul,.mw-parser-output .toclimit-6 .toclevel-5 ul,.mw-parser-output .toclimit-7 .toclevel-6 ul{display:none}</style><div class="toclimit-3"><div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2 id="mw-toc-heading">Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Background"><span class="tocnumber">1</span> <span class="toctext">Background</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Sequential_processing"><span class="tocnumber">1.1</span> <span class="toctext">Sequential processing</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#Attention"><span class="tocnumber">1.2</span> <span class="toctext">Attention</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-4"><a href="#Architecture"><span class="tocnumber">2</span> <span class="toctext">Architecture</span></a>
+<ul>
+<li class="toclevel-2 tocsection-5"><a href="#Encoder-decoder_architecture"><span class="tocnumber">2.1</span> <span class="toctext">Encoder-decoder architecture</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Scaled_dot-product_attention"><span class="tocnumber">2.2</span> <span class="toctext">Scaled dot-product attention</span></a>
+<ul>
+<li class="toclevel-3 tocsection-7"><a href="#Multi-head_attention"><span class="tocnumber">2.2.1</span> <span class="toctext">Multi-head attention</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-8"><a href="#Encoder"><span class="tocnumber">2.3</span> <span class="toctext">Encoder</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="#Decoder"><span class="tocnumber">2.4</span> <span class="toctext">Decoder</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="#Alternatives"><span class="tocnumber">2.5</span> <span class="toctext">Alternatives</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-11"><a href="#Training"><span class="tocnumber">3</span> <span class="toctext">Training</span></a></li>
+<li class="toclevel-1 tocsection-12"><a href="#Applications"><span class="tocnumber">4</span> <span class="toctext">Applications</span></a></li>
+<li class="toclevel-1 tocsection-13"><a href="#Implementations"><span class="tocnumber">5</span> <span class="toctext">Implementations</span></a></li>
+<li class="toclevel-1 tocsection-14"><a href="#See_also"><span class="tocnumber">6</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-15"><a href="#References"><span class="tocnumber">7</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-16"><a href="#Further_reading"><span class="tocnumber">8</span> <span class="toctext">Further reading</span></a></li>
+<li class="toclevel-1 tocsection-17"><a href="#External_links"><span class="tocnumber">9</span> <span class="toctext">External links</span></a></li>
+</ul>
+</div>
+</div>
+<h2><span class="mw-headline" id="Background">Background</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Transformer_(machine_learning_model)&amp;action=edit&amp;section=1" title="Edit section: Background">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Before transformers, most state-of-the-art NLP systems relied on gated RNNs, such as <a href="/wiki/Long_short-term_memory" title="Long short-term memory">LSTM</a> and <a href="/wiki/Gated_recurrent_unit" title="Gated recurrent unit">gated recurrent units</a> (GRUs), with added <a href="/wiki/Attention_mechanism" class="mw-redirect" title="Attention mechanism">attention mechanisms</a>. Transformers are built on these attention technologies without using an RNN structure, highlighting the fact that attention mechanisms alone can match the performance of RNNs with attention.
+</p>
+<h3><span class="mw-headline" id="Sequential_processing">Sequential processing</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Transformer_(machine_learning_model)&amp;action=edit&amp;section=2" title="Edit section: Sequential processing">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Gated RNNs process tokens sequentially, maintaining a state vector that contains a representation of the data seen after every token. To process the <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\textstyle n}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="false" scriptlevel="0">
+        <mi>n</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\textstyle n}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/cc6e1f880981346a604257ebcacdef24c0aca2d6" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.395ex; height:1.676ex;" alt="{\textstyle n}"/></span>th token, the model combines the state representing the sentence up to token <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\textstyle n-1}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="false" scriptlevel="0">
+        <mi>n</mi>
+        <mo>&#x2212;<!-- − --></mo>
+        <mn>1</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\textstyle n-1}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/960c88fa1831b7505d9672de66058532fa5d4053" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.505ex; width:5.398ex; height:2.343ex;" alt="{\textstyle n-1}"/></span> with the information of the new token to create a new state, representing the sentence up to token <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\textstyle n}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="false" scriptlevel="0">
+        <mi>n</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\textstyle n}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/cc6e1f880981346a604257ebcacdef24c0aca2d6" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.395ex; height:1.676ex;" alt="{\textstyle n}"/></span>. Theoretically, the information from one token can propagate arbitrarily far down the sequence, if at every point the state continues to encode contextual information about the token. In practice this mechanism is flawed: the <a href="/wiki/Vanishing_gradient_problem" title="Vanishing gradient problem">vanishing gradient problem</a> leaves the model's state at the end of a long sentence without precise, extractable information about preceding tokens.
+The dependency of token computations on results of previous token computations also makes it hard to parallelize computation on modern deep learning hardware. This can make the training of RNNs inefficient.
+</p>
+<h3><span class="mw-headline" id="Attention">Attention</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Transformer_(machine_learning_model)&amp;action=edit&amp;section=3" title="Edit section: Attention">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>These problems were addressed by attention mechanisms. Attention mechanisms let a model draw from the state at any preceding point along the sequence. The attention layer can access all previous states and weigh them according to a learned measure of relevancy, providing relevant information about far-away tokens.
+</p><p>A clear example of the value of attention is in <a href="/wiki/Language_translation" class="mw-redirect" title="Language translation">language translation</a>, where context is essential to assign the meaning of a word in a sentence. In an English-to-French translation system, the first word of the French output most probably depends heavily on the first few words of the English input. However, in a classic LSTM model, in order to produce the first word of the French output, the model is given only the state vector of the <i>last</i> English word. Theoretically, this vector can encode information about the whole English sentence, giving the model all necessary knowledge. In practice, this information is often poorly preserved by the LSTM. An attention mechanism can be added to address this problem: the decoder is given access to the state vectors of every English input word, not just the last, and can learn attention weights that dictate how much to attend to each English input state vector.
+</p><p>When added to RNNs, attention mechanisms increase performance. The development of the Transformer architecture revealed that attention mechanisms were powerful in themselves and that sequential recurrent processing of data was not necessary to achieve the quality gains of RNNs with attention. Transformers use an attention mechanism without an RNN, processing all tokens at the same time and calculating attention weights between them in successive layers.
+Since the attention mechanism only uses information about other tokens from lower layers, it can be computed for all tokens in parallel, which leads to improved training speed.
+</p>
+<h2><span class="mw-headline" id="Architecture">Architecture</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Transformer_(machine_learning_model)&amp;action=edit&amp;section=4" title="Edit section: Architecture">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<h3><span class="mw-headline" id="Encoder-decoder_architecture">Encoder-decoder architecture</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Transformer_(machine_learning_model)&amp;action=edit&amp;section=5" title="Edit section: Encoder-decoder architecture">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Like earlier seq2seq models, the original Transformer model used an <b>encoder-decoder</b> architecture. The encoder consists of encoding layers that process the input iteratively one layer after another, while the decoder consists of decoding layers that do the same thing to the encoder's output.
+</p><p>The function of each encoder layer is to generate encodings that contain information about which parts of the inputs are relevant to each other. It passes its encodings to the next encoder layer as inputs. Each decoder layer does the opposite, taking all the encodings and using their incorporated contextual information to generate an output sequence.<sup id="cite_ref-6" class="reference"><a href="#cite_note-6">&#91;6&#93;</a></sup> To achieve this, each encoder and decoder layer makes use of an attention mechanism.
+</p><p>For each input, attention weighs the relevance of every other input and draws from them to produce the output.<sup id="cite_ref-:1_7-0" class="reference"><a href="#cite_note-:1-7">&#91;7&#93;</a></sup> Each decoder layer has an additional attention mechanism that draws information from the outputs of previous decoders, before the decoder layer draws information from the encodings.
+</p><p>Both the encoder and decoder layers have a <a href="/wiki/Feedforward_neural_network" title="Feedforward neural network">feed-forward neural network</a> for additional processing of the outputs and contain residual connections and layer normalization steps.<sup id="cite_ref-:1_7-1" class="reference"><a href="#cite_note-:1-7">&#91;7&#93;</a></sup>
+</p>
+<h3><span class="mw-headline" id="Scaled_dot-product_attention">Scaled dot-product attention</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Transformer_(machine_learning_model)&amp;action=edit&amp;section=6" title="Edit section: Scaled dot-product attention">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The transformer building blocks are scaled dot-product attention units. When a sentence is passed into a transformer model, attention weights are calculated between every token simultaneously. The attention unit produces embeddings for every token in context that contain information about the token itself along with a weighted combination of other relevant tokens each weighted by its attention weight.
+</p><p>For each attention unit the transformer model learns three weight matrices; the query weights <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle W_{Q}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>W</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>Q</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle W_{Q}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/27233f4471dd458034969c094d1ac13bff1e38d1" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:3.726ex; height:2.843ex;" alt="{\displaystyle W_{Q}}"/></span>, the key weights <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle W_{K}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>W</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>K</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle W_{K}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/1476608b04371ce36cdf6625d8b9ba8a96c615b9" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:3.887ex; height:2.509ex;" alt="{\displaystyle W_{K}}"/></span>, and the value weights <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle W_{V}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>W</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>V</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle W_{V}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/2ea6ed8ea3f0c61c33d4efb054e07f58b7046597" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:3.69ex; height:2.509ex;" alt="{\displaystyle W_{V}}"/></span>. For each token <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle i}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>i</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle i}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/add78d8608ad86e54951b8c8bd6c8d8416533d20" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:0.802ex; height:2.176ex;" alt="i"/></span>, the input <a href="/wiki/Word_embedding" title="Word embedding">word embedding</a> <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle x_{i}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle x_{i}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e87000dd6142b81d041896a30fe58f0c3acb2158" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:2.129ex; height:2.009ex;" alt="x_{i}"/></span> is multiplied with each of the three weight matrices to produce a query vector <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle q_{i}=x_{i}W_{Q}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>q</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <msub>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+          </mrow>
+        </msub>
+        <msub>
+          <mi>W</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>Q</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle q_{i}=x_{i}W_{Q}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ebba814bf54791662c42b73973f13b95a062a835" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:10.79ex; height:2.843ex;" alt="{\displaystyle q_{i}=x_{i}W_{Q}}"/></span>, a key vector <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle k_{i}=x_{i}W_{K}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>k</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <msub>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+          </mrow>
+        </msub>
+        <msub>
+          <mi>W</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>K</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle k_{i}=x_{i}W_{K}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/c55d138a4e6a0203e8bac5d4f87d7143dec961ce" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:11.126ex; height:2.509ex;" alt="{\displaystyle k_{i}=x_{i}W_{K}}"/></span>, and a value vector <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle v_{i}=x_{i}W_{V}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>v</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <msub>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+          </mrow>
+        </msub>
+        <msub>
+          <mi>W</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>V</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle v_{i}=x_{i}W_{V}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/237f8999bf057b953208623a1647ade7ed908c52" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:10.845ex; height:2.509ex;" alt="{\displaystyle v_{i}=x_{i}W_{V}}"/></span>. Attention weights are calculated using the query and key vectors: the attention weight <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle a_{ij}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+            <mi>j</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle a_{ij}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ebea6cd2813c330c798921a2894b358f7b643917" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:2.707ex; height:2.343ex;" alt="a_{ij}"/></span> from token <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle i}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>i</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle i}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/add78d8608ad86e54951b8c8bd6c8d8416533d20" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:0.802ex; height:2.176ex;" alt="i"/></span> to token <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle j}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>j</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle j}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/2f461e54f5c093e92a55547b9764291390f0b5d0" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; margin-left: -0.027ex; width:0.985ex; height:2.509ex;" alt="j"/></span> is the dot product between <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle q_{i}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>q</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle q_{i}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/2752dcbff884354069fe332b8e51eb0a70a531b6" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:1.837ex; height:2.009ex;" alt="q_{i}"/></span> and <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle k_{j}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>k</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>j</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle k_{j}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/05ddf2c6d7759ac955e001a7cfafb2abfca41b0b" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:2.121ex; height:2.843ex;" alt="k_j"/></span>. The attention weights are divided by the square root of the dimension of the key vectors, <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\sqrt {d_{k}}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <msqrt>
+            <msub>
+              <mi>d</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>k</mi>
+              </mrow>
+            </msub>
+          </msqrt>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\sqrt {d_{k}}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/0be678d1b945828faecd56b29927f5a60011be37" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:4.621ex; height:3.343ex;" alt="{\displaystyle {\sqrt {d_{k}}}}"/></span>, which stabilizes gradients during training, and passed through a <a href="/wiki/Softmax_function" title="Softmax function">softmax</a> which normalizes the weights. The fact that <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle W_{Q}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>W</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>Q</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle W_{Q}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/27233f4471dd458034969c094d1ac13bff1e38d1" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:3.726ex; height:2.843ex;" alt="{\displaystyle W_{Q}}"/></span> and <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle W_{K}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>W</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>K</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle W_{K}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/1476608b04371ce36cdf6625d8b9ba8a96c615b9" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:3.887ex; height:2.509ex;" alt="{\displaystyle W_{K}}"/></span> are different matrices allows attention to be non-symmetric: if token <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle i}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>i</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle i}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/add78d8608ad86e54951b8c8bd6c8d8416533d20" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:0.802ex; height:2.176ex;" alt="i"/></span> attends to token <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle j}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>j</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle j}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/2f461e54f5c093e92a55547b9764291390f0b5d0" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; margin-left: -0.027ex; width:0.985ex; height:2.509ex;" alt="j"/></span> (i.e. <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle q_{i}\cdot k_{j}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>q</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+          </mrow>
+        </msub>
+        <mo>&#x22C5;<!-- ⋅ --></mo>
+        <msub>
+          <mi>k</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>j</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle q_{i}\cdot k_{j}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/7de4219a59ace005d92f8d0a13466dbdb5fd6d9c" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:5.637ex; height:2.843ex;" alt="{\displaystyle q_{i}\cdot k_{j}}"/></span> is large), this does not necessarily mean that token <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle j}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>j</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle j}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/2f461e54f5c093e92a55547b9764291390f0b5d0" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; margin-left: -0.027ex; width:0.985ex; height:2.509ex;" alt="j"/></span> will attend to token <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle i}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>i</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle i}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/add78d8608ad86e54951b8c8bd6c8d8416533d20" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:0.802ex; height:2.176ex;" alt="i"/></span> (i.e. <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle q_{j}\cdot k_{i}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>q</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>j</mi>
+          </mrow>
+        </msub>
+        <mo>&#x22C5;<!-- ⋅ --></mo>
+        <msub>
+          <mi>k</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle q_{j}\cdot k_{i}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/d40445a57203e20510d7b629e0567957524700e4" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:5.637ex; height:2.843ex;" alt="{\displaystyle q_{j}\cdot k_{i}}"/></span> could be small).  The output of the attention unit for token <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle i}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>i</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle i}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/add78d8608ad86e54951b8c8bd6c8d8416533d20" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:0.802ex; height:2.176ex;" alt="i"/></span> is the weighted sum of the value vectors of all tokens, weighted by <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle a_{ij}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+            <mi>j</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle a_{ij}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ebea6cd2813c330c798921a2894b358f7b643917" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:2.707ex; height:2.343ex;" alt="a_{ij}"/></span>, the attention from token <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle i}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>i</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle i}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/add78d8608ad86e54951b8c8bd6c8d8416533d20" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:0.802ex; height:2.176ex;" alt="i"/></span> to each token.
+</p><p>The attention calculation for all tokens can be expressed as one large matrix calculation using the <a href="/wiki/Softmax_function" title="Softmax function">softmax function</a>, which is useful for training due to computational matrix operation optimizations that quickly compute matrix operations. The matrices <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle Q}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>Q</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle Q}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/8752c7023b4b3286800fe3238271bbca681219ed" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:1.838ex; height:2.509ex;" alt="Q"/></span>, <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle K}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>K</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle K}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/2b76fce82a62ed5461908f0dc8f037de4e3686b0" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:2.066ex; height:2.176ex;" alt="K"/></span> and <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle V}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>V</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle V}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/af0f6064540e84211d0ffe4dac72098adfa52845" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.787ex; height:2.176ex;" alt="V"/></span> are defined as the matrices where the <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle i}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>i</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle i}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/add78d8608ad86e54951b8c8bd6c8d8416533d20" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:0.802ex; height:2.176ex;" alt="i"/></span>th rows are vectors <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle q_{i}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>q</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle q_{i}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/2752dcbff884354069fe332b8e51eb0a70a531b6" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:1.837ex; height:2.009ex;" alt="q_{i}"/></span>, <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle k_{i}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>k</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle k_{i}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f29138ed3ad54ffce527daccadc49c520459b0b0" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:2.011ex; height:2.509ex;" alt="k_{i}"/></span>, and <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle v_{i}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>v</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle v_{i}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/7dffe5726650f6daac54829972a94f38eb8ec127" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:1.927ex; height:2.009ex;" alt="v_{i}"/></span> respectively.
+</p><p><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\begin{aligned}{\text{Attention}}(Q,K,V)={\text{softmax}}\left({\frac {QK^{\mathrm {T} }}{\sqrt {d_{k}}}}\right)V\end{aligned}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mtable columnalign="right left right left right left right left right left right left" rowspacing="3pt" columnspacing="0em 2em 0em 2em 0em 2em 0em 2em 0em 2em 0em" displaystyle="true">
+            <mtr>
+              <mtd>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mtext>Attention</mtext>
+                </mrow>
+                <mo stretchy="false">(</mo>
+                <mi>Q</mi>
+                <mo>,</mo>
+                <mi>K</mi>
+                <mo>,</mo>
+                <mi>V</mi>
+                <mo stretchy="false">)</mo>
+                <mo>=</mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mtext>softmax</mtext>
+                </mrow>
+                <mrow>
+                  <mo>(</mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mfrac>
+                      <mrow>
+                        <mi>Q</mi>
+                        <msup>
+                          <mi>K</mi>
+                          <mrow class="MJX-TeXAtom-ORD">
+                            <mrow class="MJX-TeXAtom-ORD">
+                              <mi mathvariant="normal">T</mi>
+                            </mrow>
+                          </mrow>
+                        </msup>
+                      </mrow>
+                      <msqrt>
+                        <msub>
+                          <mi>d</mi>
+                          <mrow class="MJX-TeXAtom-ORD">
+                            <mi>k</mi>
+                          </mrow>
+                        </msub>
+                      </msqrt>
+                    </mfrac>
+                  </mrow>
+                  <mo>)</mo>
+                </mrow>
+                <mi>V</mi>
+              </mtd>
+            </mtr>
+          </mtable>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\begin{aligned}{\text{Attention}}(Q,K,V)={\text{softmax}}\left({\frac {QK^{\mathrm {T} }}{\sqrt {d_{k}}}}\right)V\end{aligned}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/0b2afc7240eb97375a384b1628c18438e3068e3f" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.171ex; width:43.753ex; height:7.509ex;" alt="{\displaystyle {\begin{aligned}{\text{Attention}}(Q,K,V)={\text{softmax}}\left({\frac {QK^{\mathrm {T} }}{\sqrt {d_{k}}}}\right)V\end{aligned}}}"/></span>
+</p>
+<h4><span class="mw-headline" id="Multi-head_attention">Multi-head attention</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Transformer_(machine_learning_model)&amp;action=edit&amp;section=7" title="Edit section: Multi-head attention">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>One set of <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \left(W_{Q},W_{K},W_{V}\right)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow>
+          <mo>(</mo>
+          <mrow>
+            <msub>
+              <mi>W</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>Q</mi>
+              </mrow>
+            </msub>
+            <mo>,</mo>
+            <msub>
+              <mi>W</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>K</mi>
+              </mrow>
+            </msub>
+            <mo>,</mo>
+            <msub>
+              <mi>W</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>V</mi>
+              </mrow>
+            </msub>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \left(W_{Q},W_{K},W_{V}\right)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/021c670a99024a281521fcfdc56d59571a70e4fd" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:15.18ex; height:3.009ex;" alt="{\displaystyle \left(W_{Q},W_{K},W_{V}\right)}"/></span> matrices is called an <i>attention head</i>, and each layer in a transformer model has multiple attention heads. While each attention head attends to the tokens that are relevant to each token, with multiple attention heads the model can do this for different definitions of "relevance". In addition the influence field representing relevance can become progressively dilated in successive layers. Many transformer attention heads encode relevance relations that are meaningful to humans. For example, attention heads can attend mostly to the next word, while others  mainly attend from verbs to their direct objects.<sup id="cite_ref-8" class="reference"><a href="#cite_note-8">&#91;8&#93;</a></sup> The computations for each attention head can be performed in parallel, which allows for fast processing. The outputs for the attention layer are concatenated to pass into the feed-forward neural network layers.
+</p>
+<h3><span class="mw-headline" id="Encoder">Encoder</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Transformer_(machine_learning_model)&amp;action=edit&amp;section=8" title="Edit section: Encoder">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Each encoder consists of two major components: a self-attention mechanism and a feed-forward neural network. The self-attention mechanism accepts input encodings from the previous encoder and weighs their relevance to each other to generate output encodings. The feed-forward neural network further processes each output encoding individually. These output encodings are then passed to the next encoder as its input, as well as to the decoders.
+</p><p>The first encoder takes positional information and <a href="/wiki/Word_embedding" title="Word embedding">embeddings</a> of the input sequence as its input, rather than encodings. The positional information is necessary for the transformer to make use of the order of the sequence, because no other part of the transformer makes use of this.<sup id="cite_ref-:0_1-3" class="reference"><a href="#cite_note-:0-1">&#91;1&#93;</a></sup>
+</p>
+<h3><span class="mw-headline" id="Decoder">Decoder</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Transformer_(machine_learning_model)&amp;action=edit&amp;section=9" title="Edit section: Decoder">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Each decoder consists of three major components: a self-attention mechanism, an attention mechanism over the encodings, and a feed-forward neural network. The decoder functions in a similar fashion to the encoder, but an additional attention mechanism is inserted which instead draws relevant information from the encodings generated by the encoders.<sup id="cite_ref-:0_1-4" class="reference"><a href="#cite_note-:0-1">&#91;1&#93;</a></sup><sup id="cite_ref-:1_7-2" class="reference"><a href="#cite_note-:1-7">&#91;7&#93;</a></sup>
+</p><p>Like the first encoder, the first decoder takes positional information and embeddings of the output sequence as its input, rather than encodings. The transformer must not use the current or future output to predict an output, so the output sequence must be partially masked to prevent this reverse information flow.<sup id="cite_ref-:0_1-5" class="reference"><a href="#cite_note-:0-1">&#91;1&#93;</a></sup> The last decoder is followed by a final <a href="/wiki/Matrix_multiplication" title="Matrix multiplication">linear transformation</a> and <a href="/wiki/Softmax_function" title="Softmax function">softmax layer</a>, to produce the output probabilities over the vocabulary.
+</p>
+<h3><span class="mw-headline" id="Alternatives">Alternatives</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Transformer_(machine_learning_model)&amp;action=edit&amp;section=10" title="Edit section: Alternatives">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Training transformer-based architectures can be expensive, especially for long inputs.<sup id="cite_ref-9" class="reference"><a href="#cite_note-9">&#91;9&#93;</a></sup> Alternative architectures include the Reformer (which reduces the computational load from <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle O(N^{2})}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>O</mi>
+        <mo stretchy="false">(</mo>
+        <msup>
+          <mi>N</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msup>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle O(N^{2})}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e5d43a3df904fa4d7220f5b86285298aa36d969b" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:6.76ex; height:3.176ex;" alt="O(N^{2})"/></span> to <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle O(N\ln N)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>O</mi>
+        <mo stretchy="false">(</mo>
+        <mi>N</mi>
+        <mi>ln</mi>
+        <mo>&#x2061;<!-- ⁡ --></mo>
+        <mi>N</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle O(N\ln N)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/d3d19d1f2923ba0d7170ade3df165c0de1d2423e" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:10.423ex; height:2.843ex;" alt="O(N\ln N)"/></span>), or models like ETC/BigBird (which can reduce it to <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle O(N)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>O</mi>
+        <mo stretchy="false">(</mo>
+        <mi>N</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle O(N)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/78484c5c26cfc97bb3b915418caa09454421e80b" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:5.646ex; height:2.843ex;" alt="O(N)"/></span>)<sup id="cite_ref-10" class="reference"><a href="#cite_note-10">&#91;10&#93;</a></sup> where <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle N}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>N</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle N}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f5e3890c981ae85503089652feb48b191b57aae3" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:2.064ex; height:2.176ex;" alt="N"/></span> is the length of the sequence. This is done using <a href="/wiki/Locality-sensitive_hashing" title="Locality-sensitive hashing">locality-sensitive hashing</a> and reversible layers.<sup id="cite_ref-11" class="reference"><a href="#cite_note-11">&#91;11&#93;</a></sup><sup id="cite_ref-12" class="reference"><a href="#cite_note-12">&#91;12&#93;</a></sup>
+</p><p>A benchmark for comparing transformer architectures was introduced in late 2020.<sup id="cite_ref-13" class="reference"><a href="#cite_note-13">&#91;13&#93;</a></sup>
+</p>
+<h2><span class="mw-headline" id="Training">Training</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Transformer_(machine_learning_model)&amp;action=edit&amp;section=11" title="Edit section: Training">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Transformers typically undergo <a href="/wiki/Semi-supervised_learning" title="Semi-supervised learning">semi-supervised learning</a> involving <a href="/wiki/Unsupervised_learning" title="Unsupervised learning">unsupervised</a> pretraining followed by <a href="/wiki/Supervised_learning" title="Supervised learning">supervised</a> fine-tuning. Pretraining is typically done on a larger dataset than fine-tuning, due to the limited availability of labeled training data. Tasks for pretraining and fine-tuning commonly include:
+</p>
+<ul><li><a href="/wiki/Language_modeling" class="mw-redirect" title="Language modeling">language modeling</a><sup id="cite_ref-:6_4-1" class="reference"><a href="#cite_note-:6-4">&#91;4&#93;</a></sup></li>
+<li>next-sentence prediction<sup id="cite_ref-:6_4-2" class="reference"><a href="#cite_note-:6-4">&#91;4&#93;</a></sup></li>
+<li><a href="/wiki/Question_answering" title="Question answering">question answering</a><sup id="cite_ref-:7_5-1" class="reference"><a href="#cite_note-:7-5">&#91;5&#93;</a></sup></li>
+<li><a href="/wiki/Natural-language_understanding" title="Natural-language understanding">reading comprehension</a></li>
+<li><a href="/wiki/Sentiment_analysis" title="Sentiment analysis">sentiment analysis</a><sup id="cite_ref-:8_14-0" class="reference"><a href="#cite_note-:8-14">&#91;14&#93;</a></sup></li>
+<li><a href="/wiki/Text_Summaries" class="mw-redirect" title="Text Summaries">paraphrasing</a><sup id="cite_ref-:8_14-1" class="reference"><a href="#cite_note-:8-14">&#91;14&#93;</a></sup></li></ul>
+<h2><span class="mw-headline" id="Applications">Applications</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Transformer_(machine_learning_model)&amp;action=edit&amp;section=12" title="Edit section: Applications">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The transformer has had great success in <a href="/wiki/Natural_language_processing" title="Natural language processing">natural language processing</a> (NLP), for example the tasks of <a href="/wiki/Machine_translation" title="Machine translation">machine translation</a> and <a href="/wiki/Time_series" title="Time series">time series</a> prediction.<sup id="cite_ref-15" class="reference"><a href="#cite_note-15">&#91;15&#93;</a></sup>  Many pretrained models such as <a href="/wiki/GPT-2" title="GPT-2">GPT-2</a>, <a href="/wiki/GPT-3" title="GPT-3">GPT-3</a>, <a href="/wiki/BERT_(language_model)" title="BERT (language model)">BERT</a>, XLNet, and RoBERTa demonstrate the ability of transformers to perform a wide variety of such NLP-related tasks, and have the potential to find real-world applications.<sup id="cite_ref-:6_4-3" class="reference"><a href="#cite_note-:6-4">&#91;4&#93;</a></sup><sup id="cite_ref-:7_5-2" class="reference"><a href="#cite_note-:7-5">&#91;5&#93;</a></sup><sup id="cite_ref-16" class="reference"><a href="#cite_note-16">&#91;16&#93;</a></sup> These may include:
+</p>
+<ul><li><a href="/wiki/Machine_translation" title="Machine translation">machine translation</a></li>
+<li><a href="/wiki/Automatic_summarization" title="Automatic summarization">document summarization</a></li>
+<li><a href="/wiki/Natural-language_generation" class="mw-redirect" title="Natural-language generation">document generation</a></li>
+<li><a href="/wiki/Named-entity_recognition" title="Named-entity recognition">named entity recognition</a> (NER)<sup id="cite_ref-:9_17-0" class="reference"><a href="#cite_note-:9-17">&#91;17&#93;</a></sup></li>
+<li><a href="/wiki/Sequence_analysis" title="Sequence analysis">biological sequence analysis</a><sup id="cite_ref-18" class="reference"><a href="#cite_note-18">&#91;18&#93;</a></sup><sup id="cite_ref-19" class="reference"><a href="#cite_note-19">&#91;19&#93;</a></sup><sup id="cite_ref-20" class="reference"><a href="#cite_note-20">&#91;20&#93;</a></sup></li>
+<li><a href="/wiki/Computer_vision" title="Computer vision">video understanding</a>.<sup id="cite_ref-21" class="reference"><a href="#cite_note-21">&#91;21&#93;</a></sup></li></ul>
+<p>In 2020, it was shown that the transformer architecture, more specifically GPT-2, could be tuned to play chess.<sup id="cite_ref-22" class="reference"><a href="#cite_note-22">&#91;22&#93;</a></sup> Transformers have been applied to image processing with results competitive with <a href="/wiki/Convolutional_neural_networks" class="mw-redirect" title="Convolutional neural networks">convolutional neural networks</a>.<sup id="cite_ref-23" class="reference"><a href="#cite_note-23">&#91;23&#93;</a></sup><sup id="cite_ref-24" class="reference"><a href="#cite_note-24">&#91;24&#93;</a></sup>
+</p>
+<h2><span class="mw-headline" id="Implementations">Implementations</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Transformer_(machine_learning_model)&amp;action=edit&amp;section=13" title="Edit section: Implementations">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The transformer model has been implemented in standard deep learning frameworks such as <a href="/wiki/TensorFlow" title="TensorFlow">TensorFlow</a> and <a href="/wiki/PyTorch" title="PyTorch">PyTorch</a>.
+</p><p><i>Transformers</i> is a library produced by <a href="/w/index.php?title=Hugging_Face&amp;action=edit&amp;redlink=1" class="new" title="Hugging Face (page does not exist)">Hugging Face</a> that supplies transformer-based architectures and pretrained models.<sup id="cite_ref-wolf2020_3-1" class="reference"><a href="#cite_note-wolf2020-3">&#91;3&#93;</a></sup>
+</p>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Transformer_(machine_learning_model)&amp;action=edit&amp;section=14" title="Edit section: See also">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul><li><a href="/wiki/Perceiver" title="Perceiver">Perceiver</a></li>
+<li><a href="/wiki/GPT-3" title="GPT-3">GPT-3</a></li>
+<li><a href="/wiki/Wu_Dao" title="Wu Dao">Wu Dao</a></li>
+<li><a href="/wiki/Vision_transformer" title="Vision transformer">Vision Transformers</a></li></ul>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Transformer_(machine_learning_model)&amp;action=edit&amp;section=15" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<style data-mw-deduplicate="TemplateStyles:r1011085734">.mw-parser-output .reflist{font-size:90%;margin-bottom:0.5em;list-style-type:decimal}.mw-parser-output .reflist .references{font-size:100%;margin-bottom:0;list-style-type:inherit}.mw-parser-output .reflist-columns-2{column-width:30em}.mw-parser-output .reflist-columns-3{column-width:25em}.mw-parser-output .reflist-columns{margin-top:0.3em}.mw-parser-output .reflist-columns ol{margin-top:0}.mw-parser-output .reflist-columns li{page-break-inside:avoid;break-inside:avoid-column}.mw-parser-output .reflist-upper-alpha{list-style-type:upper-alpha}.mw-parser-output .reflist-upper-roman{list-style-type:upper-roman}.mw-parser-output .reflist-lower-alpha{list-style-type:lower-alpha}.mw-parser-output .reflist-lower-greek{list-style-type:lower-greek}.mw-parser-output .reflist-lower-roman{list-style-type:lower-roman}</style><div class="reflist">
+<div class="mw-references-wrap mw-references-columns"><ol class="references">
+<li id="cite_note-:0-1"><span class="mw-cite-backlink">^ <a href="#cite_ref-:0_1-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-:0_1-1"><sup><i><b>b</b></i></sup></a> <a href="#cite_ref-:0_1-2"><sup><i><b>c</b></i></sup></a> <a href="#cite_ref-:0_1-3"><sup><i><b>d</b></i></sup></a> <a href="#cite_ref-:0_1-4"><sup><i><b>e</b></i></sup></a> <a href="#cite_ref-:0_1-5"><sup><i><b>f</b></i></sup></a></span> <span class="reference-text"><style data-mw-deduplicate="TemplateStyles:r1067248974">.mw-parser-output cite.citation{font-style:inherit;word-wrap:break-word}.mw-parser-output .citation q{quotes:"\"""\"""'""'"}.mw-parser-output .citation:target{background-color:rgba(0,127,255,0.133)}.mw-parser-output .id-lock-free a,.mw-parser-output .citation .cs1-lock-free a{background:linear-gradient(transparent,transparent),url("//upload.wikimedia.org/wikipedia/commons/6/65/Lock-green.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-limited a,.mw-parser-output .id-lock-registration a,.mw-parser-output .citation .cs1-lock-limited a,.mw-parser-output .citation .cs1-lock-registration a{background:linear-gradient(transparent,transparent),url("//upload.wikimedia.org/wikipedia/commons/d/d6/Lock-gray-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-subscription a,.mw-parser-output .citation .cs1-lock-subscription a{background:linear-gradient(transparent,transparent),url("//upload.wikimedia.org/wikipedia/commons/a/aa/Lock-red-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .cs1-ws-icon a{background:linear-gradient(transparent,transparent),url("//upload.wikimedia.org/wikipedia/commons/4/4c/Wikisource-logo.svg")right 0.1em center/12px no-repeat}.mw-parser-output .cs1-code{color:inherit;background:inherit;border:none;padding:inherit}.mw-parser-output .cs1-hidden-error{display:none;color:#d33}.mw-parser-output .cs1-visible-error{color:#d33}.mw-parser-output .cs1-maint{display:none;color:#3a3;margin-left:0.3em}.mw-parser-output .cs1-format{font-size:95%}.mw-parser-output .cs1-kern-left{padding-left:0.2em}.mw-parser-output .cs1-kern-right{padding-right:0.2em}.mw-parser-output .citation .mw-selflink{font-weight:inherit}</style><cite id="CITEREFVaswaniShazeerParmarUszkoreit2017" class="citation arxiv cs1">Vaswani, Ashish; Shazeer, Noam; Parmar, Niki; Uszkoreit, Jakob; Jones, Llion; Gomez, Aidan N.; Kaiser, Lukasz; Polosukhin, Illia (2017-06-12). "Attention Is All You Need". <a href="/wiki/ArXiv_(identifier)" class="mw-redirect" title="ArXiv (identifier)">arXiv</a>:<span class="cs1-lock-free" title="Freely accessible"><a rel="nofollow" class="external text" href="//arxiv.org/abs/1706.03762">1706.03762</a></span> [<a rel="nofollow" class="external text" href="//arxiv.org/archive/cs.CL">cs.CL</a>].</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=preprint&amp;rft.jtitle=arXiv&amp;rft.atitle=Attention+Is+All+You+Need&amp;rft.date=2017-06-12&amp;rft_id=info%3Aarxiv%2F1706.03762&amp;rft.aulast=Vaswani&amp;rft.aufirst=Ashish&amp;rft.au=Shazeer%2C+Noam&amp;rft.au=Parmar%2C+Niki&amp;rft.au=Uszkoreit%2C+Jakob&amp;rft.au=Jones%2C+Llion&amp;rft.au=Gomez%2C+Aidan+N.&amp;rft.au=Kaiser%2C+Lukasz&amp;rft.au=Polosukhin%2C+Illia&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ATransformer+%28machine+learning+model%29" class="Z3988"></span></span>
+</li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-2">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><cite id="CITEREFHe" class="citation web cs1">He, Cheng. <a rel="nofollow" class="external text" href="https://towardsdatascience.com/transformer-in-cv-bbdb58bf335e">"Transformer in CV"</a>. <i>Transformer in CV</i>. Towards Data Science.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=Transformer+in+CV&amp;rft.atitle=Transformer+in+CV&amp;rft.aulast=He&amp;rft.aufirst=Cheng&amp;rft_id=https%3A%2F%2Ftowardsdatascience.com%2Ftransformer-in-cv-bbdb58bf335e&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ATransformer+%28machine+learning+model%29" class="Z3988"></span></span>
+</li>
+<li id="cite_note-wolf2020-3"><span class="mw-cite-backlink">^ <a href="#cite_ref-wolf2020_3-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-wolf2020_3-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><cite id="CITEREFWolfDebutSanhChaumond2020" class="citation book cs1">Wolf, Thomas; Debut, Lysandre; Sanh, Victor; Chaumond, Julien; Delangue, Clement; Moi, Anthony; Cistac, Pierric; Rault, Tim; Louf, Remi; Funtowicz, Morgan; Davison, Joe; Shleifer, Sam; von Platen, Patrick; Ma, Clara; Jernite, Yacine; Plu, Julien; Xu, Canwen; Le Scao, Teven; Gugger, Sylvain; Drame, Mariama; Lhoest, Quentin; Rush, Alexander (2020). "Transformers: State-of-the-Art Natural Language Processing". <i>Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing: System Demonstrations</i>. pp.&#160;38–45. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.18653%2Fv1%2F2020.emnlp-demos.6">10.18653/v1/2020.emnlp-demos.6</a>. <a href="/wiki/S2CID_(identifier)" class="mw-redirect" title="S2CID (identifier)">S2CID</a>&#160;<a rel="nofollow" class="external text" href="https://api.semanticscholar.org/CorpusID:208117506">208117506</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.atitle=Transformers%3A+State-of-the-Art+Natural+Language+Processing&amp;rft.btitle=Proceedings+of+the+2020+Conference+on+Empirical+Methods+in+Natural+Language+Processing%3A+System+Demonstrations&amp;rft.pages=38-45&amp;rft.date=2020&amp;rft_id=info%3Adoi%2F10.18653%2Fv1%2F2020.emnlp-demos.6&amp;rft_id=https%3A%2F%2Fapi.semanticscholar.org%2FCorpusID%3A208117506%23id-name%3DS2CID&amp;rft.aulast=Wolf&amp;rft.aufirst=Thomas&amp;rft.au=Debut%2C+Lysandre&amp;rft.au=Sanh%2C+Victor&amp;rft.au=Chaumond%2C+Julien&amp;rft.au=Delangue%2C+Clement&amp;rft.au=Moi%2C+Anthony&amp;rft.au=Cistac%2C+Pierric&amp;rft.au=Rault%2C+Tim&amp;rft.au=Louf%2C+Remi&amp;rft.au=Funtowicz%2C+Morgan&amp;rft.au=Davison%2C+Joe&amp;rft.au=Shleifer%2C+Sam&amp;rft.au=von+Platen%2C+Patrick&amp;rft.au=Ma%2C+Clara&amp;rft.au=Jernite%2C+Yacine&amp;rft.au=Plu%2C+Julien&amp;rft.au=Xu%2C+Canwen&amp;rft.au=Le+Scao%2C+Teven&amp;rft.au=Gugger%2C+Sylvain&amp;rft.au=Drame%2C+Mariama&amp;rft.au=Lhoest%2C+Quentin&amp;rft.au=Rush%2C+Alexander&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ATransformer+%28machine+learning+model%29" class="Z3988"></span></span>
+</li>
+<li id="cite_note-:6-4"><span class="mw-cite-backlink">^ <a href="#cite_ref-:6_4-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-:6_4-1"><sup><i><b>b</b></i></sup></a> <a href="#cite_ref-:6_4-2"><sup><i><b>c</b></i></sup></a> <a href="#cite_ref-:6_4-3"><sup><i><b>d</b></i></sup></a></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><cite class="citation web cs1"><a rel="nofollow" class="external text" href="http://ai.googleblog.com/2018/11/open-sourcing-bert-state-of-art-pre.html">"Open Sourcing BERT: State-of-the-Art Pre-training for Natural Language Processing"</a>. <i>Google AI Blog</i><span class="reference-accessdate">. Retrieved <span class="nowrap">2019-08-25</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=Google+AI+Blog&amp;rft.atitle=Open+Sourcing+BERT%3A+State-of-the-Art+Pre-training+for+Natural+Language+Processing&amp;rft_id=http%3A%2F%2Fai.googleblog.com%2F2018%2F11%2Fopen-sourcing-bert-state-of-art-pre.html&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ATransformer+%28machine+learning+model%29" class="Z3988"></span></span>
+</li>
+<li id="cite_note-:7-5"><span class="mw-cite-backlink">^ <a href="#cite_ref-:7_5-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-:7_5-1"><sup><i><b>b</b></i></sup></a> <a href="#cite_ref-:7_5-2"><sup><i><b>c</b></i></sup></a></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><cite class="citation web cs1"><a rel="nofollow" class="external text" href="https://openai.com/blog/better-language-models/">"Better Language Models and Their Implications"</a>. <i>OpenAI</i>. 2019-02-14<span class="reference-accessdate">. Retrieved <span class="nowrap">2019-08-25</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=OpenAI&amp;rft.atitle=Better+Language+Models+and+Their+Implications&amp;rft.date=2019-02-14&amp;rft_id=https%3A%2F%2Fopenai.com%2Fblog%2Fbetter-language-models%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ATransformer+%28machine+learning+model%29" class="Z3988"></span></span>
+</li>
+<li id="cite_note-6"><span class="mw-cite-backlink"><b><a href="#cite_ref-6">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><cite class="citation web cs1"><a rel="nofollow" class="external text" href="https://indico.io/blog/sequence-modeling-neural-networks-part2-attention-models/">"Sequence Modeling with Neural Networks (Part 2): Attention Models"</a>. <i>Indico</i>. 2016-04-18<span class="reference-accessdate">. Retrieved <span class="nowrap">2019-10-15</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=Indico&amp;rft.atitle=Sequence+Modeling+with+Neural+Networks+%28Part+2%29%3A+Attention+Models&amp;rft.date=2016-04-18&amp;rft_id=https%3A%2F%2Findico.io%2Fblog%2Fsequence-modeling-neural-networks-part2-attention-models%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ATransformer+%28machine+learning+model%29" class="Z3988"></span></span>
+</li>
+<li id="cite_note-:1-7"><span class="mw-cite-backlink">^ <a href="#cite_ref-:1_7-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-:1_7-1"><sup><i><b>b</b></i></sup></a> <a href="#cite_ref-:1_7-2"><sup><i><b>c</b></i></sup></a></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><cite id="CITEREFAlammar" class="citation web cs1">Alammar, Jay. <a rel="nofollow" class="external text" href="http://jalammar.github.io/illustrated-transformer/">"The Illustrated Transformer"</a>. <i>jalammar.github.io</i><span class="reference-accessdate">. Retrieved <span class="nowrap">2019-10-15</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=jalammar.github.io&amp;rft.atitle=The+Illustrated+Transformer&amp;rft.aulast=Alammar&amp;rft.aufirst=Jay&amp;rft_id=http%3A%2F%2Fjalammar.github.io%2Fillustrated-transformer%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ATransformer+%28machine+learning+model%29" class="Z3988"></span></span>
+</li>
+<li id="cite_note-8"><span class="mw-cite-backlink"><b><a href="#cite_ref-8">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><cite id="CITEREFClarkKhandelwalLevyManning2019" class="citation journal cs1">Clark, Kevin; Khandelwal, Urvashi; Levy, Omer; Manning, Christopher D. (August 2019). <a rel="nofollow" class="external text" href="https://www.aclweb.org/anthology/W19-4828">"What Does BERT Look at? An Analysis of BERT's Attention"</a>. <i>Proceedings of the 2019 ACL Workshop BlackboxNLP: Analyzing and Interpreting Neural Networks for NLP</i>. Florence, Italy: Association for Computational Linguistics: 276–286. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<span class="cs1-lock-free" title="Freely accessible"><a rel="nofollow" class="external text" href="https://doi.org/10.18653%2Fv1%2FW19-4828">10.18653/v1/W19-4828</a></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Proceedings+of+the+2019+ACL+Workshop+BlackboxNLP%3A+Analyzing+and+Interpreting+Neural+Networks+for+NLP&amp;rft.atitle=What+Does+BERT+Look+at%3F+An+Analysis+of+BERT%27s+Attention&amp;rft.pages=276-286&amp;rft.date=2019-08&amp;rft_id=info%3Adoi%2F10.18653%2Fv1%2FW19-4828&amp;rft.aulast=Clark&amp;rft.aufirst=Kevin&amp;rft.au=Khandelwal%2C+Urvashi&amp;rft.au=Levy%2C+Omer&amp;rft.au=Manning%2C+Christopher+D.&amp;rft_id=https%3A%2F%2Fwww.aclweb.org%2Fanthology%2FW19-4828&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ATransformer+%28machine+learning+model%29" class="Z3988"></span></span>
+</li>
+<li id="cite_note-9"><span class="mw-cite-backlink"><b><a href="#cite_ref-9">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><cite id="CITEREFKitaevKaiserLevskaya2020" class="citation arxiv cs1">Kitaev, Nikita; Kaiser, Łukasz; Levskaya, Anselm (2020). "Reformer: The Efficient Transformer". <a href="/wiki/ArXiv_(identifier)" class="mw-redirect" title="ArXiv (identifier)">arXiv</a>:<span class="cs1-lock-free" title="Freely accessible"><a rel="nofollow" class="external text" href="//arxiv.org/abs/2001.04451">2001.04451</a></span> [<a rel="nofollow" class="external text" href="//arxiv.org/archive/cs.LG">cs.LG</a>].</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=preprint&amp;rft.jtitle=arXiv&amp;rft.atitle=Reformer%3A+The+Efficient+Transformer&amp;rft.date=2020&amp;rft_id=info%3Aarxiv%2F2001.04451&amp;rft.aulast=Kitaev&amp;rft.aufirst=Nikita&amp;rft.au=Kaiser%2C+%C5%81ukasz&amp;rft.au=Levskaya%2C+Anselm&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ATransformer+%28machine+learning+model%29" class="Z3988"></span></span>
+</li>
+<li id="cite_note-10"><span class="mw-cite-backlink"><b><a href="#cite_ref-10">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><cite class="citation web cs1"><a rel="nofollow" class="external text" href="https://ai.googleblog.com/2021/03/constructing-transformers-for-longer.html">"Constructing Transformers For Longer Sequences with Sparse Attention Methods"</a>. <i>Google AI Blog</i><span class="reference-accessdate">. Retrieved <span class="nowrap">2021-05-28</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=Google+AI+Blog&amp;rft.atitle=Constructing+Transformers+For+Longer+Sequences+with+Sparse+Attention+Methods&amp;rft_id=https%3A%2F%2Fai.googleblog.com%2F2021%2F03%2Fconstructing-transformers-for-longer.html&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ATransformer+%28machine+learning+model%29" class="Z3988"></span></span>
+</li>
+<li id="cite_note-11"><span class="mw-cite-backlink"><b><a href="#cite_ref-11">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><cite class="citation web cs1"><a rel="nofollow" class="external text" href="https://www.coursera.org/lecture/attention-models-in-nlp/tasks-with-long-sequences-suzNH">"Tasks with Long Sequences – Chatbot"</a>. <i>Coursera</i>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=Coursera&amp;rft.atitle=Tasks+with+Long+Sequences+%E2%80%93+Chatbot&amp;rft_id=https%3A%2F%2Fwww.coursera.org%2Flecture%2Fattention-models-in-nlp%2Ftasks-with-long-sequences-suzNH&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ATransformer+%28machine+learning+model%29" class="Z3988"></span></span>
+</li>
+<li id="cite_note-12"><span class="mw-cite-backlink"><b><a href="#cite_ref-12">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><cite class="citation web cs1"><a rel="nofollow" class="external text" href="http://ai.googleblog.com/2020/01/reformer-efficient-transformer.html">"Reformer: The Efficient Transformer"</a>. <i>Google AI Blog</i><span class="reference-accessdate">. Retrieved <span class="nowrap">2020-10-22</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=Google+AI+Blog&amp;rft.atitle=Reformer%3A+The+Efficient+Transformer&amp;rft_id=http%3A%2F%2Fai.googleblog.com%2F2020%2F01%2Freformer-efficient-transformer.html&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ATransformer+%28machine+learning+model%29" class="Z3988"></span></span>
+</li>
+<li id="cite_note-13"><span class="mw-cite-backlink"><b><a href="#cite_ref-13">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><cite id="CITEREFTayDehghaniAbnarShen2020" class="citation arxiv cs1">Tay, Yi; Dehghani, Mostafa; Abnar, Samira; Shen, Yikang; Bahri, Dara; Pham, Philip; Rao, Jinfeng; Yang, Liu; Ruder, Sebastian; Metzler, Donald (2020-11-08). "Long Range Arena: A Benchmark for Efficient Transformers". <a href="/wiki/ArXiv_(identifier)" class="mw-redirect" title="ArXiv (identifier)">arXiv</a>:<span class="cs1-lock-free" title="Freely accessible"><a rel="nofollow" class="external text" href="//arxiv.org/abs/2011.04006">2011.04006</a></span> [<a rel="nofollow" class="external text" href="//arxiv.org/archive/cs.LG">cs.LG</a>].</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=preprint&amp;rft.jtitle=arXiv&amp;rft.atitle=Long+Range+Arena%3A+A+Benchmark+for+Efficient+Transformers&amp;rft.date=2020-11-08&amp;rft_id=info%3Aarxiv%2F2011.04006&amp;rft.aulast=Tay&amp;rft.aufirst=Yi&amp;rft.au=Dehghani%2C+Mostafa&amp;rft.au=Abnar%2C+Samira&amp;rft.au=Shen%2C+Yikang&amp;rft.au=Bahri%2C+Dara&amp;rft.au=Pham%2C+Philip&amp;rft.au=Rao%2C+Jinfeng&amp;rft.au=Yang%2C+Liu&amp;rft.au=Ruder%2C+Sebastian&amp;rft.au=Metzler%2C+Donald&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ATransformer+%28machine+learning+model%29" class="Z3988"></span></span>
+</li>
+<li id="cite_note-:8-14"><span class="mw-cite-backlink">^ <a href="#cite_ref-:8_14-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-:8_14-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><cite id="CITEREFWangSinghMichaelHill2018" class="citation journal cs1">Wang, Alex; Singh, Amanpreet; Michael, Julian; Hill, Felix; Levy, Omer; Bowman, Samuel (2018). "GLUE: A Multi-Task Benchmark and Analysis Platform for Natural Language Understanding". <i>Proceedings of the 2018 EMNLP Workshop BlackboxNLP: Analyzing and Interpreting Neural Networks for NLP</i>. Stroudsburg, PA, USA: Association for Computational Linguistics: 353–355. <a href="/wiki/ArXiv_(identifier)" class="mw-redirect" title="ArXiv (identifier)">arXiv</a>:<span class="cs1-lock-free" title="Freely accessible"><a rel="nofollow" class="external text" href="//arxiv.org/abs/1804.07461">1804.07461</a></span>. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.18653%2Fv1%2Fw18-5446">10.18653/v1/w18-5446</a>. <a href="/wiki/S2CID_(identifier)" class="mw-redirect" title="S2CID (identifier)">S2CID</a>&#160;<a rel="nofollow" class="external text" href="https://api.semanticscholar.org/CorpusID:5034059">5034059</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Proceedings+of+the+2018+EMNLP+Workshop+BlackboxNLP%3A+Analyzing+and+Interpreting+Neural+Networks+for+NLP&amp;rft.atitle=GLUE%3A+A+Multi-Task+Benchmark+and+Analysis+Platform+for+Natural+Language+Understanding&amp;rft.pages=353-355&amp;rft.date=2018&amp;rft_id=info%3Aarxiv%2F1804.07461&amp;rft_id=https%3A%2F%2Fapi.semanticscholar.org%2FCorpusID%3A5034059%23id-name%3DS2CID&amp;rft_id=info%3Adoi%2F10.18653%2Fv1%2Fw18-5446&amp;rft.aulast=Wang&amp;rft.aufirst=Alex&amp;rft.au=Singh%2C+Amanpreet&amp;rft.au=Michael%2C+Julian&amp;rft.au=Hill%2C+Felix&amp;rft.au=Levy%2C+Omer&amp;rft.au=Bowman%2C+Samuel&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ATransformer+%28machine+learning+model%29" class="Z3988"></span></span>
+</li>
+<li id="cite_note-15"><span class="mw-cite-backlink"><b><a href="#cite_ref-15">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><cite id="CITEREFAllard2019" class="citation web cs1">Allard, Maxime (2019-07-01). <a rel="nofollow" class="external text" href="https://medium.com/inside-machine-learning/what-is-a-transformer-d07dd1fbec04">"What is a Transformer?"</a>. <i>Medium</i><span class="reference-accessdate">. Retrieved <span class="nowrap">2019-10-21</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=Medium&amp;rft.atitle=What+is+a+Transformer%3F&amp;rft.date=2019-07-01&amp;rft.aulast=Allard&amp;rft.aufirst=Maxime&amp;rft_id=https%3A%2F%2Fmedium.com%2Finside-machine-learning%2Fwhat-is-a-transformer-d07dd1fbec04&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ATransformer+%28machine+learning+model%29" class="Z3988"></span></span>
+</li>
+<li id="cite_note-16"><span class="mw-cite-backlink"><b><a href="#cite_ref-16">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><cite id="CITEREFYang,_Zhilin_Dai,_Zihang_Yang,_Yiming_Carbonell,_Jaime_Salakhutdinov,_Ruslan_Le,_Quoc_V.2019" class="citation book cs1">Yang, Zhilin Dai, Zihang Yang, Yiming Carbonell, Jaime Salakhutdinov, Ruslan Le, Quoc V. (2019-06-19). <i>XLNet: Generalized Autoregressive Pretraining for Language Understanding</i>. <a href="/wiki/OCLC_(identifier)" class="mw-redirect" title="OCLC (identifier)">OCLC</a>&#160;<a rel="nofollow" class="external text" href="//www.worldcat.org/oclc/1106350082">1106350082</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=XLNet%3A+Generalized+Autoregressive+Pretraining+for+Language+Understanding&amp;rft.date=2019-06-19&amp;rft_id=info%3Aoclcnum%2F1106350082&amp;rft.au=Yang%2C+Zhilin+Dai%2C+Zihang+Yang%2C+Yiming+Carbonell%2C+Jaime+Salakhutdinov%2C+Ruslan+Le%2C+Quoc+V.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ATransformer+%28machine+learning+model%29" class="Z3988"></span><span class="cs1-maint citation-comment"><code class="cs1-code">{{<a href="/wiki/Template:Cite_book" title="Template:Cite book">cite book</a>}}</code>:  CS1 maint: multiple names: authors list (<a href="/wiki/Category:CS1_maint:_multiple_names:_authors_list" title="Category:CS1 maint: multiple names: authors list">link</a>)</span></span>
+</li>
+<li id="cite_note-:9-17"><span class="mw-cite-backlink"><b><a href="#cite_ref-:9_17-0">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><cite id="CITEREFMonsters2017" class="citation web cs1">Monsters, Data (2017-09-26). <a rel="nofollow" class="external text" href="https://medium.com/@datamonsters/artificial-neural-networks-in-natural-language-processing-bcf62aa9151a">"10 Applications of Artificial Neural Networks in Natural Language Processing"</a>. <i>Medium</i><span class="reference-accessdate">. Retrieved <span class="nowrap">2019-10-21</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=Medium&amp;rft.atitle=10+Applications+of+Artificial+Neural+Networks+in+Natural+Language+Processing&amp;rft.date=2017-09-26&amp;rft.aulast=Monsters&amp;rft.aufirst=Data&amp;rft_id=https%3A%2F%2Fmedium.com%2F%40datamonsters%2Fartificial-neural-networks-in-natural-language-processing-bcf62aa9151a&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ATransformer+%28machine+learning+model%29" class="Z3988"></span></span>
+</li>
+<li id="cite_note-18"><span class="mw-cite-backlink"><b><a href="#cite_ref-18">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><cite id="CITEREFRivesGoyalMeierGuo2019" class="citation biorxiv cs1">Rives, Alexander; Goyal, Siddharth; Meier, Joshua; Guo, Demi; Ott, Myle; Zitnick, C. Lawrence; Ma, Jerry; Fergus, Rob (2019). "Biological structure and function emerge from scaling unsupervised learning to 250 million protein sequences". <a href="/wiki/BioRxiv_(identifier)" class="mw-redirect" title="BioRxiv (identifier)">bioRxiv</a>&#160;<span class="cs1-lock-free" title="Freely accessible"><a rel="nofollow" class="external text" href="https://doi.org/10.1101%2F622803">10.1101/622803</a></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=preprint&amp;rft.jtitle=bioRxiv&amp;rft.atitle=Biological+structure+and+function+emerge+from+scaling+unsupervised+learning+to+250+million+protein+sequences&amp;rft.date=2019&amp;rft_id=%2F%2Fdoi.org%2F10.1101%2F622803%23id-name%3DbioRxiv&amp;rft.aulast=Rives&amp;rft.aufirst=Alexander&amp;rft.au=Goyal%2C+Siddharth&amp;rft.au=Meier%2C+Joshua&amp;rft.au=Guo%2C+Demi&amp;rft.au=Ott%2C+Myle&amp;rft.au=Zitnick%2C+C.+Lawrence&amp;rft.au=Ma%2C+Jerry&amp;rft.au=Fergus%2C+Rob&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ATransformer+%28machine+learning+model%29" class="Z3988"></span></span>
+</li>
+<li id="cite_note-19"><span class="mw-cite-backlink"><b><a href="#cite_ref-19">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><cite id="CITEREFNambiarHeflinLiuMaslov2020" class="citation journal cs1">Nambiar, Ananthan; Heflin, Maeve; Liu, Simon; Maslov, Sergei; Hopkins, Mark; Ritz, Anna (2020). <a rel="nofollow" class="external text" href="https://doi.org/10.1145%2F3388440.3412467">"Transforming the Language of Life: Transformer Neural Networks for Protein Prediction Tasks"</a>. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<span class="cs1-lock-free" title="Freely accessible"><a rel="nofollow" class="external text" href="https://doi.org/10.1145%2F3388440.3412467">10.1145/3388440.3412467</a></span>. <a href="/wiki/S2CID_(identifier)" class="mw-redirect" title="S2CID (identifier)">S2CID</a>&#160;<a rel="nofollow" class="external text" href="https://api.semanticscholar.org/CorpusID:226283020">226283020</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=Transforming+the+Language+of+Life%3A+Transformer+Neural+Networks+for+Protein+Prediction+Tasks.&amp;rft.date=2020&amp;rft_id=info%3Adoi%2F10.1145%2F3388440.3412467&amp;rft_id=https%3A%2F%2Fapi.semanticscholar.org%2FCorpusID%3A226283020%23id-name%3DS2CID&amp;rft.aulast=Nambiar&amp;rft.aufirst=Ananthan&amp;rft.au=Heflin%2C+Maeve&amp;rft.au=Liu%2C+Simon&amp;rft.au=Maslov%2C+Sergei&amp;rft.au=Hopkins%2C+Mark&amp;rft.au=Ritz%2C+Anna&amp;rft_id=%2F%2Fdoi.org%2F10.1145%252F3388440.3412467&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ATransformer+%28machine+learning+model%29" class="Z3988"></span> <span class="cs1-hidden-error citation-comment"><code class="cs1-code">{{<a href="/wiki/Template:Cite_journal" title="Template:Cite journal">cite journal</a>}}</code>: </span><span class="cs1-hidden-error citation-comment">Cite journal requires <code class="cs1-code">&#124;journal=</code> (<a href="/wiki/Help:CS1_errors#missing_periodical" title="Help:CS1 errors">help</a>)</span></span>
+</li>
+<li id="cite_note-20"><span class="mw-cite-backlink"><b><a href="#cite_ref-20">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><cite id="CITEREFRaoBhattacharyaThomasDuan2019" class="citation biorxiv cs1">Rao, Roshan; Bhattacharya, Nicholas; Thomas, Neil; Duan, Yan; Chen, Xi; Canny, John; Abbeel, Pieter; Song, Yun S. (2019). "Evaluating Protein Transfer Learning with TAPE". <a href="/wiki/BioRxiv_(identifier)" class="mw-redirect" title="BioRxiv (identifier)">bioRxiv</a>&#160;<span class="cs1-lock-free" title="Freely accessible"><a rel="nofollow" class="external text" href="https://doi.org/10.1101%2F676825">10.1101/676825</a></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=preprint&amp;rft.jtitle=bioRxiv&amp;rft.atitle=Evaluating+Protein+Transfer+Learning+with+TAPE&amp;rft.date=2019&amp;rft_id=%2F%2Fdoi.org%2F10.1101%2F676825%23id-name%3DbioRxiv&amp;rft.aulast=Rao&amp;rft.aufirst=Roshan&amp;rft.au=Bhattacharya%2C+Nicholas&amp;rft.au=Thomas%2C+Neil&amp;rft.au=Duan%2C+Yan&amp;rft.au=Chen%2C+Xi&amp;rft.au=Canny%2C+John&amp;rft.au=Abbeel%2C+Pieter&amp;rft.au=Song%2C+Yun+S.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ATransformer+%28machine+learning+model%29" class="Z3988"></span></span>
+</li>
+<li id="cite_note-21"><span class="mw-cite-backlink"><b><a href="#cite_ref-21">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><cite id="CITEREFBertasiasWangTorresani2021" class="citation arxiv cs1">Bertasias; Wang; Torresani (2021). "Is Space-Time Attention All You Need for Video Understanding?". <a href="/wiki/ArXiv_(identifier)" class="mw-redirect" title="ArXiv (identifier)">arXiv</a>:<span class="cs1-lock-free" title="Freely accessible"><a rel="nofollow" class="external text" href="//arxiv.org/abs/2102.05095">2102.05095</a></span> [<a rel="nofollow" class="external text" href="//arxiv.org/archive/cs.CV">cs.CV</a>].</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=preprint&amp;rft.jtitle=arXiv&amp;rft.atitle=Is+Space-Time+Attention+All+You+Need+for+Video+Understanding%3F&amp;rft.date=2021&amp;rft_id=info%3Aarxiv%2F2102.05095&amp;rft.au=Bertasias&amp;rft.au=Wang&amp;rft.au=Torresani&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ATransformer+%28machine+learning+model%29" class="Z3988"></span></span>
+</li>
+<li id="cite_note-22"><span class="mw-cite-backlink"><b><a href="#cite_ref-22">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><cite id="CITEREFNoeverCiolinoKalin2020" class="citation arxiv cs1">Noever, David; Ciolino, Matt; Kalin, Josh (2020-08-21). "The Chess Transformer: Mastering Play using Generative Language Models". <a href="/wiki/ArXiv_(identifier)" class="mw-redirect" title="ArXiv (identifier)">arXiv</a>:<span class="cs1-lock-free" title="Freely accessible"><a rel="nofollow" class="external text" href="//arxiv.org/abs/2008.04057">2008.04057</a></span> [<a rel="nofollow" class="external text" href="//arxiv.org/archive/cs.AI">cs.AI</a>].</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=preprint&amp;rft.jtitle=arXiv&amp;rft.atitle=The+Chess+Transformer%3A+Mastering+Play+using+Generative+Language+Models&amp;rft.date=2020-08-21&amp;rft_id=info%3Aarxiv%2F2008.04057&amp;rft.aulast=Noever&amp;rft.aufirst=David&amp;rft.au=Ciolino%2C+Matt&amp;rft.au=Kalin%2C+Josh&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ATransformer+%28machine+learning+model%29" class="Z3988"></span></span>
+</li>
+<li id="cite_note-23"><span class="mw-cite-backlink"><b><a href="#cite_ref-23">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><cite id="CITEREFDosovitskiyBeyerKolesnikovWeissenborn2020" class="citation web cs1">Dosovitskiy, Alexey; Beyer, Lucas; Kolesnikov, Alexander; Weissenborn, Dirk; Zhai, Xiaohua; Unterthiner, Thomas; Dehghani, Mostafa; Minderer, Matthias; Heigold, Georg; Gelly, Sylvain; Uszkoreit, Jakob; Houlsby, Neil (2020). <a rel="nofollow" class="external text" href="https://arxiv.org/pdf/2010.11929.pdf">"An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale"</a> <span class="cs1-format">(PDF)</span>. <a href="/wiki/ArXiv_(identifier)" class="mw-redirect" title="ArXiv (identifier)">arXiv</a>:<span class="cs1-lock-free" title="Freely accessible"><a rel="nofollow" class="external text" href="//arxiv.org/abs/2010.11929">2010.11929</a></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=An+Image+is+Worth+16x16+Words%3A+Transformers+for+Image+Recognition+at+Scale&amp;rft.date=2020&amp;rft_id=info%3Aarxiv%2F2010.11929&amp;rft.aulast=Dosovitskiy&amp;rft.aufirst=Alexey&amp;rft.au=Beyer%2C+Lucas&amp;rft.au=Kolesnikov%2C+Alexander&amp;rft.au=Weissenborn%2C+Dirk&amp;rft.au=Zhai%2C+Xiaohua&amp;rft.au=Unterthiner%2C+Thomas&amp;rft.au=Dehghani%2C+Mostafa&amp;rft.au=Minderer%2C+Matthias&amp;rft.au=Heigold%2C+Georg&amp;rft.au=Gelly%2C+Sylvain&amp;rft.au=Uszkoreit%2C+Jakob&amp;rft.au=Houlsby%2C+Neil&amp;rft_id=https%3A%2F%2Farxiv.org%2Fpdf%2F2010.11929.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ATransformer+%28machine+learning+model%29" class="Z3988"></span><span class="cs1-maint citation-comment"><code class="cs1-code">{{<a href="/wiki/Template:Cite_web" title="Template:Cite web">cite web</a>}}</code>:  CS1 maint: url-status (<a href="/wiki/Category:CS1_maint:_url-status" title="Category:CS1 maint: url-status">link</a>)</span></span>
+</li>
+<li id="cite_note-24"><span class="mw-cite-backlink"><b><a href="#cite_ref-24">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><cite id="CITEREFTouvronCordDouzeMassa2020" class="citation web cs1">Touvron, Hugo; Cord, Matthieu; Douze, Matthijs; Massa, Francisco; Sablayrolles, Alexandre; Jégou, Hervé (2020). <a rel="nofollow" class="external text" href="https://arxiv.org/pdf/2012.12877.pdf">"Training data-efficient image transformers &amp; distillation through attention"</a> <span class="cs1-format">(PDF)</span>. <a href="/wiki/ArXiv_(identifier)" class="mw-redirect" title="ArXiv (identifier)">arXiv</a>:<span class="cs1-lock-free" title="Freely accessible"><a rel="nofollow" class="external text" href="//arxiv.org/abs/2012.12877">2012.12877</a></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Training+data-efficient+image+transformers+%26+distillation+through+attention&amp;rft.date=2020&amp;rft_id=info%3Aarxiv%2F2012.12877&amp;rft.aulast=Touvron&amp;rft.aufirst=Hugo&amp;rft.au=Cord%2C+Matthieu&amp;rft.au=Douze%2C+Matthijs&amp;rft.au=Massa%2C+Francisco&amp;rft.au=Sablayrolles%2C+Alexandre&amp;rft.au=J%C3%A9gou%2C+Herv%C3%A9&amp;rft_id=https%3A%2F%2Farxiv.org%2Fpdf%2F2012.12877.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ATransformer+%28machine+learning+model%29" class="Z3988"></span><span class="cs1-maint citation-comment"><code class="cs1-code">{{<a href="/wiki/Template:Cite_web" title="Template:Cite web">cite web</a>}}</code>:  CS1 maint: url-status (<a href="/wiki/Category:CS1_maint:_url-status" title="Category:CS1 maint: url-status">link</a>)</span></span>
+</li>
+</ol></div></div>
+<h2><span class="mw-headline" id="Further_reading">Further reading</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Transformer_(machine_learning_model)&amp;action=edit&amp;section=16" title="Edit section: Further reading">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul><li>Hubert Ramsauer <i>et al.</i> (2020), <a rel="nofollow" class="external text" href="https://arxiv.org/abs/2008.02217">"Hopfield Networks is All You Need"</a>, preprint submitted for <a href="/wiki/International_Conference_on_Learning_Representations" title="International Conference on Learning Representations">ICLR</a> 2021. <a href="/wiki/ArXiv_(identifier)" class="mw-redirect" title="ArXiv (identifier)">arXiv</a>:<a rel="nofollow" class="external text" href="https://arxiv.org/abs/2008.02217">2008.02217</a>; see also authors' <a rel="nofollow" class="external text" href="https://ml-jku.github.io/hopfield-layers/">blog</a></li></ul>
+<dl><dd><dl><dd>– Discussion of the effect of a transformer layer as equivalent to a Hopfield update, bringing the input closer to one of the <a href="/wiki/Fixed_point_(mathematics)" title="Fixed point (mathematics)">fixed points</a> (representable patterns) of a continuous-valued <a href="/wiki/Hopfield_network" title="Hopfield network">Hopfield network</a></dd></dl></dd></dl>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Transformer_(machine_learning_model)&amp;action=edit&amp;section=17" title="Edit section: External links">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul><li>Alexander Rush, <a rel="nofollow" class="external text" href="https://nlp.seas.harvard.edu/2018/04/03/attention.html">The Annotated transformer</a>, Harvard NLP group, 3 April 2018</li></ul>
+<p><br />
+</p>
+<div class="navbox-styles nomobile"><style data-mw-deduplicate="TemplateStyles:r1061467846">.mw-parser-output .navbox{box-sizing:border-box;border:1px solid #a2a9b1;width:100%;clear:both;font-size:88%;text-align:center;padding:1px;margin:1em auto 0}.mw-parser-output .navbox .navbox{margin-top:0}.mw-parser-output .navbox+.navbox,.mw-parser-output .navbox+.navbox-styles+.navbox{margin-top:-1px}.mw-parser-output .navbox-inner,.mw-parser-output .navbox-subgroup{width:100%}.mw-parser-output .navbox-group,.mw-parser-output .navbox-title,.mw-parser-output .navbox-abovebelow{padding:0.25em 1em;line-height:1.5em;text-align:center}.mw-parser-output .navbox-group{white-space:nowrap;text-align:right}.mw-parser-output .navbox,.mw-parser-output .navbox-subgroup{background-color:#fdfdfd}.mw-parser-output .navbox-list{line-height:1.5em;border-color:#fdfdfd}.mw-parser-output .navbox-list-with-group{text-align:left;border-left-width:2px;border-left-style:solid}.mw-parser-output tr+tr>.navbox-abovebelow,.mw-parser-output tr+tr>.navbox-group,.mw-parser-output tr+tr>.navbox-image,.mw-parser-output tr+tr>.navbox-list{border-top:2px solid #fdfdfd}.mw-parser-output .navbox-title{background-color:#ccf}.mw-parser-output .navbox-abovebelow,.mw-parser-output .navbox-group,.mw-parser-output .navbox-subgroup .navbox-title{background-color:#ddf}.mw-parser-output .navbox-subgroup .navbox-group,.mw-parser-output .navbox-subgroup .navbox-abovebelow{background-color:#e6e6ff}.mw-parser-output .navbox-even{background-color:#f7f7f7}.mw-parser-output .navbox-odd{background-color:transparent}.mw-parser-output .navbox .hlist td dl,.mw-parser-output .navbox .hlist td ol,.mw-parser-output .navbox .hlist td ul,.mw-parser-output .navbox td.hlist dl,.mw-parser-output .navbox td.hlist ol,.mw-parser-output .navbox td.hlist ul{padding:0.125em 0}.mw-parser-output .navbox .navbar{display:block;font-size:100%}.mw-parser-output .navbox-title .navbar{float:left;text-align:left;margin-right:0.5em}</style></div><div role="navigation" class="navbox" aria-labelledby="Differentiable_computing" style="padding:3px"><table class="nowraplinks hlist mw-collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit"><tbody><tr><th scope="col" class="navbox-title" colspan="2"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1063604349"/><div class="navbar plainlinks hlist navbar-mini"><ul><li class="nv-view"><a href="/wiki/Template:Differentiable_computing" title="Template:Differentiable computing"><abbr title="View this template" style=";;background:none transparent;border:none;box-shadow:none;padding:0;">v</abbr></a></li><li class="nv-talk"><a href="/wiki/Template_talk:Differentiable_computing" title="Template talk:Differentiable computing"><abbr title="Discuss this template" style=";;background:none transparent;border:none;box-shadow:none;padding:0;">t</abbr></a></li><li class="nv-edit"><a class="external text" href="https://en.wikipedia.org/w/index.php?title=Template:Differentiable_computing&amp;action=edit"><abbr title="Edit this template" style=";;background:none transparent;border:none;box-shadow:none;padding:0;">e</abbr></a></li></ul></div><div id="Differentiable_computing" style="font-size:114%;margin:0 4em">Differentiable computing</div></th></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Differentiable_function" title="Differentiable function">General</a></th><td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Differentiable_programming" title="Differentiable programming">Differentiable programming</a></li>
+<li><a href="/wiki/Neural_Turing_machine" title="Neural Turing machine">Neural Turing machine</a></li>
+<li><a href="/wiki/Differentiable_neural_computer" title="Differentiable neural computer">Differentiable neural computer</a></li>
+<li><a href="/wiki/Automatic_differentiation" title="Automatic differentiation">Automatic differentiation</a></li>
+<li><a href="/wiki/Neuromorphic_engineering" title="Neuromorphic engineering">Neuromorphic engineering</a></li>
+<li><a href="/wiki/Cable_theory" title="Cable theory">Cable theory</a></li>
+<li><a href="/wiki/Pattern_recognition" title="Pattern recognition">Pattern recognition</a></li>
+<li><a href="/wiki/Computational_learning_theory" title="Computational learning theory">Computational learning theory</a></li>
+<li><a href="/wiki/Tensor_calculus" title="Tensor calculus">Tensor calculus</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Concepts</th><td class="navbox-list-with-group navbox-list navbox-even" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Gradient_descent" title="Gradient descent">Gradient descent</a>
+<ul><li><a href="/wiki/Stochastic_gradient_descent" title="Stochastic gradient descent">SGD</a></li></ul></li>
+<li><a href="/wiki/Cluster_analysis" title="Cluster analysis">Clustering</a></li>
+<li><a href="/wiki/Regression_analysis" title="Regression analysis">Regression</a>
+<ul><li><a href="/wiki/Overfitting" title="Overfitting">Overfitting</a></li></ul></li>
+<li><a href="/wiki/Adversarial_machine_learning" title="Adversarial machine learning">Adversary</a></li>
+<li><a href="/wiki/Attention_(machine_learning)" title="Attention (machine learning)">Attention</a></li>
+<li><a href="/wiki/Convolution" title="Convolution">Convolution</a></li>
+<li><a href="/wiki/Loss_functions_for_classification" title="Loss functions for classification">Loss functions</a></li>
+<li><a href="/wiki/Backpropagation" title="Backpropagation">Backpropagation</a></li>
+<li><a href="/wiki/Batch_normalization" title="Batch normalization">Normalization</a></li>
+<li><a href="/wiki/Activation_function" title="Activation function">Activation</a>
+<ul><li><a href="/wiki/Softmax_function" title="Softmax function">Softmax</a></li>
+<li><a href="/wiki/Sigmoid_function" title="Sigmoid function">Sigmoid</a></li>
+<li><a href="/wiki/Rectifier_(neural_networks)" title="Rectifier (neural networks)">Rectifier</a></li></ul></li>
+<li><a href="/wiki/Regularization_(mathematics)" title="Regularization (mathematics)">Regularization</a></li>
+<li><a href="/wiki/Training,_validation,_and_test_sets" title="Training, validation, and test sets">Datasets</a>
+<ul><li><a href="/wiki/Data_augmentation" title="Data augmentation">Augmentation</a></li></ul></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Programming languages</th><td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Python_(programming_language)" title="Python (programming language)">Python</a></li>
+<li><a href="/wiki/Julia_(programming_language)" title="Julia (programming language)">Julia</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Application</th><td class="navbox-list-with-group navbox-list navbox-even" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Machine_learning" title="Machine learning">Machine learning</a></li>
+<li><a href="/wiki/Artificial_neural_network" title="Artificial neural network">Artificial neural network</a>
+<ul><li><a href="/wiki/Deep_learning" title="Deep learning">Deep learning</a></li></ul></li>
+<li><a href="/wiki/Computational_science" title="Computational science">Scientific computing</a></li>
+<li><a href="/wiki/Artificial_intelligence" title="Artificial intelligence">Artificial Intelligence</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Hardware</th><td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Graphcore" title="Graphcore">IPU</a></li>
+<li><a href="/wiki/Tensor_Processing_Unit" title="Tensor Processing Unit">TPU</a></li>
+<li><a href="/wiki/Vision_processing_unit" title="Vision processing unit">VPU</a></li>
+<li><a href="/wiki/Memristor" title="Memristor">Memristor</a></li>
+<li><a href="/wiki/SpiNNaker" title="SpiNNaker">SpiNNaker</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Software library</th><td class="navbox-list-with-group navbox-list navbox-even" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/TensorFlow" title="TensorFlow">TensorFlow</a></li>
+<li><a href="/wiki/PyTorch" title="PyTorch">PyTorch</a></li>
+<li><a href="/wiki/Keras" title="Keras">Keras</a></li>
+<li><a href="/wiki/Theano_(software)" title="Theano (software)">Theano</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Implementation</th><td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0"><div style="padding:0 0.25em"></div><table class="nowraplinks navbox-subgroup" style="border-spacing:0"><tbody><tr><th scope="row" class="navbox-group" style="width:1%">Audio-visual</th><td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/AlexNet" title="AlexNet">AlexNet</a></li>
+<li><a href="/wiki/WaveNet" title="WaveNet">WaveNet</a></li>
+<li><a href="/wiki/Human_image_synthesis" title="Human image synthesis">Human image synthesis</a></li>
+<li><a href="/wiki/Handwriting_recognition" title="Handwriting recognition">HWR</a></li>
+<li><a href="/wiki/Optical_character_recognition" title="Optical character recognition">OCR</a></li>
+<li><a href="/wiki/Speech_synthesis" title="Speech synthesis">Speech synthesis</a></li>
+<li><a href="/wiki/Speech_recognition" title="Speech recognition">Speech recognition</a></li>
+<li><a href="/wiki/Facial_recognition_system" title="Facial recognition system">Facial recognition</a></li>
+<li><a href="/wiki/AlphaFold" title="AlphaFold">AlphaFold</a></li>
+<li><a href="/wiki/DALL-E" title="DALL-E">DALL-E</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Verbal</th><td class="navbox-list-with-group navbox-list navbox-even" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Word2vec" title="Word2vec">Word2vec</a></li>
+<li><a class="mw-selflink selflink">Transformer</a></li>
+<li><a href="/wiki/BERT_(language_model)" title="BERT (language model)">BERT</a></li>
+<li><a href="/wiki/Neural_machine_translation" title="Neural machine translation">NMT</a></li>
+<li><a href="/wiki/Project_Debater" title="Project Debater">Project Debater</a></li>
+<li><a href="/wiki/Watson_(computer)" title="Watson (computer)">Watson</a></li>
+<li><a href="/wiki/GPT-2" title="GPT-2">GPT-2</a></li>
+<li><a href="/wiki/GPT-3" title="GPT-3">GPT-3</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Decisional</th><td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/AlphaGo" title="AlphaGo">AlphaGo</a></li>
+<li><a href="/wiki/AlphaZero" title="AlphaZero">AlphaZero</a></li>
+<li><a href="/wiki/Q-learning" title="Q-learning">Q-learning</a></li>
+<li><a href="/wiki/State%E2%80%93action%E2%80%93reward%E2%80%93state%E2%80%93action" title="State–action–reward–state–action">SARSA</a></li>
+<li><a href="/wiki/OpenAI_Five" title="OpenAI Five">OpenAI Five</a></li>
+<li><a href="/wiki/Self-driving_car" title="Self-driving car">Self-driving car</a></li>
+<li><a href="/wiki/MuZero" title="MuZero">MuZero</a></li>
+<li><a href="/wiki/Action_selection" title="Action selection">Action selection</a></li>
+<li><a href="/wiki/Robot_control" title="Robot control">Robot control</a></li></ul>
+</div></td></tr></tbody></table><div></div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">People</th><td class="navbox-list-with-group navbox-list navbox-even" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Alex_Graves_(computer_scientist)" title="Alex Graves (computer scientist)">Alex Graves</a></li>
+<li><a href="/wiki/Ian_Goodfellow" title="Ian Goodfellow">Ian Goodfellow</a></li>
+<li><a href="/wiki/Yoshua_Bengio" title="Yoshua Bengio">Yoshua Bengio</a></li>
+<li><a href="/wiki/Geoffrey_Hinton" title="Geoffrey Hinton">Geoffrey Hinton</a></li>
+<li><a href="/wiki/Yann_LeCun" title="Yann LeCun">Yann LeCun</a></li>
+<li><a href="/wiki/Andrew_Ng" title="Andrew Ng">Andrew Ng</a></li>
+<li><a href="/wiki/Demis_Hassabis" title="Demis Hassabis">Demis Hassabis</a></li>
+<li><a href="/wiki/David_Silver_(computer_scientist)" title="David Silver (computer scientist)">David Silver</a></li>
+<li><a href="/wiki/Fei-Fei_Li" title="Fei-Fei Li">Fei-Fei Li</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Organizations</th><td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/DeepMind" title="DeepMind">DeepMind</a></li>
+<li><a href="/wiki/OpenAI" title="OpenAI">OpenAI</a></li>
+<li><a href="/wiki/MIT_Computer_Science_and_Artificial_Intelligence_Laboratory" title="MIT Computer Science and Artificial Intelligence Laboratory">MIT CSAIL</a></li>
+<li><a href="/wiki/Mila_(research_institute)" title="Mila (research institute)">Mila</a></li>
+<li><a href="/wiki/Google_Brain" title="Google Brain">Google Brain</a></li>
+<li><a href="https://fr.wikipedia.org/wiki/Facebook_Artificial_Intelligence_Research" class="extiw" title="fr:Facebook Artificial Intelligence Research">FAIR</a></li></ul>
+</div></td></tr><tr><td class="navbox-abovebelow" colspan="2"><div>
+<ul><li><a href="/wiki/File:Symbol_portal_class.svg" class="image" title="Portal"><img alt="" src="//upload.wikimedia.org/wikipedia/en/thumb/e/e2/Symbol_portal_class.svg/16px-Symbol_portal_class.svg.png" decoding="async" width="16" height="16" class="noviewer" srcset="//upload.wikimedia.org/wikipedia/en/thumb/e/e2/Symbol_portal_class.svg/23px-Symbol_portal_class.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/e/e2/Symbol_portal_class.svg/31px-Symbol_portal_class.svg.png 2x" data-file-width="180" data-file-height="185" /></a> Portals
+<ul><li><a href="/wiki/Portal:Computer_programming" title="Portal:Computer programming">Computer programming</a></li>
+<li><a href="/wiki/Portal:Technology" title="Portal:Technology">Technology</a></li></ul></li>
+<li><img alt="" src="//upload.wikimedia.org/wikipedia/en/thumb/9/96/Symbol_category_class.svg/16px-Symbol_category_class.svg.png" decoding="async" title="Category" width="16" height="16" class="noviewer" srcset="//upload.wikimedia.org/wikipedia/en/thumb/9/96/Symbol_category_class.svg/23px-Symbol_category_class.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/9/96/Symbol_category_class.svg/31px-Symbol_category_class.svg.png 2x" data-file-width="180" data-file-height="185" /> Category
+<ul><li><a href="/wiki/Category:Artificial_neural_networks" title="Category:Artificial neural networks">Artificial neural networks</a></li>
+<li><a href="/wiki/Category:Machine_learning" title="Category:Machine learning">Machine learning</a></li></ul></li></ul>
+</div></td></tr></tbody></table></div>
+<!-- 
+NewPP limit report
+Parsed by mw1358
+Cached time: 20220226203601
+Cache expiry: 1814400
+Reduced expiry: false
+Complications: [vary‐revision‐sha1]
+CPU time usage: 0.765 seconds
+Real time usage: 0.888 seconds
+Preprocessor visited node count: 2222/1000000
+Post‐expand include size: 101804/2097152 bytes
+Template argument size: 1644/2097152 bytes
+Highest expansion depth: 11/100
+Expensive parser function count: 0/500
+Unstrip recursion depth: 1/20
+Unstrip post‐expand size: 86634/5000000 bytes
+Lua time usage: 0.390/10.000 seconds
+Lua memory usage: 6216853/52428800 bytes
+Number of Wikibase entities loaded: 0/400
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  657.291      1 -total
+ 56.99%  374.613      1 Template:Reflist
+ 22.38%  147.124      5 Template:Cite_arXiv
+ 16.04%  105.425      1 Template:Machine_learning
+ 15.41%  101.307      1 Template:Sidebar_with_collapsible_lists
+ 12.88%   84.660      1 Template:Short_description
+ 11.85%   77.892     12 Template:Cite_web
+  9.41%   61.874      1 Template:Differentiable_computing
+  9.33%   61.337      2 Template:Navbox
+  5.67%   37.295      1 Template:Pagetype
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:61603971-0!canonical and timestamp 20220226203601 and revision id 1074172579. Serialized with JSON.
+ -->
+</div><noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript>
+<div class="printfooter">Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Transformer_(machine_learning_model)&amp;oldid=1074172579">https://en.wikipedia.org/w/index.php?title=Transformer_(machine_learning_model)&amp;oldid=1074172579</a>"</div></div>
+		<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Artificial_neural_networks" title="Category:Artificial neural networks">Artificial neural networks</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:CS1_maint:_multiple_names:_authors_list" title="Category:CS1 maint: multiple names: authors list">CS1 maint: multiple names: authors list</a></li><li><a href="/wiki/Category:CS1_errors:_missing_periodical" title="Category:CS1 errors: missing periodical">CS1 errors: missing periodical</a></li><li><a href="/wiki/Category:CS1_maint:_url-status" title="Category:CS1 maint: url-status">CS1 maint: url-status</a></li><li><a href="/wiki/Category:Articles_with_short_description" title="Category:Articles with short description">Articles with short description</a></li><li><a href="/wiki/Category:Short_description_is_different_from_Wikidata" title="Category:Short description is different from Wikidata">Short description is different from Wikidata</a></li></ul></div></div>
+	</div>
+</div>
+<div id='mw-data-after-content'>
+	<div class="read-more-container"></div>
+</div>
+
+<div id="mw-navigation">
+	<h2>Navigation menu</h2>
+	<div id="mw-head">
+		
+<nav id="p-personal" class="mw-portlet mw-portlet-personal vector-user-menu-legacy vector-menu" aria-labelledby="p-personal-label" role="navigation" 
+	 >
+	<label id="p-personal-label" aria-label="" class="vector-menu-heading">
+		<span class="vector-menu-heading-label">Personal tools</span>
+	</label>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="pt-anonuserpage" class="mw-list-item"><span>Not logged in</span></li><li id="pt-anontalk" class="mw-list-item"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n"><span>Talk</span></a></li><li id="pt-anoncontribs" class="mw-list-item"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y"><span>Contributions</span></a></li><li id="pt-createaccount" class="mw-list-item"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Transformer+%28machine+learning+model%29&amp;returntoquery=lxml%3D" title="You are encouraged to create an account and log in; however, it is not mandatory"><span>Create account</span></a></li><li id="pt-login" class="mw-list-item"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Transformer+%28machine+learning+model%29&amp;returntoquery=lxml%3D" title="You&#039;re encouraged to log in; however, it&#039;s not mandatory. [o]" accesskey="o"><span>Log in</span></a></li></ul>
+		
+	</div>
+</nav>
+
+		<div id="left-navigation">
+			
+<nav id="p-namespaces" class="mw-portlet mw-portlet-namespaces vector-menu vector-menu-tabs" aria-labelledby="p-namespaces-label" role="navigation" 
+	 >
+	<label id="p-namespaces-label" aria-label="" class="vector-menu-heading">
+		<span class="vector-menu-heading-label">Namespaces</span>
+	</label>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="ca-nstab-main" class="selected mw-list-item"><a href="/wiki/Transformer_(machine_learning_model)" title="View the content page [c]" accesskey="c"><span>Article</span></a></li><li id="ca-talk" class="mw-list-item"><a href="/wiki/Talk:Transformer_(machine_learning_model)" rel="discussion" title="Discuss improvements to the content page [t]" accesskey="t"><span>Talk</span></a></li></ul>
+		
+	</div>
+</nav>
+
+			
+<nav id="p-variants" class="mw-portlet mw-portlet-variants emptyPortlet vector-menu-dropdown-noicon vector-menu vector-menu-dropdown" aria-labelledby="p-variants-label" role="navigation" 
+	 >
+	<input type="checkbox"
+		id="p-variants-checkbox"
+		role="button"
+		aria-haspopup="true"
+		data-event-name="ui.dropdown-p-variants"
+		class="vector-menu-checkbox" aria-labelledby="p-variants-label" />
+	<label id="p-variants-label" aria-label="Change language variant" class="vector-menu-heading">
+		<span class="vector-menu-heading-label">English</span>
+			<span class="vector-menu-checkbox-expanded">expanded</span>
+			<span class="vector-menu-checkbox-collapsed">collapsed</span>
+	</label>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"></ul>
+		
+	</div>
+</nav>
+
+		</div>
+		<div id="right-navigation">
+			
+<nav id="p-views" class="mw-portlet mw-portlet-views vector-menu vector-menu-tabs" aria-labelledby="p-views-label" role="navigation" 
+	 >
+	<label id="p-views-label" aria-label="" class="vector-menu-heading">
+		<span class="vector-menu-heading-label">Views</span>
+	</label>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="ca-view" class="selected mw-list-item"><a href="/wiki/Transformer_(machine_learning_model)"><span>Read</span></a></li><li id="ca-edit" class="mw-list-item"><a href="/w/index.php?title=Transformer_(machine_learning_model)&amp;action=edit" title="Edit this page [e]" accesskey="e"><span>Edit</span></a></li><li id="ca-history" class="mw-list-item"><a href="/w/index.php?title=Transformer_(machine_learning_model)&amp;action=history" title="Past revisions of this page [h]" accesskey="h"><span>View history</span></a></li></ul>
+		
+	</div>
+</nav>
+
+			
+<nav id="p-cactions" class="mw-portlet mw-portlet-cactions emptyPortlet vector-menu-dropdown-noicon vector-menu vector-menu-dropdown" aria-labelledby="p-cactions-label" role="navigation"  title="More options"
+	 >
+	<input type="checkbox"
+		id="p-cactions-checkbox"
+		role="button"
+		aria-haspopup="true"
+		data-event-name="ui.dropdown-p-cactions"
+		class="vector-menu-checkbox" aria-labelledby="p-cactions-label" />
+	<label id="p-cactions-label" aria-label="" class="vector-menu-heading">
+		<span class="vector-menu-heading-label">More</span>
+			<span class="vector-menu-checkbox-expanded">expanded</span>
+			<span class="vector-menu-checkbox-collapsed">collapsed</span>
+	</label>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"></ul>
+		
+	</div>
+</nav>
+
+			
+<div id="p-search" role="search" class="vector-search-box-vue  vector-search-box-show-thumbnail vector-search-box-auto-expand-width vector-search-box">
+	<div>
+			<h3 >
+				<label for="searchInput">Search</label>
+			</h3>
+		<form action="/w/index.php" id="searchform"
+			class="vector-search-box-form">
+			<div id="simpleSearch"
+				class="vector-search-box-inner"
+				 data-search-loc="header-navigation">
+				<input class="vector-search-box-input"
+					 type="search" name="search" placeholder="Search Wikipedia" aria-label="Search Wikipedia" autocapitalize="sentences" title="Search Wikipedia [f]" accesskey="f" id="searchInput"
+				/>
+				<input type="hidden" name="title" value="Special:Search"/>
+				<input id="mw-searchButton"
+					 class="searchButton mw-fallbackSearchButton" type="submit" name="fulltext" title="Search Wikipedia for this text" value="Search" />
+				<input id="searchButton"
+					 class="searchButton" type="submit" name="go" title="Go to a page with this exact name if it exists" value="Go" />
+			</div>
+		</form>
+	</div>
+</div>
+
+		</div>
+	</div>
+	
+
+<div id="mw-panel">
+	<div id="p-logo" role="banner">
+		<a class="mw-wiki-logo" href="/wiki/Main_Page"
+			title="Visit the main page"></a>
+	</div>
+	
+<nav id="p-navigation" class="mw-portlet mw-portlet-navigation vector-menu vector-menu-portal portal" aria-labelledby="p-navigation-label" role="navigation" 
+	 >
+	<label id="p-navigation-label" aria-label="" class="vector-menu-heading">
+		<span class="vector-menu-heading-label">Navigation</span>
+	</label>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="n-mainpage-description" class="mw-list-item"><a href="/wiki/Main_Page" icon="home" title="Visit the main page [z]" accesskey="z"><span>Main page</span></a></li><li id="n-contents" class="mw-list-item"><a href="/wiki/Wikipedia:Contents" title="Guides to browsing Wikipedia"><span>Contents</span></a></li><li id="n-currentevents" class="mw-list-item"><a href="/wiki/Portal:Current_events" title="Articles related to current events"><span>Current events</span></a></li><li id="n-randompage" class="mw-list-item"><a href="/wiki/Special:Random" icon="die" title="Visit a randomly selected article [x]" accesskey="x"><span>Random article</span></a></li><li id="n-aboutsite" class="mw-list-item"><a href="/wiki/Wikipedia:About" title="Learn about Wikipedia and how it works"><span>About Wikipedia</span></a></li><li id="n-contactpage" class="mw-list-item"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia"><span>Contact us</span></a></li><li id="n-sitesupport" class="mw-list-item"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us by donating to the Wikimedia Foundation"><span>Donate</span></a></li></ul>
+		
+	</div>
+</nav>
+
+	
+<nav id="p-interaction" class="mw-portlet mw-portlet-interaction vector-menu vector-menu-portal portal" aria-labelledby="p-interaction-label" role="navigation" 
+	 >
+	<label id="p-interaction-label" aria-label="" class="vector-menu-heading">
+		<span class="vector-menu-heading-label">Contribute</span>
+	</label>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="n-help" class="mw-list-item"><a href="/wiki/Help:Contents" icon="help" title="Guidance on how to use and edit Wikipedia"><span>Help</span></a></li><li id="n-introduction" class="mw-list-item"><a href="/wiki/Help:Introduction" title="Learn how to edit Wikipedia"><span>Learn to edit</span></a></li><li id="n-portal" class="mw-list-item"><a href="/wiki/Wikipedia:Community_portal" title="The hub for editors"><span>Community portal</span></a></li><li id="n-recentchanges" class="mw-list-item"><a href="/wiki/Special:RecentChanges" icon="recentChanges" title="A list of recent changes to Wikipedia [r]" accesskey="r"><span>Recent changes</span></a></li><li id="n-upload" class="mw-list-item"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Add images or other media for use on Wikipedia"><span>Upload file</span></a></li></ul>
+		
+	</div>
+</nav>
+
+<nav id="p-tb" class="mw-portlet mw-portlet-tb vector-menu vector-menu-portal portal" aria-labelledby="p-tb-label" role="navigation" 
+	 >
+	<label id="p-tb-label" aria-label="" class="vector-menu-heading">
+		<span class="vector-menu-heading-label">Tools</span>
+	</label>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="t-whatlinkshere" class="mw-list-item"><a href="/wiki/Special:WhatLinksHere/Transformer_(machine_learning_model)" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j"><span>What links here</span></a></li><li id="t-recentchangeslinked" class="mw-list-item"><a href="/wiki/Special:RecentChangesLinked/Transformer_(machine_learning_model)" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k"><span>Related changes</span></a></li><li id="t-upload" class="mw-list-item"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u"><span>Upload file</span></a></li><li id="t-specialpages" class="mw-list-item"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q"><span>Special pages</span></a></li><li id="t-permalink" class="mw-list-item"><a href="/w/index.php?title=Transformer_(machine_learning_model)&amp;oldid=1074172579" title="Permanent link to this revision of this page"><span>Permanent link</span></a></li><li id="t-info" class="mw-list-item"><a href="/w/index.php?title=Transformer_(machine_learning_model)&amp;action=info" title="More information about this page"><span>Page information</span></a></li><li id="t-cite" class="mw-list-item"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Transformer_%28machine_learning_model%29&amp;id=1074172579&amp;wpFormIdentifier=titleform" title="Information on how to cite this page"><span>Cite this page</span></a></li><li id="t-wikibase" class="mw-list-item"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q85810444" title="Structured data on this page hosted by Wikidata [g]" accesskey="g"><span>Wikidata item</span></a></li></ul>
+		
+	</div>
+</nav>
+
+<nav id="p-coll-print_export" class="mw-portlet mw-portlet-coll-print_export vector-menu vector-menu-portal portal" aria-labelledby="p-coll-print_export-label" role="navigation" 
+	 >
+	<label id="p-coll-print_export-label" aria-label="" class="vector-menu-heading">
+		<span class="vector-menu-heading-label">Print/export</span>
+	</label>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="coll-download-as-rl" class="mw-list-item"><a href="/w/index.php?title=Special:DownloadAsPdf&amp;page=Transformer_%28machine_learning_model%29&amp;action=show-download-screen" title="Download this page as a PDF file"><span>Download as PDF</span></a></li><li id="t-print" class="mw-list-item"><a href="/w/index.php?title=Transformer_(machine_learning_model)&amp;printable=yes" title="Printable version of this page [p]" accesskey="p"><span>Printable version</span></a></li></ul>
+		
+	</div>
+</nav>
+
+	
+<nav id="p-lang" class="mw-portlet mw-portlet-lang vector-menu vector-menu-portal portal" aria-labelledby="p-lang-label" role="navigation" 
+	 >
+	<label id="p-lang-label" aria-label="" class="vector-menu-heading">
+		<span class="vector-menu-heading-label">Languages</span>
+	</label>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li class="interlanguage-link interwiki-ar mw-list-item"><a href="https://ar.wikipedia.org/wiki/%D8%A7%D9%84%D8%B4%D8%A8%D9%83%D8%A7%D8%AA_%D8%A7%D9%84%D8%B9%D8%B5%D8%A8%D9%8A%D8%A9_%D8%BA%D9%8A%D8%B1_%D8%A7%D9%84%D8%AA%D8%B1%D8%AA%D9%8A%D8%A8%D9%8A%D8%A9_(%D8%AD%D8%A7%D8%B3%D9%88%D8%A8)" title="الشبكات العصبية غير الترتيبية (حاسوب) – Arabic" lang="ar" hreflang="ar" class="interlanguage-link-target"><span>العربية</span></a></li><li class="interlanguage-link interwiki-de mw-list-item"><a href="https://de.wikipedia.org/wiki/Transformer_(Maschinelles_Lernen)" title="Transformer (Maschinelles Lernen) – German" lang="de" hreflang="de" class="interlanguage-link-target"><span>Deutsch</span></a></li><li class="interlanguage-link interwiki-eu mw-list-item"><a href="https://eu.wikipedia.org/wiki/Transformer_(ikasketa_automatikoko_eredua)" title="Transformer (ikasketa automatikoko eredua) – Basque" lang="eu" hreflang="eu" class="interlanguage-link-target"><span>Euskara</span></a></li><li class="interlanguage-link interwiki-fa mw-list-item"><a href="https://fa.wikipedia.org/wiki/%D8%AA%D8%B1%D9%86%D8%B3%D9%81%D9%88%D8%B1%D9%85%D8%B1%D9%87%D8%A7_(%DB%8C%D8%A7%D8%AF%DA%AF%DB%8C%D8%B1%DB%8C_%D9%85%D8%A7%D8%B4%DB%8C%D9%86)" title="ترنسفورمرها (یادگیری ماشین) – Persian" lang="fa" hreflang="fa" class="interlanguage-link-target"><span>فارسی</span></a></li><li class="interlanguage-link interwiki-fr mw-list-item"><a href="https://fr.wikipedia.org/wiki/Transformeur" title="Transformeur – French" lang="fr" hreflang="fr" class="interlanguage-link-target"><span>Français</span></a></li><li class="interlanguage-link interwiki-ko mw-list-item"><a href="https://ko.wikipedia.org/wiki/%EB%B3%80%ED%99%98%EA%B8%B0_(%EA%B8%B0%EA%B3%84_%ED%95%99%EC%8A%B5)" title="변환기 (기계 학습) – Korean" lang="ko" hreflang="ko" class="interlanguage-link-target"><span>한국어</span></a></li><li class="interlanguage-link interwiki-ja mw-list-item"><a href="https://ja.wikipedia.org/wiki/Transformer_(%E6%A9%9F%E6%A2%B0%E5%AD%A6%E7%BF%92%E3%83%A2%E3%83%87%E3%83%AB)" title="Transformer (機械学習モデル) – Japanese" lang="ja" hreflang="ja" class="interlanguage-link-target"><span>日本語</span></a></li><li class="interlanguage-link interwiki-ru mw-list-item"><a href="https://ru.wikipedia.org/wiki/%D0%A2%D1%80%D0%B0%D0%BD%D1%81%D1%84%D0%BE%D1%80%D0%BC%D0%B5%D1%80_(%D0%BC%D0%BE%D0%B4%D0%B5%D0%BB%D1%8C_%D0%BC%D0%B0%D1%88%D0%B8%D0%BD%D0%BD%D0%BE%D0%B3%D0%BE_%D0%BE%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D1%8F)" title="Трансформер (модель машинного обучения) – Russian" lang="ru" hreflang="ru" class="interlanguage-link-target"><span>Русский</span></a></li><li class="interlanguage-link interwiki-uk mw-list-item"><a href="https://uk.wikipedia.org/wiki/%D0%A2%D1%80%D0%B0%D0%BD%D1%81%D1%84%D0%BE%D1%80%D0%BC%D0%B5%D1%80_(%D0%BC%D0%BE%D0%B4%D0%B5%D0%BB%D1%8C_%D0%BC%D0%B0%D1%88%D0%B8%D0%BD%D0%BD%D0%BE%D0%B3%D0%BE_%D0%BD%D0%B0%D0%B2%D1%87%D0%B0%D0%BD%D0%BD%D1%8F)" title="Трансформер (модель машинного навчання) – Ukrainian" lang="uk" hreflang="uk" class="interlanguage-link-target"><span>Українська</span></a></li><li class="interlanguage-link interwiki-vi mw-list-item"><a href="https://vi.wikipedia.org/wiki/Transformer_(m%C3%B4_h%C3%ACnh_h%E1%BB%8Dc_m%C3%A1y)" title="Transformer (mô hình học máy) – Vietnamese" lang="vi" hreflang="vi" class="interlanguage-link-target"><span>Tiếng Việt</span></a></li><li class="interlanguage-link interwiki-zh-yue mw-list-item"><a href="https://zh-yue.wikipedia.org/wiki/Transformer_(%E6%A9%9F%E6%A2%B0%E5%AD%B8%E7%BF%92%E6%A8%A1%E5%9E%8B)" title="Transformer (機械學習模型) – Cantonese" lang="yue" hreflang="yue" class="interlanguage-link-target"><span>粵語</span></a></li></ul>
+		<div class="after-portlet after-portlet-lang"><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q85810444#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>
+	</div>
+</nav>
+
+</div>
+
+</div>
+
+<footer id="footer" class="mw-footer" role="contentinfo" >
+	<ul id="footer-info">
+	<li id="footer-info-lastmod"> This page was last edited on 26 February 2022, at 20:35<span class="anonymous-show">&#160;(UTC)</span>.</li>
+	<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License 3.0</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//foundation.wikimedia.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//foundation.wikimedia.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+</ul>
+
+	<ul id="footer-places">
+	<li id="footer-places-privacy"><a href="https://foundation.wikimedia.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+	<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+	<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+	<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+	<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Transformer_(machine_learning_model)&amp;lxml=&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+	<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+	<li id="footer-places-statslink"><a href="https://stats.wikimedia.org/#/en.wikipedia.org">Statistics</a></li>
+	<li id="footer-places-cookiestatement"><a href="https://foundation.wikimedia.org/wiki/Cookie_statement">Cookie statement</a></li>
+</ul>
+
+	<ul id="footer-icons" class="noprint">
+	<li id="footer-copyrightico"><a href="https://wikimediafoundation.org/"><img src="/static/images/footer/wikimedia-button.png" srcset="/static/images/footer/wikimedia-button-1.5x.png 1.5x, /static/images/footer/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation" loading="lazy" /></a></li>
+	<li id="footer-poweredbyico"><a href="https://www.mediawiki.org/"><img src="/static/images/footer/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/footer/poweredby_mediawiki_132x47.png 1.5x, /static/images/footer/poweredby_mediawiki_176x62.png 2x" width="88" height="31" loading="lazy"/></a></li>
+</ul>
+
+</footer>
+
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.765","walltime":"0.888","ppvisitednodes":{"value":2222,"limit":1000000},"postexpandincludesize":{"value":101804,"limit":2097152},"templateargumentsize":{"value":1644,"limit":2097152},"expansiondepth":{"value":11,"limit":100},"expensivefunctioncount":{"value":0,"limit":500},"unstrip-depth":{"value":1,"limit":20},"unstrip-size":{"value":86634,"limit":5000000},"entityaccesscount":{"value":0,"limit":400},"timingprofile":["100.00%  657.291      1 -total"," 56.99%  374.613      1 Template:Reflist"," 22.38%  147.124      5 Template:Cite_arXiv"," 16.04%  105.425      1 Template:Machine_learning"," 15.41%  101.307      1 Template:Sidebar_with_collapsible_lists"," 12.88%   84.660      1 Template:Short_description"," 11.85%   77.892     12 Template:Cite_web","  9.41%   61.874      1 Template:Differentiable_computing","  9.33%   61.337      2 Template:Navbox","  5.67%   37.295      1 Template:Pagetype"]},"scribunto":{"limitreport-timeusage":{"value":"0.390","limit":"10.000"},"limitreport-memusage":{"value":6216853,"limit":52428800}},"cachereport":{"origin":"mw1358","timestamp":"20220226203601","ttl":1814400,"transientcontent":false}}});});</script>
+<script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"Article","name":"Transformer (machine learning model)","url":"https:\/\/en.wikipedia.org\/wiki\/Transformer_(machine_learning_model)","sameAs":"http:\/\/www.wikidata.org\/entity\/Q85810444","mainEntity":"http:\/\/www.wikidata.org\/entity\/Q85810444","author":{"@type":"Organization","name":"Contributors to Wikimedia projects"},"publisher":{"@type":"Organization","name":"Wikimedia Foundation, Inc.","logo":{"@type":"ImageObject","url":"https:\/\/www.wikimedia.org\/static\/images\/wmf-hor-googpub.png"}},"datePublished":"2019-08-25T16:32:02Z","dateModified":"2022-02-26T20:35:58Z","image":"https:\/\/upload.wikimedia.org\/wikipedia\/commons\/f\/fe\/Kernel_Machine.svg","headline":"A machine learning model from Google Brain"}</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":184,"wgHostname":"mw1328"});});</script>
+</body>
+</html>

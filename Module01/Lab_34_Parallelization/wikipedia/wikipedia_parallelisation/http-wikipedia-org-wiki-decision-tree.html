@@ -1,0 +1,1208 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Decision tree - Wikipedia</title>
+<script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"e2d06c61-c0e9-44fc-aa81-e1757115d1ac","wgCSPNonce":false,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Decision_tree","wgTitle":"Decision tree","wgCurRevisionId":1073030495,"wgRevisionId":1073030495,"wgArticleId":232602,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Articles with short description","Short description is different from Wikidata","Use dmy dates from April 2020","All articles with unsourced statements","Articles with unsourced statements from July 2021","Commons category link is on Wikidata","Articles with GND identifiers",
+"Pages that use a deprecated format of the math tags","Decision trees","Decision analysis"],"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"Decision_tree","wgRelevantArticleId":232602,"wgIsProbablyEditable":true,"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgFlaggedRevsParams":{"tags":{"status":{"levels":-1}}},"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en"},"wgMFDisplayWikibaseDescriptions":{"search":true,"nearby":true,"watchlist":true,"tagline":false},"wgWMESchemaEditAttemptStepOversample":false,"wgWMEPageLength":20000,"wgNoticeProject":"wikipedia","wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgPopupsFlags":10,"wgULSCurrentAutonym":"English","wgEditSubmitButtonLabelPublish":true,"wgCentralAuthMobileDomain":false,"wgULSPosition":"interlanguage","wgULSisCompactLinksEnabled":true,"wgWikibaseItemId":"Q831366","wgGENewcomerTasksGuidanceEnabled":
+true,"wgGEAskQuestionEnabled":false,"wgGELinkRecommendationsFrontendEnabled":false};RLSTATE={"ext.globalCssJs.user.styles":"ready","site.styles":"ready","user.styles":"ready","ext.globalCssJs.user":"ready","user":"ready","user.options":"loading","ext.cite.styles":"ready","ext.math.styles":"ready","skins.vector.styles.legacy":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.wikimediaBadges":"ready","ext.uls.interlanguage":"ready","wikibase.client.init":"ready"};RLPAGEMODULES=["ext.cite.ux-enhancements","ext.math.scripts","site","mediawiki.page.ready","mediawiki.toc","skins.vector.legacy.js","ext.gadget.ReferenceTooltips","ext.gadget.charinsert","ext.gadget.extra-toolbar-buttons","ext.gadget.refToolbar","ext.gadget.switcher","mmv.head","mmv.bootstrap.autostart","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging","ext.wikimediaEvents","ext.navigationTiming","ext.cx.eventlogging.campaigns","ext.centralNotice.geoIP",
+"ext.centralNotice.startUp","ext.centralauth.centralautologin","ext.popups","ext.uls.compactlinks","ext.uls.interface","ext.growthExperiments.SuggestedEditSession"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@1i9g4",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});});});</script>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=ext.cite.styles%7Cext.math.styles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cskins.vector.styles.legacy%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.38.0-wmf.25"/>
+<meta name="referrer" content="origin"/>
+<meta name="referrer" content="origin-when-crossorigin"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/c/c6/Manual_decision_tree.jpg"/>
+<meta property="og:image:width" content="1200"/>
+<meta property="og:image:height" content="1419"/>
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/c/c6/Manual_decision_tree.jpg"/>
+<meta property="og:image:width" content="800"/>
+<meta property="og:image:height" content="946"/>
+<meta property="og:image:width" content="640"/>
+<meta property="og:image:height" content="757"/>
+<meta property="og:title" content="Decision tree - Wikipedia"/>
+<meta property="og:type" content="website"/>
+<link rel="preconnect" href="//upload.wikimedia.org"/>
+<link rel="alternate" media="only screen and (max-width: 720px)" href="//en.m.wikipedia.org/wiki/Decision_tree"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Decision_tree&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="license" href="https://creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Decision_tree"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject mw-editable page-Decision_tree rootpage-Decision_tree skin-vector action-view skin-vector-legacy"><div id="mw-page-base" class="noprint"></div>
+<div id="mw-head-base" class="noprint"></div>
+<div id="content" class="mw-body" role="main">
+	<a id="top"></a>
+	<div id="siteNotice"><!-- CentralNotice --></div>
+	<div class="mw-indicators">
+	</div>
+	<h1 id="firstHeading" class="firstHeading mw-first-heading">Decision tree</h1>
+	<div id="bodyContent" class="vector-body">
+		<div id="siteSub" class="noprint">From Wikipedia, the free encyclopedia</div>
+		<div id="contentSub"></div>
+		<div id="contentSub2"></div>
+		
+		<div id="jump-to-nav"></div>
+		<a class="mw-jump-link" href="#mw-head">Jump to navigation</a>
+		<a class="mw-jump-link" href="#searchInput">Jump to search</a>
+		<div id="mw-content-text" class="mw-body-content mw-content-ltr" lang="en" dir="ltr"><div class="mw-parser-output"><div class="shortdescription nomobile noexcerpt noprint searchaux" style="display:none">Decision support tool</div>
+<style data-mw-deduplicate="TemplateStyles:r1033289096">.mw-parser-output .hatnote{font-style:italic}.mw-parser-output div.hatnote{padding-left:1.6em;margin-bottom:0.5em}.mw-parser-output .hatnote i{font-style:normal}.mw-parser-output .hatnote+link+.hatnote{margin-top:-0.5em}</style><div role="note" class="hatnote navigation-not-searchable">This article is about decision trees in decision analysis. For the use of the term in machine learning, see <a href="/wiki/Decision_tree_learning" title="Decision tree learning">Decision tree learning</a>.</div>
+<p class="mw-empty-elt">
+</p>
+<div class="thumb tright"><div class="thumbinner" style="width:222px;"><a href="/wiki/File:Manual_decision_tree.jpg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Manual_decision_tree.jpg/220px-Manual_decision_tree.jpg" decoding="async" width="220" height="260" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Manual_decision_tree.jpg/330px-Manual_decision_tree.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/c/c6/Manual_decision_tree.jpg 2x" data-file-width="400" data-file-height="473" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/File:Manual_decision_tree.jpg" class="internal" title="Enlarge"></a></div>Traditionally, decision trees have been created manually.</div></div></div>
+<style data-mw-deduplicate="TemplateStyles:r1045330069">.mw-parser-output .sidebar{width:22em;float:right;clear:right;margin:0.5em 0 1em 1em;background:#f8f9fa;border:1px solid #aaa;padding:0.2em;text-align:center;line-height:1.4em;font-size:88%;border-collapse:collapse;display:table}body.skin-minerva .mw-parser-output .sidebar{display:table!important;float:right!important;margin:0.5em 0 1em 1em!important}.mw-parser-output .sidebar-subgroup{width:100%;margin:0;border-spacing:0}.mw-parser-output .sidebar-left{float:left;clear:left;margin:0.5em 1em 1em 0}.mw-parser-output .sidebar-none{float:none;clear:both;margin:0.5em 1em 1em 0}.mw-parser-output .sidebar-outer-title{padding:0 0.4em 0.2em;font-size:125%;line-height:1.2em;font-weight:bold}.mw-parser-output .sidebar-top-image{padding:0.4em}.mw-parser-output .sidebar-top-caption,.mw-parser-output .sidebar-pretitle-with-top-image,.mw-parser-output .sidebar-caption{padding:0.2em 0.4em 0;line-height:1.2em}.mw-parser-output .sidebar-pretitle{padding:0.4em 0.4em 0;line-height:1.2em}.mw-parser-output .sidebar-title,.mw-parser-output .sidebar-title-with-pretitle{padding:0.2em 0.8em;font-size:145%;line-height:1.2em}.mw-parser-output .sidebar-title-with-pretitle{padding:0.1em 0.4em}.mw-parser-output .sidebar-image{padding:0.2em 0.4em 0.4em}.mw-parser-output .sidebar-heading{padding:0.1em 0.4em}.mw-parser-output .sidebar-content{padding:0 0.5em 0.4em}.mw-parser-output .sidebar-content-with-subgroup{padding:0.1em 0.4em 0.2em}.mw-parser-output .sidebar-above,.mw-parser-output .sidebar-below{padding:0.3em 0.8em;font-weight:bold}.mw-parser-output .sidebar-collapse .sidebar-above,.mw-parser-output .sidebar-collapse .sidebar-below{border-top:1px solid #aaa;border-bottom:1px solid #aaa}.mw-parser-output .sidebar-navbar{text-align:right;font-size:115%;padding:0 0.4em 0.4em}.mw-parser-output .sidebar-list-title{padding:0 0.4em;text-align:left;font-weight:bold;line-height:1.6em;font-size:105%}.mw-parser-output .sidebar-list-title-c{padding:0 0.4em;text-align:center;margin:0 3.3em}@media(max-width:720px){body.mediawiki .mw-parser-output .sidebar{width:100%!important;clear:both;float:none!important;margin-left:0!important;margin-right:0!important}}</style><table class="sidebar nomobile nowraplinks hlist"><tbody><tr><td class="sidebar-top-image"><a href="/wiki/File:Detail_of_Tree_of_Knowledge_after_Diderot_%26_d%27Alembert%27s_Encyclop%C3%A9die,_by_Chr%C3%A9tien_Fr%C3%A9d%C3%A9ric_Guillaume_Roth.jpg" class="image" title="detail of a Tree of Knowledge after Diderot &amp; d&#39;Alembert&#39;s Encyclopédie, by Chrétien Frédéric Guillaume Roth"><img alt="detail of a Tree of Knowledge after Diderot &amp; d&#39;Alembert&#39;s Encyclopédie, by Chrétien Frédéric Guillaume Roth" src="//upload.wikimedia.org/wikipedia/commons/thumb/1/17/Detail_of_Tree_of_Knowledge_after_Diderot_%26_d%27Alembert%27s_Encyclop%C3%A9die%2C_by_Chr%C3%A9tien_Fr%C3%A9d%C3%A9ric_Guillaume_Roth.jpg/165px-Detail_of_Tree_of_Knowledge_after_Diderot_%26_d%27Alembert%27s_Encyclop%C3%A9die%2C_by_Chr%C3%A9tien_Fr%C3%A9d%C3%A9ric_Guillaume_Roth.jpg" decoding="async" width="165" height="80" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/1/17/Detail_of_Tree_of_Knowledge_after_Diderot_%26_d%27Alembert%27s_Encyclop%C3%A9die%2C_by_Chr%C3%A9tien_Fr%C3%A9d%C3%A9ric_Guillaume_Roth.jpg/248px-Detail_of_Tree_of_Knowledge_after_Diderot_%26_d%27Alembert%27s_Encyclop%C3%A9die%2C_by_Chr%C3%A9tien_Fr%C3%A9d%C3%A9ric_Guillaume_Roth.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/1/17/Detail_of_Tree_of_Knowledge_after_Diderot_%26_d%27Alembert%27s_Encyclop%C3%A9die%2C_by_Chr%C3%A9tien_Fr%C3%A9d%C3%A9ric_Guillaume_Roth.jpg/330px-Detail_of_Tree_of_Knowledge_after_Diderot_%26_d%27Alembert%27s_Encyclop%C3%A9die%2C_by_Chr%C3%A9tien_Fr%C3%A9d%C3%A9ric_Guillaume_Roth.jpg 2x" data-file-width="1590" data-file-height="771" /></a></td></tr><tr><th class="sidebar-title" style="background:#ccccff;"><a href="/wiki/Information_mapping" title="Information mapping">Information mapping</a></th></tr><tr><th class="sidebar-heading" style="background:transparent;">
+Topics and fields</th></tr><tr><td class="sidebar-content" style="padding-bottom:0.9em;">
+<ul><li><a href="/wiki/Business_decision_mapping" title="Business decision mapping">Business decision mapping</a></li>
+<li><a href="/wiki/Data_visualization" title="Data visualization">Data visualization</a></li>
+<li><a href="/wiki/Graphic_communication" title="Graphic communication">Graphic communication</a></li>
+<li><a href="/wiki/Infographic" title="Infographic">Infographics</a></li>
+<li><a href="/wiki/Information_design" title="Information design">Information design</a></li>
+<li><a href="/wiki/Knowledge_visualization" class="mw-redirect" title="Knowledge visualization">Knowledge visualization</a></li>
+<li><a href="/wiki/Mental_model" title="Mental model">Mental model</a></li>
+<li><a href="/wiki/Morphological_analysis_(problem-solving)" title="Morphological analysis (problem-solving)">Morphological analysis</a></li>
+<li><a href="/wiki/Visual_analytics" title="Visual analytics">Visual analytics</a></li>
+<li><a href="/wiki/Visual_language" title="Visual language">Visual language</a></li></ul></td>
+</tr><tr><th class="sidebar-heading" style="background:transparent;">
+Node–link approaches</th></tr><tr><td class="sidebar-content" style="padding-bottom:0.9em;">
+<ul><li><a href="/wiki/Argument_map" title="Argument map">Argument map</a></li>
+<li><a href="/wiki/Cladistics" title="Cladistics">Cladistics</a></li>
+<li><a href="/wiki/Cognitive_map" title="Cognitive map">Cognitive map</a></li>
+<li><a href="/wiki/Concept_lattice" class="mw-redirect" title="Concept lattice">Concept lattice</a></li>
+<li><a href="/wiki/Concept_map" title="Concept map">Concept map</a></li>
+<li><a href="/wiki/Conceptual_graph" title="Conceptual graph">Conceptual graph</a></li>
+<li><a class="mw-selflink selflink">Decision tree</a></li>
+<li><a href="/wiki/Dendrogram" title="Dendrogram">Dendrogram</a></li>
+<li><a href="/wiki/Graph_drawing" title="Graph drawing">Graph drawing</a></li>
+<li><a href="/wiki/Hyperbolic_tree" title="Hyperbolic tree">Hyperbolic tree</a></li>
+<li><a href="/wiki/Hypertext" title="Hypertext">Hypertext</a></li>
+<li><a href="/wiki/Issue-based_information_system" title="Issue-based information system">Issue map</a></li>
+<li><a href="/wiki/Issue_tree" title="Issue tree">Issue tree</a></li>
+<li><a href="/wiki/Layered_graph_drawing" title="Layered graph drawing">Layered graph drawing</a></li>
+<li><a href="/wiki/Mind_map" title="Mind map">Mind map</a></li>
+<li><a href="/wiki/Object-role_modeling" title="Object-role modeling">Object-role modeling</a></li>
+<li><a href="/wiki/Organizational_chart" title="Organizational chart">Organizational chart</a></li>
+<li><a href="/wiki/Radial_tree" title="Radial tree">Radial tree</a></li>
+<li><a href="/wiki/Semantic_network" title="Semantic network">Semantic network</a></li>
+<li><a href="/wiki/Sociogram" title="Sociogram">Sociogram</a></li>
+<li><a href="/wiki/Timeline" title="Timeline">Timeline</a></li>
+<li><a href="/wiki/Topic_map" title="Topic map">Topic map</a></li>
+<li><a href="/wiki/Tree_structure" title="Tree structure">Tree structure</a></li></ul></td>
+</tr><tr><th class="sidebar-heading" style="background:transparent;">
+See also</th></tr><tr><td class="sidebar-content" style="padding-bottom:0.9em;">
+<ul><li><a href="/wiki/Design_rationale" title="Design rationale">Design rationale</a></li>
+<li><a href="/wiki/Diagrammatic_reasoning" title="Diagrammatic reasoning">Diagrammatic reasoning</a></li>
+<li><a href="/wiki/Entity%E2%80%93relationship_model" title="Entity–relationship model">Entity–relationship model</a></li>
+<li><a href="/wiki/Geovisualization" title="Geovisualization">Geovisualization</a></li>
+<li><a href="/wiki/List_of_concept-_and_mind-mapping_software" title="List of concept- and mind-mapping software">List of concept- and mind-mapping software</a></li>
+<li><a href="/wiki/Olog" title="Olog">Olog</a></li>
+<li><a href="/wiki/Problem_structuring_methods" title="Problem structuring methods">Problem structuring methods</a></li>
+<li><a href="/wiki/Semantic_Web" title="Semantic Web">Semantic Web</a></li>
+<li><a href="/wiki/Treemapping" title="Treemapping">Treemapping</a></li>
+<li><a href="/wiki/Wicked_problem" title="Wicked problem">Wicked problem</a></li></ul></td>
+</tr><tr><td class="sidebar-navbar" style="border-top:1px solid #aaa;"><style data-mw-deduplicate="TemplateStyles:r1063604349">.mw-parser-output .navbar{display:inline;font-size:88%;font-weight:normal}.mw-parser-output .navbar-collapse{float:left;text-align:left}.mw-parser-output .navbar-boxtext{word-spacing:0}.mw-parser-output .navbar ul{display:inline-block;white-space:nowrap;line-height:inherit}.mw-parser-output .navbar-brackets::before{margin-right:-0.125em;content:"[ "}.mw-parser-output .navbar-brackets::after{margin-left:-0.125em;content:" ]"}.mw-parser-output .navbar li{word-spacing:-0.125em}.mw-parser-output .navbar a>span,.mw-parser-output .navbar a>abbr{text-decoration:inherit}.mw-parser-output .navbar-mini abbr{font-variant:small-caps;border-bottom:none;text-decoration:none;cursor:inherit}.mw-parser-output .navbar-ct-full{font-size:114%;margin:0 7em}.mw-parser-output .navbar-ct-mini{font-size:114%;margin:0 4em}</style><div class="navbar plainlinks hlist navbar-mini"><ul><li class="nv-view"><a href="/wiki/Template:InfoMaps" title="Template:InfoMaps"><abbr title="View this template">v</abbr></a></li><li class="nv-talk"><a href="/wiki/Template_talk:InfoMaps" title="Template talk:InfoMaps"><abbr title="Discuss this template">t</abbr></a></li><li class="nv-edit"><a class="external text" href="https://en.wikipedia.org/w/index.php?title=Template:InfoMaps&amp;action=edit"><abbr title="Edit this template">e</abbr></a></li></ul></div></td></tr></tbody></table>
+<p>A <b>decision tree</b>  is a <a href="/wiki/Decision_support_system" title="Decision support system">decision support</a> tool that uses a <a href="/wiki/Tree_(graph_theory)" title="Tree (graph theory)">tree-like</a> <a href="/wiki/Causal_model" title="Causal model">model</a> of decisions and their possible consequences, including <a href="/wiki/Probability" title="Probability">chance</a> event outcomes, resource costs, and <a href="/wiki/Utility" title="Utility">utility</a>. It is one way to display an <a href="/wiki/Algorithm" title="Algorithm">algorithm</a> that only contains conditional control statements.
+</p><p>Decision trees are commonly used in <a href="/wiki/Operations_research" title="Operations research">operations research</a>, specifically in <a href="/wiki/Decision_analysis" title="Decision analysis">decision analysis</a>, to help identify a strategy most likely to reach a <a href="/wiki/Goal" title="Goal">goal</a>, but are also a popular tool in <a href="/wiki/Decision_tree_learning" title="Decision tree learning">machine learning</a>.
+</p>
+<div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2 id="mw-toc-heading">Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Overview"><span class="tocnumber">1</span> <span class="toctext">Overview</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Decision_tree_building_blocks"><span class="tocnumber">2</span> <span class="toctext">Decision tree building blocks</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="#Decision_tree_elements"><span class="tocnumber">2.1</span> <span class="toctext">Decision tree elements</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Decision_rules"><span class="tocnumber">2.2</span> <span class="toctext">Decision rules</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Decision_tree_using_flowchart_symbols"><span class="tocnumber">2.3</span> <span class="toctext">Decision tree using flowchart symbols</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Analysis_example"><span class="tocnumber">2.4</span> <span class="toctext">Analysis example</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#Influence_diagram"><span class="tocnumber">2.5</span> <span class="toctext">Influence diagram</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-8"><a href="#Association_rule_induction"><span class="tocnumber">3</span> <span class="toctext">Association rule induction</span></a></li>
+<li class="toclevel-1 tocsection-9"><a href="#Advantages_and_disadvantages"><span class="tocnumber">4</span> <span class="toctext">Advantages and disadvantages</span></a>
+<ul>
+<li class="toclevel-2 tocsection-10"><a href="#The_action_of_more_than_one_decision-maker_can_be_considered."><span class="tocnumber">4.1</span> <span class="toctext">The action of more than one decision-maker can be considered.</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-11"><a href="#Optimizing_Decision_Tree"><span class="tocnumber">5</span> <span class="toctext">Optimizing Decision Tree</span></a></li>
+<li class="toclevel-1 tocsection-12"><a href="#Evaluating_a_Decision_Tree"><span class="tocnumber">6</span> <span class="toctext">Evaluating a Decision Tree</span></a></li>
+<li class="toclevel-1 tocsection-13"><a href="#See_also"><span class="tocnumber">7</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-14"><a href="#References"><span class="tocnumber">8</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-15"><a href="#External_links"><span class="tocnumber">9</span> <span class="toctext">External links</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Overview">Overview</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Decision_tree&amp;action=edit&amp;section=1" title="Edit section: Overview">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>A decision tree is a <a href="/wiki/Flowchart" title="Flowchart">flowchart</a>-like structure in which each internal node represents a "test" on an attribute (e.g. whether a coin flip comes up heads or tails), each branch represents the outcome of the test, and each leaf node represents a class label (decision taken after computing all attributes). The paths from root to leaf represent classification rules.
+</p><p>In <a href="/wiki/Decision_analysis" title="Decision analysis">decision analysis</a>, a decision tree and the closely related <a href="/wiki/Influence_diagram" title="Influence diagram">influence diagram</a> are used as a visual and analytical decision support tool, where the <a href="/wiki/Expected_value" title="Expected value">expected values</a> (or <a href="/wiki/Expected_utility" class="mw-redirect" title="Expected utility">expected utility</a>) of competing alternatives are calculated.
+</p><p>A decision tree consists of three types of nodes:<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">&#91;1&#93;</a></sup>
+</p>
+<ol><li>Decision nodes – typically represented by squares</li>
+<li>Chance nodes – typically represented by circles</li>
+<li>End nodes – typically represented by triangles</li></ol>
+<p>Decision trees are commonly used in <a href="/wiki/Operations_research" title="Operations research">operations research</a> and <a href="/wiki/Operations_management" title="Operations management">operations management</a>. If, in practice, decisions have to be taken online with no recall under incomplete knowledge, a decision tree should be paralleled by a <a href="/wiki/Probability" title="Probability">probability</a> model as a best choice model or online selection model <a href="/wiki/Algorithm" title="Algorithm">algorithm</a>.<sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">&#91;<i><a href="/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources. (July 2021)">citation needed</span></a></i>&#93;</sup> Another use of decision trees is as a descriptive means for calculating <a href="/wiki/Conditional_probability" title="Conditional probability">conditional probabilities</a>.
+</p><p>Decision trees, <a href="/wiki/Influence_diagrams" class="mw-redirect" title="Influence diagrams">influence diagrams</a>, <a href="/wiki/Utility_function" class="mw-redirect" title="Utility function">utility functions</a>, and other <a href="/wiki/Decision_analysis" title="Decision analysis">decision analysis</a> tools and methods are taught to undergraduate students in schools of business, health economics, and public health, and are examples of operations research or <a href="/wiki/Management_science" title="Management science">management science</a> methods.
+</p>
+<h2><span class="mw-headline" id="Decision_tree_building_blocks">Decision tree building blocks</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Decision_tree&amp;action=edit&amp;section=2" title="Edit section: Decision tree building blocks">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<h3><span class="mw-headline" id="Decision_tree_elements">Decision tree elements</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Decision_tree&amp;action=edit&amp;section=3" title="Edit section: Decision tree elements">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<div class="center"><div class="floatnone"><a href="/wiki/File:Decision-Tree-Elements.png" class="image"><img alt="Decision-Tree-Elements.png" src="//upload.wikimedia.org/wikipedia/commons/a/ad/Decision-Tree-Elements.png" decoding="async" width="491" height="141" data-file-width="491" data-file-height="141" /></a></div></div>
+<p>Drawn from left to right, a decision tree has only burst nodes (splitting paths) but no sink nodes (converging paths). Therefore, used manually, they can grow very big and are then often hard to draw fully by hand. Traditionally, decision trees have been created manually – as the aside example shows – although increasingly, specialized software is employed.
+</p>
+<h3><span class="mw-headline" id="Decision_rules">Decision rules</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Decision_tree&amp;action=edit&amp;section=4" title="Edit section: Decision rules">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The decision tree can be <a href="/wiki/Linearization" title="Linearization">linearized</a> into <b>decision rules</b>,<sup id="cite_ref-2" class="reference"><a href="#cite_note-2">&#91;2&#93;</a></sup> where the outcome is the contents of the leaf node, and the conditions along the path form a conjunction in the if clause. In general, the rules have the form:
+</p>
+<dl><dd><i>if</i> condition1 <i>and</i> condition2 <i>and</i> condition3 <i>then</i> outcome.</dd></dl>
+<p>Decision rules can be generated by constructing <a href="/wiki/Association_rule_learning" title="Association rule learning">association rules</a> with the target variable on the right. They can also denote <a href="/wiki/Time" title="Time">temporal</a> or <a href="/wiki/Causal" class="mw-redirect" title="Causal">causal</a> relations.<sup id="cite_ref-3" class="reference"><a href="#cite_note-3">&#91;3&#93;</a></sup>
+</p>
+<h3><span class="mw-headline" id="Decision_tree_using_flowchart_symbols">Decision tree using flowchart symbols</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Decision_tree&amp;action=edit&amp;section=5" title="Edit section: Decision tree using flowchart symbols">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Commonly a decision tree is drawn using <a href="/wiki/Flowchart" title="Flowchart">flowchart</a> symbols as it is easier for many to read and understand. Note there is a conceptual error in the "Proceed" calculation of the tree shown below; the error relates to the calculation of "costs" awarded in a legal action.
+</p>
+<div class="center"><div class="floatnone"><a href="/wiki/File:DecisionCalcs.jpg" class="image"><img alt="DecisionCalcs.jpg" src="//upload.wikimedia.org/wikipedia/commons/4/48/DecisionCalcs.jpg" decoding="async" width="800" height="525" data-file-width="800" data-file-height="525" /></a></div></div>
+<h3><span class="mw-headline" id="Analysis_example">Analysis example</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Decision_tree&amp;action=edit&amp;section=6" title="Edit section: Analysis example">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Analysis can take into account the decision maker's (e.g., the company's) <a href="/wiki/Preference" title="Preference">preference</a> or <a href="/wiki/Utility_function" class="mw-redirect" title="Utility function">utility function</a>, for example:
+</p>
+<div class="center"><div class="floatnone"><a href="/wiki/File:RiskPrefSensitivity2Threshold.png" class="image"><img alt="RiskPrefSensitivity2Threshold.png" src="//upload.wikimedia.org/wikipedia/commons/5/5b/RiskPrefSensitivity2Threshold.png" decoding="async" width="411" height="289" data-file-width="411" data-file-height="289" /></a></div></div>
+<p>The basic interpretation in this situation is that the company prefers B's risk and payoffs under realistic risk preference coefficients (greater than $400K—in that range of risk aversion, the company would need to model a third strategy, "Neither A nor B").
+</p><p>Another example, commonly used in <a href="/wiki/Operations_research" title="Operations research">operations research</a> courses, is the distribution of lifeguards on beaches (a.k.a. the "Life's a Beach" example).<sup id="cite_ref-4" class="reference"><a href="#cite_note-4">&#91;4&#93;</a></sup> The example describes two beaches with lifeguards to be distributed on each beach. There is maximum budget <i>B</i> that can be distributed among the two beaches (in total), and using a marginal returns table, analysts can decide how many lifeguards to allocate to each beach.
+</p>
+<table class="wikitable">
+<caption>
+</caption>
+<tbody><tr>
+<th>Lifeguards on each beach
+</th>
+<th>Drownings prevented in total, beach #1
+</th>
+<th>Drownings prevented in total, beach #2
+</th></tr>
+<tr>
+<td>1
+</td>
+<td>3
+</td>
+<td>1
+</td></tr>
+<tr>
+<td>2
+</td>
+<td>0
+</td>
+<td>4
+</td></tr></tbody></table>
+<p>In this example, a decision tree can be drawn to illustrate the principles of <a href="/wiki/Diminishing_returns" title="Diminishing returns">diminishing returns</a> on beach #1.
+</p>
+<div class="thumb tnone"><div class="thumbinner" style="width:222px;"><a href="/wiki/File:Beachdecisiontree.png" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/8/87/Beachdecisiontree.png/220px-Beachdecisiontree.png" decoding="async" width="220" height="66" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/8/87/Beachdecisiontree.png/330px-Beachdecisiontree.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/8/87/Beachdecisiontree.png/440px-Beachdecisiontree.png 2x" data-file-width="2466" data-file-height="741" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/File:Beachdecisiontree.png" class="internal" title="Enlarge"></a></div>Beach Decision Tree</div></div></div>
+<p>The decision tree illustrates that when sequentially distributing lifeguards, placing a first lifeguard on beach #1 would be optimal if there is only the budget for 1 lifeguard. But if there is a budget for two guards, then placing both on beach #2 would prevent more overall drownings.
+</p>
+<div class="center"><div class="thumb tnone"><div class="thumbinner" style="width:222px;"><a href="/wiki/File:Lifeguards.png" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/4/43/Lifeguards.png/220px-Lifeguards.png" decoding="async" width="220" height="132" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/4/43/Lifeguards.png/330px-Lifeguards.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/4/43/Lifeguards.png/440px-Lifeguards.png 2x" data-file-width="752" data-file-height="452" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/File:Lifeguards.png" class="internal" title="Enlarge"></a></div>Lifeguards</div></div></div></div>
+<h3><span class="mw-headline" id="Influence_diagram">Influence diagram</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Decision_tree&amp;action=edit&amp;section=7" title="Edit section: Influence diagram">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Much of the information in a decision tree can be represented more compactly as an <a href="/wiki/Influence_diagram" title="Influence diagram">influence diagram</a>, focusing attention on the issues and relationships between events.
+</p>
+<div class="center"><div class="thumb tnone"><div class="thumbinner" style="width:361px;"><a href="/wiki/File:Factory2_InfluenceDiagram.png" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/1/10/Factory2_InfluenceDiagram.png" decoding="async" width="359" height="283" class="thumbimage" data-file-width="359" data-file-height="283" /></a>  <div class="thumbcaption">The rectangle on the left represents a decision, the ovals represent actions, and the diamond represents results.</div></div></div></div>
+<h2><span class="mw-headline" id="Association_rule_induction">Association rule induction</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Decision_tree&amp;action=edit&amp;section=8" title="Edit section: Association rule induction">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1033289096"/><div role="note" class="hatnote navigation-not-searchable">Main article: <a href="/wiki/Decision_tree_learning" title="Decision tree learning">Decision tree learning</a></div>
+<p>Decision trees can also be seen as <a href="/wiki/Generative_model" title="Generative model">generative models</a> of induction rules from empirical data. An optimal decision tree is then defined as a tree that accounts for most of the data, while minimizing the number of levels (or "questions").<sup id="cite_ref-5" class="reference"><a href="#cite_note-5">&#91;5&#93;</a></sup> Several algorithms to generate such optimal trees have been devised, such as <a href="/wiki/ID3_algorithm" title="ID3 algorithm">ID3</a>/4/5,<sup id="cite_ref-6" class="reference"><a href="#cite_note-6">&#91;6&#93;</a></sup> CLS, ASSISTANT, and CART.
+</p>
+<h2><span class="mw-headline" id="Advantages_and_disadvantages">Advantages and disadvantages</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Decision_tree&amp;action=edit&amp;section=9" title="Edit section: Advantages and disadvantages">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Among decision support tools, decision trees (and <a href="/wiki/Influence_diagrams" class="mw-redirect" title="Influence diagrams">influence diagrams</a>) have several advantages. Decision trees:
+</p>
+<ul><li>Are simple to understand and interpret. People are able to understand decision tree models after a brief explanation.</li>
+<li>Have value even with little hard data. Important insights can be generated based on experts describing a situation (its alternatives, probabilities, and costs) and their preferences for outcomes.</li>
+<li>Help determine worst, best, and expected values for different scenarios.</li>
+<li>Use a <a href="/wiki/White_box_(software_engineering)" title="White box (software engineering)">white box</a> model. If a given result is provided by a model.</li>
+<li>Can be combined with other decision techniques.</li></ul>
+<h3><span class="mw-headline" id="The_action_of_more_than_one_decision-maker_can_be_considered.">The action of more than one decision-maker can be considered.</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Decision_tree&amp;action=edit&amp;section=10" title="Edit section: The action of more than one decision-maker can be considered.">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Disadvantages of decision trees:
+</p>
+<ul><li>They are unstable, meaning that a small change in the data can lead to a large change in the structure of the optimal decision tree.</li>
+<li>They are often relatively inaccurate.  Many other predictors perform better with similar data.  This can be remedied by replacing a single decision tree with a <a href="/wiki/Random_forest" title="Random forest">random forest</a> of decision trees, but a random forest is not as easy to interpret as a single decision tree.</li>
+<li>For data including categorical variables with different numbers of levels, <a href="/wiki/Information_gain_in_decision_trees" title="Information gain in decision trees">information gain in decision trees</a> is biased in favor of those attributes with more levels.<sup id="cite_ref-7" class="reference"><a href="#cite_note-7">&#91;7&#93;</a></sup></li>
+<li>Calculations can get very complex, particularly if many values are uncertain and/or if many outcomes are linked.</li></ul>
+<h2><span class="mw-headline" id="Optimizing_Decision_Tree">Optimizing Decision Tree</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Decision_tree&amp;action=edit&amp;section=11" title="Edit section: Optimizing Decision Tree">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>A few things should be considered when improving the accuracy of the decision tree classifier. The following are some possible optimizations to consider when looking to make sure the decision tree model produced makes the correct decision or classification. Note that these things are not the only things to consider but only some.
+</p><p><br />
+<b>Increasing the number of levels of the tree</b>
+</p><p>The <a href="/wiki/Accuracy_and_precision" title="Accuracy and precision">accuracy</a> of the decision tree can change based on the depth of the decision tree. In many cases, the tree’s leaves are <a href="/wiki/Gini_impurity" class="mw-redirect" title="Gini impurity">pure</a> nodes.<sup id="cite_ref-8" class="reference"><a href="#cite_note-8">&#91;8&#93;</a></sup> When a node is <a href="/wiki/Gini_impurity" class="mw-redirect" title="Gini impurity">pure</a> it means that all the data in that node belongs to a single class.<sup id="cite_ref-9" class="reference"><a href="#cite_note-9">&#91;9&#93;</a></sup> For example, if the classes in the data set are Cancer and Non-Cancer a leaf node would be considered pure when all the sample data in a leaf node is part of only one class, either cancer or non-cancer. It is important to note that a deeper tree is not always better when optimizing the decision tree. A deeper tree can influence the runtime in a negative way. If a certain classification algorithm is being used, then a deeper tree could mean the runtime of this classification algorithm being significantly slower. There is also the possibility that the actual algorithm building the decision tree will get significantly slower as the tree gets deeper. If the tree-building algorithm being used splits pure nodes, then a decrease in the overall <a href="/wiki/Accuracy_and_precision" title="Accuracy and precision">accuracy</a> of the tree classifier could be experienced. Occasionally, going deeper in the tree can cause an accuracy decrease in general, so it is very important to test modifying the depth of the decision tree and selecting the depth that produces the best results. To summarize observe the points below, we will define the number D as the depth of the tree.
+</p><p><br />
+Possible Advantages of increasing the number D:
+</p>
+<ul><li><a href="/wiki/Accuracy_and_precision" title="Accuracy and precision">Accuracy</a> of the decision tree classification model increases.</li></ul>
+<p><br />
+Possible Disadvantages of increasing D
+</p>
+<ul><li>&#160;Runtime issues</li>
+<li>Decrease in accuracy in general</li>
+<li>Pure node splits while going deeper can cause issues.</li></ul>
+<p><br />
+The ability to test the differences in classification results when changing D is imperative. We must be able to easily change and test the variables that could affect the accuracy and reliability of the decision tree-model.
+</p><p><br />
+<b>The choice of node splitting functions</b>
+</p><p>The node splitting function used can have an impact on improving the accuracy of the decision tree. For example, using the <a href="/wiki/Information_gain_in_decision_trees" title="Information gain in decision trees">Information gain</a> function may yield better results than using the phi function. The phi function is known as a measure of “goodness” of a candidate split  at a node in the decision tree. The information gain function is known as measure of the “reduction in <a href="/wiki/Entropy_(information_theory)" title="Entropy (information theory)">entropy</a>”. In the following we will build two decision trees. One decision tree will be built using the phi function to split the nodes and one decision tree will be built using the information gain function to split the nodes.
+</p><p><br />
+The main advantages &amp; disadvantages of <a href="/wiki/Information_gain_in_decision_trees" title="Information gain in decision trees">Information Gain</a> and  phi function
+</p>
+<ul><li>One major drawback of Information Gain is that the feature that is chosen as the next node in the tree tends to have more unique values.<sup id="cite_ref-10" class="reference"><a href="#cite_note-10">&#91;10&#93;</a></sup></li>
+<li>An advantage of information gain is that it tends to choose the most impactful features that are close to the root of the tree. It is a very good measure for deciding the relevance of some feature.</li>
+<li>The Phi function is also a good measure for deciding the relevance of some feature based on "goodness".</li></ul>
+<p><br />
+</p><p>This is the information gain function formula. The formula states the information gain is a function of the entropy of a node of the decision tree minus the entropy of a candidate split at node t of a decision tree. 
+</p><p><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle Igains(s)=H(t)-H(s,t)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>I</mi>
+        <mi>g</mi>
+        <mi>a</mi>
+        <mi>i</mi>
+        <mi>n</mi>
+        <mi>s</mi>
+        <mo stretchy="false">(</mo>
+        <mi>s</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mi>H</mi>
+        <mo stretchy="false">(</mo>
+        <mi>t</mi>
+        <mo stretchy="false">)</mo>
+        <mo>&#x2212;<!-- − --></mo>
+        <mi>H</mi>
+        <mo stretchy="false">(</mo>
+        <mi>s</mi>
+        <mo>,</mo>
+        <mi>t</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle Igains(s)=H(t)-H(s,t)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/39a34f32c9d890b85a398cc654015abf4eb6d661" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:27.193ex; height:2.843ex;" alt="{\displaystyle Igains(s)=H(t)-H(s,t)}"/></span>
+</p><p>The is the phi function formula. The phi function is maximized when the feature chosen splits the samples in a way that produces homogenous splits and have around the same number of samples in each split.
+</p><p><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \Phi (s,t)=(2*P_{L}*P_{R})*Q(s|t)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi mathvariant="normal">&#x03A6;<!-- Φ --></mi>
+        <mo stretchy="false">(</mo>
+        <mi>s</mi>
+        <mo>,</mo>
+        <mi>t</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mo stretchy="false">(</mo>
+        <mn>2</mn>
+        <mo>&#x2217;<!-- ∗ --></mo>
+        <msub>
+          <mi>P</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>L</mi>
+          </mrow>
+        </msub>
+        <mo>&#x2217;<!-- ∗ --></mo>
+        <msub>
+          <mi>P</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>R</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">)</mo>
+        <mo>&#x2217;<!-- ∗ --></mo>
+        <mi>Q</mi>
+        <mo stretchy="false">(</mo>
+        <mi>s</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mi>t</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \Phi (s,t)=(2*P_{L}*P_{R})*Q(s|t)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/36b272c0ced23774f81a9a3c28e8872ef429f25b" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:31.146ex; height:2.843ex;" alt="{\displaystyle \Phi (s,t)=(2*P_{L}*P_{R})*Q(s|t)}"/></span>
+</p><p><br />
+</p><p>We will set D ,which is the depth of the decision tree we are building, to three (D = 3). We also have the following data set of Cancer and Non-Cancer samples and the mutation features that the samples either have or do not have. If a sample has a feature mutation then the sample is positive for that mutation, will be represented by one. If a sample does not have a feature mutation then the sample is negative for that mutation, will be represented as zero.   
+</p><p>To summarize, C stands for Cancer and NC stands for Non-Cancer. The letter M stands for <a href="/wiki/Mutation" title="Mutation">mutation</a> ,and if a sample has a particular mutation it will show up in the table as a one and otherwise zero.
+</p>
+<table class="wikitable">
+<caption>The Sample Data
+</caption>
+<tbody><tr>
+<th>
+</th>
+<th>M1
+</th>
+<th>M2
+</th>
+<th>M3
+</th>
+<th>M4
+</th>
+<th>M5
+</th></tr>
+<tr>
+<td>C1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>1
+</td></tr>
+<tr>
+<td>NC1
+</td>
+<td>0
+</td>
+<td>0
+</td>
+<td>0
+</td>
+<td>0
+</td>
+<td>0
+</td></tr>
+<tr>
+<td>NC2
+</td>
+<td>0
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>0
+</td></tr>
+<tr>
+<td>NC3
+</td>
+<td>0
+</td>
+<td>0
+</td>
+<td>0
+</td>
+<td>0
+</td>
+<td>0
+</td></tr>
+<tr>
+<td>C2
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>1
+</td></tr>
+<tr>
+<td>NC4
+</td>
+<td>0
+</td>
+<td>0
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>0
+</td></tr></tbody></table>
+<p><br />
+Now, we can use the formulas to calculate the phi function values and information gain values for each M in the dataset. Once all the values are calculated the tree can be produced. The first thing to be done is to select the root node. In information gain and the phi function we consider the optimal split to be the mutation that produces the highest value for information gain or the phi function. Now assume that M1  has the highest phi function value and M4 has the highest information gain value. The M1 mutation will be the root of our phi function tree and M4 will be the root of our information gain tree. You can observe the root nodes below 
+</p>
+<div class="center"><div class="floatnone"><a href="/wiki/File:Realnode.jpg" class="image" title="Figure 1: The left node is the root node of the tree we are building using the phi function to split the nodes. The right node is the root node of the tree we are building using information gain to split the nodes."><img alt="Figure 1: The left node is the root node of the tree we are building using the phi function to split the nodes. The right node is the root node of the tree we are building using information gain to split the nodes." src="//upload.wikimedia.org/wikipedia/commons/thumb/0/02/Realnode.jpg/220px-Realnode.jpg" decoding="async" width="220" height="49" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/0/02/Realnode.jpg/330px-Realnode.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/0/02/Realnode.jpg 2x" data-file-width="361" data-file-height="81" /></a></div></div>
+<p><br />
+</p><p><br />
+Now, once we have chosen the root node we can split the samples into two groups based on whether a sample is positive or negative for the root node mutation. The groups will be called group A and group B. For example, if we use M1 to split the samples in the root node we get NC2 and C2 samples in group A and the rest of the samples NC4, NC3, NC1, C1 in group B.
+</p><p>Disregarding  the mutation chosen for the root node,  proceed to place the next best features that have the highest values for information gain or the phi function in the left or right child nodes of the decision tree. Once we choose the root node and the two child nodes for the tree of depth = 3 we can just add the leaves. The leaves will represent the final classification decision the model has produced based on the mutations a sample either has or does not have. The left tree is the decision tree we obtain from using information gain to split the nodes and the right tree is what we obtain from using the phi function to split the nodes.
+</p>
+<div class="floatleft"><a href="/wiki/File:Information_Gain_Tree.jpg" class="image" title="The resulting tree from using information gain to split the nodes."><img alt="The resulting tree from using information gain to split the nodes." src="//upload.wikimedia.org/wikipedia/commons/thumb/3/36/Information_Gain_Tree.jpg/500px-Information_Gain_Tree.jpg" decoding="async" width="500" height="241" srcset="//upload.wikimedia.org/wikipedia/commons/3/36/Information_Gain_Tree.jpg 1.5x" data-file-width="541" data-file-height="261" /></a></div>
+<div class="center"><div class="floatnone"><a href="/wiki/File:Phi_Function_Tree.jpg" class="image"><img alt="Phi Function Tree.jpg" src="//upload.wikimedia.org/wikipedia/commons/thumb/4/43/Phi_Function_Tree.jpg/500px-Phi_Function_Tree.jpg" decoding="async" width="500" height="241" srcset="//upload.wikimedia.org/wikipedia/commons/4/43/Phi_Function_Tree.jpg 1.5x" data-file-width="541" data-file-height="261" /></a></div></div>
+<p><br />
+</p><p><br />
+</p><p><br />
+</p><p><br />
+</p><p>Now assume the <a href="/wiki/Classification" title="Classification">classification</a> results from both trees are given using a <a href="/wiki/Confusion_matrix" title="Confusion matrix">confusion matrix</a>.
+</p><p>Information Gain Confusion Matrix:
+</p>
+<table class="wikitable">
+<caption>
+</caption>
+<tbody><tr>
+<td>
+</td>
+<td>Predicted: C
+</td>
+<td>Predicted: NC
+</td></tr>
+<tr>
+<td>Actual: C
+</td>
+<td>1
+</td>
+<td>1
+</td></tr>
+<tr>
+<td>Actual: NC
+</td>
+<td>0
+</td>
+<td>4
+</td></tr></tbody></table>
+<p><br />
+Phi Function Confusion Matrix:
+</p>
+<table class="wikitable">
+<caption>
+</caption>
+<tbody><tr>
+<td>
+</td>
+<td>Predicted: C
+</td>
+<td>Predicted: NC
+</td></tr>
+<tr>
+<td>Actual: C
+</td>
+<td>2
+</td>
+<td>0
+</td></tr>
+<tr>
+<td>Actual: NC
+</td>
+<td>1
+</td>
+<td>3
+</td></tr></tbody></table>
+<p><br />
+</p><p>The tree using information gain has  the same results when using the phi function when calculating the accuracy. When we classify the samples based on the model using information gain we get one true positive, one false positive, zero false negatives, and four true negatives. For the model using the phi function we get two true positives, zero false positives, one false negative, and three true negatives. The next step is to evaluate the effectiveness of the decision tree using some key metrics that will be discussed in the Evaluating a Decision Tree section below. The metrics that will be discussed below can help determine the next steps to be taken when optimizing the decision tree.
+</p><p><br />
+<b>Other Techniques</b>
+</p><p>The above information is not where it ends for building and optimizing a decision tree. There are many techniques for improving the decision tree classification models we build. One of the techniques is making our decision tree model from a <a href="/wiki/Bootstrapping" title="Bootstrapping">bootstrapped</a> dataset. The bootstrapped dataset helps remove the bias that occurs when building a decision tree model with the same data the model is tested with. The ability to leverage the power of <a href="/wiki/Random_forest" title="Random forest">random forests</a> can also help significantly improve the overall accuracy of the model being built. This method generates many decisions from many decision trees and tallies up the votes from each decision tree to make the final classification. There are many techniques, but the main objective is to test building your decision tree model in different ways to make sure it reaches the highest performance level possible.
+</p>
+<h2><span class="mw-headline" id="Evaluating_a_Decision_Tree">Evaluating a Decision Tree</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Decision_tree&amp;action=edit&amp;section=12" title="Edit section: Evaluating a Decision Tree">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p><b>&#160; &#160; &#160; &#160; &#160;&#160;</b> It is important to know the measurements used to evaluate decision trees. The main metrics used are <a href="/wiki/Accuracy_and_precision" title="Accuracy and precision">accuracy</a>, <a href="/wiki/Sensitivity_and_specificity" title="Sensitivity and specificity">sensitivity</a>, <a href="/wiki/Sensitivity_and_specificity" title="Sensitivity and specificity">specificity</a>, <a href="/wiki/Accuracy_and_precision" title="Accuracy and precision">precision</a>, <a href="/wiki/Sensitivity_and_specificity" title="Sensitivity and specificity">miss rate</a>, <a href="/wiki/False_discovery_rate" title="False discovery rate">false discovery rate</a>, and <a href="/wiki/False_omission_rate" class="mw-redirect" title="False omission rate">false omission rate</a>. All these measurements are derived from the number of <a href="/wiki/True_positive" class="mw-redirect" title="True positive">true positives</a>, <a href="/wiki/False_positives_and_false_negatives" title="False positives and false negatives">false positives</a>, <a href="/wiki/True_negative" class="mw-redirect" title="True negative">true negatives</a>, and <a href="/wiki/False_positives_and_false_negatives" title="False positives and false negatives">false negatives</a> obtained when running a set of samples through the decision tree classification model. Also, a confusion matrix can be made to display these results. All these main metrics tell something different about the strengths and weaknesses of the classification model built based on your decision tree. For example, A low sensitivity with high specificity could indicate the classification model built from the decision tree does not do well identifying cancer samples over non-cancer samples.
+</p><p><br />
+Let us take the confusion matrix below. The confusion matrix shows us the decision tree model classifier built gave 11 true positives, 1 false positive, 45 false negatives, and 105 true negatives.
+</p>
+<table class="wikitable">
+<caption>
+</caption>
+<tbody><tr>
+<td>
+</td>
+<td>Predicted: C
+</td>
+<td>Predicted: NC
+</td></tr>
+<tr>
+<td>Actual: C
+</td>
+<td>11
+</td>
+<td>45
+</td></tr>
+<tr>
+<td>Actual: NC
+</td>
+<td>1
+</td>
+<td>105
+</td></tr></tbody></table>
+<p><br />
+We will now calculate the values accuracy, sensitivity, specificity, precision, miss rate, false discovery rate, and false omission rate. 
+</p><p><br />
+Accuracy:
+</p><p><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle Accuracy=(TP+TN)/(TP+TN+FP+FN)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>A</mi>
+        <mi>c</mi>
+        <mi>c</mi>
+        <mi>u</mi>
+        <mi>r</mi>
+        <mi>a</mi>
+        <mi>c</mi>
+        <mi>y</mi>
+        <mo>=</mo>
+        <mo stretchy="false">(</mo>
+        <mi>T</mi>
+        <mi>P</mi>
+        <mo>+</mo>
+        <mi>T</mi>
+        <mi>N</mi>
+        <mo stretchy="false">)</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo>/</mo>
+        </mrow>
+        <mo stretchy="false">(</mo>
+        <mi>T</mi>
+        <mi>P</mi>
+        <mo>+</mo>
+        <mi>T</mi>
+        <mi>N</mi>
+        <mo>+</mo>
+        <mi>F</mi>
+        <mi>P</mi>
+        <mo>+</mo>
+        <mi>F</mi>
+        <mi>N</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle Accuracy=(TP+TN)/(TP+TN+FP+FN)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/d989ad7a6d60de241b7cc6d7c5839a26538937e5" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:50.222ex; height:2.843ex;" alt="{\displaystyle Accuracy=(TP+TN)/(TP+TN+FP+FN)}"/></span>
+</p><p><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle (11+104)\div 162=71.60\%}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">(</mo>
+        <mn>11</mn>
+        <mo>+</mo>
+        <mn>104</mn>
+        <mo stretchy="false">)</mo>
+        <mo>&#x00F7;<!-- ÷ --></mo>
+        <mn>162</mn>
+        <mo>=</mo>
+        <mn>71.60</mn>
+        <mi mathvariant="normal">&#x0025;<!-- % --></mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle (11+104)\div 162=71.60\%}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/2a2f9360b1e862f323d2b1be73eea37628e6557d" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:27.121ex; height:2.843ex;" alt="{\displaystyle (11+104)\div 162=71.60\%}"/></span>
+</p><p><br />
+Sensitivity (TPR - True Positive Rate):<sup id="cite_ref-11" class="reference"><a href="#cite_note-11">&#91;11&#93;</a></sup>
+</p><p><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle TPR=TP/(TP+FN)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>T</mi>
+        <mi>P</mi>
+        <mi>R</mi>
+        <mo>=</mo>
+        <mi>T</mi>
+        <mi>P</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo>/</mo>
+        </mrow>
+        <mo stretchy="false">(</mo>
+        <mi>T</mi>
+        <mi>P</mi>
+        <mo>+</mo>
+        <mi>F</mi>
+        <mi>N</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle TPR=TP/(TP+FN)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/d7fbc69a0bf8dcae28fc8fa12b65e868ed91bdb2" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:24.624ex; height:2.843ex;" alt="{\displaystyle TPR=TP/(TP+FN)}"/></span>
+</p><p><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle (11)\div (11+45)=19.64\%}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">(</mo>
+        <mn>11</mn>
+        <mo stretchy="false">)</mo>
+        <mo>&#x00F7;<!-- ÷ --></mo>
+        <mo stretchy="false">(</mo>
+        <mn>11</mn>
+        <mo>+</mo>
+        <mn>45</mn>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mn>19.64</mn>
+        <mi mathvariant="normal">&#x0025;<!-- % --></mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle (11)\div (11+45)=19.64\%}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/c4c397138d3394487d258b1a0c02adea315929c1" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:26.605ex; height:2.843ex;" alt="{\displaystyle (11)\div (11+45)=19.64\%}"/></span>
+</p><p><br />
+Specificity (TNR - True Negative Rate):
+</p><p><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle TNR=TN/(TN+FP)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>T</mi>
+        <mi>N</mi>
+        <mi>R</mi>
+        <mo>=</mo>
+        <mi>T</mi>
+        <mi>N</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo>/</mo>
+        </mrow>
+        <mo stretchy="false">(</mo>
+        <mi>T</mi>
+        <mi>N</mi>
+        <mo>+</mo>
+        <mi>F</mi>
+        <mi>P</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle TNR=TN/(TN+FP)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e6f66e444cc10b568a2904098427e5f330bb86f3" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:25.26ex; height:2.843ex;" alt="{\displaystyle TNR=TN/(TN+FP)}"/></span>
+</p><p><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle 105\div (105+1)=99.06\%}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mn>105</mn>
+        <mo>&#x00F7;<!-- ÷ --></mo>
+        <mo stretchy="false">(</mo>
+        <mn>105</mn>
+        <mo>+</mo>
+        <mn>1</mn>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mn>99.06</mn>
+        <mi mathvariant="normal">&#x0025;<!-- % --></mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle 105\div (105+1)=99.06\%}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/7b60b6ff62db2a5c9e0d234a095778ab262eabeb" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:25.958ex; height:2.843ex;" alt="{\displaystyle 105\div (105+1)=99.06\%}"/></span>
+</p><p><br />
+Precision (PPV - Positive Predictive Value):
+</p><p><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle PPV=TP/(TP+FP)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>P</mi>
+        <mi>P</mi>
+        <mi>V</mi>
+        <mo>=</mo>
+        <mi>T</mi>
+        <mi>P</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo>/</mo>
+        </mrow>
+        <mo stretchy="false">(</mo>
+        <mi>T</mi>
+        <mi>P</mi>
+        <mo>+</mo>
+        <mi>F</mi>
+        <mi>P</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle PPV=TP/(TP+FP)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/7d9380bb38fd0b723260575965dcb8ebb561b3c2" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:24.438ex; height:2.843ex;" alt="{\displaystyle PPV=TP/(TP+FP)}"/></span>
+</p><p><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle 11/(11+1)=91.66\%}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mn>11</mn>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo>/</mo>
+        </mrow>
+        <mo stretchy="false">(</mo>
+        <mn>11</mn>
+        <mo>+</mo>
+        <mn>1</mn>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mn>91.66</mn>
+        <mi mathvariant="normal">&#x0025;<!-- % --></mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle 11/(11+1)=91.66\%}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/c196d37dda4aa936a545c530220c370ff6dd4a72" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:21.955ex; height:2.843ex;" alt="{\displaystyle 11/(11+1)=91.66\%}"/></span>
+</p><p><br />
+Miss Rate (FNR - False Negative Rate):
+</p><p><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle FNR=FN/(FN+TP)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>F</mi>
+        <mi>N</mi>
+        <mi>R</mi>
+        <mo>=</mo>
+        <mi>F</mi>
+        <mi>N</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo>/</mo>
+        </mrow>
+        <mo stretchy="false">(</mo>
+        <mi>F</mi>
+        <mi>N</mi>
+        <mo>+</mo>
+        <mi>T</mi>
+        <mi>P</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle FNR=FN/(FN+TP)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/984dae76e0da26d7ed47b627d9428e18368f23bc" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:25.47ex; height:2.843ex;" alt="{\displaystyle FNR=FN/(FN+TP)}"/></span>
+</p><p><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle 45\div (45+11)=80.35\%}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mn>45</mn>
+        <mo>&#x00F7;<!-- ÷ --></mo>
+        <mo stretchy="false">(</mo>
+        <mn>45</mn>
+        <mo>+</mo>
+        <mn>11</mn>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mn>80.35</mn>
+        <mi mathvariant="normal">&#x0025;<!-- % --></mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle 45\div (45+11)=80.35\%}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/908c7428a3c0aafc79e37aae807fb9b2a596605a" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:24.796ex; height:2.843ex;" alt="{\displaystyle 45\div (45+11)=80.35\%}"/></span>
+</p><p><br />
+False Discovery Rate( FDR):
+</p><p><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle FDR=FP/(FP+TP)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>F</mi>
+        <mi>D</mi>
+        <mi>R</mi>
+        <mo>=</mo>
+        <mi>F</mi>
+        <mi>P</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo>/</mo>
+        </mrow>
+        <mo stretchy="false">(</mo>
+        <mi>F</mi>
+        <mi>P</mi>
+        <mo>+</mo>
+        <mi>T</mi>
+        <mi>P</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle FDR=FP/(FP+TP)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/83170256eb3c70632addfb3e6e1ee08229e4f6b5" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:24.694ex; height:2.843ex;" alt="{\displaystyle FDR=FP/(FP+TP)}"/></span>
+</p><p><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle 1\div (1+11)=8.30\%}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mn>1</mn>
+        <mo>&#x00F7;<!-- ÷ --></mo>
+        <mo stretchy="false">(</mo>
+        <mn>1</mn>
+        <mo>+</mo>
+        <mn>11</mn>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mn>8.30</mn>
+        <mi mathvariant="normal">&#x0025;<!-- % --></mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle 1\div (1+11)=8.30\%}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/d4115f04dd631ecb3b7f1cbd952cab567d116dc1" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:21.308ex; height:2.843ex;" alt="{\displaystyle 1\div (1+11)=8.30\%}"/></span>
+</p><p><br />
+False Omission rate (FOR):
+</p><p><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle FOR=FN/(FN+TN)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>F</mi>
+        <mi>O</mi>
+        <mi>R</mi>
+        <mo>=</mo>
+        <mi>F</mi>
+        <mi>N</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo>/</mo>
+        </mrow>
+        <mo stretchy="false">(</mo>
+        <mi>F</mi>
+        <mi>N</mi>
+        <mo>+</mo>
+        <mi>T</mi>
+        <mi>N</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle FOR=FN/(FN+TN)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/35e719e19425e10f32eb7d43bf5ebe98db15baaa" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:25.497ex; height:2.843ex;" alt="{\displaystyle FOR=FN/(FN+TN)}"/></span>
+</p><p><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle 45\div (45+105)=30.00\%}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mn>45</mn>
+        <mo>&#x00F7;<!-- ÷ --></mo>
+        <mo stretchy="false">(</mo>
+        <mn>45</mn>
+        <mo>+</mo>
+        <mn>105</mn>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mn>30.00</mn>
+        <mi mathvariant="normal">&#x0025;<!-- % --></mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle 45\div (45+105)=30.00\%}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/49e546bc3f64591920e4849c1b473598ac70dc54" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:25.958ex; height:2.843ex;" alt="{\displaystyle 45\div (45+105)=30.00\%}"/></span>
+</p><p><br />
+</p><p>Once we have calculated the key metrics we can make some initial conclusions on the performance of the decision tree model built. The accuracy that we calculated was 71.60%. The accuracy value is good to start but we would like to get our models as accurate as possible while maintaining the overall performance. The sensitivity value of 19.64% means that out of everyone who was actually positive for Cancer tested positive. If we look at the specificity value of 99.06% we know that out of all the samples that were negative for cancer actually tested negative. When it comes to sensitivity and specificity it is important to have a balance between the two values ,so if we can decrease our specificity to increase the sensitivity that would prove to be beneficial.<sup id="cite_ref-12" class="reference"><a href="#cite_note-12">&#91;12&#93;</a></sup> These are just a few examples on how to use these values and the meanings behind them to evaluate the decision tree model and improve upon the next iteration.
+</p><p><br />
+</p>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Decision_tree&amp;action=edit&amp;section=13" title="Edit section: See also">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<style data-mw-deduplicate="TemplateStyles:r998391716">.mw-parser-output .div-col{margin-top:0.3em;column-width:30em}.mw-parser-output .div-col-small{font-size:90%}.mw-parser-output .div-col-rules{column-rule:1px solid #aaa}.mw-parser-output .div-col dl,.mw-parser-output .div-col ol,.mw-parser-output .div-col ul{margin-top:0}.mw-parser-output .div-col li,.mw-parser-output .div-col dd{page-break-inside:avoid;break-inside:avoid-column}</style><div class="div-col" style="column-width: 22em;">
+<ul><li><a href="/wiki/Behavior_tree_(artificial_intelligence,_robotics_and_control)" title="Behavior tree (artificial intelligence, robotics and control)">Behavior tree (artificial intelligence, robotics and control)</a></li>
+<li><a href="/wiki/Boosting_(machine_learning)" title="Boosting (machine learning)">Boosting (machine learning)</a></li>
+<li><a href="/wiki/Decision_cycle" title="Decision cycle">Decision cycle</a></li>
+<li><a href="/wiki/Decision_list" title="Decision list">Decision list</a></li>
+<li><a href="/wiki/Decision_table" title="Decision table">Decision table</a></li>
+<li><a href="/wiki/Decision_tree_model" title="Decision tree model">Decision tree model</a> of computation</li>
+<li><a href="/wiki/Design_rationale" title="Design rationale">Design rationale</a></li>
+<li><a href="/wiki/DRAKON" title="DRAKON">DRAKON</a></li>
+<li><a href="/wiki/Markov_chain" title="Markov chain">Markov chain</a></li>
+<li><a href="/wiki/Random_forest" title="Random forest">Random forest</a></li>
+<li><a href="/wiki/Odds_algorithm" title="Odds algorithm">Odds algorithm</a></li>
+<li><a href="/wiki/Topological_combinatorics" title="Topological combinatorics">Topological combinatorics</a></li>
+<li><a href="/wiki/Truth_table" title="Truth table">Truth table</a></li></ul>
+</div>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Decision_tree&amp;action=edit&amp;section=14" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<style data-mw-deduplicate="TemplateStyles:r1011085734">.mw-parser-output .reflist{font-size:90%;margin-bottom:0.5em;list-style-type:decimal}.mw-parser-output .reflist .references{font-size:100%;margin-bottom:0;list-style-type:inherit}.mw-parser-output .reflist-columns-2{column-width:30em}.mw-parser-output .reflist-columns-3{column-width:25em}.mw-parser-output .reflist-columns{margin-top:0.3em}.mw-parser-output .reflist-columns ol{margin-top:0}.mw-parser-output .reflist-columns li{page-break-inside:avoid;break-inside:avoid-column}.mw-parser-output .reflist-upper-alpha{list-style-type:upper-alpha}.mw-parser-output .reflist-upper-roman{list-style-type:upper-roman}.mw-parser-output .reflist-lower-alpha{list-style-type:lower-alpha}.mw-parser-output .reflist-lower-greek{list-style-type:lower-greek}.mw-parser-output .reflist-lower-roman{list-style-type:lower-roman}</style><div class="reflist">
+<div class="mw-references-wrap mw-references-columns"><ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-1">^</a></b></span> <span class="reference-text"><style data-mw-deduplicate="TemplateStyles:r1067248974">.mw-parser-output cite.citation{font-style:inherit;word-wrap:break-word}.mw-parser-output .citation q{quotes:"\"""\"""'""'"}.mw-parser-output .citation:target{background-color:rgba(0,127,255,0.133)}.mw-parser-output .id-lock-free a,.mw-parser-output .citation .cs1-lock-free a{background:linear-gradient(transparent,transparent),url("//upload.wikimedia.org/wikipedia/commons/6/65/Lock-green.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-limited a,.mw-parser-output .id-lock-registration a,.mw-parser-output .citation .cs1-lock-limited a,.mw-parser-output .citation .cs1-lock-registration a{background:linear-gradient(transparent,transparent),url("//upload.wikimedia.org/wikipedia/commons/d/d6/Lock-gray-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-subscription a,.mw-parser-output .citation .cs1-lock-subscription a{background:linear-gradient(transparent,transparent),url("//upload.wikimedia.org/wikipedia/commons/a/aa/Lock-red-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .cs1-ws-icon a{background:linear-gradient(transparent,transparent),url("//upload.wikimedia.org/wikipedia/commons/4/4c/Wikisource-logo.svg")right 0.1em center/12px no-repeat}.mw-parser-output .cs1-code{color:inherit;background:inherit;border:none;padding:inherit}.mw-parser-output .cs1-hidden-error{display:none;color:#d33}.mw-parser-output .cs1-visible-error{color:#d33}.mw-parser-output .cs1-maint{display:none;color:#3a3;margin-left:0.3em}.mw-parser-output .cs1-format{font-size:95%}.mw-parser-output .cs1-kern-left{padding-left:0.2em}.mw-parser-output .cs1-kern-right{padding-right:0.2em}.mw-parser-output .citation .mw-selflink{font-weight:inherit}</style><cite id="CITEREFKamińskiJakubczykSzufel2017" class="citation journal cs1">Kamiński, B.; Jakubczyk, M.; Szufel, P. (2017). <a rel="nofollow" class="external text" href="//www.ncbi.nlm.nih.gov/pmc/articles/PMC5767274">"A framework for sensitivity analysis of decision trees"</a>. <i>Central European Journal of Operations Research</i>. <b>26</b> (1): 135–159. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1007%2Fs10100-017-0479-6">10.1007/s10100-017-0479-6</a>. <a href="/wiki/PMC_(identifier)" class="mw-redirect" title="PMC (identifier)">PMC</a>&#160;<span class="cs1-lock-free" title="Freely accessible"><a rel="nofollow" class="external text" href="//www.ncbi.nlm.nih.gov/pmc/articles/PMC5767274">5767274</a></span>. <a href="/wiki/PMID_(identifier)" class="mw-redirect" title="PMID (identifier)">PMID</a>&#160;<a rel="nofollow" class="external text" href="//pubmed.ncbi.nlm.nih.gov/29375266">29375266</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Central+European+Journal+of+Operations+Research&amp;rft.atitle=A+framework+for+sensitivity+analysis+of+decision+trees&amp;rft.volume=26&amp;rft.issue=1&amp;rft.pages=135-159&amp;rft.date=2017&amp;rft_id=%2F%2Fwww.ncbi.nlm.nih.gov%2Fpmc%2Farticles%2FPMC5767274%23id-name%3DPMC&amp;rft_id=info%3Apmid%2F29375266&amp;rft_id=info%3Adoi%2F10.1007%2Fs10100-017-0479-6&amp;rft.aulast=Kami%C5%84ski&amp;rft.aufirst=B.&amp;rft.au=Jakubczyk%2C+M.&amp;rft.au=Szufel%2C+P.&amp;rft_id=%2F%2Fwww.ncbi.nlm.nih.gov%2Fpmc%2Farticles%2FPMC5767274&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ADecision+tree" class="Z3988"></span></span>
+</li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-2">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><cite id="CITEREFQuinlan1987" class="citation journal cs1">Quinlan, J. R. (1987). "Simplifying decision trees". <i>International Journal of Man-Machine Studies</i>. <b>27</b> (3): 221–234. <a href="/wiki/CiteSeerX_(identifier)" class="mw-redirect" title="CiteSeerX (identifier)">CiteSeerX</a>&#160;<span class="cs1-lock-free" title="Freely accessible"><a rel="nofollow" class="external text" href="//citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.18.4267">10.1.1.18.4267</a></span>. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1016%2FS0020-7373%2887%2980053-6">10.1016/S0020-7373(87)80053-6</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=International+Journal+of+Man-Machine+Studies&amp;rft.atitle=Simplifying+decision+trees&amp;rft.volume=27&amp;rft.issue=3&amp;rft.pages=221-234&amp;rft.date=1987&amp;rft_id=%2F%2Fciteseerx.ist.psu.edu%2Fviewdoc%2Fsummary%3Fdoi%3D10.1.1.18.4267%23id-name%3DCiteSeerX&amp;rft_id=info%3Adoi%2F10.1016%2FS0020-7373%2887%2980053-6&amp;rft.aulast=Quinlan&amp;rft.aufirst=J.+R.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ADecision+tree" class="Z3988"></span></span>
+</li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><b><a href="#cite_ref-3">^</a></b></span> <span class="reference-text">K. Karimi and H.J. Hamilton (2011), "<a rel="nofollow" class="external text" href="https://arxiv.org/abs/1004.3334">Generation and Interpretation of Temporal Decision Rules</a>", International Journal of Computer Information Systems and Industrial Management Applications, Volume 3</span>
+</li>
+<li id="cite_note-4"><span class="mw-cite-backlink"><b><a href="#cite_ref-4">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><cite id="CITEREFWagner1975" class="citation book cs1">Wagner, Harvey M. (1 September 1975). <span class="cs1-lock-registration" title="Free registration required"><a rel="nofollow" class="external text" href="https://archive.org/details/principlesofoper00wagn"><i>Principles of Operations Research: With Applications to Managerial Decisions</i></a></span> (2nd&#160;ed.). Englewood Cliffs, NJ: Prentice Hall. <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&#160;<a href="/wiki/Special:BookSources/9780137095926" title="Special:BookSources/9780137095926"><bdi>9780137095926</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Principles+of+Operations+Research%3A+With+Applications+to+Managerial+Decisions&amp;rft.place=Englewood+Cliffs%2C+NJ&amp;rft.edition=2nd&amp;rft.pub=Prentice+Hall&amp;rft.date=1975-09-01&amp;rft.isbn=9780137095926&amp;rft.aulast=Wagner&amp;rft.aufirst=Harvey+M.&amp;rft_id=https%3A%2F%2Farchive.org%2Fdetails%2Fprinciplesofoper00wagn&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ADecision+tree" class="Z3988"></span></span>
+</li>
+<li id="cite_note-5"><span class="mw-cite-backlink"><b><a href="#cite_ref-5">^</a></b></span> <span class="reference-text">R. Quinlan, <a rel="nofollow" class="external text" href="https://link.springer.com/chapter/10.1007%2F978-3-662-12405-5_15#page-1">"Learning efficient classification procedures"</a>, <i>Machine Learning:  an artificial intelligence approach</i>, Michalski, Carbonell &amp; Mitchell (eds.), Morgan Kaufmann, 1983, p. 463–482.  <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1007%2F978-3-662-12405-5_15">10.1007/978-3-662-12405-5_15</a></span>
+</li>
+<li id="cite_note-6"><span class="mw-cite-backlink"><b><a href="#cite_ref-6">^</a></b></span> <span class="reference-text">Utgoff, P. E. (1989). Incremental induction of decision trees. Machine learning, 4(2), 161–186.  <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1023%2FA%3A1022699900025">10.1023/A:1022699900025</a></span>
+</li>
+<li id="cite_note-7"><span class="mw-cite-backlink"><b><a href="#cite_ref-7">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><cite id="CITEREFDeng,H.Runger,_G.Tuv,_E.2011" class="citation conference cs1">Deng,H.; Runger, G.; Tuv, E. (2011). <a rel="nofollow" class="external text" href="https://www.researchgate.net/publication/221079908"><i>Bias of importance measures for multi-valued attributes and solutions</i></a>. Proceedings of the 21st International Conference on Artificial Neural Networks (ICANN).</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=conference&amp;rft.btitle=Bias+of+importance+measures+for+multi-valued+attributes+and+solutions&amp;rft.date=2011&amp;rft.au=Deng%2CH.&amp;rft.au=Runger%2C+G.&amp;rft.au=Tuv%2C+E.&amp;rft_id=https%3A%2F%2Fwww.researchgate.net%2Fpublication%2F221079908&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ADecision+tree" class="Z3988"></span></span>
+</li>
+<li id="cite_note-8"><span class="mw-cite-backlink"><b><a href="#cite_ref-8">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><cite id="CITEREFLarose2014" class="citation book cs1">Larose, Chantal, Daniel (2014). <i>Discovering Knowledge in Data</i>. Hoboken, NJ: John Wiley &amp; Sons. p.&#160;167. <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&#160;<a href="/wiki/Special:BookSources/9780470908747" title="Special:BookSources/9780470908747"><bdi>9780470908747</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Discovering+Knowledge+in+Data&amp;rft.place=Hoboken%2C+NJ&amp;rft.pages=167&amp;rft.pub=John+Wiley+%26+Sons&amp;rft.date=2014&amp;rft.isbn=9780470908747&amp;rft.aulast=Larose&amp;rft.aufirst=Chantal%2C+Daniel&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ADecision+tree" class="Z3988"></span></span>
+</li>
+<li id="cite_note-9"><span class="mw-cite-backlink"><b><a href="#cite_ref-9">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><cite id="CITEREFPlapinger2017" class="citation web cs1">Plapinger, Thomas (29 July 2017). <a rel="nofollow" class="external text" href="https://towardsdatascience.com/what-is-a-decision-tree-22975f00f3e1">"What is a Decision Tree?"</a>. <i>Towards Data Science</i>. <a rel="nofollow" class="external text" href="https://web.archive.org/web/20211210231954/https://towardsdatascience.com/what-is-a-decision-tree-22975f00f3e1">Archived</a> from the original on 10 December 2021<span class="reference-accessdate">. Retrieved <span class="nowrap">5 December</span> 2021</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=Towards+Data+Science&amp;rft.atitle=What+is+a+Decision+Tree%3F&amp;rft.date=2017-07-29&amp;rft.aulast=Plapinger&amp;rft.aufirst=Thomas&amp;rft_id=https%3A%2F%2Ftowardsdatascience.com%2Fwhat-is-a-decision-tree-22975f00f3e1&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ADecision+tree" class="Z3988"></span></span>
+</li>
+<li id="cite_note-10"><span class="mw-cite-backlink"><b><a href="#cite_ref-10">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><cite id="CITEREFTao2020" class="citation web cs1">Tao, Christopher (6 September 2020). <a rel="nofollow" class="external text" href="https://towardsdatascience.com/do-not-use-decision-tree-like-this-369769d6104d">"Do Not Use Decision Tree Like Thus"</a>. <i>Towards Data Science</i>. <a rel="nofollow" class="external text" href="https://web.archive.org/web/20211210231951/https://towardsdatascience.com/do-not-use-decision-tree-like-this-369769d6104d">Archived</a> from the original on 10 December 2021<span class="reference-accessdate">. Retrieved <span class="nowrap">10 December</span> 2021</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=Towards+Data+Science&amp;rft.atitle=Do+Not+Use+Decision+Tree+Like+Thus&amp;rft.date=2020-09-06&amp;rft.aulast=Tao&amp;rft.aufirst=Christopher&amp;rft_id=https%3A%2F%2Ftowardsdatascience.com%2Fdo-not-use-decision-tree-like-this-369769d6104d&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ADecision+tree" class="Z3988"></span></span>
+</li>
+<li id="cite_note-11"><span class="mw-cite-backlink"><b><a href="#cite_ref-11">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><cite class="citation web cs1"><a rel="nofollow" class="external text" href="https://www.split.io/glossary/false-positive-rate/">"False Positive Rate | Split Glossary"</a>. <i>Split</i><span class="reference-accessdate">. Retrieved <span class="nowrap">10 December</span> 2021</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=Split&amp;rft.atitle=False+Positive+Rate+%7C+Split+Glossary&amp;rft_id=https%3A%2F%2Fwww.split.io%2Fglossary%2Ffalse-positive-rate%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ADecision+tree" class="Z3988"></span></span>
+</li>
+<li id="cite_note-12"><span class="mw-cite-backlink"><b><a href="#cite_ref-12">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><cite class="citation web cs1"><a rel="nofollow" class="external text" href="https://www.technologynetworks.com/analysis/articles/sensitivity-vs-specificity-318222">"Sensitivity vs Specificity"</a>. <i>Analysis &amp; Separations from Technology Networks</i><span class="reference-accessdate">. Retrieved <span class="nowrap">10 December</span> 2021</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=Analysis+%26+Separations+from+Technology+Networks&amp;rft.atitle=Sensitivity+vs+Specificity&amp;rft_id=https%3A%2F%2Fwww.technologynetworks.com%2Fanalysis%2Farticles%2Fsensitivity-vs-specificity-318222&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ADecision+tree" class="Z3988"></span></span>
+</li>
+</ol></div></div>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Decision_tree&amp;action=edit&amp;section=15" title="Edit section: External links">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<table role="presentation" class="mbox-small plainlinks sistersitebox" style="background-color:#f9f9f9;border:1px solid #aaa;color:#000">
+<tbody><tr>
+<td class="mbox-image"><img alt="" src="//upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/30px-Commons-logo.svg.png" decoding="async" width="30" height="40" class="noviewer" srcset="//upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/45px-Commons-logo.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/59px-Commons-logo.svg.png 2x" data-file-width="1024" data-file-height="1376" /></td>
+<td class="mbox-text plainlist">Wikimedia Commons has media related to <span style="font-weight: bold; font-style: italic;"><a href="https://commons.wikimedia.org/wiki/Category:Decision_diagrams" class="extiw" title="commons:Category:Decision diagrams">decision diagrams</a></span>.</td></tr>
+</tbody></table>
+<ul><li><a rel="nofollow" class="external text" href="http://www.public.asu.edu/~kirkwood/DAStuff/refs/decisiontrees/index.html">Extensive Decision Tree tutorials and examples</a></li>
+<li><a rel="nofollow" class="external text" href="https://github.com/SilverDecisions/SilverDecisions/wiki/Gallery">Gallery of example decision trees</a></li>
+<li><a rel="nofollow" class="external text" href="https://blog.datarobot.com/gradient-boosted-regression-trees">Gradient Boosted Decision Trees</a></li></ul>
+<div class="navbox-styles nomobile"><style data-mw-deduplicate="TemplateStyles:r1061467846">.mw-parser-output .navbox{box-sizing:border-box;border:1px solid #a2a9b1;width:100%;clear:both;font-size:88%;text-align:center;padding:1px;margin:1em auto 0}.mw-parser-output .navbox .navbox{margin-top:0}.mw-parser-output .navbox+.navbox,.mw-parser-output .navbox+.navbox-styles+.navbox{margin-top:-1px}.mw-parser-output .navbox-inner,.mw-parser-output .navbox-subgroup{width:100%}.mw-parser-output .navbox-group,.mw-parser-output .navbox-title,.mw-parser-output .navbox-abovebelow{padding:0.25em 1em;line-height:1.5em;text-align:center}.mw-parser-output .navbox-group{white-space:nowrap;text-align:right}.mw-parser-output .navbox,.mw-parser-output .navbox-subgroup{background-color:#fdfdfd}.mw-parser-output .navbox-list{line-height:1.5em;border-color:#fdfdfd}.mw-parser-output .navbox-list-with-group{text-align:left;border-left-width:2px;border-left-style:solid}.mw-parser-output tr+tr>.navbox-abovebelow,.mw-parser-output tr+tr>.navbox-group,.mw-parser-output tr+tr>.navbox-image,.mw-parser-output tr+tr>.navbox-list{border-top:2px solid #fdfdfd}.mw-parser-output .navbox-title{background-color:#ccf}.mw-parser-output .navbox-abovebelow,.mw-parser-output .navbox-group,.mw-parser-output .navbox-subgroup .navbox-title{background-color:#ddf}.mw-parser-output .navbox-subgroup .navbox-group,.mw-parser-output .navbox-subgroup .navbox-abovebelow{background-color:#e6e6ff}.mw-parser-output .navbox-even{background-color:#f7f7f7}.mw-parser-output .navbox-odd{background-color:transparent}.mw-parser-output .navbox .hlist td dl,.mw-parser-output .navbox .hlist td ol,.mw-parser-output .navbox .hlist td ul,.mw-parser-output .navbox td.hlist dl,.mw-parser-output .navbox td.hlist ol,.mw-parser-output .navbox td.hlist ul{padding:0.125em 0}.mw-parser-output .navbox .navbar{display:block;font-size:100%}.mw-parser-output .navbox-title .navbar{float:left;text-align:left;margin-right:0.5em}</style></div><div role="navigation" class="navbox authority-control" aria-labelledby="Authority_control:_National_libraries_frameless_&amp;#124;text-top_&amp;#124;10px_&amp;#124;alt=Edit_this_at_Wikidata_&amp;#124;link=https&amp;#58;//www.wikidata.org/wiki/Q831366#identifiers&amp;#124;Edit_this_at_Wikidata" style="padding:3px"><table class="nowraplinks hlist navbox-inner" style="border-spacing:0;background:transparent;color:inherit"><tbody><tr><th id="Authority_control:_National_libraries_frameless_&amp;#124;text-top_&amp;#124;10px_&amp;#124;alt=Edit_this_at_Wikidata_&amp;#124;link=https&amp;#58;//www.wikidata.org/wiki/Q831366#identifiers&amp;#124;Edit_this_at_Wikidata" scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Help:Authority_control" title="Help:Authority control">Authority control: National libraries</a>  <a href="https://www.wikidata.org/wiki/Q831366#identifiers" title="Edit this at Wikidata"><img alt="Edit this at Wikidata" src="//upload.wikimedia.org/wikipedia/en/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/10px-OOjs_UI_icon_edit-ltr-progressive.svg.png" decoding="async" width="10" height="10" style="vertical-align: text-top" srcset="//upload.wikimedia.org/wikipedia/en/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/15px-OOjs_UI_icon_edit-ltr-progressive.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/20px-OOjs_UI_icon_edit-ltr-progressive.svg.png 2x" data-file-width="20" data-file-height="20" /></a></th><td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><span class="uid"><a rel="nofollow" class="external text" href="https://d-nb.info/gnd/4347788-4">Germany</a></span></li></ul>
+</div></td></tr></tbody></table></div>
+<!-- 
+NewPP limit report
+Parsed by mw1322
+Cached time: 20220309132841
+Cache expiry: 1814400
+Reduced expiry: false
+Complications: [vary‐revision‐sha1]
+CPU time usage: 0.690 seconds
+Real time usage: 0.878 seconds
+Preprocessor visited node count: 1427/1000000
+Post‐expand include size: 34305/2097152 bytes
+Template argument size: 1777/2097152 bytes
+Highest expansion depth: 13/100
+Expensive parser function count: 4/500
+Unstrip recursion depth: 1/20
+Unstrip post‐expand size: 36892/5000000 bytes
+Lua time usage: 0.373/10.000 seconds
+Lua memory usage: 6459366/52428800 bytes
+Number of Wikibase entities loaded: 0/400
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  692.310      1 -total
+ 32.90%  227.774      1 Template:Reflist
+ 18.12%  125.412      2 Template:Cite_journal
+ 12.86%   89.026      1 Template:Authority_control
+ 12.83%   88.835      1 Template:Short_description
+ 11.75%   81.347      1 Template:InfoMaps
+ 11.32%   78.384      1 Template:Sidebar
+  9.94%   68.835      1 Template:Commons_category
+  9.38%   64.912      1 Template:Sister_project
+  7.07%   48.949      1 Template:Side_box
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:232602-0!canonical and timestamp 20220309132840 and revision id 1073030495. Serialized with JSON.
+ -->
+</div><noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript>
+<div class="printfooter">Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Decision_tree&amp;oldid=1073030495">https://en.wikipedia.org/w/index.php?title=Decision_tree&amp;oldid=1073030495</a>"</div></div>
+		<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Decision_trees" title="Category:Decision trees">Decision trees</a></li><li><a href="/wiki/Category:Decision_analysis" title="Category:Decision analysis">Decision analysis</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:Articles_with_short_description" title="Category:Articles with short description">Articles with short description</a></li><li><a href="/wiki/Category:Short_description_is_different_from_Wikidata" title="Category:Short description is different from Wikidata">Short description is different from Wikidata</a></li><li><a href="/wiki/Category:Use_dmy_dates_from_April_2020" title="Category:Use dmy dates from April 2020">Use dmy dates from April 2020</a></li><li><a href="/wiki/Category:All_articles_with_unsourced_statements" title="Category:All articles with unsourced statements">All articles with unsourced statements</a></li><li><a href="/wiki/Category:Articles_with_unsourced_statements_from_July_2021" title="Category:Articles with unsourced statements from July 2021">Articles with unsourced statements from July 2021</a></li><li><a href="/wiki/Category:Commons_category_link_is_on_Wikidata" title="Category:Commons category link is on Wikidata">Commons category link is on Wikidata</a></li><li><a href="/wiki/Category:Articles_with_GND_identifiers" title="Category:Articles with GND identifiers">Articles with GND identifiers</a></li><li><a href="/wiki/Category:Pages_that_use_a_deprecated_format_of_the_math_tags" title="Category:Pages that use a deprecated format of the math tags">Pages that use a deprecated format of the math tags</a></li></ul></div></div>
+	</div>
+</div>
+<div id='mw-data-after-content'>
+	<div class="read-more-container"></div>
+</div>
+
+<div id="mw-navigation">
+	<h2>Navigation menu</h2>
+	<div id="mw-head">
+		
+<nav id="p-personal" class="mw-portlet mw-portlet-personal vector-user-menu-legacy vector-menu" aria-labelledby="p-personal-label" role="navigation" 
+	 >
+	<label id="p-personal-label" aria-label="" class="vector-menu-heading">
+		<span class="vector-menu-heading-label">Personal tools</span>
+	</label>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="pt-anonuserpage" class="mw-list-item"><span>Not logged in</span></li><li id="pt-anontalk" class="mw-list-item"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n"><span>Talk</span></a></li><li id="pt-anoncontribs" class="mw-list-item"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y"><span>Contributions</span></a></li><li id="pt-createaccount" class="mw-list-item"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Decision+tree&amp;returntoquery=lxml%3D" title="You are encouraged to create an account and log in; however, it is not mandatory"><span>Create account</span></a></li><li id="pt-login" class="mw-list-item"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Decision+tree&amp;returntoquery=lxml%3D" title="You&#039;re encouraged to log in; however, it&#039;s not mandatory. [o]" accesskey="o"><span>Log in</span></a></li></ul>
+		
+	</div>
+</nav>
+
+		<div id="left-navigation">
+			
+<nav id="p-namespaces" class="mw-portlet mw-portlet-namespaces vector-menu vector-menu-tabs" aria-labelledby="p-namespaces-label" role="navigation" 
+	 >
+	<label id="p-namespaces-label" aria-label="" class="vector-menu-heading">
+		<span class="vector-menu-heading-label">Namespaces</span>
+	</label>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="ca-nstab-main" class="selected mw-list-item"><a href="/wiki/Decision_tree" title="View the content page [c]" accesskey="c"><span>Article</span></a></li><li id="ca-talk" class="mw-list-item"><a href="/wiki/Talk:Decision_tree" rel="discussion" title="Discuss improvements to the content page [t]" accesskey="t"><span>Talk</span></a></li></ul>
+		
+	</div>
+</nav>
+
+			
+<nav id="p-variants" class="mw-portlet mw-portlet-variants emptyPortlet vector-menu-dropdown-noicon vector-menu vector-menu-dropdown" aria-labelledby="p-variants-label" role="navigation" 
+	 >
+	<input type="checkbox"
+		id="p-variants-checkbox"
+		role="button"
+		aria-haspopup="true"
+		data-event-name="ui.dropdown-p-variants"
+		class="vector-menu-checkbox" aria-labelledby="p-variants-label" />
+	<label id="p-variants-label" aria-label="Change language variant" class="vector-menu-heading">
+		<span class="vector-menu-heading-label">English</span>
+			<span class="vector-menu-checkbox-expanded">expanded</span>
+			<span class="vector-menu-checkbox-collapsed">collapsed</span>
+	</label>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"></ul>
+		
+	</div>
+</nav>
+
+		</div>
+		<div id="right-navigation">
+			
+<nav id="p-views" class="mw-portlet mw-portlet-views vector-menu vector-menu-tabs" aria-labelledby="p-views-label" role="navigation" 
+	 >
+	<label id="p-views-label" aria-label="" class="vector-menu-heading">
+		<span class="vector-menu-heading-label">Views</span>
+	</label>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="ca-view" class="selected mw-list-item"><a href="/wiki/Decision_tree"><span>Read</span></a></li><li id="ca-edit" class="mw-list-item"><a href="/w/index.php?title=Decision_tree&amp;action=edit" title="Edit this page [e]" accesskey="e"><span>Edit</span></a></li><li id="ca-history" class="mw-list-item"><a href="/w/index.php?title=Decision_tree&amp;action=history" title="Past revisions of this page [h]" accesskey="h"><span>View history</span></a></li></ul>
+		
+	</div>
+</nav>
+
+			
+<nav id="p-cactions" class="mw-portlet mw-portlet-cactions emptyPortlet vector-menu-dropdown-noicon vector-menu vector-menu-dropdown" aria-labelledby="p-cactions-label" role="navigation"  title="More options"
+	 >
+	<input type="checkbox"
+		id="p-cactions-checkbox"
+		role="button"
+		aria-haspopup="true"
+		data-event-name="ui.dropdown-p-cactions"
+		class="vector-menu-checkbox" aria-labelledby="p-cactions-label" />
+	<label id="p-cactions-label" aria-label="" class="vector-menu-heading">
+		<span class="vector-menu-heading-label">More</span>
+			<span class="vector-menu-checkbox-expanded">expanded</span>
+			<span class="vector-menu-checkbox-collapsed">collapsed</span>
+	</label>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"></ul>
+		
+	</div>
+</nav>
+
+			
+<div id="p-search" role="search" class="vector-search-box-vue  vector-search-box-show-thumbnail vector-search-box-auto-expand-width vector-search-box">
+	<div>
+			<h3 >
+				<label for="searchInput">Search</label>
+			</h3>
+		<form action="/w/index.php" id="searchform"
+			class="vector-search-box-form">
+			<div id="simpleSearch"
+				class="vector-search-box-inner"
+				 data-search-loc="header-navigation">
+				<input class="vector-search-box-input"
+					 type="search" name="search" placeholder="Search Wikipedia" aria-label="Search Wikipedia" autocapitalize="sentences" title="Search Wikipedia [f]" accesskey="f" id="searchInput"
+				/>
+				<input type="hidden" name="title" value="Special:Search"/>
+				<input id="mw-searchButton"
+					 class="searchButton mw-fallbackSearchButton" type="submit" name="fulltext" title="Search Wikipedia for this text" value="Search" />
+				<input id="searchButton"
+					 class="searchButton" type="submit" name="go" title="Go to a page with this exact name if it exists" value="Go" />
+			</div>
+		</form>
+	</div>
+</div>
+
+		</div>
+	</div>
+	
+
+<div id="mw-panel">
+	<div id="p-logo" role="banner">
+		<a class="mw-wiki-logo" href="/wiki/Main_Page"
+			title="Visit the main page"></a>
+	</div>
+	
+<nav id="p-navigation" class="mw-portlet mw-portlet-navigation vector-menu vector-menu-portal portal" aria-labelledby="p-navigation-label" role="navigation" 
+	 >
+	<label id="p-navigation-label" aria-label="" class="vector-menu-heading">
+		<span class="vector-menu-heading-label">Navigation</span>
+	</label>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="n-mainpage-description" class="mw-list-item"><a href="/wiki/Main_Page" icon="home" title="Visit the main page [z]" accesskey="z"><span>Main page</span></a></li><li id="n-contents" class="mw-list-item"><a href="/wiki/Wikipedia:Contents" title="Guides to browsing Wikipedia"><span>Contents</span></a></li><li id="n-currentevents" class="mw-list-item"><a href="/wiki/Portal:Current_events" title="Articles related to current events"><span>Current events</span></a></li><li id="n-randompage" class="mw-list-item"><a href="/wiki/Special:Random" icon="die" title="Visit a randomly selected article [x]" accesskey="x"><span>Random article</span></a></li><li id="n-aboutsite" class="mw-list-item"><a href="/wiki/Wikipedia:About" title="Learn about Wikipedia and how it works"><span>About Wikipedia</span></a></li><li id="n-contactpage" class="mw-list-item"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia"><span>Contact us</span></a></li><li id="n-sitesupport" class="mw-list-item"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us by donating to the Wikimedia Foundation"><span>Donate</span></a></li></ul>
+		
+	</div>
+</nav>
+
+	
+<nav id="p-interaction" class="mw-portlet mw-portlet-interaction vector-menu vector-menu-portal portal" aria-labelledby="p-interaction-label" role="navigation" 
+	 >
+	<label id="p-interaction-label" aria-label="" class="vector-menu-heading">
+		<span class="vector-menu-heading-label">Contribute</span>
+	</label>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="n-help" class="mw-list-item"><a href="/wiki/Help:Contents" icon="help" title="Guidance on how to use and edit Wikipedia"><span>Help</span></a></li><li id="n-introduction" class="mw-list-item"><a href="/wiki/Help:Introduction" title="Learn how to edit Wikipedia"><span>Learn to edit</span></a></li><li id="n-portal" class="mw-list-item"><a href="/wiki/Wikipedia:Community_portal" title="The hub for editors"><span>Community portal</span></a></li><li id="n-recentchanges" class="mw-list-item"><a href="/wiki/Special:RecentChanges" icon="recentChanges" title="A list of recent changes to Wikipedia [r]" accesskey="r"><span>Recent changes</span></a></li><li id="n-upload" class="mw-list-item"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Add images or other media for use on Wikipedia"><span>Upload file</span></a></li></ul>
+		
+	</div>
+</nav>
+
+<nav id="p-tb" class="mw-portlet mw-portlet-tb vector-menu vector-menu-portal portal" aria-labelledby="p-tb-label" role="navigation" 
+	 >
+	<label id="p-tb-label" aria-label="" class="vector-menu-heading">
+		<span class="vector-menu-heading-label">Tools</span>
+	</label>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="t-whatlinkshere" class="mw-list-item"><a href="/wiki/Special:WhatLinksHere/Decision_tree" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j"><span>What links here</span></a></li><li id="t-recentchangeslinked" class="mw-list-item"><a href="/wiki/Special:RecentChangesLinked/Decision_tree" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k"><span>Related changes</span></a></li><li id="t-upload" class="mw-list-item"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u"><span>Upload file</span></a></li><li id="t-specialpages" class="mw-list-item"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q"><span>Special pages</span></a></li><li id="t-permalink" class="mw-list-item"><a href="/w/index.php?title=Decision_tree&amp;oldid=1073030495" title="Permanent link to this revision of this page"><span>Permanent link</span></a></li><li id="t-info" class="mw-list-item"><a href="/w/index.php?title=Decision_tree&amp;action=info" title="More information about this page"><span>Page information</span></a></li><li id="t-cite" class="mw-list-item"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Decision_tree&amp;id=1073030495&amp;wpFormIdentifier=titleform" title="Information on how to cite this page"><span>Cite this page</span></a></li><li id="t-wikibase" class="mw-list-item"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q831366" title="Structured data on this page hosted by Wikidata [g]" accesskey="g"><span>Wikidata item</span></a></li></ul>
+		
+	</div>
+</nav>
+
+<nav id="p-coll-print_export" class="mw-portlet mw-portlet-coll-print_export vector-menu vector-menu-portal portal" aria-labelledby="p-coll-print_export-label" role="navigation" 
+	 >
+	<label id="p-coll-print_export-label" aria-label="" class="vector-menu-heading">
+		<span class="vector-menu-heading-label">Print/export</span>
+	</label>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="coll-download-as-rl" class="mw-list-item"><a href="/w/index.php?title=Special:DownloadAsPdf&amp;page=Decision_tree&amp;action=show-download-screen" title="Download this page as a PDF file"><span>Download as PDF</span></a></li><li id="t-print" class="mw-list-item"><a href="/w/index.php?title=Decision_tree&amp;printable=yes" title="Printable version of this page [p]" accesskey="p"><span>Printable version</span></a></li></ul>
+		
+	</div>
+</nav>
+
+<nav id="p-wikibase-otherprojects" class="mw-portlet mw-portlet-wikibase-otherprojects vector-menu vector-menu-portal portal" aria-labelledby="p-wikibase-otherprojects-label" role="navigation" 
+	 >
+	<label id="p-wikibase-otherprojects-label" aria-label="" class="vector-menu-heading">
+		<span class="vector-menu-heading-label">In other projects</span>
+	</label>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li class="wb-otherproject-link wb-otherproject-commons mw-list-item"><a href="https://commons.wikimedia.org/wiki/Category:Decision_diagrams" hreflang="en"><span>Wikimedia Commons</span></a></li></ul>
+		
+	</div>
+</nav>
+
+	
+<nav id="p-lang" class="mw-portlet mw-portlet-lang vector-menu vector-menu-portal portal" aria-labelledby="p-lang-label" role="navigation" 
+	 >
+	<label id="p-lang-label" aria-label="" class="vector-menu-heading">
+		<span class="vector-menu-heading-label">Languages</span>
+	</label>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li class="interlanguage-link interwiki-ar mw-list-item"><a href="https://ar.wikipedia.org/wiki/%D8%B4%D8%AC%D8%B1%D8%A9_%D8%A7%D9%84%D9%82%D8%B1%D8%A7%D8%B1" title="شجرة القرار – Arabic" lang="ar" hreflang="ar" class="interlanguage-link-target"><span>العربية</span></a></li><li class="interlanguage-link interwiki-bg mw-list-item"><a href="https://bg.wikipedia.org/wiki/%D0%94%D1%8A%D1%80%D0%B2%D0%BE_%D0%BD%D0%B0_%D1%80%D0%B5%D1%88%D0%B5%D0%BD%D0%B8%D1%8F%D1%82%D0%B0" title="Дърво на решенията – Bulgarian" lang="bg" hreflang="bg" class="interlanguage-link-target"><span>Български</span></a></li><li class="interlanguage-link interwiki-ca mw-list-item"><a href="https://ca.wikipedia.org/wiki/Arbre_de_decisi%C3%B3" title="Arbre de decisió – Catalan" lang="ca" hreflang="ca" class="interlanguage-link-target"><span>Català</span></a></li><li class="interlanguage-link interwiki-cs mw-list-item"><a href="https://cs.wikipedia.org/wiki/Rozhodovac%C3%AD_strom" title="Rozhodovací strom – Czech" lang="cs" hreflang="cs" class="interlanguage-link-target"><span>Čeština</span></a></li><li class="interlanguage-link interwiki-de mw-list-item"><a href="https://de.wikipedia.org/wiki/Entscheidungsbaum" title="Entscheidungsbaum – German" lang="de" hreflang="de" class="interlanguage-link-target"><span>Deutsch</span></a></li><li class="interlanguage-link interwiki-et mw-list-item"><a href="https://et.wikipedia.org/wiki/Otsustuspuu" title="Otsustuspuu – Estonian" lang="et" hreflang="et" class="interlanguage-link-target"><span>Eesti</span></a></li><li class="interlanguage-link interwiki-es mw-list-item"><a href="https://es.wikipedia.org/wiki/%C3%81rbol_de_decisi%C3%B3n" title="Árbol de decisión – Spanish" lang="es" hreflang="es" class="interlanguage-link-target"><span>Español</span></a></li><li class="interlanguage-link interwiki-fa mw-list-item"><a href="https://fa.wikipedia.org/wiki/%D8%AF%D8%B1%D8%AE%D8%AA_%D8%AA%D8%B5%D9%85%DB%8C%D9%85" title="درخت تصمیم – Persian" lang="fa" hreflang="fa" class="interlanguage-link-target"><span>فارسی</span></a></li><li class="interlanguage-link interwiki-fr mw-list-item"><a href="https://fr.wikipedia.org/wiki/Arbre_de_d%C3%A9cision" title="Arbre de décision – French" lang="fr" hreflang="fr" class="interlanguage-link-target"><span>Français</span></a></li><li class="interlanguage-link interwiki-ko mw-list-item"><a href="https://ko.wikipedia.org/wiki/%EA%B2%B0%EC%A0%95_%ED%8A%B8%EB%A6%AC" title="결정 트리 – Korean" lang="ko" hreflang="ko" class="interlanguage-link-target"><span>한국어</span></a></li><li class="interlanguage-link interwiki-hi mw-list-item"><a href="https://hi.wikipedia.org/wiki/%E0%A4%A8%E0%A4%BF%E0%A4%B0%E0%A5%8D%E0%A4%A3%E0%A4%AF_%E0%A4%B5%E0%A5%83%E0%A4%95%E0%A5%8D%E0%A4%B7" title="निर्णय वृक्ष – Hindi" lang="hi" hreflang="hi" class="interlanguage-link-target"><span>हिन्दी</span></a></li><li class="interlanguage-link interwiki-it mw-list-item"><a href="https://it.wikipedia.org/wiki/Albero_di_decisione" title="Albero di decisione – Italian" lang="it" hreflang="it" class="interlanguage-link-target"><span>Italiano</span></a></li><li class="interlanguage-link interwiki-he mw-list-item"><a href="https://he.wikipedia.org/wiki/%D7%A2%D7%A5_%D7%94%D7%97%D7%9C%D7%98%D7%94" title="עץ החלטה – Hebrew" lang="he" hreflang="he" class="interlanguage-link-target"><span>עברית</span></a></li><li class="interlanguage-link interwiki-hu mw-list-item"><a href="https://hu.wikipedia.org/wiki/D%C3%B6nt%C3%A9si_fa" title="Döntési fa – Hungarian" lang="hu" hreflang="hu" class="interlanguage-link-target"><span>Magyar</span></a></li><li class="interlanguage-link interwiki-nl mw-list-item"><a href="https://nl.wikipedia.org/wiki/Beslissingsboom" title="Beslissingsboom – Dutch" lang="nl" hreflang="nl" class="interlanguage-link-target"><span>Nederlands</span></a></li><li class="interlanguage-link interwiki-ja mw-list-item"><a href="https://ja.wikipedia.org/wiki/%E6%B1%BA%E5%AE%9A%E6%9C%A8" title="決定木 – Japanese" lang="ja" hreflang="ja" class="interlanguage-link-target"><span>日本語</span></a></li><li class="interlanguage-link interwiki-no mw-list-item"><a href="https://no.wikipedia.org/wiki/Beslutningstre" title="Beslutningstre – Norwegian Bokmål" lang="nb" hreflang="nb" class="interlanguage-link-target"><span>Norsk bokmål</span></a></li><li class="interlanguage-link interwiki-pl mw-list-item"><a href="https://pl.wikipedia.org/wiki/Drzewo_decyzyjne" title="Drzewo decyzyjne – Polish" lang="pl" hreflang="pl" class="interlanguage-link-target"><span>Polski</span></a></li><li class="interlanguage-link interwiki-pt mw-list-item"><a href="https://pt.wikipedia.org/wiki/%C3%81rvore_de_decis%C3%A3o" title="Árvore de decisão – Portuguese" lang="pt" hreflang="pt" class="interlanguage-link-target"><span>Português</span></a></li><li class="interlanguage-link interwiki-ru mw-list-item"><a href="https://ru.wikipedia.org/wiki/%D0%94%D0%B5%D1%80%D0%B5%D0%B2%D0%BE_%D1%80%D0%B5%D1%88%D0%B5%D0%BD%D0%B8%D0%B9" title="Дерево решений – Russian" lang="ru" hreflang="ru" class="interlanguage-link-target"><span>Русский</span></a></li><li class="interlanguage-link interwiki-sl mw-list-item"><a href="https://sl.wikipedia.org/wiki/Odlo%C4%8Ditveno_drevo" title="Odločitveno drevo – Slovenian" lang="sl" hreflang="sl" class="interlanguage-link-target"><span>Slovenščina</span></a></li><li class="interlanguage-link interwiki-sr mw-list-item"><a href="https://sr.wikipedia.org/wiki/%D0%A1%D1%82%D0%B0%D0%B1%D0%BB%D0%BE_%D0%BE%D0%B4%D0%BB%D1%83%D1%87%D0%B8%D0%B2%D0%B0%D1%9A%D0%B0" title="Стабло одлучивања – Serbian" lang="sr" hreflang="sr" class="interlanguage-link-target"><span>Српски / srpski</span></a></li><li class="interlanguage-link interwiki-sv mw-list-item"><a href="https://sv.wikipedia.org/wiki/Beslutstr%C3%A4d" title="Beslutsträd – Swedish" lang="sv" hreflang="sv" class="interlanguage-link-target"><span>Svenska</span></a></li><li class="interlanguage-link interwiki-th mw-list-item"><a href="https://th.wikipedia.org/wiki/%E0%B8%95%E0%B9%89%E0%B8%99%E0%B9%84%E0%B8%A1%E0%B9%89%E0%B8%95%E0%B8%B1%E0%B8%94%E0%B8%AA%E0%B8%B4%E0%B8%99%E0%B9%83%E0%B8%88" title="ต้นไม้ตัดสินใจ – Thai" lang="th" hreflang="th" class="interlanguage-link-target"><span>ไทย</span></a></li><li class="interlanguage-link interwiki-tr mw-list-item"><a href="https://tr.wikipedia.org/wiki/Karar_a%C4%9Fac%C4%B1" title="Karar ağacı – Turkish" lang="tr" hreflang="tr" class="interlanguage-link-target"><span>Türkçe</span></a></li><li class="interlanguage-link interwiki-uk mw-list-item"><a href="https://uk.wikipedia.org/wiki/%D0%94%D0%B5%D1%80%D0%B5%D0%B2%D0%BE_%D1%83%D1%85%D0%B2%D0%B0%D0%BB%D0%B5%D0%BD%D0%BD%D1%8F_%D1%80%D1%96%D1%88%D0%B5%D0%BD%D1%8C" title="Дерево ухвалення рішень – Ukrainian" lang="uk" hreflang="uk" class="interlanguage-link-target"><span>Українська</span></a></li><li class="interlanguage-link interwiki-vi mw-list-item"><a href="https://vi.wikipedia.org/wiki/C%C3%A2y_quy%E1%BA%BFt_%C4%91%E1%BB%8Bnh" title="Cây quyết định – Vietnamese" lang="vi" hreflang="vi" class="interlanguage-link-target"><span>Tiếng Việt</span></a></li><li class="interlanguage-link interwiki-zh-yue mw-list-item"><a href="https://zh-yue.wikipedia.org/wiki/%E6%B1%BA%E7%AD%96%E6%A8%B9" title="決策樹 – Cantonese" lang="yue" hreflang="yue" class="interlanguage-link-target"><span>粵語</span></a></li><li class="interlanguage-link interwiki-zh mw-list-item"><a href="https://zh.wikipedia.org/wiki/%E5%86%B3%E7%AD%96%E6%A0%91" title="决策树 – Chinese" lang="zh" hreflang="zh" class="interlanguage-link-target"><span>中文</span></a></li></ul>
+		<div class="after-portlet after-portlet-lang"><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q831366#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>
+	</div>
+</nav>
+
+</div>
+
+</div>
+
+<footer id="footer" class="mw-footer" role="contentinfo" >
+	<ul id="footer-info">
+	<li id="footer-info-lastmod"> This page was last edited on 20 February 2022, at 17:40<span class="anonymous-show">&#160;(UTC)</span>.</li>
+	<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License 3.0</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//foundation.wikimedia.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//foundation.wikimedia.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+</ul>
+
+	<ul id="footer-places">
+	<li id="footer-places-privacy"><a href="https://foundation.wikimedia.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+	<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+	<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+	<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+	<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Decision_tree&amp;lxml=&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+	<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+	<li id="footer-places-statslink"><a href="https://stats.wikimedia.org/#/en.wikipedia.org">Statistics</a></li>
+	<li id="footer-places-cookiestatement"><a href="https://foundation.wikimedia.org/wiki/Cookie_statement">Cookie statement</a></li>
+</ul>
+
+	<ul id="footer-icons" class="noprint">
+	<li id="footer-copyrightico"><a href="https://wikimediafoundation.org/"><img src="/static/images/footer/wikimedia-button.png" srcset="/static/images/footer/wikimedia-button-1.5x.png 1.5x, /static/images/footer/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation" loading="lazy" /></a></li>
+	<li id="footer-poweredbyico"><a href="https://www.mediawiki.org/"><img src="/static/images/footer/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/footer/poweredby_mediawiki_132x47.png 1.5x, /static/images/footer/poweredby_mediawiki_176x62.png 2x" width="88" height="31" loading="lazy"/></a></li>
+</ul>
+
+</footer>
+
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.690","walltime":"0.878","ppvisitednodes":{"value":1427,"limit":1000000},"postexpandincludesize":{"value":34305,"limit":2097152},"templateargumentsize":{"value":1777,"limit":2097152},"expansiondepth":{"value":13,"limit":100},"expensivefunctioncount":{"value":4,"limit":500},"unstrip-depth":{"value":1,"limit":20},"unstrip-size":{"value":36892,"limit":5000000},"entityaccesscount":{"value":0,"limit":400},"timingprofile":["100.00%  692.310      1 -total"," 32.90%  227.774      1 Template:Reflist"," 18.12%  125.412      2 Template:Cite_journal"," 12.86%   89.026      1 Template:Authority_control"," 12.83%   88.835      1 Template:Short_description"," 11.75%   81.347      1 Template:InfoMaps"," 11.32%   78.384      1 Template:Sidebar","  9.94%   68.835      1 Template:Commons_category","  9.38%   64.912      1 Template:Sister_project","  7.07%   48.949      1 Template:Side_box"]},"scribunto":{"limitreport-timeusage":{"value":"0.373","limit":"10.000"},"limitreport-memusage":{"value":6459366,"limit":52428800}},"cachereport":{"origin":"mw1322","timestamp":"20220309132841","ttl":1814400,"transientcontent":false}}});});</script>
+<script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"Article","name":"Decision tree","url":"https:\/\/en.wikipedia.org\/wiki\/Decision_tree","sameAs":"http:\/\/www.wikidata.org\/entity\/Q831366","mainEntity":"http:\/\/www.wikidata.org\/entity\/Q831366","author":{"@type":"Organization","name":"Contributors to Wikimedia projects"},"publisher":{"@type":"Organization","name":"Wikimedia Foundation, Inc.","logo":{"@type":"ImageObject","url":"https:\/\/www.wikimedia.org\/static\/images\/wmf-hor-googpub.png"}},"datePublished":"2003-05-23T17:33:14Z","dateModified":"2022-02-20T17:40:56Z","image":"https:\/\/upload.wikimedia.org\/wikipedia\/commons\/c\/c6\/Manual_decision_tree.jpg","headline":"decision support tool that uses a tree-like model of decisions and their possible consequences, including chance event outcomes, resource costs, and utility"}</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":121,"wgHostname":"mw1418"});});</script>
+</body>
+</html>

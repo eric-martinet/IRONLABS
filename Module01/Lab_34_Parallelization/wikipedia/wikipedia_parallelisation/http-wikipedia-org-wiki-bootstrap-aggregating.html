@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Bootstrap aggregating - Wikipedia</title>
+<script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"26b50404-5cf6-4e18-80b7-4e35acaf4175","wgCSPNonce":false,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Bootstrap_aggregating","wgTitle":"Bootstrap aggregating","wgCurRevisionId":1060689473,"wgRevisionId":1060689473,"wgArticleId":1307911,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Wikipedia articles needing clarification from May 2021","CS1 errors: missing periodical","Ensemble learning","Machine learning algorithms","Computational statistics"],"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"Bootstrap_aggregating",
+"wgRelevantArticleId":1307911,"wgIsProbablyEditable":true,"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgFlaggedRevsParams":{"tags":{"status":{"levels":-1}}},"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en"},"wgMFDisplayWikibaseDescriptions":{"search":true,"nearby":true,"watchlist":true,"tagline":false},"wgWMESchemaEditAttemptStepOversample":false,"wgWMEPageLength":30000,"wgNoticeProject":"wikipedia","wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgPopupsFlags":10,"wgULSCurrentAutonym":"English","wgEditSubmitButtonLabelPublish":true,"wgCentralAuthMobileDomain":false,"wgULSPosition":"interlanguage","wgULSisCompactLinksEnabled":true,"wgWikibaseItemId":"Q799897","wgGENewcomerTasksGuidanceEnabled":true,"wgGEAskQuestionEnabled":false,"wgGELinkRecommendationsFrontendEnabled":false};RLSTATE={"ext.globalCssJs.user.styles":"ready","site.styles":"ready","user.styles":"ready",
+"ext.globalCssJs.user":"ready","user":"ready","user.options":"loading","ext.math.styles":"ready","ext.cite.styles":"ready","skins.vector.styles.legacy":"ready","jquery.makeCollapsible.styles":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.wikimediaBadges":"ready","ext.uls.interlanguage":"ready","wikibase.client.init":"ready"};RLPAGEMODULES=["ext.math.scripts","ext.cite.ux-enhancements","site","mediawiki.page.ready","jquery.makeCollapsible","mediawiki.toc","skins.vector.legacy.js","ext.gadget.ReferenceTooltips","ext.gadget.charinsert","ext.gadget.extra-toolbar-buttons","ext.gadget.refToolbar","ext.gadget.switcher","mmv.head","mmv.bootstrap.autostart","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging","ext.wikimediaEvents","ext.navigationTiming","ext.cx.eventlogging.campaigns","ext.centralNotice.geoIP","ext.centralNotice.startUp","ext.centralauth.centralautologin","ext.popups","ext.uls.compactlinks","ext.uls.interface",
+"ext.growthExperiments.SuggestedEditSession"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@1i9g4",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});});});</script>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=ext.cite.styles%7Cext.math.styles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cjquery.makeCollapsible.styles%7Cskins.vector.styles.legacy%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.38.0-wmf.25"/>
+<meta name="referrer" content="origin"/>
+<meta name="referrer" content="origin-when-crossorigin"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Kernel_Machine.svg/1200px-Kernel_Machine.svg.png"/>
+<meta property="og:image:width" content="1200"/>
+<meta property="og:image:height" content="546"/>
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Kernel_Machine.svg/800px-Kernel_Machine.svg.png"/>
+<meta property="og:image:width" content="800"/>
+<meta property="og:image:height" content="364"/>
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Kernel_Machine.svg/640px-Kernel_Machine.svg.png"/>
+<meta property="og:image:width" content="640"/>
+<meta property="og:image:height" content="291"/>
+<meta property="og:title" content="Bootstrap aggregating - Wikipedia"/>
+<meta property="og:type" content="website"/>
+<link rel="preconnect" href="//upload.wikimedia.org"/>
+<link rel="alternate" media="only screen and (max-width: 720px)" href="//en.m.wikipedia.org/wiki/Bootstrap_aggregating"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Bootstrap_aggregating&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="license" href="https://creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Bootstrap_aggregating"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject mw-editable page-Bootstrap_aggregating rootpage-Bootstrap_aggregating skin-vector action-view skin-vector-legacy"><div id="mw-page-base" class="noprint"></div>
+<div id="mw-head-base" class="noprint"></div>
+<div id="content" class="mw-body" role="main">
+	<a id="top"></a>
+	<div id="siteNotice"><!-- CentralNotice --></div>
+	<div class="mw-indicators">
+	</div>
+	<h1 id="firstHeading" class="firstHeading mw-first-heading">Bootstrap aggregating</h1>
+	<div id="bodyContent" class="vector-body">
+		<div id="siteSub" class="noprint">From Wikipedia, the free encyclopedia</div>
+		<div id="contentSub"></div>
+		<div id="contentSub2"></div>
+		
+		<div id="jump-to-nav"></div>
+		<a class="mw-jump-link" href="#mw-head">Jump to navigation</a>
+		<a class="mw-jump-link" href="#searchInput">Jump to search</a>
+		<div id="mw-content-text" class="mw-body-content mw-content-ltr" lang="en" dir="ltr"><div class="mw-parser-output"><style data-mw-deduplicate="TemplateStyles:r1045330069">.mw-parser-output .sidebar{width:22em;float:right;clear:right;margin:0.5em 0 1em 1em;background:#f8f9fa;border:1px solid #aaa;padding:0.2em;text-align:center;line-height:1.4em;font-size:88%;border-collapse:collapse;display:table}body.skin-minerva .mw-parser-output .sidebar{display:table!important;float:right!important;margin:0.5em 0 1em 1em!important}.mw-parser-output .sidebar-subgroup{width:100%;margin:0;border-spacing:0}.mw-parser-output .sidebar-left{float:left;clear:left;margin:0.5em 1em 1em 0}.mw-parser-output .sidebar-none{float:none;clear:both;margin:0.5em 1em 1em 0}.mw-parser-output .sidebar-outer-title{padding:0 0.4em 0.2em;font-size:125%;line-height:1.2em;font-weight:bold}.mw-parser-output .sidebar-top-image{padding:0.4em}.mw-parser-output .sidebar-top-caption,.mw-parser-output .sidebar-pretitle-with-top-image,.mw-parser-output .sidebar-caption{padding:0.2em 0.4em 0;line-height:1.2em}.mw-parser-output .sidebar-pretitle{padding:0.4em 0.4em 0;line-height:1.2em}.mw-parser-output .sidebar-title,.mw-parser-output .sidebar-title-with-pretitle{padding:0.2em 0.8em;font-size:145%;line-height:1.2em}.mw-parser-output .sidebar-title-with-pretitle{padding:0.1em 0.4em}.mw-parser-output .sidebar-image{padding:0.2em 0.4em 0.4em}.mw-parser-output .sidebar-heading{padding:0.1em 0.4em}.mw-parser-output .sidebar-content{padding:0 0.5em 0.4em}.mw-parser-output .sidebar-content-with-subgroup{padding:0.1em 0.4em 0.2em}.mw-parser-output .sidebar-above,.mw-parser-output .sidebar-below{padding:0.3em 0.8em;font-weight:bold}.mw-parser-output .sidebar-collapse .sidebar-above,.mw-parser-output .sidebar-collapse .sidebar-below{border-top:1px solid #aaa;border-bottom:1px solid #aaa}.mw-parser-output .sidebar-navbar{text-align:right;font-size:115%;padding:0 0.4em 0.4em}.mw-parser-output .sidebar-list-title{padding:0 0.4em;text-align:left;font-weight:bold;line-height:1.6em;font-size:105%}.mw-parser-output .sidebar-list-title-c{padding:0 0.4em;text-align:center;margin:0 3.3em}@media(max-width:720px){body.mediawiki .mw-parser-output .sidebar{width:100%!important;clear:both;float:none!important;margin-left:0!important;margin-right:0!important}}</style><table class="sidebar sidebar-collapse nomobile nowraplinks"><tbody><tr><td class="sidebar-pretitle">Part of a series on</td></tr><tr><th class="sidebar-title-with-pretitle"><a href="/wiki/Machine_learning" title="Machine learning">Machine learning</a><br />and <a href="/wiki/Data_mining" title="Data mining">data mining</a></th></tr><tr><td class="sidebar-image"><a href="/wiki/File:Kernel_Machine.svg" class="image" title="Scatterplot featuring a linear support vector machine&#39;s decision boundary (dashed line)"><img alt="Scatterplot featuring a linear support vector machine&#39;s decision boundary (dashed line)" src="//upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Kernel_Machine.svg/220px-Kernel_Machine.svg.png" decoding="async" width="220" height="100" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Kernel_Machine.svg/330px-Kernel_Machine.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Kernel_Machine.svg/440px-Kernel_Machine.svg.png 2x" data-file-width="512" data-file-height="233" /></a></td></tr><tr><td class="sidebar-content">
+<div class="sidebar-list mw-collapsible mw-collapsed"><div class="sidebar-list-title" style="border-top:1px solid #aaa;text-align:center; background:#ddd;">Problems</div><div class="sidebar-list-content mw-collapsible-content hlist">
+<ul><li><a href="/wiki/Statistical_classification" title="Statistical classification">Classification</a></li>
+<li><a href="/wiki/Cluster_analysis" title="Cluster analysis">Clustering</a></li>
+<li><a href="/wiki/Regression_analysis" title="Regression analysis">Regression</a></li>
+<li><a href="/wiki/Anomaly_detection" title="Anomaly detection">Anomaly detection</a></li>
+<li><a href="/wiki/Data_Cleaning" class="mw-redirect" title="Data Cleaning">Data Cleaning</a></li>
+<li><a href="/wiki/Automated_machine_learning" title="Automated machine learning">AutoML</a></li>
+<li><a href="/wiki/Association_rule_learning" title="Association rule learning">Association rules</a></li>
+<li><a href="/wiki/Reinforcement_learning" title="Reinforcement learning">Reinforcement learning</a></li>
+<li><a href="/wiki/Structured_prediction" title="Structured prediction">Structured prediction</a></li>
+<li><a href="/wiki/Feature_engineering" title="Feature engineering">Feature engineering</a></li>
+<li><a href="/wiki/Feature_learning" title="Feature learning">Feature learning</a></li>
+<li><a href="/wiki/Online_machine_learning" title="Online machine learning">Online learning</a></li>
+<li><a href="/wiki/Semi-supervised_learning" title="Semi-supervised learning">Semi-supervised learning</a></li>
+<li><a href="/wiki/Unsupervised_learning" title="Unsupervised learning">Unsupervised learning</a></li>
+<li><a href="/wiki/Learning_to_rank" title="Learning to rank">Learning to rank</a></li>
+<li><a href="/wiki/Grammar_induction" title="Grammar induction">Grammar induction</a></li></ul></div></div></td>
+</tr><tr><td class="sidebar-content">
+<div class="sidebar-list mw-collapsible"><div class="sidebar-list-title" style="border-top:1px solid #aaa;text-align:center; background:#ddd;"><div style="display:inline-block; padding:0.1em 0;line-height:1.2em;"><a href="/wiki/Supervised_learning" title="Supervised learning">Supervised learning</a><br /><style data-mw-deduplicate="TemplateStyles:r886047488">.mw-parser-output .nobold{font-weight:normal}</style><span class="nobold"><span style="font-size:85%;">(<b><a href="/wiki/Statistical_classification" title="Statistical classification">classification</a></b>&#160;&#8226;&#32;<b><a href="/wiki/Regression_analysis" title="Regression analysis">regression</a></b>)</span></span> </div></div><div class="sidebar-list-content mw-collapsible-content hlist">
+<ul><li><a href="/wiki/Decision_tree_learning" title="Decision tree learning">Decision trees</a></li>
+<li><a href="/wiki/Ensemble_learning" title="Ensemble learning">Ensembles</a>
+<ul><li><a class="mw-selflink selflink">Bagging</a></li>
+<li><a href="/wiki/Boosting_(machine_learning)" title="Boosting (machine learning)">Boosting</a></li>
+<li><a href="/wiki/Random_forest" title="Random forest">Random forest</a></li></ul></li>
+<li><a href="/wiki/K-nearest_neighbors_algorithm" title="K-nearest neighbors algorithm"><i>k</i>-NN</a></li>
+<li><a href="/wiki/Linear_regression" title="Linear regression">Linear regression</a></li>
+<li><a href="/wiki/Naive_Bayes_classifier" title="Naive Bayes classifier">Naive Bayes</a></li>
+<li><a href="/wiki/Artificial_neural_network" title="Artificial neural network">Artificial neural networks</a></li>
+<li><a href="/wiki/Logistic_regression" title="Logistic regression">Logistic regression</a></li>
+<li><a href="/wiki/Perceptron" title="Perceptron">Perceptron</a></li>
+<li><a href="/wiki/Relevance_vector_machine" title="Relevance vector machine">Relevance vector machine (RVM)</a></li>
+<li><a href="/wiki/Support-vector_machine" title="Support-vector machine">Support vector machine (SVM)</a></li></ul></div></div></td>
+</tr><tr><td class="sidebar-content">
+<div class="sidebar-list mw-collapsible mw-collapsed"><div class="sidebar-list-title" style="border-top:1px solid #aaa;text-align:center; background:#ddd;"><a href="/wiki/Cluster_analysis" title="Cluster analysis">Clustering</a></div><div class="sidebar-list-content mw-collapsible-content hlist">
+<ul><li><a href="/wiki/BIRCH" title="BIRCH">BIRCH</a></li>
+<li><a href="/wiki/CURE_algorithm" title="CURE algorithm">CURE</a></li>
+<li><a href="/wiki/Hierarchical_clustering" title="Hierarchical clustering">Hierarchical</a></li>
+<li><a href="/wiki/K-means_clustering" title="K-means clustering"><i>k</i>-means</a></li>
+<li><a href="/wiki/Expectation%E2%80%93maximization_algorithm" title="Expectation–maximization algorithm">Expectation–maximization (EM)</a></li>
+<li><br /><a href="/wiki/DBSCAN" title="DBSCAN">DBSCAN</a></li>
+<li><a href="/wiki/OPTICS_algorithm" title="OPTICS algorithm">OPTICS</a></li>
+<li><a href="/wiki/Mean_shift" title="Mean shift">Mean shift</a></li></ul></div></div></td>
+</tr><tr><td class="sidebar-content">
+<div class="sidebar-list mw-collapsible mw-collapsed"><div class="sidebar-list-title" style="border-top:1px solid #aaa;text-align:center; background:#ddd;"><a href="/wiki/Dimensionality_reduction" title="Dimensionality reduction">Dimensionality reduction</a></div><div class="sidebar-list-content mw-collapsible-content hlist">
+<ul><li><a href="/wiki/Factor_analysis" title="Factor analysis">Factor analysis</a></li>
+<li><a href="/wiki/Canonical_correlation" title="Canonical correlation">CCA</a></li>
+<li><a href="/wiki/Independent_component_analysis" title="Independent component analysis">ICA</a></li>
+<li><a href="/wiki/Linear_discriminant_analysis" title="Linear discriminant analysis">LDA</a></li>
+<li><a href="/wiki/Non-negative_matrix_factorization" title="Non-negative matrix factorization">NMF</a></li>
+<li><a href="/wiki/Principal_component_analysis" title="Principal component analysis">PCA</a></li>
+<li><a href="/wiki/Proper_generalized_decomposition" title="Proper generalized decomposition">PGD</a></li>
+<li><a href="/wiki/T-distributed_stochastic_neighbor_embedding" title="T-distributed stochastic neighbor embedding">t-SNE</a></li></ul></div></div></td>
+</tr><tr><td class="sidebar-content">
+<div class="sidebar-list mw-collapsible mw-collapsed"><div class="sidebar-list-title" style="border-top:1px solid #aaa;text-align:center; background:#ddd;"><a href="/wiki/Structured_prediction" title="Structured prediction">Structured prediction</a></div><div class="sidebar-list-content mw-collapsible-content hlist">
+<ul><li><a href="/wiki/Graphical_model" title="Graphical model">Graphical models</a>
+<ul><li><a href="/wiki/Bayesian_network" title="Bayesian network">Bayes net</a></li>
+<li><a href="/wiki/Conditional_random_field" title="Conditional random field">Conditional random field</a></li>
+<li><a href="/wiki/Hidden_Markov_model" title="Hidden Markov model">Hidden Markov</a></li></ul></li></ul></div></div></td>
+</tr><tr><td class="sidebar-content">
+<div class="sidebar-list mw-collapsible mw-collapsed"><div class="sidebar-list-title" style="border-top:1px solid #aaa;text-align:center; background:#ddd;"><a href="/wiki/Anomaly_detection" title="Anomaly detection">Anomaly detection</a></div><div class="sidebar-list-content mw-collapsible-content hlist">
+<ul><li><a href="/wiki/K-nearest_neighbors_algorithm" title="K-nearest neighbors algorithm"><i>k</i>-NN</a></li>
+<li><a href="/wiki/Local_outlier_factor" title="Local outlier factor">Local outlier factor</a></li></ul></div></div></td>
+</tr><tr><td class="sidebar-content">
+<div class="sidebar-list mw-collapsible mw-collapsed"><div class="sidebar-list-title" style="border-top:1px solid #aaa;text-align:center; background:#ddd;"><a href="/wiki/Artificial_neural_network" title="Artificial neural network">Artificial neural network</a></div><div class="sidebar-list-content mw-collapsible-content hlist">
+<ul><li><a href="/wiki/Autoencoder" title="Autoencoder">Autoencoder</a></li>
+<li><a href="/wiki/Cognitive_computing" title="Cognitive computing">Cognitive computing</a></li>
+<li><a href="/wiki/Deep_learning" title="Deep learning">Deep learning</a></li>
+<li><a href="/wiki/DeepDream" title="DeepDream">DeepDream</a></li>
+<li><a href="/wiki/Multilayer_perceptron" title="Multilayer perceptron">Multilayer perceptron</a></li>
+<li><a href="/wiki/Recurrent_neural_network" title="Recurrent neural network">RNN</a>
+<ul><li><a href="/wiki/Long_short-term_memory" title="Long short-term memory">LSTM</a></li>
+<li><a href="/wiki/Gated_recurrent_unit" title="Gated recurrent unit">GRU</a></li>
+<li><a href="/wiki/Echo_state_network" title="Echo state network">ESN</a></li></ul></li>
+<li><a href="/wiki/Restricted_Boltzmann_machine" title="Restricted Boltzmann machine">Restricted Boltzmann machine</a></li>
+<li><a href="/wiki/Generative_adversarial_network" title="Generative adversarial network">GAN</a></li>
+<li><a href="/wiki/Self-organizing_map" title="Self-organizing map">SOM</a></li>
+<li><a href="/wiki/Convolutional_neural_network" title="Convolutional neural network">Convolutional neural network</a>
+<ul><li><a href="/wiki/U-Net" title="U-Net">U-Net</a></li></ul></li>
+<li><a href="/wiki/Transformer_(machine_learning_model)" title="Transformer (machine learning model)">Transformer</a>
+<ul><li><a href="/wiki/Vision_transformer" title="Vision transformer">Vision</a></li></ul></li>
+<li><a href="/wiki/Spiking_neural_network" title="Spiking neural network">Spiking neural network</a></li>
+<li><a href="/wiki/Memtransistor" title="Memtransistor">Memtransistor</a></li>
+<li><a href="/wiki/Electrochemical_RAM" title="Electrochemical RAM">Electrochemical RAM</a> (ECRAM)</li></ul></div></div></td>
+</tr><tr><td class="sidebar-content">
+<div class="sidebar-list mw-collapsible mw-collapsed"><div class="sidebar-list-title" style="border-top:1px solid #aaa;text-align:center; background:#ddd;"><a href="/wiki/Reinforcement_learning" title="Reinforcement learning">Reinforcement learning</a></div><div class="sidebar-list-content mw-collapsible-content hlist">
+<ul><li><a href="/wiki/Q-learning" title="Q-learning">Q-learning</a></li>
+<li><a href="/wiki/State%E2%80%93action%E2%80%93reward%E2%80%93state%E2%80%93action" title="State–action–reward–state–action">SARSA</a></li>
+<li><a href="/wiki/Temporal_difference_learning" title="Temporal difference learning">Temporal difference (TD)</a></li></ul></div></div></td>
+</tr><tr><td class="sidebar-content">
+<div class="sidebar-list mw-collapsible mw-collapsed"><div class="sidebar-list-title" style="border-top:1px solid #aaa;text-align:center; background:#ddd;">Theory</div><div class="sidebar-list-content mw-collapsible-content hlist">
+<ul><li><a href="/wiki/Kernel_machines" class="mw-redirect" title="Kernel machines">Kernel machines</a></li>
+<li><a href="/wiki/Bias%E2%80%93variance_tradeoff" title="Bias–variance tradeoff">Bias–variance tradeoff</a></li>
+<li><a href="/wiki/Computational_learning_theory" title="Computational learning theory">Computational learning theory</a></li>
+<li><a href="/wiki/Empirical_risk_minimization" title="Empirical risk minimization">Empirical risk minimization</a></li>
+<li><a href="/wiki/Occam_learning" title="Occam learning">Occam learning</a></li>
+<li><a href="/wiki/Probably_approximately_correct_learning" title="Probably approximately correct learning">PAC learning</a></li>
+<li><a href="/wiki/Statistical_learning_theory" title="Statistical learning theory">Statistical learning</a></li>
+<li><a href="/wiki/Vapnik%E2%80%93Chervonenkis_theory" title="Vapnik–Chervonenkis theory">VC theory</a></li></ul></div></div></td>
+</tr><tr><td class="sidebar-content">
+<div class="sidebar-list mw-collapsible mw-collapsed"><div class="sidebar-list-title" style="border-top:1px solid #aaa;text-align:center; background:#ddd;">Machine-learning venues</div><div class="sidebar-list-content mw-collapsible-content hlist">
+<ul><li><a href="/wiki/Conference_on_Neural_Information_Processing_Systems" title="Conference on Neural Information Processing Systems">NeurIPS</a></li>
+<li><a href="/wiki/International_Conference_on_Machine_Learning" title="International Conference on Machine Learning">ICML</a></li>
+<li><a href="/wiki/Machine_Learning_(journal)" title="Machine Learning (journal)">ML</a></li>
+<li><a href="/wiki/Journal_of_Machine_Learning_Research" title="Journal of Machine Learning Research">JMLR</a></li>
+<li><a rel="nofollow" class="external text" href="https://arxiv.org/list/cs.LG/recent">ArXiv:cs.LG</a></li></ul></div></div></td>
+</tr><tr><td class="sidebar-content">
+<div class="sidebar-list mw-collapsible mw-collapsed"><div class="sidebar-list-title" style="border-top:1px solid #aaa;text-align:center; background:#ddd;">Related articles</div><div class="sidebar-list-content mw-collapsible-content hlist">
+<ul><li><a href="/wiki/Glossary_of_artificial_intelligence" title="Glossary of artificial intelligence">Glossary of artificial intelligence</a></li>
+<li><a href="/wiki/List_of_datasets_for_machine-learning_research" title="List of datasets for machine-learning research">List of datasets for machine-learning research</a></li>
+<li><a href="/wiki/Outline_of_machine_learning" title="Outline of machine learning">Outline of machine learning</a></li></ul></div></div></td>
+</tr><tr><td class="sidebar-navbar"><style data-mw-deduplicate="TemplateStyles:r1063604349">.mw-parser-output .navbar{display:inline;font-size:88%;font-weight:normal}.mw-parser-output .navbar-collapse{float:left;text-align:left}.mw-parser-output .navbar-boxtext{word-spacing:0}.mw-parser-output .navbar ul{display:inline-block;white-space:nowrap;line-height:inherit}.mw-parser-output .navbar-brackets::before{margin-right:-0.125em;content:"[ "}.mw-parser-output .navbar-brackets::after{margin-left:-0.125em;content:" ]"}.mw-parser-output .navbar li{word-spacing:-0.125em}.mw-parser-output .navbar a>span,.mw-parser-output .navbar a>abbr{text-decoration:inherit}.mw-parser-output .navbar-mini abbr{font-variant:small-caps;border-bottom:none;text-decoration:none;cursor:inherit}.mw-parser-output .navbar-ct-full{font-size:114%;margin:0 7em}.mw-parser-output .navbar-ct-mini{font-size:114%;margin:0 4em}</style><div class="navbar plainlinks hlist navbar-mini"><ul><li class="nv-view"><a href="/wiki/Template:Machine_learning" title="Template:Machine learning"><abbr title="View this template">v</abbr></a></li><li class="nv-talk"><a href="/wiki/Template_talk:Machine_learning" title="Template talk:Machine learning"><abbr title="Discuss this template">t</abbr></a></li><li class="nv-edit"><a class="external text" href="https://en.wikipedia.org/w/index.php?title=Template:Machine_learning&amp;action=edit"><abbr title="Edit this template">e</abbr></a></li></ul></div></td></tr></tbody></table>
+<p><b>Bootstrap aggregating</b>, also called <b>bagging</b> (from <b>b</b>ootstrap <b>agg</b>regat<b>ing</b>), is a <a href="/wiki/Ensemble_learning" title="Ensemble learning">machine learning ensemble</a> <a href="/wiki/Meta-algorithm" class="mw-redirect" title="Meta-algorithm">meta-algorithm</a> designed to improve the <a href="/wiki/Stability_(learning_theory)" title="Stability (learning theory)">stability</a> and accuracy of <a href="/wiki/Machine_learning" title="Machine learning">machine learning</a> algorithms used in <a href="/wiki/Statistical_classification" title="Statistical classification">statistical classification</a> and <a href="/wiki/Regression_analysis" title="Regression analysis">regression</a>. It also reduces <a href="/wiki/Variance" title="Variance">variance</a> and helps to avoid <a href="/wiki/Overfitting" title="Overfitting">overfitting</a>. Although it is usually applied to <a href="/wiki/Decision_tree_learning" title="Decision tree learning">decision tree</a> methods, it can be used with any type of method. Bagging is a special case of the <a href="/wiki/Ensemble_learning" title="Ensemble learning">model averaging</a> approach.
+</p>
+<div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2 id="mw-toc-heading">Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Description_of_the_technique"><span class="tocnumber">1</span> <span class="toctext">Description of the technique</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Process_of_the_algorithm"><span class="tocnumber">2</span> <span class="toctext">Process of the algorithm</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="#Key_Terms"><span class="tocnumber">2.1</span> <span class="toctext">Key Terms</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Creating_the_bootstrap_dataset"><span class="tocnumber">2.2</span> <span class="toctext">Creating the bootstrap dataset</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Creating_the_out-of-bag_dataset"><span class="tocnumber">2.3</span> <span class="toctext">Creating the out-of-bag dataset</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Importance"><span class="tocnumber">2.4</span> <span class="toctext">Importance</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#Creation_of_Decision_Trees"><span class="tocnumber">2.5</span> <span class="toctext">Creation of Decision Trees</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#Random_Forests"><span class="tocnumber">2.6</span> <span class="toctext">Random Forests</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="#Wisdom_of_Crowds"><span class="tocnumber">2.7</span> <span class="toctext">Wisdom of Crowds</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-10"><a href="#Improving_Random_Forests_and_Bagging"><span class="tocnumber">3</span> <span class="toctext">Improving Random Forests and Bagging</span></a></li>
+<li class="toclevel-1 tocsection-11"><a href="#Algorithm_(classification)"><span class="tocnumber">4</span> <span class="toctext">Algorithm (classification)</span></a></li>
+<li class="toclevel-1 tocsection-12"><a href="#Example:_ozone_data"><span class="tocnumber">5</span> <span class="toctext">Example: ozone data</span></a></li>
+<li class="toclevel-1 tocsection-13"><a href="#Advantages_and_disadvantages"><span class="tocnumber">6</span> <span class="toctext">Advantages and disadvantages</span></a></li>
+<li class="toclevel-1 tocsection-14"><a href="#History"><span class="tocnumber">7</span> <span class="toctext">History</span></a></li>
+<li class="toclevel-1 tocsection-15"><a href="#See_also"><span class="tocnumber">8</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-16"><a href="#References"><span class="tocnumber">9</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-17"><a href="#Further_reading"><span class="tocnumber">10</span> <span class="toctext">Further reading</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Description_of_the_technique">Description of the technique</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Bootstrap_aggregating&amp;action=edit&amp;section=1" title="Edit section: Description of the technique">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Given a standard <a href="/wiki/Training_set" class="mw-redirect" title="Training set">training set</a> <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle D}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>D</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle D}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f34a0c600395e5d4345287e21fb26efd386990e6" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.924ex; height:2.176ex;" alt="D"/></span> of size <i>n</i>, bagging generates <i>m</i> new training sets <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle D_{i}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>D</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle D_{i}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/9f07b53d3212e08ca316a536c8aac0bbefa79ee1" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:2.724ex; height:2.509ex;" alt="D_{i}"/></span>, each of size <i>n′</i>, by <a href="/wiki/Sampling_(statistics)" title="Sampling (statistics)">sampling</a> from <i>D</i> <a href="/wiki/Probability_distribution#With_finite_support" title="Probability distribution">uniformly</a> and <a href="/wiki/Sampling_(statistics)#Replacement_of_selected_units" title="Sampling (statistics)">with replacement</a>. By sampling with replacement, some observations may be repeated in each <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle D_{i}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>D</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle D_{i}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/9f07b53d3212e08ca316a536c8aac0bbefa79ee1" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:2.724ex; height:2.509ex;" alt="D_{i}"/></span>. If <i>n<a href="/wiki/Prime_(symbol)" title="Prime (symbol)">′</a></i>=<i>n</i>, then for large <i>n</i> the set <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle D_{i}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>D</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle D_{i}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/9f07b53d3212e08ca316a536c8aac0bbefa79ee1" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:2.724ex; height:2.509ex;" alt="D_{i}"/></span> is expected to have the fraction (1 - 1/<i><a href="/wiki/E_(mathematical_constant)" title="E (mathematical constant)">e</a></i>) (≈63.2%) of the unique examples of <i>D</i>, the rest being duplicates.<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">&#91;1&#93;</a></sup> This kind of sample is known as a <a href="/wiki/Bootstrap_(statistics)" class="mw-redirect" title="Bootstrap (statistics)">bootstrap</a> sample. Sampling with replacement ensures each bootstrap is independent from its peers, as it does not depend on previous chosen samples when sampling.   Then, <i>m</i> models  are fitted using the above <i>m</i> bootstrap samples and combined by averaging the output (for regression) or voting (for classification).
+</p>
+<div class="center"><div class="thumb tnone"><div class="thumbinner" style="width:442px;"><a href="/wiki/File:Ensemble_Bagging.svg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Ensemble_Bagging.svg/440px-Ensemble_Bagging.svg.png" decoding="async" width="440" height="248" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Ensemble_Bagging.svg/660px-Ensemble_Bagging.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Ensemble_Bagging.svg/880px-Ensemble_Bagging.svg.png 2x" data-file-width="512" data-file-height="289" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/File:Ensemble_Bagging.svg" class="internal" title="Enlarge"></a></div>An illustration for the concept of bootstrap aggregating</div></div></div></div>
+<p>Bagging leads to "improvements for unstable procedures",<sup id="cite_ref-:0_2-0" class="reference"><a href="#cite_note-:0-2">&#91;2&#93;</a></sup> which include, for example, <a href="/wiki/Artificial_neural_networks" class="mw-redirect" title="Artificial neural networks">artificial neural networks</a>, <a href="/wiki/Classification_and_regression_tree" class="mw-redirect" title="Classification and regression tree">classification and regression trees</a>, and subset selection in <a href="/wiki/Linear_regression" title="Linear regression">linear regression</a>.<sup id="cite_ref-:1_3-0" class="reference"><a href="#cite_note-:1-3">&#91;3&#93;</a></sup> Bagging was shown to improve preimage learning.<sup id="cite_ref-4" class="reference"><a href="#cite_note-4">&#91;4&#93;</a></sup><sup id="cite_ref-5" class="reference"><a href="#cite_note-5">&#91;5&#93;</a></sup> On the other hand, it can mildly degrade the performance of stable methods such as K-nearest neighbors.<sup id="cite_ref-:0_2-1" class="reference"><a href="#cite_note-:0-2">&#91;2&#93;</a></sup>
+</p>
+<h2><span class="mw-headline" id="Process_of_the_algorithm">Process of the algorithm</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Bootstrap_aggregating&amp;action=edit&amp;section=2" title="Edit section: Process of the algorithm">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<h3><span class="mw-headline" id="Key_Terms">Key Terms</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Bootstrap_aggregating&amp;action=edit&amp;section=3" title="Edit section: Key Terms">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>There are three types of datasets in bootstrap aggregating. These are the <b>original, bootstrap, and out-of-bag datasets.</b> Each section below will explain how each dataset is made except for the original dataset. The original dataset is whatever information is given.
+</p>
+<h3><span class="mw-headline" id="Creating_the_bootstrap_dataset">Creating the bootstrap dataset</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Bootstrap_aggregating&amp;action=edit&amp;section=4" title="Edit section: Creating the bootstrap dataset">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The bootstrap dataset is made by randomly picking objects from the original dataset. Also, <b>it must be the same size as the original dataset.</b> However, the difference is that the bootstrap dataset can have duplicate objects. Here is simple example to demonstrate how it works along with the illustration below:
+</p><p><a href="/wiki/File:Bootstrap_Example_2.png" class="image" title="Bootstrap Example"><img alt="Bootstrap Example" src="//upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Bootstrap_Example_2.png/672px-Bootstrap_Example_2.png" decoding="async" width="672" height="330" srcset="//upload.wikimedia.org/wikipedia/commons/f/fe/Bootstrap_Example_2.png 1.5x" data-file-width="975" data-file-height="479" /></a>
+</p><p>Suppose the <b>original dataset</b> is a <b>group of 12 people.</b> These guys are <b>Emily, Jessie, George, Constantine, Lexi, Theodore, John, James, Rachel, Anthony, Ellie, and Jamal.</b>
+</p><p>By randomly picking a group of names, let us say <b>our bootstrap dataset</b> had <b>James, Ellie, Constantine, Lexi, John, Constantine, Theodore, Constantine, Anthony, Lexi, Constantine, and Theodore.</b> In this case, the bootstrap sample contained four duplicates for Constantine, and two duplicates for Lexi, and Theodore.
+</p>
+<h3><span class="mw-headline" id="Creating_the_out-of-bag_dataset">Creating the out-of-bag dataset</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Bootstrap_aggregating&amp;action=edit&amp;section=5" title="Edit section: Creating the out-of-bag dataset">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The out-of-bag dataset <b>represents the remaining people who were not in the bootstrap dataset.</b> It can be calculated by taking the difference between the original and the bootstrap datasets. In this case, the remaining samples who were not selected are <b>Emily, Jessie, George, Rachel, and Jamal.</b> Keep in mind that since both datasets are sets, when taking the difference the duplicate names are ignored in the bootstrap dataset. The illustration below shows how the math is done:
+</p><p><a href="/wiki/File:Complete_Example_2.png" class="image" title="Complete Example"><img alt="Complete Example" src="//upload.wikimedia.org/wikipedia/commons/thumb/5/57/Complete_Example_2.png/840px-Complete_Example_2.png" decoding="async" width="840" height="335" srcset="//upload.wikimedia.org/wikipedia/commons/5/57/Complete_Example_2.png 1.5x" data-file-width="1083" data-file-height="432" /></a>
+</p>
+<h3><span class="mw-headline" id="Importance">Importance</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Bootstrap_aggregating&amp;action=edit&amp;section=6" title="Edit section: Importance">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Creating the bootstrap and out-of-bag datasets is crucial since it is used to test the accuracy of a random forest algorithm. For example, a model that produces 50 trees using the bootstrap/out-of-bag datasets will have a better accuracy than if it produced 10 trees. Since the algorithm generates multiple trees and therefore multiple datasets the chance that an object is left out of the bootstrap dataset is low. Using the 12 people from earlier let’s say that eight of them are tested negative for COVID-19 and the other four have it. By having the model produce a higher accuracy it will reduce the chance that false positives or false negatives will occur. This is crucial because an improved model will be more likely to contain the spread of COVID-19. The next few sections talk about how the random forest algorithm works in more detail.
+</p>
+<h3><span class="mw-headline" id="Creation_of_Decision_Trees">Creation of Decision Trees</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Bootstrap_aggregating&amp;action=edit&amp;section=7" title="Edit section: Creation of Decision Trees">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The next step of the algorithm involves the generation of <a href="/wiki/Decision_tree" title="Decision tree">decision trees</a> from the bootstrapped dataset. To achieve this, the process examines each gene/feature and determines for how many samples the feature's presence or absence yields a positive or negative result. This information is then used to compute a <a href="/wiki/Confusion_matrix" title="Confusion matrix">confusion matrix</a>, which lists the true positives, false positives, true negatives, and false negatives of the feature when used as a classifier. These features are then ranked according to various <a href="/wiki/Decision_tree_learning" title="Decision tree learning">classification metrics</a> based on their confusion matrices. Some common metrics include estimate of positive correctness (calculated by subtracting false positives from true positives), measure of "goodness", and <a href="/wiki/Information_gain_in_decision_trees" title="Information gain in decision trees">information gain</a>. These features are then used to partition the samples into two sets: those who possess the top feature, and those who do not.
+</p><p>The diagram below shows a decision tree of depth two being used to classify data. For example, a data point that exhibits Feature 1, but not Feature 2, will be given a "No". Another point that does not exhibit Feature 1, but does exhibit Feature 3, will be given a "Yes".
+</p><p><a href="/wiki/File:Decision_Tree_Depth_2.png" class="image" title="Decision Tree Depth 2"><img alt="Decision Tree Depth 2" src="//upload.wikimedia.org/wikipedia/commons/a/a8/Decision_Tree_Depth_2.png" decoding="async" width="881" height="401" data-file-width="881" data-file-height="401" /></a>
+</p><p>This process is repeated recursively for successive levels of the tree until the desired depth is reached. At the very bottom of the tree, samples that test positive for the final feature are generally classified as positive, while those that lack the feature are classified as negative.<sup id="cite_ref-:2_6-0" class="reference"><a href="#cite_note-:2-6">&#91;6&#93;</a></sup> These trees are then used as predictors to classify new data.
+</p>
+<h3><span class="mw-headline" id="Random_Forests">Random Forests</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Bootstrap_aggregating&amp;action=edit&amp;section=8" title="Edit section: Random Forests">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The next part of the algorithm involves introducing yet another element of variability amongst the bootstrapped trees. In addition to each tree only examining a bootstrapped set of samples, only a small but consistent number of unique features are considered when ranking them as classifiers. This means that each tree only knows about the data pertaining to a small constant number of features, and a variable number of samples that is less than or equal to that of the original dataset. Consequently, the trees are more likely to return a wider array of answers, derived from more diverse knowledge. This results in a <a href="/wiki/Random_forest" title="Random forest">random forest</a>, which possesses numerous benefits over a single decision tree generated without randomness. In a random forest, each tree "votes" on whether or not to classify a sample as positive based on its features. The sample is then classified based on majority vote. An example of this is given in the diagram below, where the four trees in a random forest vote on whether or not a patient with mutations A, B, F, and G has cancer. Since three out of four trees vote yes, the patient is then classified as cancer positive.
+</p>
+<div class="center"><div class="floatnone"><a href="/wiki/File:Random_Forest_Diagram_Extra_Wide.png" class="image"><img alt="Random Forest Diagram Extra Wide.png" src="//upload.wikimedia.org/wikipedia/commons/thumb/7/76/Random_Forest_Diagram_Extra_Wide.png/1035px-Random_Forest_Diagram_Extra_Wide.png" decoding="async" width="1035" height="461" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/7/76/Random_Forest_Diagram_Extra_Wide.png/1553px-Random_Forest_Diagram_Extra_Wide.png 1.5x, //upload.wikimedia.org/wikipedia/commons/7/76/Random_Forest_Diagram_Extra_Wide.png 2x" data-file-width="2021" data-file-height="901" /></a></div></div>
+<p>Because of their properties, random forests are considered one of the most accurate data mining algorithms, are less likely to <a href="/wiki/Overfitting" title="Overfitting">overfit</a> their data, and run quickly and efficiently even for large datasets.<sup id="cite_ref-7" class="reference"><a href="#cite_note-7">&#91;7&#93;</a></sup> They are primarily useful for classification as opposed to <a href="/wiki/Regression_analysis" title="Regression analysis">regression</a>, which attempts to draw observed connections between statistical variables in a dataset. This makes random forests particularly useful in such fields as banking, healthcare, the stock market, and <a href="/wiki/E-commerce" title="E-commerce">e-commerce</a> where it is important to be able to predict future results based on past data.<sup id="cite_ref-:4_8-0" class="reference"><a href="#cite_note-:4-8">&#91;8&#93;</a></sup> One of their applications would be as a useful tool for predicting cancer based on genetic factors, as seen in the above example.
+</p><p>There are several important factors to consider when designing a random forest. If the trees in the random forests are too deep, overfitting can still occur due to over-specificity. If the forest is too large, the algorithm may become less efficient due to an increased runtime. Random forests also do not generally perform well when given sparse data with little variability.<sup id="cite_ref-:4_8-1" class="reference"><a href="#cite_note-:4-8">&#91;8&#93;</a></sup> However, they still have numerous advantages over similar data classification algorithms such as <a href="/wiki/Neural_network" title="Neural network">neural networks</a>, as they are much easier to interpret and generally require less data for training.<sup id="cite_ref-9" class="reference"><a href="#cite_note-9">&#91;9&#93;</a></sup> As an integral component of random forests, bootstrap aggregating is very important to classification algorithms, and provides a critical element of variability that allows for increased accuracy when analyzing new data, as discussed below.
+</p>
+<h3><span class="mw-headline" id="Wisdom_of_Crowds">Wisdom of Crowds</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Bootstrap_aggregating&amp;action=edit&amp;section=9" title="Edit section: Wisdom of Crowds">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>One key component to generating an accurate decision tree and random forest is utilizing the wisdom of crowds. The <a href="/wiki/Wisdom_of_the_crowd" title="Wisdom of the crowd">wisdom of crowds</a> is the collective opinion of a group of individuals rather than that of a single expert.<sup id="cite_ref-10" class="reference"><a href="#cite_note-10">&#91;10&#93;</a></sup> Utilizing the wisdom of crowds allows for the random forest developed from multiple decision trees to be accurate. When building a random forest, each decision tree acts as a person in the crowd. One decision tree's outcome is not dependent upon the outcome of the next when generating a random forest, they are created independently with a randomized subset of data from a shared set of mutations and or samples. Each of the generated trees determines a vote and averaging these results will determine the result per the wisdom of the crowd.
+</p><p>In order to implement this method effectively, the crowd (decision trees) must include the prerequisite qualities as listed below in the table.
+</p>
+<table class="wikitable">
+<tbody><tr>
+<td colspan="3">
+<table class="wikitable">
+<caption>5  Qualities Necessary For A Wise Crowd<sup id="cite_ref-11" class="reference"><a href="#cite_note-11">&#91;11&#93;</a></sup>
+</caption>
+<tbody><tr>
+<th>Criteria
+</th>
+<th>General Description
+</th>
+<th>Random Forest Connection
+</th></tr>
+<tr>
+<td>Diversity of Opinion
+</td>
+<td>Each person should have private information even if it is just an eccentric interpretation of the known facts.
+</td>
+<td>The mutations and samples are the  known data that each tree in the forest shares. The votes developed by each  tree are "private" information until aggregation of all decision tree results happen. The randomized subsets of the shared data are also "private."
+</td></tr>
+<tr>
+<td>Independence
+</td>
+<td>People's opinions are not determined by the opinions of those around them.
+</td>
+<td>Each decision tree that is built  is independent with its own randomly selected subset of data. This randomized subset of each tree is not influenced by the subsets from the other trees.
+</td></tr>
+<tr>
+<td><a href="/wiki/Decentralized_decision-making" title="Decentralized decision-making">Decentralization</a>
+</td>
+<td>People are able to specialize and draw on their local knowledge.
+</td>
+<td>Instead of the decision trees forming their results based on the results of other decision trees, they draw upon the results from their specific data set to determine the accurate result.
+</td></tr>
+<tr>
+<td><a href="/wiki/Aggregate_data" title="Aggregate data">Aggregation</a>
+</td>
+<td>Some mechanism exists for turning private judgements into a collective decision.
+</td>
+<td>Each tree returns its own results which allow for the collective results from each tree to be compared for a final result.
+</td></tr>
+<tr>
+<td>Trust
+</td>
+<td>Each person trusts the collective group to be fair and valid.
+</td>
+<td>Trust in a random forest refers to the belief that each decision tree generated, and each individual result are accurate alone, and as a collective group the aggregation of all of their results is also accurate.
+</td></tr></tbody></table>
+<p>**This table defines the 5 necessary criteria for generating a random forest with a wise crowd.**
+</p>
+</td></tr></tbody></table>
+<p>The wisdom of crowds when the above criteria are met yields a wise judgement. However, there are situations where the wisdom of the crowd is not accurate and produces a failed judgement. Some examples of crowds that create a failed judgement: mobs, citizens experiencing a market crash, etc. Wisdom of crowds is not only useful for generating decision trees but can also be used by businesses for marketing purposes, for generating social data analysis, and more. Generating and studying the wisdom of crowds in a random forest is an accurate way to judge the overall determining result. Below is a simple example of how the wisdom of crowd functions in a given random forest generation.
+</p><p>In this example, the result that needs to be determined is whether or not it is summer. This a dataset of temperatures over the course of a month: [76, 82, 69, 67, 87, 70, 66, 42, 48, 51, 62, 65, 74, 88, 90, 59, 67, 49, 52, 67, 63, 64, 67, 77, 75, 65, 55, 91]. This is the dataset used to make the subset of 12 temperatures for each decision tree. In this example, there are 3 generated trees (3 randomized subsets of temperatures). The graphic below displays Decision Tree 1, its subset, along with explanations of how the tree makes its decision and comes to a result.
+</p><p><b>Decision Tree 1 Diagram with Labeled Decisions</b> 
+</p>
+<div class="center"><div class="thumb tnone"><div class="thumbinner" style="width:702px;"><a href="/wiki/File:Dectree.png" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Dectree.png/700px-Dectree.png" decoding="async" width="700" height="262" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Dectree.png/1050px-Dectree.png 1.5x, //upload.wikimedia.org/wikipedia/commons/e/e7/Dectree.png 2x" data-file-width="1226" data-file-height="458" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/File:Dectree.png" class="internal" title="Enlarge"></a></div>Wisdom of Crowds Example Including Decisions</div></div></div></div>
+<p>Temperature 77 in Tree 1 answers yes to the Decision 1, moving to the left to Decision 2. Then at Decision 2, it also answers yes which takes it to the left-most branch of the tree. This is the same process used to build the other two decision trees (people) with each temperature from the subset. The 3 generated trees serve as the crowd in this example. Tree 1 as shown above returned the vote "Yes" for whether or not it is summer based on the results with the majority of data from the subset evaluating the decision as yes. The results from this crowd are shown in the image below. Green represents the “Yes” temperatures of each subset and the pink represents the "No" temperatures based on each decision criterion.
+</p><p><b>Final Decision Tree Results:</b>
+</p>
+<div class="center"><div class="thumb tnone"><div class="thumbinner" style="width:702px;"><a href="/wiki/File:CompletedTree.png" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/d/df/CompletedTree.png/700px-CompletedTree.png" decoding="async" width="700" height="331" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/df/CompletedTree.png/1050px-CompletedTree.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/d/df/CompletedTree.png/1400px-CompletedTree.png 2x" data-file-width="1502" data-file-height="710" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/File:CompletedTree.png" class="internal" title="Enlarge"></a></div>Completed Random Forest - Wisdom of Crowds Example</div></div></div></div>
+<p>Looking at the generated votes from each tree(person) in the example above, in trees 1 and 2, it was voted to be summer. In tree 3, the decision was determined to be no. The aggregation of the results from each tree returns "Yes" for summer 2 out of 3 times, the majority of the time. The crowd in this example indicates that the overall result is yes. This means that the random forest generated a final result that it is in fact summer.
+</p><p>This simple example displays how the aggregation of each decision tree’s results leads to one final decision based on the wisdom of the crowd. The way each decision tree is built follows the criteria set in the table.
+</p><p>Utilizing the wisdom of crowds creates a diverse set of data. This is what allows random forests to be highly accurate. Without following the criteria explained in this section, generated random forests could not be trusted to generate accurate decisions of data of any kind. This is one of the most important aspects to consider and improve when creating and evaluating any data using decision trees and a random forest. The next section will cover ways to improve random forests with characteristics in addition to the wisdom of crowds.
+</p>
+<h2><span class="mw-headline" id="Improving_Random_Forests_and_Bagging">Improving Random Forests and Bagging</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Bootstrap_aggregating&amp;action=edit&amp;section=10" title="Edit section: Improving Random Forests and Bagging">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>While the techniques described above to utilize <a href="/wiki/Random_forest" title="Random forest">random forests</a>, <a href="/wiki/Bootstrapping" title="Bootstrapping">bagging</a> (otherwise known as bootstrapping), and <a href="/wiki/The_Wisdom_of_Crowds" title="The Wisdom of Crowds">wisdom of crowds</a> are incredibly useful on their own, there are certain methods that can be used in order to improve their execution and voting time, their prediction accuracy, and their overall performance. The following are key steps in creating an efficient random forest:
+</p>
+<ol><li>Specify the maximum depth of trees: Instead of allowing your random forest to continue until all nodes are pure, it is better to cut it off at a certain point in order to further decrease chances of overfitting.</li>
+<li>Prune the dataset: Using an extremely large dataset may prove to create results that is less indicative of the data provided than a smaller set that more accurately represents what is being focused on.
+<ul><li>Continue pruning the data at each node split rather than just in the original bagging process.</li></ul></li>
+<li>Decide on accuracy or speed: Depending on the desired results, increasing or decreasing the number of trees within the forest can help. Increasing the number of trees generally provides more accurate results while decreasing the number of trees will provide quicker results.</li></ol>
+<table class="wikitable">
+<caption>Pros and Cons of Random Forests and Bagging
+</caption>
+<tbody><tr>
+<th>Pros
+</th>
+<th>Cons
+</th></tr>
+<tr>
+<td>There are overall less requirements involved for normalization and scaling, making the use of random forests more convenient.<sup id="cite_ref-12" class="reference"><a href="#cite_note-12">&#91;12&#93;</a></sup>
+</td>
+<td>The algorithm may change significantly if there is a slight change to the data being bootstrapped and used within the forests.<sup id="cite_ref-13" class="reference"><a href="#cite_note-13">&#91;13&#93;</a></sup> In other words, random forests are incredibly dependent on their data sets, changing these can drastically change the individual trees' structures.
+</td></tr>
+<tr>
+<td>Easy data preparation. Data is prepared by creating a bootstrap set and a certain number of decision trees to build a random forest that also utilizes feature selection, as mentioned in the <u>Random Forests</u> section.
+</td>
+<td>Random Forests are more complex to implement than lone decision trees or other algorithms. This is because they take extra steps for bagging, as well as the need for recursion in order to produce an entire forest, which complicates implementation. Because of this, it requires much more computational power and computational resources.
+</td></tr>
+<tr>
+<td>Consisting of multiple <a href="/wiki/Decision_tree" title="Decision tree">decision trees</a>, forests are able to more accurately make predictions. Making predictions based on the <a href="/wiki/The_Wisdom_of_Crowds" title="The Wisdom of Crowds">wisdom of crowds</a> is much more accurate. For example, having one person vote for the president less accurately depicts the truth of opinion than having all people vote.
+</td>
+<td>Requires much more time to train the data compared to decision trees. Having a large forest can quickly begin to decrease the speed in which one's program operates because it has to traverse much more data even though each tree is using a smaller set of samples and features.
+</td></tr>
+<tr>
+<td>Works well with non-linear data. Non-linear data is data that does not involve a single level, meaning it cannot be traversed in one go. Working well with non-linear data is a huge advantage because other data mining techniques such as single decision trees do not handle this as well.
+</td>
+<td>Requires much more time to make decisions and vote within the random forest classifier. The random forest classifier need to vote using wisdom of crowds, which takes much more time than classifying within a single decision tree.
+</td></tr>
+<tr>
+<td>There is a lower risk of <a href="/wiki/Overfitting" title="Overfitting">overfitting</a> and runs efficiently on even large data sets.<sup id="cite_ref-14" class="reference"><a href="#cite_note-14">&#91;14&#93;</a></sup> This is the result of the random forest's use of bagging in conjunction with random feature selection.
+</td>
+<td>Does not predict beyond the range of the training data. This is a con because while bagging is often effective, all of the data is not being considered, therefore it cannot predict an entire dataset.
+</td></tr>
+<tr>
+<td>The random forest classifier operates with a high accuracy and speed.<sup id="cite_ref-15" class="reference"><a href="#cite_note-15">&#91;15&#93;</a></sup> Random forests are much faster than decision trees because of using a smaller data set.
+</td>
+<td>To recreate specific results you need to keep track of the exact random seed used to generate the bootstrap sets. This may be important when collecting data for research or within a data mining class. Using random seeds is essential to the random forests, but can make it hard to support your statements based on forests if there is a failure to record the seeds.
+</td></tr>
+<tr>
+<td>Deals with <a href="/wiki/Missing_data" title="Missing data">missing data</a> and datasets with many outliers well. They deal with this by using <a href="/wiki/Binning_method" class="mw-redirect" title="Binning method">binning</a>, or by grouping values together to avoid values that are terribly far apart.
+</td>
+<td>
+</td></tr></tbody></table>
+<h2><span id="Algorithm_.28classification.29"></span><span class="mw-headline" id="Algorithm_(classification)">Algorithm (classification)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Bootstrap_aggregating&amp;action=edit&amp;section=11" title="Edit section: Algorithm (classification)">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="thumb tright"><div class="thumbinner" style="width:222px;"><a href="/wiki/File:Bagging_for_Classification_with_descripitons.png" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Bagging_for_Classification_with_descripitons.png/220px-Bagging_for_Classification_with_descripitons.png" decoding="async" width="220" height="140" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Bagging_for_Classification_with_descripitons.png/330px-Bagging_for_Classification_with_descripitons.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Bagging_for_Classification_with_descripitons.png/440px-Bagging_for_Classification_with_descripitons.png 2x" data-file-width="984" data-file-height="625" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/File:Bagging_for_Classification_with_descripitons.png" class="internal" title="Enlarge"></a></div>Flow chart of the bagging algorithm when used for classification</div></div></div>
+<p>For classification, use a <a href="/wiki/Training_set" class="mw-redirect" title="Training set">training set</a> <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle D}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>D</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle D}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f34a0c600395e5d4345287e21fb26efd386990e6" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.924ex; height:2.176ex;" alt="D"/></span>, Inducer <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle I}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>I</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle I}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/535ea7fc4134a31cbe2251d9d3511374bc41be9f" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.172ex; height:2.176ex;" alt="I"/></span> and the number of bootstrap samples <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle m}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>m</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle m}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/0a07d98bb302f3856cbabc47b2b9016692e3f7bc" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:2.04ex; height:1.676ex;" alt="m"/></span> as input. Generate a classifier <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle C^{*}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>C</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo>&#x2217;<!-- ∗ --></mo>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle C^{*}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/9fda87fa9eddc6a89e202bdebaa9a5e1a55dec9d" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:2.852ex; height:2.343ex;" alt="C^*"/></span> as output<sup id="cite_ref-Bauer_16-0" class="reference"><a href="#cite_note-Bauer-16">&#91;16&#93;</a></sup>
+</p>
+<ol><li>Create <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle m}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>m</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle m}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/0a07d98bb302f3856cbabc47b2b9016692e3f7bc" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:2.04ex; height:1.676ex;" alt="m"/></span>  new training sets  <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle D_{i}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>D</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle D_{i}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/9f07b53d3212e08ca316a536c8aac0bbefa79ee1" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:2.724ex; height:2.509ex;" alt="D_{i}"/></span>, from <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle D}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>D</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle D}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f34a0c600395e5d4345287e21fb26efd386990e6" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.924ex; height:2.176ex;" alt="D"/></span> with replacement</li>
+<li>Classifier <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle C_{i}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>C</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle C_{i}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/cc49dc02c0ec8c86b67e7d10518ac791eda0bf22" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:2.461ex; height:2.509ex;" alt="C_{i}"/></span> is built from each set <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle D_{i}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>D</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle D_{i}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/9f07b53d3212e08ca316a536c8aac0bbefa79ee1" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:2.724ex; height:2.509ex;" alt="D_{i}"/></span> using <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle I}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>I</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle I}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/535ea7fc4134a31cbe2251d9d3511374bc41be9f" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.172ex; height:2.176ex;" alt="I"/></span> to determine the classification of set <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle D_{i}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>D</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle D_{i}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/9f07b53d3212e08ca316a536c8aac0bbefa79ee1" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:2.724ex; height:2.509ex;" alt="D_{i}"/></span></li>
+<li>Finally classifier <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle C^{*}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>C</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo>&#x2217;<!-- ∗ --></mo>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle C^{*}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/9fda87fa9eddc6a89e202bdebaa9a5e1a55dec9d" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:2.852ex; height:2.343ex;" alt="C^*"/></span> is generated by using the previously created set of classifiers <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle C_{i}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>C</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle C_{i}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/cc49dc02c0ec8c86b67e7d10518ac791eda0bf22" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:2.461ex; height:2.509ex;" alt="C_{i}"/></span> on the original data set <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle D}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>D</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle D}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f34a0c600395e5d4345287e21fb26efd386990e6" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.924ex; height:2.176ex;" alt="D"/></span>, the classification predicted most often by the sub-classifiers <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle C_{i}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>C</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle C_{i}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/cc49dc02c0ec8c86b67e7d10518ac791eda0bf22" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:2.461ex; height:2.509ex;" alt="C_{i}"/></span> is the final classification</li></ol>
+<pre>for i = 1 to m {
+    D' = bootstrap sample from D    (sample with replacement)
+    Ci = I(D')
+}
+C*(x) = argmax #{i:Ci(x)=y}         (most often predicted label y)
+         y∈Y   
+</pre>
+<h2><span class="mw-headline" id="Example:_ozone_data">Example: ozone data</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Bootstrap_aggregating&amp;action=edit&amp;section=12" title="Edit section: Example: ozone data">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>To illustrate the basic principles of bagging, below is an analysis on the relationship between <a href="/wiki/Ozone" title="Ozone">ozone</a> and temperature (data from <a href="/wiki/Peter_Rousseeuw" title="Peter Rousseeuw">Rousseeuw</a> and Leroy<sup class="noprint Inline-Template" style="margin-left:0.1em; white-space:nowrap;">&#91;<i><a href="/wiki/Wikipedia:Please_clarify" title="Wikipedia:Please clarify"><span title="The text near this tag may need clarification or removal of jargon. (May 2021)">clarification needed</span></a></i>&#93;</sup> (1986), analysis done in <a href="/wiki/R_(programming_language)" title="R (programming language)">R</a>).
+</p><p>The relationship between temperature and ozone appears to be nonlinear in this data set, based on the scatter plot. To mathematically describe this relationship, <a href="/wiki/Local_regression" title="Local regression">LOESS</a> smoothers (with bandwidth 0.5) are used. Rather than building a single smoother for the complete data set, 100 <a href="/wiki/Bootstrap_(statistics)" class="mw-redirect" title="Bootstrap (statistics)">bootstrap</a> samples were drawn. Each sample is composed of a random subset of the original data and maintains a semblance of the master set’s distribution and variability. For each bootstrap sample, a LOESS smoother was fit. Predictions from these 100 smoothers were then made across the range of the data. The black lines represent these initial predictions. The lines lack agreement in their predictions and tend to overfit their data points: evident by the wobbly flow of the lines.
+</p>
+<div class="center"><div class="floatnone"><a href="/wiki/File:Ozone.png" class="image"><img alt="Ozone.png" src="//upload.wikimedia.org/wikipedia/commons/d/de/Ozone.png" decoding="async" width="431" height="325" data-file-width="431" data-file-height="325" /></a></div></div>
+<p>By taking the average of 100 smoothers, each corresponding to a subset of the original data set, we arrive at one bagged predictor (red line). The red line's flow is stable and does not overly conform to any data point(s).
+</p>
+<h2><span class="mw-headline" id="Advantages_and_disadvantages">Advantages and disadvantages</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Bootstrap_aggregating&amp;action=edit&amp;section=13" title="Edit section: Advantages and disadvantages">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Advantages:
+</p>
+<ul><li>Many weak learners aggregated typically outperform a single learner over the entire set, and has less overfit</li>
+<li>Removes variance in high-variance <a href="/wiki/Bias_(statistics)" title="Bias (statistics)">low-bias</a> weak learner <sup id="cite_ref-:3_17-0" class="reference"><a href="#cite_note-:3-17">&#91;17&#93;</a></sup></li>
+<li>Can be performed in <a href="/wiki/Parallel_Computing" class="mw-redirect" title="Parallel Computing">parallel</a>, as each separate bootstrap can be processed on its own before combination<sup id="cite_ref-18" class="reference"><a href="#cite_note-18">&#91;18&#93;</a></sup></li></ul>
+<p>Disadvantages:
+</p>
+<ul><li>For weak learner with high bias, bagging will also carry high bias into its aggregate<sup id="cite_ref-:3_17-1" class="reference"><a href="#cite_note-:3-17">&#91;17&#93;</a></sup></li>
+<li>Loss of interpretability of a model.</li>
+<li>Can be computationally expensive depending on the data set</li></ul>
+<h2><span class="mw-headline" id="History">History</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Bootstrap_aggregating&amp;action=edit&amp;section=14" title="Edit section: History">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The concept of bootstrap aggregating is derived from the concept of bootstrapping which was developed by Bradley Efron.<sup id="cite_ref-:8_19-0" class="reference"><a href="#cite_note-:8-19">&#91;19&#93;</a></sup>
+Bootstrap aggregating was proposed by <a href="/wiki/Leo_Breiman" title="Leo Breiman">Leo Breiman</a> who also coined the abbreviated term "bagging" (<b>b</b>ootstrap <b>agg</b>regat<b>ing</b>). Breiman developed the concept of bagging in 1994 to improve classification by combining classifications of randomly generated training sets. He argued, "If perturbing the learning set can cause significant changes in the predictor constructed, then bagging can improve accuracy".<sup id="cite_ref-:1_3-1" class="reference"><a href="#cite_note-:1-3">&#91;3&#93;</a></sup>
+</p>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Bootstrap_aggregating&amp;action=edit&amp;section=15" title="Edit section: See also">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul><li><a href="/wiki/Boosting_(meta-algorithm)" class="mw-redirect" title="Boosting (meta-algorithm)">Boosting (meta-algorithm)</a></li>
+<li><a href="/wiki/Bootstrapping_(statistics)" title="Bootstrapping (statistics)">Bootstrapping (statistics)</a></li>
+<li><a href="/wiki/Cross-validation_(statistics)" title="Cross-validation (statistics)">Cross-validation (statistics)</a></li>
+<li><a href="/wiki/Out-of-bag_error" title="Out-of-bag error">Out-of-bag error</a></li>
+<li><a href="/wiki/Random_forest" title="Random forest">Random forest</a></li>
+<li><a href="/wiki/Random_subspace_method" title="Random subspace method">Random subspace method</a> (attribute bagging)</li>
+<li><a href="/wiki/Resampled_efficient_frontier" title="Resampled efficient frontier">Resampled efficient frontier</a></li>
+<li><a href="/wiki/Predictive_analytics" title="Predictive analytics">Predictive analysis: Classification and regression trees</a></li></ul>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Bootstrap_aggregating&amp;action=edit&amp;section=16" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<style data-mw-deduplicate="TemplateStyles:r1011085734">.mw-parser-output .reflist{font-size:90%;margin-bottom:0.5em;list-style-type:decimal}.mw-parser-output .reflist .references{font-size:100%;margin-bottom:0;list-style-type:inherit}.mw-parser-output .reflist-columns-2{column-width:30em}.mw-parser-output .reflist-columns-3{column-width:25em}.mw-parser-output .reflist-columns{margin-top:0.3em}.mw-parser-output .reflist-columns ol{margin-top:0}.mw-parser-output .reflist-columns li{page-break-inside:avoid;break-inside:avoid-column}.mw-parser-output .reflist-upper-alpha{list-style-type:upper-alpha}.mw-parser-output .reflist-upper-roman{list-style-type:upper-roman}.mw-parser-output .reflist-lower-alpha{list-style-type:lower-alpha}.mw-parser-output .reflist-lower-greek{list-style-type:lower-greek}.mw-parser-output .reflist-lower-roman{list-style-type:lower-roman}</style><div class="reflist">
+<div class="mw-references-wrap mw-references-columns"><ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-1">^</a></b></span> <span class="reference-text">Aslam, Javed A.; Popa, Raluca A.; and Rivest, Ronald L. (2007); <a rel="nofollow" class="external text" href="http://people.csail.mit.edu/rivest/pubs/APR07.pdf"><i>On Estimating the Size and Confidence of a Statistical Audit</i></a>, Proceedings of the Electronic Voting Technology Workshop (EVT '07), Boston, MA, August 6, 2007. More generally, when drawing with replacement <i>n′</i> values out of a set of <i>n</i> (different and equally likely), the expected number of unique draws is <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle n(1-e^{-n'/n})}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>n</mi>
+        <mo stretchy="false">(</mo>
+        <mn>1</mn>
+        <mo>&#x2212;<!-- − --></mo>
+        <msup>
+          <mi>e</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo>&#x2212;<!-- − --></mo>
+            <msup>
+              <mi>n</mi>
+              <mo>&#x2032;</mo>
+            </msup>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mo>/</mo>
+            </mrow>
+            <mi>n</mi>
+          </mrow>
+        </msup>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle n(1-e^{-n'/n})}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/26da6de761b567e2f32908ee83e6be3cb6d97222" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:13.127ex; height:3.343ex;" alt="n(1 - e^{-n&#039;/n})"/></span>.</span>
+</li>
+<li id="cite_note-:0-2"><span class="mw-cite-backlink">^ <a href="#cite_ref-:0_2-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-:0_2-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><style data-mw-deduplicate="TemplateStyles:r1067248974">.mw-parser-output cite.citation{font-style:inherit;word-wrap:break-word}.mw-parser-output .citation q{quotes:"\"""\"""'""'"}.mw-parser-output .citation:target{background-color:rgba(0,127,255,0.133)}.mw-parser-output .id-lock-free a,.mw-parser-output .citation .cs1-lock-free a{background:linear-gradient(transparent,transparent),url("//upload.wikimedia.org/wikipedia/commons/6/65/Lock-green.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-limited a,.mw-parser-output .id-lock-registration a,.mw-parser-output .citation .cs1-lock-limited a,.mw-parser-output .citation .cs1-lock-registration a{background:linear-gradient(transparent,transparent),url("//upload.wikimedia.org/wikipedia/commons/d/d6/Lock-gray-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-subscription a,.mw-parser-output .citation .cs1-lock-subscription a{background:linear-gradient(transparent,transparent),url("//upload.wikimedia.org/wikipedia/commons/a/aa/Lock-red-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .cs1-ws-icon a{background:linear-gradient(transparent,transparent),url("//upload.wikimedia.org/wikipedia/commons/4/4c/Wikisource-logo.svg")right 0.1em center/12px no-repeat}.mw-parser-output .cs1-code{color:inherit;background:inherit;border:none;padding:inherit}.mw-parser-output .cs1-hidden-error{display:none;color:#d33}.mw-parser-output .cs1-visible-error{color:#d33}.mw-parser-output .cs1-maint{display:none;color:#3a3;margin-left:0.3em}.mw-parser-output .cs1-format{font-size:95%}.mw-parser-output .cs1-kern-left{padding-left:0.2em}.mw-parser-output .cs1-kern-right{padding-right:0.2em}.mw-parser-output .citation .mw-selflink{font-weight:inherit}</style><cite id="CITEREFBreiman1996" class="citation journal cs1"><a href="/wiki/Leo_Breiman" title="Leo Breiman">Breiman, Leo</a> (1996). "Bagging predictors". <i><a href="/wiki/Machine_Learning_(journal)" title="Machine Learning (journal)">Machine Learning</a></i>. <b>24</b> (2): 123–140. <a href="/wiki/CiteSeerX_(identifier)" class="mw-redirect" title="CiteSeerX (identifier)">CiteSeerX</a>&#160;<span class="cs1-lock-free" title="Freely accessible"><a rel="nofollow" class="external text" href="//citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.32.9399">10.1.1.32.9399</a></span>. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1007%2FBF00058655">10.1007/BF00058655</a>. <a href="/wiki/S2CID_(identifier)" class="mw-redirect" title="S2CID (identifier)">S2CID</a>&#160;<a rel="nofollow" class="external text" href="https://api.semanticscholar.org/CorpusID:47328136">47328136</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Machine+Learning&amp;rft.atitle=Bagging+predictors&amp;rft.volume=24&amp;rft.issue=2&amp;rft.pages=123-140&amp;rft.date=1996&amp;rft_id=%2F%2Fciteseerx.ist.psu.edu%2Fviewdoc%2Fsummary%3Fdoi%3D10.1.1.32.9399%23id-name%3DCiteSeerX&amp;rft_id=https%3A%2F%2Fapi.semanticscholar.org%2FCorpusID%3A47328136%23id-name%3DS2CID&amp;rft_id=info%3Adoi%2F10.1007%2FBF00058655&amp;rft.aulast=Breiman&amp;rft.aufirst=Leo&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ABootstrap+aggregating" class="Z3988"></span></span>
+</li>
+<li id="cite_note-:1-3"><span class="mw-cite-backlink">^ <a href="#cite_ref-:1_3-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-:1_3-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><cite id="CITEREFBreiman1994" class="citation journal cs1">Breiman, Leo (September 1994). <a rel="nofollow" class="external text" href="https://www.stat.berkeley.edu/~breiman/bagging.pdf">"Bagging Predictors"</a> <span class="cs1-format">(PDF)</span>. <i>Technical Report</i>. Department of Statistics, University of California Berkeley (421)<span class="reference-accessdate">. Retrieved <span class="nowrap">2019-07-28</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Technical+Report&amp;rft.atitle=Bagging+Predictors&amp;rft.issue=421&amp;rft.date=1994-09&amp;rft.aulast=Breiman&amp;rft.aufirst=Leo&amp;rft_id=https%3A%2F%2Fwww.stat.berkeley.edu%2F~breiman%2Fbagging.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ABootstrap+aggregating" class="Z3988"></span></span>
+</li>
+<li id="cite_note-4"><span class="mw-cite-backlink"><b><a href="#cite_ref-4">^</a></b></span> <span class="reference-text">Sahu, A., Runger, G., Apley, D., <a rel="nofollow" class="external text" href="https://www.researchgate.net/profile/Anshuman_Sahu/publication/254023773_Image_denoising_with_a_multi-phase_kernel_principal_component_approach_and_an_ensemble_version/links/5427b5e40cf2e4ce940a4410/Image-denoising-with-a-multi-phase-kernel-principal-component-approach-and-an-ensemble-version.pdf">Image denoising with a multi-phase kernel principal component approach and an ensemble version</a>, IEEE Applied Imagery Pattern Recognition Workshop, pp.1-7, 2011.</span>
+</li>
+<li id="cite_note-5"><span class="mw-cite-backlink"><b><a href="#cite_ref-5">^</a></b></span> <span class="reference-text">Shinde, Amit, Anshuman Sahu, Daniel Apley, and George Runger. "<a rel="nofollow" class="external text" href="https://www.researchgate.net/profile/Anshuman_Sahu/publication/263388433_Preimages_for_variation_patterns_from_kernel_PCA_and_bagging/links/5427b3930cf26120b7b35ebd/Preimages-for-variation-patterns-from-kernel-PCA-and-bagging.pdf">Preimages for Variation Patterns from Kernel PCA and Bagging</a>." IIE Transactions, Vol.46, Iss.5, 2014</span>
+</li>
+<li id="cite_note-:2-6"><span class="mw-cite-backlink"><b><a href="#cite_ref-:2_6-0">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><cite class="citation cs2"><a class="external text" href="https://en.wikipedia.org/w/index.php?title=Decision_tree_learning&amp;oldid=1057681416">"Decision tree learning"</a>, <i>Wikipedia</i>, 2021-11-29<span class="reference-accessdate">, retrieved <span class="nowrap">2021-11-29</span></span></cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Wikipedia&amp;rft.atitle=Decision+tree+learning&amp;rft.date=2021-11-29&amp;rft_id=https%3A%2F%2Fen.wikipedia.org%2Fw%2Findex.php%3Ftitle%3DDecision_tree_learning%26oldid%3D1057681416&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ABootstrap+aggregating" class="Z3988"></span></span>
+</li>
+<li id="cite_note-7"><span class="mw-cite-backlink"><b><a href="#cite_ref-7">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><cite class="citation web cs1"><a rel="nofollow" class="external text" href="https://www.stat.berkeley.edu/~breiman/RandomForests/cc_home.htm">"Random forests - classification description"</a>. <i>www.stat.berkeley.edu</i><span class="reference-accessdate">. Retrieved <span class="nowrap">2021-12-09</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=www.stat.berkeley.edu&amp;rft.atitle=Random+forests+-+classification+description&amp;rft_id=https%3A%2F%2Fwww.stat.berkeley.edu%2F~breiman%2FRandomForests%2Fcc_home.htm&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ABootstrap+aggregating" class="Z3988"></span></span>
+</li>
+<li id="cite_note-:4-8"><span class="mw-cite-backlink">^ <a href="#cite_ref-:4_8-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-:4_8-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><cite class="citation web cs1"><a rel="nofollow" class="external text" href="https://www.section.io/engineering-education/introduction-to-random-forest-in-machine-learning/">"Introduction to Random Forest in Machine Learning"</a>. <i>Engineering Education (EngEd) Program | Section</i><span class="reference-accessdate">. Retrieved <span class="nowrap">2021-12-09</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=Engineering+Education+%28EngEd%29+Program+%7C+Section&amp;rft.atitle=Introduction+to+Random+Forest+in+Machine+Learning&amp;rft_id=https%3A%2F%2Fwww.section.io%2Fengineering-education%2Fintroduction-to-random-forest-in-machine-learning%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ABootstrap+aggregating" class="Z3988"></span></span>
+</li>
+<li id="cite_note-9"><span class="mw-cite-backlink"><b><a href="#cite_ref-9">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><cite id="CITEREFMontantes2020" class="citation web cs1">Montantes, James (2020-02-04). <a rel="nofollow" class="external text" href="https://towardsdatascience.com/3-reasons-to-use-random-forest-over-a-neural-network-comparing-machine-learning-versus-deep-f9d65a154d89">"3 Reasons to Use Random Forest Over a Neural Network–Comparing Machine Learning versus Deep…"</a>. <i>Medium</i><span class="reference-accessdate">. Retrieved <span class="nowrap">2021-12-09</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=Medium&amp;rft.atitle=3+Reasons+to+Use+Random+Forest+Over+a+Neural+Network%E2%80%93Comparing+Machine+Learning+versus+Deep%E2%80%A6&amp;rft.date=2020-02-04&amp;rft.aulast=Montantes&amp;rft.aufirst=James&amp;rft_id=https%3A%2F%2Ftowardsdatascience.com%2F3-reasons-to-use-random-forest-over-a-neural-network-comparing-machine-learning-versus-deep-f9d65a154d89&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ABootstrap+aggregating" class="Z3988"></span></span>
+</li>
+<li id="cite_note-10"><span class="mw-cite-backlink"><b><a href="#cite_ref-10">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><cite class="citation cs2"><a class="external text" href="https://en.wikipedia.org/w/index.php?title=Wisdom_of_the_crowd&amp;oldid=1059575053">"Wisdom of the crowd"</a>, <i>Wikipedia</i>, 2021-12-10<span class="reference-accessdate">, retrieved <span class="nowrap">2021-12-10</span></span></cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Wikipedia&amp;rft.atitle=Wisdom+of+the+crowd&amp;rft.date=2021-12-10&amp;rft_id=https%3A%2F%2Fen.wikipedia.org%2Fw%2Findex.php%3Ftitle%3DWisdom_of_the_crowd%26oldid%3D1059575053&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ABootstrap+aggregating" class="Z3988"></span></span>
+</li>
+<li id="cite_note-11"><span class="mw-cite-backlink"><b><a href="#cite_ref-11">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><cite class="citation cs2"><a class="external text" href="https://en.wikipedia.org/w/index.php?title=The_Wisdom_of_Crowds&amp;oldid=1049127525">"The Wisdom of Crowds"</a>, <i>Wikipedia</i>, 2021-10-10<span class="reference-accessdate">, retrieved <span class="nowrap">2021-12-10</span></span></cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Wikipedia&amp;rft.atitle=The+Wisdom+of+Crowds&amp;rft.date=2021-10-10&amp;rft_id=https%3A%2F%2Fen.wikipedia.org%2Fw%2Findex.php%3Ftitle%3DThe_Wisdom_of_Crowds%26oldid%3D1049127525&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ABootstrap+aggregating" class="Z3988"></span></span>
+</li>
+<li id="cite_note-12"><span class="mw-cite-backlink"><b><a href="#cite_ref-12">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><cite class="citation web cs1"><a rel="nofollow" class="external text" href="https://holypython.com/rf/random-forest-pros-cons/">"Random Forest Pros &amp; Cons"</a>. <i>HolyPython.com</i><span class="reference-accessdate">. Retrieved <span class="nowrap">2021-11-26</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=HolyPython.com&amp;rft.atitle=Random+Forest+Pros+%26+Cons&amp;rft_id=https%3A%2F%2Fholypython.com%2Frf%2Frandom-forest-pros-cons%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ABootstrap+aggregating" class="Z3988"></span></span>
+</li>
+<li id="cite_note-13"><span class="mw-cite-backlink"><b><a href="#cite_ref-13">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><cite id="CITEREFK2020" class="citation web cs1">K, Dhiraj (2020-11-22). <a rel="nofollow" class="external text" href="https://dhirajkumarblog.medium.com/random-forest-algorithm-advantages-and-disadvantages-1ed22650c84f">"Random Forest Algorithm Advantages and Disadvantages"</a>. <i>Medium</i><span class="reference-accessdate">. Retrieved <span class="nowrap">2021-11-26</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=Medium&amp;rft.atitle=Random+Forest+Algorithm+Advantages+and+Disadvantages&amp;rft.date=2020-11-22&amp;rft.aulast=K&amp;rft.aufirst=Dhiraj&amp;rft_id=https%3A%2F%2Fdhirajkumarblog.medium.com%2Frandom-forest-algorithm-advantages-and-disadvantages-1ed22650c84f&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ABootstrap+aggregating" class="Z3988"></span></span>
+</li>
+<li id="cite_note-14"><span class="mw-cite-backlink"><b><a href="#cite_ref-14">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><cite id="CITEREFTeam" class="citation web cs1">Team, Towards AI. <a rel="nofollow" class="external text" href="https://towardsai.net/p/machine-learning/why-choose-random-forest-and-not-decision-trees,%20https://towardsai.net/p/machine-learning/why-choose-random-forest-and-not-decision-trees">"Why Choose Random Forest and Not Decision Trees – Towards AI — The World's Leading AI and Technology Publication"</a><span class="reference-accessdate">. Retrieved <span class="nowrap">2021-11-26</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Why+Choose+Random+Forest+and+Not+Decision+Trees+%E2%80%93+Towards+AI+%E2%80%94+The+World%E2%80%99s+Leading+AI+and+Technology+Publication&amp;rft.aulast=Team&amp;rft.aufirst=Towards+AI&amp;rft_id=https%3A%2F%2Ftowardsai.net%2Fp%2Fmachine-learning%2Fwhy-choose-random-forest-and-not-decision-trees%2C%2520https%3A%2F%2Ftowardsai.net%2Fp%2Fmachine-learning%2Fwhy-choose-random-forest-and-not-decision-trees&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ABootstrap+aggregating" class="Z3988"></span></span>
+</li>
+<li id="cite_note-15"><span class="mw-cite-backlink"><b><a href="#cite_ref-15">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><cite class="citation web cs1"><a rel="nofollow" class="external text" href="https://corporatefinanceinstitute.com/resources/knowledge/other/random-forest/">"Random Forest"</a>. <i>Corporate Finance Institute</i><span class="reference-accessdate">. Retrieved <span class="nowrap">2021-11-26</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=Corporate+Finance+Institute&amp;rft.atitle=Random+Forest&amp;rft_id=https%3A%2F%2Fcorporatefinanceinstitute.com%2Fresources%2Fknowledge%2Fother%2Frandom-forest%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ABootstrap+aggregating" class="Z3988"></span></span>
+</li>
+<li id="cite_note-Bauer-16"><span class="mw-cite-backlink"><b><a href="#cite_ref-Bauer_16-0">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><cite id="CITEREFBauerKohavi1999" class="citation journal cs1">Bauer, Eric; Kohavi, Ron (1999). <a rel="nofollow" class="external text" href="https://link.springer.com/article/10.1023/A:1007515423169#article-info">"An Empirical Comparison of Voting Classification Algorithms: Bagging, Boosting, and Variants"</a>. <i>Machine Learning</i>. <b>36</b>: 108–109. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<span class="cs1-lock-free" title="Freely accessible"><a rel="nofollow" class="external text" href="https://doi.org/10.1023%2FA%3A1007515423169">10.1023/A:1007515423169</a></span>. <a href="/wiki/S2CID_(identifier)" class="mw-redirect" title="S2CID (identifier)">S2CID</a>&#160;<a rel="nofollow" class="external text" href="https://api.semanticscholar.org/CorpusID:1088806">1088806</a><span class="reference-accessdate">. Retrieved <span class="nowrap">6 December</span> 2020</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Machine+Learning&amp;rft.atitle=An+Empirical+Comparison+of+Voting+Classification+Algorithms%3A+Bagging%2C+Boosting%2C+and+Variants&amp;rft.volume=36&amp;rft.pages=108-109&amp;rft.date=1999&amp;rft_id=info%3Adoi%2F10.1023%2FA%3A1007515423169&amp;rft_id=https%3A%2F%2Fapi.semanticscholar.org%2FCorpusID%3A1088806%23id-name%3DS2CID&amp;rft.aulast=Bauer&amp;rft.aufirst=Eric&amp;rft.au=Kohavi%2C+Ron&amp;rft_id=https%3A%2F%2Flink.springer.com%2Farticle%2F10.1023%2FA%3A1007515423169%23article-info&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ABootstrap+aggregating" class="Z3988"></span></span>
+</li>
+<li id="cite_note-:3-17"><span class="mw-cite-backlink">^ <a href="#cite_ref-:3_17-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-:3_17-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><cite class="citation web cs1"><a rel="nofollow" class="external text" href="https://corporatefinanceinstitute.com/resources/knowledge/other/bagging-bootstrap-aggregation/">"What is Bagging (Bootstrap Aggregation)?"</a>. <i>CFI</i>. Corporate Finance Institute<span class="reference-accessdate">. Retrieved <span class="nowrap">December 5,</span> 2020</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=CFI&amp;rft.atitle=What+is+Bagging+%28Bootstrap+Aggregation%29%3F&amp;rft_id=https%3A%2F%2Fcorporatefinanceinstitute.com%2Fresources%2Fknowledge%2Fother%2Fbagging-bootstrap-aggregation%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ABootstrap+aggregating" class="Z3988"></span></span>
+</li>
+<li id="cite_note-18"><span class="mw-cite-backlink"><b><a href="#cite_ref-18">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><cite id="CITEREFZoghni2020" class="citation web cs1">Zoghni, Raouf (September 5, 2020). <a rel="nofollow" class="external text" href="https://medium.com/swlh/bagging-bootstrap-aggregating-overview-b73ca019e0e9">"Bagging (Bootstrap Aggregating), Overview"</a>. The Startup &#8211; via Medium.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Bagging+%28Bootstrap+Aggregating%29%2C+Overview&amp;rft.pub=The+Startup&amp;rft.date=2020-09-05&amp;rft.aulast=Zoghni&amp;rft.aufirst=Raouf&amp;rft_id=https%3A%2F%2Fmedium.com%2Fswlh%2Fbagging-bootstrap-aggregating-overview-b73ca019e0e9&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ABootstrap+aggregating" class="Z3988"></span></span>
+</li>
+<li id="cite_note-:8-19"><span class="mw-cite-backlink"><b><a href="#cite_ref-:8_19-0">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><cite id="CITEREFEfron1979" class="citation journal cs1"><a href="/wiki/Bradley_Efron" title="Bradley Efron">Efron, B.</a> (1979). <a rel="nofollow" class="external text" href="https://doi.org/10.1214%2Faos%2F1176344552">"Bootstrap methods: Another look at the jackknife"</a>. <i><a href="/wiki/The_Annals_of_Statistics" class="mw-redirect" title="The Annals of Statistics">The Annals of Statistics</a></i>. <b>7</b> (1): 1–26. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<span class="cs1-lock-free" title="Freely accessible"><a rel="nofollow" class="external text" href="https://doi.org/10.1214%2Faos%2F1176344552">10.1214/aos/1176344552</a></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=The+Annals+of+Statistics&amp;rft.atitle=Bootstrap+methods%3A+Another+look+at+the+jackknife&amp;rft.volume=7&amp;rft.issue=1&amp;rft.pages=1-26&amp;rft.date=1979&amp;rft_id=info%3Adoi%2F10.1214%2Faos%2F1176344552&amp;rft.aulast=Efron&amp;rft.aufirst=B.&amp;rft_id=%2F%2Fdoi.org%2F10.1214%252Faos%252F1176344552&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ABootstrap+aggregating" class="Z3988"></span></span>
+</li>
+</ol></div></div>
+<h2><span class="mw-headline" id="Further_reading">Further reading</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Bootstrap_aggregating&amp;action=edit&amp;section=17" title="Edit section: Further reading">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul><li><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><cite id="CITEREFBreiman1996" class="citation journal cs1"><a href="/wiki/Leo_Breiman" title="Leo Breiman">Breiman, Leo</a> (1996). "Bagging predictors". <i><a href="/wiki/Machine_Learning_(journal)" title="Machine Learning (journal)">Machine Learning</a></i>. <b>24</b> (2): 123–140. <a href="/wiki/CiteSeerX_(identifier)" class="mw-redirect" title="CiteSeerX (identifier)">CiteSeerX</a>&#160;<span class="cs1-lock-free" title="Freely accessible"><a rel="nofollow" class="external text" href="//citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.32.9399">10.1.1.32.9399</a></span>. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1007%2FBF00058655">10.1007/BF00058655</a>. <a href="/wiki/S2CID_(identifier)" class="mw-redirect" title="S2CID (identifier)">S2CID</a>&#160;<a rel="nofollow" class="external text" href="https://api.semanticscholar.org/CorpusID:47328136">47328136</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Machine+Learning&amp;rft.atitle=Bagging+predictors&amp;rft.volume=24&amp;rft.issue=2&amp;rft.pages=123-140&amp;rft.date=1996&amp;rft_id=%2F%2Fciteseerx.ist.psu.edu%2Fviewdoc%2Fsummary%3Fdoi%3D10.1.1.32.9399%23id-name%3DCiteSeerX&amp;rft_id=https%3A%2F%2Fapi.semanticscholar.org%2FCorpusID%3A47328136%23id-name%3DS2CID&amp;rft_id=info%3Adoi%2F10.1007%2FBF00058655&amp;rft.aulast=Breiman&amp;rft.aufirst=Leo&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ABootstrap+aggregating" class="Z3988"></span></li>
+<li><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><cite id="CITEREFAlfaro2012" class="citation journal cs1">Alfaro, E., Gámez, M. and García, N. (2012). <a rel="nofollow" class="external text" href="https://cran.r-project.org/package=adabag">"adabag: An R package for classification with AdaBoost.M1, AdaBoost-SAMME and Bagging"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=adabag%3A+An+R+package+for+classification+with+AdaBoost.M1%2C+AdaBoost-SAMME+and+Bagging&amp;rft.date=2012&amp;rft.aulast=Alfaro&amp;rft.aufirst=E.%2C+G%C3%A1mez%2C+M.+and+Garc%C3%ADa%2C+N.&amp;rft_id=https%3A%2F%2Fcran.r-project.org%2Fpackage%3Dadabag&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ABootstrap+aggregating" class="Z3988"></span> <span class="cs1-hidden-error citation-comment"><code class="cs1-code">{{<a href="/wiki/Template:Cite_journal" title="Template:Cite journal">cite journal</a>}}</code>: </span><span class="cs1-hidden-error citation-comment">Cite journal requires <code class="cs1-code">&#124;journal=</code> (<a href="/wiki/Help:CS1_errors#missing_periodical" title="Help:CS1 errors">help</a>)</span></li>
+<li><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><cite id="CITEREFKotsiantis2014" class="citation journal cs1">Kotsiantis, Sotiris (2014). "Bagging and boosting variants for handling classifications problems: a survey". <i>Knowledge Eng. Review</i>. <b>29</b> (1): 78–100. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1017%2FS0269888913000313">10.1017/S0269888913000313</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Knowledge+Eng.+Review&amp;rft.atitle=Bagging+and+boosting+variants+for+handling+classifications+problems%3A+a+survey&amp;rft.volume=29&amp;rft.issue=1&amp;rft.pages=78-100&amp;rft.date=2014&amp;rft_id=info%3Adoi%2F10.1017%2FS0269888913000313&amp;rft.aulast=Kotsiantis&amp;rft.aufirst=Sotiris&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ABootstrap+aggregating" class="Z3988"></span></li>
+<li><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><cite id="CITEREFBoehmkeGreenwell2019" class="citation book cs1">Boehmke, Bradley; Greenwell, Brandon (2019). "Bagging". <i>Hands-On Machine Learning with R</i>. Chapman &amp; Hall. pp.&#160;191–202. <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-1-138-49568-5" title="Special:BookSources/978-1-138-49568-5"><bdi>978-1-138-49568-5</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.atitle=Bagging&amp;rft.btitle=Hands-On+Machine+Learning+with+R&amp;rft.pages=191-202&amp;rft.pub=Chapman+%26+Hall&amp;rft.date=2019&amp;rft.isbn=978-1-138-49568-5&amp;rft.aulast=Boehmke&amp;rft.aufirst=Bradley&amp;rft.au=Greenwell%2C+Brandon&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ABootstrap+aggregating" class="Z3988"></span></li></ul>
+<!-- 
+NewPP limit report
+Parsed by mw1387
+Cached time: 20220301191657
+Cache expiry: 1814400
+Reduced expiry: false
+Complications: [vary‐revision‐sha1]
+CPU time usage: 0.389 seconds
+Real time usage: 0.509 seconds
+Preprocessor visited node count: 1438/1000000
+Post‐expand include size: 60277/2097152 bytes
+Template argument size: 1160/2097152 bytes
+Highest expansion depth: 12/100
+Expensive parser function count: 1/500
+Unstrip recursion depth: 1/20
+Unstrip post‐expand size: 62432/5000000 bytes
+Lua time usage: 0.178/10.000 seconds
+Lua memory usage: 5625152/52428800 bytes
+Number of Wikibase entities loaded: 0/400
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  324.051      1 -total
+ 50.30%  163.005      1 Template:Reflist
+ 30.50%   98.847      7 Template:Cite_journal
+ 26.00%   84.238      1 Template:Machine_learning
+ 25.08%   81.264      1 Template:Sidebar_with_collapsible_lists
+ 14.00%   45.352      1 Template:Clarify
+ 12.57%   40.745      1 Template:Fix-span
+ 10.11%   32.766      9 Template:Cite_web
+  7.36%   23.857      2 Template:Category_handler
+  4.36%   14.121      1 Template:Replace
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:1307911-0!canonical and timestamp 20220301191657 and revision id 1060689473. Serialized with JSON.
+ -->
+</div><noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript>
+<div class="printfooter">Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Bootstrap_aggregating&amp;oldid=1060689473">https://en.wikipedia.org/w/index.php?title=Bootstrap_aggregating&amp;oldid=1060689473</a>"</div></div>
+		<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Ensemble_learning" title="Category:Ensemble learning">Ensemble learning</a></li><li><a href="/wiki/Category:Machine_learning_algorithms" title="Category:Machine learning algorithms">Machine learning algorithms</a></li><li><a href="/wiki/Category:Computational_statistics" title="Category:Computational statistics">Computational statistics</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:Wikipedia_articles_needing_clarification_from_May_2021" title="Category:Wikipedia articles needing clarification from May 2021">Wikipedia articles needing clarification from May 2021</a></li><li><a href="/wiki/Category:CS1_errors:_missing_periodical" title="Category:CS1 errors: missing periodical">CS1 errors: missing periodical</a></li></ul></div></div>
+	</div>
+</div>
+<div id='mw-data-after-content'>
+	<div class="read-more-container"></div>
+</div>
+
+<div id="mw-navigation">
+	<h2>Navigation menu</h2>
+	<div id="mw-head">
+		
+<nav id="p-personal" class="mw-portlet mw-portlet-personal vector-user-menu-legacy vector-menu" aria-labelledby="p-personal-label" role="navigation" 
+	 >
+	<label id="p-personal-label" aria-label="" class="vector-menu-heading">
+		<span class="vector-menu-heading-label">Personal tools</span>
+	</label>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="pt-anonuserpage" class="mw-list-item"><span>Not logged in</span></li><li id="pt-anontalk" class="mw-list-item"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n"><span>Talk</span></a></li><li id="pt-anoncontribs" class="mw-list-item"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y"><span>Contributions</span></a></li><li id="pt-createaccount" class="mw-list-item"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Bootstrap+aggregating&amp;returntoquery=lxml%3D" title="You are encouraged to create an account and log in; however, it is not mandatory"><span>Create account</span></a></li><li id="pt-login" class="mw-list-item"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Bootstrap+aggregating&amp;returntoquery=lxml%3D" title="You&#039;re encouraged to log in; however, it&#039;s not mandatory. [o]" accesskey="o"><span>Log in</span></a></li></ul>
+		
+	</div>
+</nav>
+
+		<div id="left-navigation">
+			
+<nav id="p-namespaces" class="mw-portlet mw-portlet-namespaces vector-menu vector-menu-tabs" aria-labelledby="p-namespaces-label" role="navigation" 
+	 >
+	<label id="p-namespaces-label" aria-label="" class="vector-menu-heading">
+		<span class="vector-menu-heading-label">Namespaces</span>
+	</label>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="ca-nstab-main" class="selected mw-list-item"><a href="/wiki/Bootstrap_aggregating" title="View the content page [c]" accesskey="c"><span>Article</span></a></li><li id="ca-talk" class="mw-list-item"><a href="/wiki/Talk:Bootstrap_aggregating" rel="discussion" title="Discuss improvements to the content page [t]" accesskey="t"><span>Talk</span></a></li></ul>
+		
+	</div>
+</nav>
+
+			
+<nav id="p-variants" class="mw-portlet mw-portlet-variants emptyPortlet vector-menu-dropdown-noicon vector-menu vector-menu-dropdown" aria-labelledby="p-variants-label" role="navigation" 
+	 >
+	<input type="checkbox"
+		id="p-variants-checkbox"
+		role="button"
+		aria-haspopup="true"
+		data-event-name="ui.dropdown-p-variants"
+		class="vector-menu-checkbox" aria-labelledby="p-variants-label" />
+	<label id="p-variants-label" aria-label="Change language variant" class="vector-menu-heading">
+		<span class="vector-menu-heading-label">English</span>
+			<span class="vector-menu-checkbox-expanded">expanded</span>
+			<span class="vector-menu-checkbox-collapsed">collapsed</span>
+	</label>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"></ul>
+		
+	</div>
+</nav>
+
+		</div>
+		<div id="right-navigation">
+			
+<nav id="p-views" class="mw-portlet mw-portlet-views vector-menu vector-menu-tabs" aria-labelledby="p-views-label" role="navigation" 
+	 >
+	<label id="p-views-label" aria-label="" class="vector-menu-heading">
+		<span class="vector-menu-heading-label">Views</span>
+	</label>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="ca-view" class="selected mw-list-item"><a href="/wiki/Bootstrap_aggregating"><span>Read</span></a></li><li id="ca-edit" class="mw-list-item"><a href="/w/index.php?title=Bootstrap_aggregating&amp;action=edit" title="Edit this page [e]" accesskey="e"><span>Edit</span></a></li><li id="ca-history" class="mw-list-item"><a href="/w/index.php?title=Bootstrap_aggregating&amp;action=history" title="Past revisions of this page [h]" accesskey="h"><span>View history</span></a></li></ul>
+		
+	</div>
+</nav>
+
+			
+<nav id="p-cactions" class="mw-portlet mw-portlet-cactions emptyPortlet vector-menu-dropdown-noicon vector-menu vector-menu-dropdown" aria-labelledby="p-cactions-label" role="navigation"  title="More options"
+	 >
+	<input type="checkbox"
+		id="p-cactions-checkbox"
+		role="button"
+		aria-haspopup="true"
+		data-event-name="ui.dropdown-p-cactions"
+		class="vector-menu-checkbox" aria-labelledby="p-cactions-label" />
+	<label id="p-cactions-label" aria-label="" class="vector-menu-heading">
+		<span class="vector-menu-heading-label">More</span>
+			<span class="vector-menu-checkbox-expanded">expanded</span>
+			<span class="vector-menu-checkbox-collapsed">collapsed</span>
+	</label>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"></ul>
+		
+	</div>
+</nav>
+
+			
+<div id="p-search" role="search" class="vector-search-box-vue  vector-search-box-show-thumbnail vector-search-box-auto-expand-width vector-search-box">
+	<div>
+			<h3 >
+				<label for="searchInput">Search</label>
+			</h3>
+		<form action="/w/index.php" id="searchform"
+			class="vector-search-box-form">
+			<div id="simpleSearch"
+				class="vector-search-box-inner"
+				 data-search-loc="header-navigation">
+				<input class="vector-search-box-input"
+					 type="search" name="search" placeholder="Search Wikipedia" aria-label="Search Wikipedia" autocapitalize="sentences" title="Search Wikipedia [f]" accesskey="f" id="searchInput"
+				/>
+				<input type="hidden" name="title" value="Special:Search"/>
+				<input id="mw-searchButton"
+					 class="searchButton mw-fallbackSearchButton" type="submit" name="fulltext" title="Search Wikipedia for this text" value="Search" />
+				<input id="searchButton"
+					 class="searchButton" type="submit" name="go" title="Go to a page with this exact name if it exists" value="Go" />
+			</div>
+		</form>
+	</div>
+</div>
+
+		</div>
+	</div>
+	
+
+<div id="mw-panel">
+	<div id="p-logo" role="banner">
+		<a class="mw-wiki-logo" href="/wiki/Main_Page"
+			title="Visit the main page"></a>
+	</div>
+	
+<nav id="p-navigation" class="mw-portlet mw-portlet-navigation vector-menu vector-menu-portal portal" aria-labelledby="p-navigation-label" role="navigation" 
+	 >
+	<label id="p-navigation-label" aria-label="" class="vector-menu-heading">
+		<span class="vector-menu-heading-label">Navigation</span>
+	</label>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="n-mainpage-description" class="mw-list-item"><a href="/wiki/Main_Page" icon="home" title="Visit the main page [z]" accesskey="z"><span>Main page</span></a></li><li id="n-contents" class="mw-list-item"><a href="/wiki/Wikipedia:Contents" title="Guides to browsing Wikipedia"><span>Contents</span></a></li><li id="n-currentevents" class="mw-list-item"><a href="/wiki/Portal:Current_events" title="Articles related to current events"><span>Current events</span></a></li><li id="n-randompage" class="mw-list-item"><a href="/wiki/Special:Random" icon="die" title="Visit a randomly selected article [x]" accesskey="x"><span>Random article</span></a></li><li id="n-aboutsite" class="mw-list-item"><a href="/wiki/Wikipedia:About" title="Learn about Wikipedia and how it works"><span>About Wikipedia</span></a></li><li id="n-contactpage" class="mw-list-item"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia"><span>Contact us</span></a></li><li id="n-sitesupport" class="mw-list-item"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us by donating to the Wikimedia Foundation"><span>Donate</span></a></li></ul>
+		
+	</div>
+</nav>
+
+	
+<nav id="p-interaction" class="mw-portlet mw-portlet-interaction vector-menu vector-menu-portal portal" aria-labelledby="p-interaction-label" role="navigation" 
+	 >
+	<label id="p-interaction-label" aria-label="" class="vector-menu-heading">
+		<span class="vector-menu-heading-label">Contribute</span>
+	</label>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="n-help" class="mw-list-item"><a href="/wiki/Help:Contents" icon="help" title="Guidance on how to use and edit Wikipedia"><span>Help</span></a></li><li id="n-introduction" class="mw-list-item"><a href="/wiki/Help:Introduction" title="Learn how to edit Wikipedia"><span>Learn to edit</span></a></li><li id="n-portal" class="mw-list-item"><a href="/wiki/Wikipedia:Community_portal" title="The hub for editors"><span>Community portal</span></a></li><li id="n-recentchanges" class="mw-list-item"><a href="/wiki/Special:RecentChanges" icon="recentChanges" title="A list of recent changes to Wikipedia [r]" accesskey="r"><span>Recent changes</span></a></li><li id="n-upload" class="mw-list-item"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Add images or other media for use on Wikipedia"><span>Upload file</span></a></li></ul>
+		
+	</div>
+</nav>
+
+<nav id="p-tb" class="mw-portlet mw-portlet-tb vector-menu vector-menu-portal portal" aria-labelledby="p-tb-label" role="navigation" 
+	 >
+	<label id="p-tb-label" aria-label="" class="vector-menu-heading">
+		<span class="vector-menu-heading-label">Tools</span>
+	</label>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="t-whatlinkshere" class="mw-list-item"><a href="/wiki/Special:WhatLinksHere/Bootstrap_aggregating" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j"><span>What links here</span></a></li><li id="t-recentchangeslinked" class="mw-list-item"><a href="/wiki/Special:RecentChangesLinked/Bootstrap_aggregating" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k"><span>Related changes</span></a></li><li id="t-upload" class="mw-list-item"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u"><span>Upload file</span></a></li><li id="t-specialpages" class="mw-list-item"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q"><span>Special pages</span></a></li><li id="t-permalink" class="mw-list-item"><a href="/w/index.php?title=Bootstrap_aggregating&amp;oldid=1060689473" title="Permanent link to this revision of this page"><span>Permanent link</span></a></li><li id="t-info" class="mw-list-item"><a href="/w/index.php?title=Bootstrap_aggregating&amp;action=info" title="More information about this page"><span>Page information</span></a></li><li id="t-cite" class="mw-list-item"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Bootstrap_aggregating&amp;id=1060689473&amp;wpFormIdentifier=titleform" title="Information on how to cite this page"><span>Cite this page</span></a></li><li id="t-wikibase" class="mw-list-item"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q799897" title="Structured data on this page hosted by Wikidata [g]" accesskey="g"><span>Wikidata item</span></a></li></ul>
+		
+	</div>
+</nav>
+
+<nav id="p-coll-print_export" class="mw-portlet mw-portlet-coll-print_export vector-menu vector-menu-portal portal" aria-labelledby="p-coll-print_export-label" role="navigation" 
+	 >
+	<label id="p-coll-print_export-label" aria-label="" class="vector-menu-heading">
+		<span class="vector-menu-heading-label">Print/export</span>
+	</label>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="coll-download-as-rl" class="mw-list-item"><a href="/w/index.php?title=Special:DownloadAsPdf&amp;page=Bootstrap_aggregating&amp;action=show-download-screen" title="Download this page as a PDF file"><span>Download as PDF</span></a></li><li id="t-print" class="mw-list-item"><a href="/w/index.php?title=Bootstrap_aggregating&amp;printable=yes" title="Printable version of this page [p]" accesskey="p"><span>Printable version</span></a></li></ul>
+		
+	</div>
+</nav>
+
+	
+<nav id="p-lang" class="mw-portlet mw-portlet-lang vector-menu vector-menu-portal portal" aria-labelledby="p-lang-label" role="navigation" 
+	 >
+	<label id="p-lang-label" aria-label="" class="vector-menu-heading">
+		<span class="vector-menu-heading-label">Languages</span>
+	</label>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li class="interlanguage-link interwiki-de mw-list-item"><a href="https://de.wikipedia.org/wiki/Bootstrap_aggregating" title="Bootstrap aggregating – German" lang="de" hreflang="de" class="interlanguage-link-target"><span>Deutsch</span></a></li><li class="interlanguage-link interwiki-es mw-list-item"><a href="https://es.wikipedia.org/wiki/Agregaci%C3%B3n_de_bootstrap" title="Agregación de bootstrap – Spanish" lang="es" hreflang="es" class="interlanguage-link-target"><span>Español</span></a></li><li class="interlanguage-link interwiki-fr mw-list-item"><a href="https://fr.wikipedia.org/wiki/Bootstrap_aggregating" title="Bootstrap aggregating – French" lang="fr" hreflang="fr" class="interlanguage-link-target"><span>Français</span></a></li><li class="interlanguage-link interwiki-ko mw-list-item"><a href="https://ko.wikipedia.org/wiki/%EB%B0%B0%EA%B9%85" title="배깅 – Korean" lang="ko" hreflang="ko" class="interlanguage-link-target"><span>한국어</span></a></li><li class="interlanguage-link interwiki-id mw-list-item"><a href="https://id.wikipedia.org/wiki/Bootstrap_aggregating" title="Bootstrap aggregating – Indonesian" lang="id" hreflang="id" class="interlanguage-link-target"><span>Bahasa Indonesia</span></a></li><li class="interlanguage-link interwiki-it mw-list-item"><a href="https://it.wikipedia.org/wiki/Bagging" title="Bagging – Italian" lang="it" hreflang="it" class="interlanguage-link-target"><span>Italiano</span></a></li><li class="interlanguage-link interwiki-ja mw-list-item"><a href="https://ja.wikipedia.org/wiki/%E3%83%90%E3%82%AE%E3%83%B3%E3%82%B0" title="バギング – Japanese" lang="ja" hreflang="ja" class="interlanguage-link-target"><span>日本語</span></a></li><li class="interlanguage-link interwiki-ru mw-list-item"><a href="https://ru.wikipedia.org/wiki/%D0%91%D1%8D%D0%B3%D0%B3%D0%B8%D0%BD%D0%B3" title="Бэггинг – Russian" lang="ru" hreflang="ru" class="interlanguage-link-target"><span>Русский</span></a></li><li class="interlanguage-link interwiki-uk mw-list-item"><a href="https://uk.wikipedia.org/wiki/%D0%91%D1%83%D1%82%D1%81%D1%82%D1%80%D0%B5%D0%BF%D0%BE%D0%B2%D0%B0_%D0%B0%D0%B3%D1%80%D0%B5%D0%B3%D0%B0%D1%86%D1%96%D1%8F" title="Бутстрепова агрегація – Ukrainian" lang="uk" hreflang="uk" class="interlanguage-link-target"><span>Українська</span></a></li><li class="interlanguage-link interwiki-zh mw-list-item"><a href="https://zh.wikipedia.org/wiki/Bagging%E7%AE%97%E6%B3%95" title="Bagging算法 – Chinese" lang="zh" hreflang="zh" class="interlanguage-link-target"><span>中文</span></a></li></ul>
+		<div class="after-portlet after-portlet-lang"><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q799897#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>
+	</div>
+</nav>
+
+</div>
+
+</div>
+
+<footer id="footer" class="mw-footer" role="contentinfo" >
+	<ul id="footer-info">
+	<li id="footer-info-lastmod"> This page was last edited on 17 December 2021, at 02:18<span class="anonymous-show">&#160;(UTC)</span>.</li>
+	<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License 3.0</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//foundation.wikimedia.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//foundation.wikimedia.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+</ul>
+
+	<ul id="footer-places">
+	<li id="footer-places-privacy"><a href="https://foundation.wikimedia.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+	<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+	<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+	<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+	<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Bootstrap_aggregating&amp;lxml=&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+	<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+	<li id="footer-places-statslink"><a href="https://stats.wikimedia.org/#/en.wikipedia.org">Statistics</a></li>
+	<li id="footer-places-cookiestatement"><a href="https://foundation.wikimedia.org/wiki/Cookie_statement">Cookie statement</a></li>
+</ul>
+
+	<ul id="footer-icons" class="noprint">
+	<li id="footer-copyrightico"><a href="https://wikimediafoundation.org/"><img src="/static/images/footer/wikimedia-button.png" srcset="/static/images/footer/wikimedia-button-1.5x.png 1.5x, /static/images/footer/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation" loading="lazy" /></a></li>
+	<li id="footer-poweredbyico"><a href="https://www.mediawiki.org/"><img src="/static/images/footer/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/footer/poweredby_mediawiki_132x47.png 1.5x, /static/images/footer/poweredby_mediawiki_176x62.png 2x" width="88" height="31" loading="lazy"/></a></li>
+</ul>
+
+</footer>
+
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.389","walltime":"0.509","ppvisitednodes":{"value":1438,"limit":1000000},"postexpandincludesize":{"value":60277,"limit":2097152},"templateargumentsize":{"value":1160,"limit":2097152},"expansiondepth":{"value":12,"limit":100},"expensivefunctioncount":{"value":1,"limit":500},"unstrip-depth":{"value":1,"limit":20},"unstrip-size":{"value":62432,"limit":5000000},"entityaccesscount":{"value":0,"limit":400},"timingprofile":["100.00%  324.051      1 -total"," 50.30%  163.005      1 Template:Reflist"," 30.50%   98.847      7 Template:Cite_journal"," 26.00%   84.238      1 Template:Machine_learning"," 25.08%   81.264      1 Template:Sidebar_with_collapsible_lists"," 14.00%   45.352      1 Template:Clarify"," 12.57%   40.745      1 Template:Fix-span"," 10.11%   32.766      9 Template:Cite_web","  7.36%   23.857      2 Template:Category_handler","  4.36%   14.121      1 Template:Replace"]},"scribunto":{"limitreport-timeusage":{"value":"0.178","limit":"10.000"},"limitreport-memusage":{"value":5625152,"limit":52428800}},"cachereport":{"origin":"mw1387","timestamp":"20220301191657","ttl":1814400,"transientcontent":false}}});});</script>
+<script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"Article","name":"Bootstrap aggregating","url":"https:\/\/en.wikipedia.org\/wiki\/Bootstrap_aggregating","sameAs":"http:\/\/www.wikidata.org\/entity\/Q799897","mainEntity":"http:\/\/www.wikidata.org\/entity\/Q799897","author":{"@type":"Organization","name":"Contributors to Wikimedia projects"},"publisher":{"@type":"Organization","name":"Wikimedia Foundation, Inc.","logo":{"@type":"ImageObject","url":"https:\/\/www.wikimedia.org\/static\/images\/wmf-hor-googpub.png"}},"datePublished":"2004-12-21T19:50:27Z","dateModified":"2021-12-17T02:18:17Z","image":"https:\/\/upload.wikimedia.org\/wikipedia\/commons\/f\/fe\/Kernel_Machine.svg","headline":"ensemble method within machine learning"}</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":129,"wgHostname":"mw1454"});});</script>
+</body>
+</html>
