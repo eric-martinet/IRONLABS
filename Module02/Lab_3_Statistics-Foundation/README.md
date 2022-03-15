@@ -13,26 +13,76 @@ This file should also include the SQL script for the Part 3.
 ## Challenges
 ## Part 1
 ### Challenge 1
-Find a and b, if median=42, mean=50
-20,34, 34,  12, 56, 110, 49, a, b.
+Find a and b, if median=42, mean=50 for [20, 34, 34, 12, 56, 110, 49, a, b].
+
+(1) mean = 50 => (20 + 34 + 34 + 12 + 56 + 110 + 49 + a + b) / 9 = 50.  
+(1) mean = 50 => a + b = 450 - 315.  
+(1) mean = 50 => a = 135 - b. 
+
+(2) median = 42 => (a or b) = 42 (odd number of datapoints)
+
+**>> a = 93 and b = 42 (or a = 42 and b = 93)**
+
 
 ### Challenge 2
 A car hit an average speed of v1 = 60 kmph in the first half of the journey, and hit an average speed of v2 = 110 kmph in the second half of the journey. Determine the average speed of the car.
 
+(1) v_avg = (v1 * d1 + v2 * d2) / (d1 + d2)
+
+(2) d1 = d2
+
+(1) and (2) => v_avg = (v1 + v2) / 2
+
+**>> v_avg = 85 kmph**
+
 ### Challenge 3
 The lifetimes of 400 light-bulbs were found to the nearest hour. The results were recorded as
 follows.
-Lifetime (hours) 0–199 200–399 400–599 600–799 800–999 1000–1199 1200–1999
-Frequency         143     97      64      51      14      14        17
+
+Lifetime (hours)
+
+0–199 200–399 400–599 600–799 800–999 1000–1199 1200–1999
+
+Frequency
+
+143     97      64      51      14      14        17
+
 Construct a histogram and cumulative frequency polygon for this dataset. Estimate the percentage
 of bulbs with lifetime less than 480 hours.
+
+est = (143 + 97 + 64 * (480 - 400) / (599 - 400) ) / 400.  
+est = (240 + 64 * 0.4) / 400. 
+
+**>> est = 66.4%**
+
 
 ### Challenge 4
 The time between arrival of 60 patients at an intensive care unit were recorded to the nearest hour.
 The data are shown below.
-Time (hours) 0–19 20–39 40–59 60–79 80–99 100–119 120–139 140–159 160–179
-Frequency     16    13    17    4     4      3       1      1       1
+
+Time (hours)
+ 
+0–19 20–39 40–59 60–79 80–99 100–119 120–139 140–159 160–179
+
+Frequency
+
+16    13    17    4     4      3       1      1       1
+
 Determine the median, mean and standard deviation for this dataset.
+
+Median.  
+Class in which the median falls: 40-59.  
+median = 40 + ((60 / 2) - (16 + 13)) / 17 * 20.  
+**>> median = 41.2**  
+
+Mean.  
+(Sum of (mid-points multiplied by frequencies)) divided by total nb of values.  
+Mean = (9.5 * 16 + 29.5 * 13 + ... + 169.5 * 1) / 60
+
+**>> mean =**  
+
+
+**>> standard deviation =**
 
 ## Part 2
 ### Challenge 1
