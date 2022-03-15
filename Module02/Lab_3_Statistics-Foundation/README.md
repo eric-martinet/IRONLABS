@@ -79,10 +79,15 @@ Mean.
 (Sum of (mid-points multiplied by frequencies)) divided by total nb of values.  
 Mean = (9.5 * 16 + 29.5 * 13 + ... + 169.5 * 1) / 60
 
-**>> mean =**  
+**>> mean = 46.5**  
 
+Standard deviation.  
+Square root of variance where  
+var = sum(n(i) * (m(i) - mean) ^ 2) / (N-1)  
 
-**>> standard deviation =**
+Here var = (16 * (9.5 - 46.5) ^ 2 + ... + 1 * (169.5 - 46.5) ^ 2) / (60 - 1)
+
+**>> standard deviation = 36.8**
 
 ## Part 2
 ### Challenge 1
