@@ -131,21 +131,34 @@ Describe the following events:
 **X in {0} & Y in {4, 14}**
 
 ### Challenge 3
-Two players roll a dice. Describe the measurable space and the random variable for:
-* A. The score of player A.
-* B. The greatest score.
+Two players roll a dice. Describe the measurable space and the random variable for:  
+* A. The score of player A.  
+**X(A) = value of player A's dice  
+Measurable space = {1, ..., 6}**  
+* B. The greatest score.  
+**Y = max(X(A), X(B))  
+Measurable space = {1, ..., 6}**  
 * C. The earnings of player A if the game rules state that:  
-"The player with the greatest score gets a coin from the other player.".
+"The player with the greatest score gets a coin from the other player.".  
+**Z(A) = (Y = X(A)) * 1  + (Y = X(B)) * 1
+Measurable space = {-1, 0, 1}**  
 * D. The earnings of player A if the game rules state that:  
-"The player with the greatest score gets as many coins as the difference between the score of player A and player B.". 
+"The player with the greatest score gets as many coins as the difference between the score of player A and player B.".   
+**ZZ(A) = (Y = X(A)) * (Y - (X(B)) + (Y = X(B)) * (Y - (X(A))  
+Measurable space = {-5, ..., 0, ..., 5}**    
 
-Describe the following events:
-* Case A: The score of player A is 2.
-* Case B: The greatest score is lower or equal than 2.
-* Case C: Considering the case where the winner gets as many coins as the difference between scores (D), describe: 
-  * Player A wins at least 4 coins.
-  * Player A loses more than 2 coins.
-  * Player A neither wins nor loses coins.
+Describe the following events:  
+* Case A: The score of player A is 2.  
+**X(A) in {2}**  
+* Case B: The greatest score is lower or equal than 2.  
+**Y in {1, 2}**  
+* Case C: Considering the case where the winner gets as many coins as the difference between scores (D), describe:   
+  * Player A wins at least 4 coins.  
+  **ZZ(A) in {4, 5}**  
+  * Player A loses more than 2 coins.  
+  **ZZ(A) in {-5, -4, -3}**  
+  * Player A neither wins nor loses coins.  
+  **ZZ(A) in {0}**    
 
 ## Bonus challenges
 ### Bonus Challenge 1
