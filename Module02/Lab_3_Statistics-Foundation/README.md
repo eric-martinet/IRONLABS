@@ -170,25 +170,39 @@ Three players take balls from a box. Inside that box there are red, blue, green 
 * If the ball is black, they lose one point and they can’t take another ball.
 
 Describe the measurable space and the random variable for:
-* A. Player A wins. Do not consider ties as a win.
-* B. Player A and B get the same points.
-* C. All players get 0 points.
+* A. Player A wins. Do not consider ties as a win.  
+**X = (Score player A > Score player B) & (Score player A > Score player C)
+Measurable space = {TRUE, FALSE}**   
+* B. Player A and B get the same points.  
+**Y = (Score player A = Score player B)  
+Measurable space = {TRUE, FALSE}**  
+* C. All players get 0 points.  
+**Z = (Score player A = 0) & (Score player B = 0) & (Score player C = 0)  
+Measurable space = {TRUE, FALSE}** 
 
 ### Bonus Challenge 2
-Consider the situation of bonus challenge 1 but now with four players. Does anything change in your solutions? What are the changes in each case?
+Consider the situation of bonus challenge 1 but now with four players. Does anything change in your solutions? What are the changes in each case?  
+**Measurable spaces do not change, but descriptions of random variables X and Z do:  
+X = (Score player A > Score player B) & (Score player A > Score player C) & (Score player A > Score player D)  
+Z = (Score player A = 0) & (Score player B = 0) & (Score player C = 0) &  (Score player D = 0)**  
 
 ### Bonus Challenge 3
 One player takes three balls from a box. Inside the box there are 5 balls: two of them are black and the other three are white. 
 
-Describe the measurable space and the random variable for:
-* A. The number of white balls if every time we take a ball we keep it.
-* B. The number of white balls if every time we take a ball we put it back again into the box.
-* C. The number of black balls if every time we take a ball we keep it.
-* D. The number of black balls if every time we take a ball we put it back into the box.
+Describe the measurable space and the random variable for:  
+* A. The number of white balls if every time we take a ball we keep it.  
+**X =   
+Measurable space = {1, 2, 3}**  
+* B. The number of white balls if every time we take a ball we put it back again into the box.  
+**Y =   
+Measurable space = {0, 1, 2, 3}**  
+* C. The number of black balls if every time we take a ball we keep it.  
+**Z =   
+Measurable space = {0, 1, 2}**  
+* D. The number of black balls if every time we take a ball we put it back into the box.  
+**W =   
+Measurable space = {0, 1, 2, 3}**  
 
-| Attempt | #1 | #2 |
-| :---: | :---: | :---: |
-| Seconds | 301 | 283 |
 
 ## Part 3
 ### Challenge 1
