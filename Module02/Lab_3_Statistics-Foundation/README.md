@@ -213,3 +213,25 @@ Describe the measurable space and the random variable for:
 
 
 Please find MEAN, SUM, STANDARD DEVIATION, VARIANCE, MIN and MAX.
+
+We assume that the table is called scores and we rounded the below results to 2 decimal digits.
+
+MEAN.  
+**SELECT AVG(score) FROM scores; => 79.93**
+
+SUM.  
+**SELECT SUM(score) FROM scores; => 1199**
+
+STANDARD DEVIATION.  
+**SELECT STD(score) FROM scores; => 14.69**
+
+VARIANCE.  
+**SELECT SUM(score) FROM scores; => 215.93**
+
+MIN.  
+**SELECT VARIANCE(score) FROM scores; => 56**
+
+MAX.  
+**SELECT MAX(score) FROM scores; => 98**
+
+
