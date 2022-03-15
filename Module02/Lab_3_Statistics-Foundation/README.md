@@ -91,26 +91,44 @@ Here var = (16 * (9.5 - 46.5) ^ 2 + ... + 1 * (169.5 - 46.5) ^ 2) / (60 - 1)
 
 ## Part 2
 ### Challenge 1
-One player rolls two dices. Describe the measurable space and the random variable for:
-* A. The values that the player obtains.
-* B. The sum of the values obtained.
-* C. The maximum value obtained after rolling both dices.
+One player rolls two dices. Describe the measurable space and the random variable for:  
+* A. The values that the player obtains:  
+**X = (value of first dice, value of second dice)  
+Measure space: {(i,j) for i in [1-6] and j in [1-6]}**.  
+* B. The sum of the values obtained:  
+**Y = value of first dice + value of second dice  
+Measurable space: {2, ..., 12}**  
+* C. The maximum value obtained after rolling both dices:  
+**Z = max(value of first dice, value of second dice)  
+Measurable space: {1, ..., 6}**
 
-Describe the following events:
-* Case A: Both values are greater than 5.
-* Case B: The sum of values is even.
-* Case C: The maximum is the value of both rolls.
+Describe the following events:  
+* Case A: Both values are greater than 5:  
+**X in {(5,5), (5,6), (6,5), (6,6)}**  
+* Case B: The sum of values is even:  
+**Y in {2, 4, 6, 8, 10, 12}**  
+* Case C: The maximum is the value of both rolls:  
+**X in {(i,i) for i in [1-6]}**  
 
 ### Challenge 2
-One player picks two cards from a poker deck. Describe the measurable space and the random variable for:
-* A. The number of figures he picks.
-* B. The sum of card values. Consider that the value of figures is 10 and the value of aces is 15.
-* C. The number of hearts or spades he picks.
+One player picks two cards from a poker deck. Describe the measurable space and the random variable for:  
+* A. The number of figures he picks:  
+**X = Nb Kings + Nb Queens + Nb Jacks   
+Measurable space = {0,1,2}**  
+* B. The sum of card values. Consider that the value of figures is 10 and the value of aces is 15:  
+**Y = value of first card + value of second card  
+Measurable space = {4, ..., 25, 30}**  
+* C. The number of hearts or spades he picks:  
+**Z = Nb Hearts + Nb Spades   
+Measurable space = {0,1,2}**  
 
-Describe the following events:
-* Case A: The number of figures in the cards the player picked is two.
-* Case B: The sum of card values is 17.
-* Case C: The value of both cards is less than 8.
+Describe the following events:  
+* Case A: The number of figures in the cards the player picked is two:  
+**X in {2}**  
+* Case B: The sum of card values is 17:  
+**Y in {17}**  
+* Case C: The value of both cards is less than 8:  
+**X in {0} & Y in {4, 14}**
 
 ### Challenge 3
 Two players roll a dice. Describe the measurable space and the random variable for:
