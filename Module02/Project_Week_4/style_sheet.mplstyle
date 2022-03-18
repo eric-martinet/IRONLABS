@@ -1,0 +1,5 @@
+# FONTSIZE
+axes.titlesize : 16
+axes.labelsize : 12
+xtick.labelsize : 10
+ytick.labelsize : 10
