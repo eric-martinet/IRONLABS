@@ -1,0 +1,13 @@
+# FONTSIZE
+figure.titlesize: xx-large
+figure.titleweight: extra bold
+axes.titlesize: x-large
+axes.titleweight:bold
+axes.labelsize: large
+xtick.labelsize: medium
+ytick.labelsize : medium
+legend.fontsize: medium
+
+# GRID
+grid.color : .8
+grid.linestyle: dotted
