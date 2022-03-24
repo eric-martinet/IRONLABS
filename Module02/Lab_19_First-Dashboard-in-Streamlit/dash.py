@@ -28,8 +28,8 @@ default_cols = ["mean smoothness","mean compactness"]
 st.sidebar.markdown('### Dropdown with Scatter chart')
 
 
-x_axis_scatter = st.sidebar.selectbox('X axis', measurements, index = 0)
-y_axis_scatter = st.sidebar.selectbox('Y axis', measurements, index = 1)
+x_axis_scatter = st.sidebar.selectbox('X axis', measurements, index = measurements.index(default_cols[0]))
+y_axis_scatter = st.sidebar.selectbox('Y axis', measurements, index = measurements.index(default_cols[1]))
 
 fig_scatter = plt.figure(figsize=figsize)
 ax_scatter = fig_scatter.add_subplot(1,1,1)
@@ -71,7 +71,7 @@ ax_bar.set_xlabel('Tumor Type')
 st.sidebar.markdown('### Histogram Chart with Multiselect & Radio buttons')
 l_select_hist = st.sidebar.multiselect('Measurements', measurements, key = 'hist', default = default_cols)
 
-nb_bin_hist = st.sidebar.radio('Number of bins',options = [5, 10, 50, 100])
+nb_bin_hist = st.sidebar.radio('Number of bins',options = [5, 10, 50, 100], index = 2)
 
 fig_hist = plt.figure(figsize=figsize)
 ax_hist = fig_hist.add_subplot(1,1,1)
