@@ -28,8 +28,8 @@ default_cols = ["mean smoothness","mean compactness"]
 st.sidebar.markdown('### Dropdown with Scatter chart')
 
 
-x_axis_scatter = st.sidebar.selectbox('X axis', measurements)
-y_axis_scatter = st.sidebar.selectbox('Y axis', measurements)
+x_axis_scatter = st.sidebar.selectbox('X axis', measurements, index = 0)
+y_axis_scatter = st.sidebar.selectbox('Y axis', measurements, index = 1)
 
 fig_scatter = plt.figure(figsize=figsize)
 ax_scatter = fig_scatter.add_subplot(1,1,1)
