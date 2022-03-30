@@ -46,3 +46,6 @@ Temporary Items
 .apdisk
 
 # End of https://www.toptal.com/developers/gitignore/api/jupyternotebooks,macos
+
+# ADDITIONAL: TABLEAU DESKTOP TEMP WORKBOOKS
+.~*.twbr
