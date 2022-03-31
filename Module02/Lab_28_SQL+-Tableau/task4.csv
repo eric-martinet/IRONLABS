@@ -1,0 +1,28 @@
+gender,dept_name,total_salary,nb_employees
+F,"Customer Service",360295110,7829
+F,Development,1306953763,27836
+F,Finance,161108493,3252
+F,"Human Resources",304459189,6645
+F,Marketing,183460398,3699
+F,Production,1134773626,24121
+F,"Quality Management",322591106,6959
+F,Research,310869922,6581
+F,Sales,248373915,4829
+M,"Customer Service",529875733,11208
+M,Development,1824564793,37760
+M,Finance,214908225,4269
+M,"Human Resources",458601481,9710
+M,Marketing,225647688,4493
+M,Production,1560397950,32282
+M,"Quality Management",449698608,9423
+M,Research,446389525,9217
+M,Sales,282204696,5461
+Unknown,"Customer Service",1130597400,23124
+Unknown,Development,3818659977,77239
+Unknown,Finance,411603648,8105
+Unknown,"Human Resources",952866095,19544
+Unknown,Marketing,427164372,8360
+Unknown,Production,3257633850,65816
+Unknown,"Quality Management",986715063,20096
+Unknown,Research,929709852,18762
+Unknown,Sales,538999914,10298
