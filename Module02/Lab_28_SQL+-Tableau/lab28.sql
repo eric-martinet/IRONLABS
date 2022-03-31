@@ -105,6 +105,8 @@ ORDER BY calendar_year, gender, dept_name;
 # within a certain salary range. Let this range be defined by two values the user can insert when calling the procedure.
 # Finally, visualize the obtained result-set in Tableau as a double bar chart.
 
+
+DROP PROCEDURE IF EXISTS avg_salary;
 DELIMITER $$
 CREATE PROCEDURE avg_salary(
 		IN min_range INTEGER,
