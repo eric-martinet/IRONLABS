@@ -1,13 +1,14 @@
 <?xml version='1.0' encoding='utf-8' ?>
 
 <!-- build 20214.22.0213.1102                               -->
-<workbook original-version='18.1' source-build='2021.4.4 (20214.22.0213.1102)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+<workbook original-version='18.1' source-build='2021.4.4 (20214.22.0213.1102)' source-platform='mac' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
   <document-format-change-manifest>
     <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
     <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
     <AutoCreateAndUpdateDSDPhoneLayouts />
     <_.fcp.MarkAnimation.true...MarkAnimation />
     <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
     <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
     <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
     <SetMembershipControl />
@@ -15,6 +16,7 @@
     <WindowsPersistSimpleIdentifiers />
     <ZoneBackgroundTransparency />
   </document-format-change-manifest>
+  <repository-location id='IronHack-Module02_Lab28' path='/workbooks' revision='1.0' />
   <preferences>
     <preference name='ui.encoding.shelf.height' value='24' />
     <preference name='ui.shelf.height' value='26' />
@@ -25,167 +27,11 @@
     </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
   </_.fcp.AnimationOnByDefault.false...style>
   <datasources>
-    <datasource caption='task1' inline='true' name='federated.145n98l1f6yvtu11o2bj70ci6ew8' version='18.1'>
-      <connection class='federated'>
-        <named-connections>
-          <named-connection caption='task1' name='textscan.0wil99y1s6byq713ng5ih0ig96sk'>
-            <connection class='textscan' directory='/Users/ericmartinet/Documents/GitHub/IRONLABS/Module02/Lab_28_SQL+-Tableau' filename='task1.csv' password='' server='' />
-          </named-connection>
-        </named-connections>
-        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0wil99y1s6byq713ng5ih0ig96sk' name='task1.csv' table='[task1#csv]' type='table'>
-          <columns character-set='UTF-8' header='yes' locale='fr_FR'>
-            <column datatype='integer' name='calendar_year' ordinal='0' />
-            <column datatype='string' name='gender' ordinal='1' />
-            <column datatype='integer' name='nb_starts' ordinal='2' />
-            <column datatype='integer' name='nb_ends' ordinal='3' />
-            <column datatype='integer' name='var' ordinal='4' />
-          </columns>
-        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
-        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0wil99y1s6byq713ng5ih0ig96sk' name='task1.csv' table='[task1#csv]' type='table'>
-          <columns character-set='UTF-8' header='yes' locale='fr_FR'>
-            <column datatype='integer' name='calendar_year' ordinal='0' />
-            <column datatype='string' name='gender' ordinal='1' />
-            <column datatype='integer' name='nb_starts' ordinal='2' />
-            <column datatype='integer' name='nb_ends' ordinal='3' />
-            <column datatype='integer' name='var' ordinal='4' />
-          </columns>
-        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
-        <metadata-records>
-          <metadata-record class='capability'>
-            <remote-name />
-            <remote-type>0</remote-type>
-            <parent-name>[task1.csv]</parent-name>
-            <remote-alias />
-            <aggregation>Count</aggregation>
-            <contains-null>true</contains-null>
-            <attributes>
-              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
-              <attribute datatype='string' name='collation'>&quot;fr_FR&quot;</attribute>
-              <attribute datatype='string' name='currency'>&quot;€&quot;</attribute>
-              <attribute datatype='string' name='debit-close-char'>&quot;&quot;</attribute>
-              <attribute datatype='string' name='debit-open-char'>&quot;&quot;</attribute>
-              <attribute datatype='string' name='decimal-char'>&quot;,&quot;</attribute>
-              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
-              <attribute datatype='string' name='locale'>&quot;fr_FR&quot;</attribute>
-              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
-              <attribute datatype='string' name='thousands-char'>&quot; &quot;</attribute>
-            </attributes>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>calendar_year</remote-name>
-            <remote-type>20</remote-type>
-            <local-name>[calendar_year]</local-name>
-            <parent-name>[task1.csv]</parent-name>
-            <remote-alias>calendar_year</remote-alias>
-            <ordinal>0</ordinal>
-            <local-type>integer</local-type>
-            <aggregation>Sum</aggregation>
-            <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[task1.csv_DD6A189FA67A47B8BAB366D8F6CE61FA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>gender</remote-name>
-            <remote-type>129</remote-type>
-            <local-name>[gender]</local-name>
-            <parent-name>[task1.csv]</parent-name>
-            <remote-alias>gender</remote-alias>
-            <ordinal>1</ordinal>
-            <local-type>string</local-type>
-            <aggregation>Count</aggregation>
-            <scale>1</scale>
-            <width>1073741823</width>
-            <contains-null>true</contains-null>
-            <collation flag='0' name='LFR_RFR' />
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[task1.csv_DD6A189FA67A47B8BAB366D8F6CE61FA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>nb_starts</remote-name>
-            <remote-type>20</remote-type>
-            <local-name>[nb_starts]</local-name>
-            <parent-name>[task1.csv]</parent-name>
-            <remote-alias>nb_starts</remote-alias>
-            <ordinal>2</ordinal>
-            <local-type>integer</local-type>
-            <aggregation>Sum</aggregation>
-            <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[task1.csv_DD6A189FA67A47B8BAB366D8F6CE61FA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>nb_ends</remote-name>
-            <remote-type>20</remote-type>
-            <local-name>[nb_ends]</local-name>
-            <parent-name>[task1.csv]</parent-name>
-            <remote-alias>nb_ends</remote-alias>
-            <ordinal>3</ordinal>
-            <local-type>integer</local-type>
-            <aggregation>Sum</aggregation>
-            <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[task1.csv_DD6A189FA67A47B8BAB366D8F6CE61FA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>var</remote-name>
-            <remote-type>20</remote-type>
-            <local-name>[var]</local-name>
-            <parent-name>[task1.csv]</parent-name>
-            <remote-alias>var</remote-alias>
-            <ordinal>4</ordinal>
-            <local-type>integer</local-type>
-            <aggregation>Sum</aggregation>
-            <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[task1.csv_DD6A189FA67A47B8BAB366D8F6CE61FA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-        </metadata-records>
-      </connection>
-      <aliases enabled='yes' />
-      <_.fcp.ObjectModelTableType.true...column caption='task1.csv' datatype='table' name='[__tableau_internal_object_id__].[task1.csv_DD6A189FA67A47B8BAB366D8F6CE61FA]' role='measure' type='quantitative' />
-      <column caption='Calendar Year' datatype='integer' name='[calendar_year]' role='dimension' type='ordinal' />
-      <column caption='Gender' datatype='string' name='[gender]' role='dimension' type='nominal' />
-      <column caption='Nb Ends' datatype='integer' name='[nb_ends]' role='measure' type='quantitative' />
-      <column caption='Nb Starts' datatype='integer' name='[nb_starts]' role='measure' type='quantitative' />
-      <column-instance column='[gender]' derivation='None' name='[none:gender:nk]' pivot='key' type='nominal' />
-      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
-      <style>
-        <style-rule element='mark'>
-          <encoding attr='color' field='[none:gender:nk]' type='palette'>
-            <map to='#4e79a7'>
-              <bucket>&quot;F&quot;</bucket>
-            </map>
-            <map to='#e15759'>
-              <bucket>&quot;Unknown&quot;</bucket>
-            </map>
-            <map to='#f28e2b'>
-              <bucket>&quot;M&quot;</bucket>
-            </map>
-          </encoding>
-        </style-rule>
-      </style>
-      <semantic-values>
-        <semantic-value key='[Country].[Name]' value='&quot;France&quot;' />
-      </semantic-values>
-      <date-options start-of-week='monday' />
-      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
-        <objects>
-          <object caption='task1.csv' id='task1.csv_DD6A189FA67A47B8BAB366D8F6CE61FA'>
-            <properties context=''>
-              <relation connection='textscan.0wil99y1s6byq713ng5ih0ig96sk' name='task1.csv' table='[task1#csv]' type='table'>
-                <columns character-set='UTF-8' header='yes' locale='fr_FR'>
-                  <column datatype='integer' name='calendar_year' ordinal='0' />
-                  <column datatype='string' name='gender' ordinal='1' />
-                  <column datatype='integer' name='nb_starts' ordinal='2' />
-                  <column datatype='integer' name='nb_ends' ordinal='3' />
-                  <column datatype='integer' name='var' ordinal='4' />
-                </columns>
-              </relation>
-            </properties>
-          </object>
-        </objects>
-      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
-    </datasource>
     <datasource caption='task2' inline='true' name='federated.0s70dc30bdjqz81fazbiz0c8oztq' version='18.1'>
       <connection class='federated'>
         <named-connections>
           <named-connection caption='task2' name='textscan.0fgzs7z05hvg7f1gfbp640ta64o3'>
-            <connection class='textscan' directory='/Users/ericmartinet/Documents/GitHub/IRONLABS/Module02/Lab_28_SQL+-Tableau' filename='task2.csv' password='' server='' />
+            <connection class='textscan' directory='/Users/ericmartinet/Documents/GitHub/IRONLABS/Module02/Lab_28_SQL+-Tableau' filename='task2.csv' password='' server='' workgroup-auth-mode='as-is' />
           </named-connection>
         </named-connections>
         <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0fgzs7z05hvg7f1gfbp640ta64o3' name='task2.csv' table='[task2#csv]' type='table'>
@@ -208,6 +54,7 @@
             <column datatype='integer' name='var' ordinal='5' />
           </columns>
         </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <refresh increment-key='' incremental-updates='false' />
         <metadata-records>
           <metadata-record class='capability'>
             <remote-name />
@@ -317,6 +164,103 @@
       <column caption='Nb Starts' datatype='integer' name='[nb_starts]' role='measure' type='quantitative' />
       <column caption='Var' datatype='integer' name='[var]' role='measure' type='quantitative' />
       <column-instance column='[gender]' derivation='None' name='[none:gender:nk]' pivot='key' type='nominal' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_GB' class='hyper' dbname='/Users/ericmartinet/Documents/GitHub/IRONLABS/Module02/Lab_28_SQL+-Tableau/task2.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='03/31/2022 12:46:24 PM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh increment-key='' incremental-updates='false'>
+            <refresh-event add-from-file-path='task2' increment-value='%null%' refresh-type='create' rows-inserted='117' timestamp-start='2022-03-31 12:46:24.736' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>calendar_year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[calendar_year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>calendar_year</remote-alias>
+              <ordinal>0</ordinal>
+              <family>task2.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>15</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[task2.csv_7ABB4A392CB341A28A193A0C1BB055A7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>gender</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[gender]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>gender</remote-alias>
+              <ordinal>1</ordinal>
+              <family>task2.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LFR_RFR' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[task2.csv_7ABB4A392CB341A28A193A0C1BB055A7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>dept_name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[dept_name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>dept_name</remote-alias>
+              <ordinal>2</ordinal>
+              <family>task2.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LFR_RFR' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[task2.csv_7ABB4A392CB341A28A193A0C1BB055A7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>nb_starts</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[nb_starts]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>nb_starts</remote-alias>
+              <ordinal>3</ordinal>
+              <family>task2.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[task2.csv_7ABB4A392CB341A28A193A0C1BB055A7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>nb_ends</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[nb_ends]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>nb_ends</remote-alias>
+              <ordinal>4</ordinal>
+              <family>task2.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[task2.csv_7ABB4A392CB341A28A193A0C1BB055A7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>var</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[var]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>var</remote-alias>
+              <ordinal>5</ordinal>
+              <family>task2.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[task2.csv_7ABB4A392CB341A28A193A0C1BB055A7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
       <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
       <style>
         <style-rule element='mark'>
@@ -349,6 +293,467 @@
                 </columns>
               </relation>
             </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='task1' inline='true' name='federated.145n98l1f6yvtu11o2bj70ci6ew8' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='task1' name='textscan.0wil99y1s6byq713ng5ih0ig96sk'>
+            <connection class='textscan' directory='/Users/ericmartinet/Documents/GitHub/IRONLABS/Module02/Lab_28_SQL+-Tableau' filename='task1.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0wil99y1s6byq713ng5ih0ig96sk' name='task1.csv' table='[task1#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='fr_FR'>
+            <column datatype='integer' name='calendar_year' ordinal='0' />
+            <column datatype='string' name='gender' ordinal='1' />
+            <column datatype='integer' name='nb_starts' ordinal='2' />
+            <column datatype='integer' name='nb_ends' ordinal='3' />
+            <column datatype='integer' name='var' ordinal='4' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0wil99y1s6byq713ng5ih0ig96sk' name='task1.csv' table='[task1#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='fr_FR'>
+            <column datatype='integer' name='calendar_year' ordinal='0' />
+            <column datatype='string' name='gender' ordinal='1' />
+            <column datatype='integer' name='nb_starts' ordinal='2' />
+            <column datatype='integer' name='nb_ends' ordinal='3' />
+            <column datatype='integer' name='var' ordinal='4' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <refresh increment-key='' incremental-updates='false' />
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[task1.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;fr_FR&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;€&quot;</attribute>
+              <attribute datatype='string' name='debit-close-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='debit-open-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='decimal-char'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;fr_FR&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='thousands-char'>&quot; &quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>calendar_year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[calendar_year]</local-name>
+            <parent-name>[task1.csv]</parent-name>
+            <remote-alias>calendar_year</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[task1.csv_DD6A189FA67A47B8BAB366D8F6CE61FA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gender</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[gender]</local-name>
+            <parent-name>[task1.csv]</parent-name>
+            <remote-alias>gender</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[task1.csv_DD6A189FA67A47B8BAB366D8F6CE61FA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>nb_starts</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[nb_starts]</local-name>
+            <parent-name>[task1.csv]</parent-name>
+            <remote-alias>nb_starts</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[task1.csv_DD6A189FA67A47B8BAB366D8F6CE61FA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>nb_ends</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[nb_ends]</local-name>
+            <parent-name>[task1.csv]</parent-name>
+            <remote-alias>nb_ends</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[task1.csv_DD6A189FA67A47B8BAB366D8F6CE61FA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>var</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[var]</local-name>
+            <parent-name>[task1.csv]</parent-name>
+            <remote-alias>var</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[task1.csv_DD6A189FA67A47B8BAB366D8F6CE61FA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='task1.csv' datatype='table' name='[__tableau_internal_object_id__].[task1.csv_DD6A189FA67A47B8BAB366D8F6CE61FA]' role='measure' type='quantitative' />
+      <column caption='Calendar Year' datatype='integer' name='[calendar_year]' role='dimension' type='ordinal' />
+      <column caption='Gender' datatype='string' name='[gender]' role='dimension' type='nominal' />
+      <column caption='Nb Ends' datatype='integer' name='[nb_ends]' role='measure' type='quantitative' />
+      <column caption='Nb Starts' datatype='integer' name='[nb_starts]' role='measure' type='quantitative' />
+      <column-instance column='[calendar_year]' derivation='None' name='[none:calendar_year:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[gender]' derivation='None' name='[none:gender:nk]' pivot='key' type='nominal' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_GB' class='hyper' dbname='/Users/ericmartinet/Documents/GitHub/IRONLABS/Module02/Lab_28_SQL+-Tableau/task1.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='03/31/2022 12:46:14 PM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh increment-key='' incremental-updates='false'>
+            <refresh-event add-from-file-path='task1' increment-value='%null%' refresh-type='create' rows-inserted='26' timestamp-start='2022-03-31 12:46:14.541' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>calendar_year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[calendar_year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>calendar_year</remote-alias>
+              <ordinal>0</ordinal>
+              <family>task1.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>13</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[task1.csv_DD6A189FA67A47B8BAB366D8F6CE61FA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>gender</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[gender]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>gender</remote-alias>
+              <ordinal>1</ordinal>
+              <family>task1.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LFR_RFR' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[task1.csv_DD6A189FA67A47B8BAB366D8F6CE61FA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>nb_starts</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[nb_starts]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>nb_starts</remote-alias>
+              <ordinal>2</ordinal>
+              <family>task1.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>26</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[task1.csv_DD6A189FA67A47B8BAB366D8F6CE61FA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>nb_ends</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[nb_ends]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>nb_ends</remote-alias>
+              <ordinal>3</ordinal>
+              <family>task1.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>26</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[task1.csv_DD6A189FA67A47B8BAB366D8F6CE61FA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>var</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[var]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>var</remote-alias>
+              <ordinal>4</ordinal>
+              <family>task1.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>26</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[task1.csv_DD6A189FA67A47B8BAB366D8F6CE61FA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+        <filter class='categorical' column='[none:calendar_year:ok]'>
+          <groupfilter from='1990' function='range' level='[none:calendar_year:ok]' to='2002' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          <target field='[federated.145n98l1f6yvtu11o2bj70ci6ew8].[none:calendar_year:ok]' />
+        </filter>
+        <filter class='categorical' column='[none:gender:nk]'>
+          <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+            <groupfilter function='member' level='[none:gender:nk]' member='&quot;F&quot;' />
+            <groupfilter function='member' level='[none:gender:nk]' member='&quot;M&quot;' />
+          </groupfilter>
+          <target field='[federated.145n98l1f6yvtu11o2bj70ci6ew8].[none:gender:nk]' />
+        </filter>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:gender:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;F&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Unknown&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;M&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;France&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='task1.csv' id='task1.csv_DD6A189FA67A47B8BAB366D8F6CE61FA'>
+            <properties context=''>
+              <relation connection='textscan.0wil99y1s6byq713ng5ih0ig96sk' name='task1.csv' table='[task1#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='fr_FR'>
+                  <column datatype='integer' name='calendar_year' ordinal='0' />
+                  <column datatype='string' name='gender' ordinal='1' />
+                  <column datatype='integer' name='nb_starts' ordinal='2' />
+                  <column datatype='integer' name='nb_ends' ordinal='3' />
+                  <column datatype='integer' name='var' ordinal='4' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='task4' inline='true' name='federated.1sj636d1gdum7b1cllkau1nejzoy' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='task4' name='textscan.1rn7d1a0s1avi911fm1zq15bfxl1'>
+            <connection class='textscan' directory='/Users/ericmartinet/Documents/GitHub/IRONLABS/Module02/Lab_28_SQL+-Tableau' filename='task4.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1rn7d1a0s1avi911fm1zq15bfxl1' name='task4.csv' table='[task4#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='fr_FR'>
+            <column datatype='string' name='gender' ordinal='0' />
+            <column datatype='string' name='dept_name' ordinal='1' />
+            <column datatype='integer' name='total_salary' ordinal='2' />
+            <column datatype='integer' name='nb_employees' ordinal='3' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1rn7d1a0s1avi911fm1zq15bfxl1' name='task4.csv' table='[task4#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='fr_FR'>
+            <column datatype='string' name='gender' ordinal='0' />
+            <column datatype='string' name='dept_name' ordinal='1' />
+            <column datatype='integer' name='total_salary' ordinal='2' />
+            <column datatype='integer' name='nb_employees' ordinal='3' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <refresh increment-key='' incremental-updates='false' />
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[task4.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;fr_FR&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;€&quot;</attribute>
+              <attribute datatype='string' name='debit-close-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='debit-open-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='decimal-char'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;fr_FR&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='thousands-char'>&quot; &quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gender</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[gender]</local-name>
+            <parent-name>[task4.csv]</parent-name>
+            <remote-alias>gender</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[task4.csv_ADBC0140EF7F41D6A2A8B7C60089EBBF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>dept_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[dept_name]</local-name>
+            <parent-name>[task4.csv]</parent-name>
+            <remote-alias>dept_name</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[task4.csv_ADBC0140EF7F41D6A2A8B7C60089EBBF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_salary</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[total_salary]</local-name>
+            <parent-name>[task4.csv]</parent-name>
+            <remote-alias>total_salary</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[task4.csv_ADBC0140EF7F41D6A2A8B7C60089EBBF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>nb_employees</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[nb_employees]</local-name>
+            <parent-name>[task4.csv]</parent-name>
+            <remote-alias>nb_employees</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[task4.csv_ADBC0140EF7F41D6A2A8B7C60089EBBF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Average Salary' datatype='real' name='[Calculation_2430817917561675780]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM([total_salary]) / SUM([nb_employees])' />
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='task4.csv' datatype='table' name='[__tableau_internal_object_id__].[task4.csv_ADBC0140EF7F41D6A2A8B7C60089EBBF]' role='measure' type='quantitative' />
+      <column caption='Dept Name' datatype='string' name='[dept_name]' role='dimension' type='nominal' />
+      <column caption='Gender' datatype='string' name='[gender]' role='dimension' type='nominal' />
+      <column caption='Nb Employees' datatype='integer' name='[nb_employees]' role='measure' type='quantitative' />
+      <column caption='Total Salary' datatype='integer' name='[total_salary]' role='measure' type='quantitative' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_GB' class='hyper' dbname='/Users/ericmartinet/Documents/GitHub/IRONLABS/Module02/Lab_28_SQL+-Tableau/task4.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='03/31/2022 12:46:44 PM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh increment-key='' incremental-updates='false'>
+            <refresh-event add-from-file-path='task4' increment-value='%null%' refresh-type='create' rows-inserted='27' timestamp-start='2022-03-31 12:46:44.253' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>gender</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[gender]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>gender</remote-alias>
+              <ordinal>0</ordinal>
+              <family>task4.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LFR_RFR' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[task4.csv_ADBC0140EF7F41D6A2A8B7C60089EBBF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>dept_name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[dept_name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>dept_name</remote-alias>
+              <ordinal>1</ordinal>
+              <family>task4.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LFR_RFR' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[task4.csv_ADBC0140EF7F41D6A2A8B7C60089EBBF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>total_salary</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[total_salary]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>total_salary</remote-alias>
+              <ordinal>2</ordinal>
+              <family>task4.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>27</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[task4.csv_ADBC0140EF7F41D6A2A8B7C60089EBBF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>nb_employees</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[nb_employees]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>nb_employees</remote-alias>
+              <ordinal>3</ordinal>
+              <family>task4.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>27</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[task4.csv_ADBC0140EF7F41D6A2A8B7C60089EBBF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;France&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='task4.csv' id='task4.csv_ADBC0140EF7F41D6A2A8B7C60089EBBF'>
+            <properties context=''>
+              <relation connection='textscan.1rn7d1a0s1avi911fm1zq15bfxl1' name='task4.csv' table='[task4#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='fr_FR'>
+                  <column datatype='string' name='gender' ordinal='0' />
+                  <column datatype='string' name='dept_name' ordinal='1' />
+                  <column datatype='integer' name='total_salary' ordinal='2' />
+                  <column datatype='integer' name='nb_employees' ordinal='3' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
           </object>
         </objects>
       </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
@@ -357,7 +762,7 @@
       <connection class='federated'>
         <named-connections>
           <named-connection caption='task3' name='textscan.19miqhf158jlrf1e0fxus14e0kj9'>
-            <connection class='textscan' directory='/Users/ericmartinet/Documents/GitHub/IRONLABS/Module02/Lab_28_SQL+-Tableau' filename='task3.csv' password='' server='' />
+            <connection class='textscan' directory='/Users/ericmartinet/Documents/GitHub/IRONLABS/Module02/Lab_28_SQL+-Tableau' filename='task3.csv' password='' server='' workgroup-auth-mode='as-is' />
           </named-connection>
         </named-connections>
         <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.19miqhf158jlrf1e0fxus14e0kj9' name='task3.csv' table='[task3#csv]' type='table'>
@@ -378,6 +783,7 @@
             <column datatype='integer' name='nb_employees' ordinal='4' />
           </columns>
         </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <refresh increment-key='' incremental-updates='false' />
         <metadata-records>
           <metadata-record class='capability'>
             <remote-name />
@@ -477,6 +883,94 @@
       <column caption='Gender' datatype='string' name='[gender]' role='dimension' type='nominal' />
       <column caption='Nb Employees' datatype='integer' name='[nb_employees]' role='measure' type='quantitative' />
       <column caption='Total Salary' datatype='integer' name='[total_salary]' role='measure' type='quantitative' />
+      <column-instance column='[dept_name]' derivation='None' name='[none:dept_name:nk]' pivot='key' type='nominal' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_GB' class='hyper' dbname='/Users/ericmartinet/Documents/GitHub/IRONLABS/Module02/Lab_28_SQL+-Tableau/task3.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='03/31/2022 12:46:36 PM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh increment-key='' incremental-updates='false'>
+            <refresh-event add-from-file-path='task3' increment-value='%null%' refresh-type='create' rows-inserted='352' timestamp-start='2022-03-31 12:46:36.538' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>calendar_year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[calendar_year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>calendar_year</remote-alias>
+              <ordinal>0</ordinal>
+              <family>task3.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>14</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[task3.csv_DCD46D7804F74775B433FA58430D598B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>gender</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[gender]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>gender</remote-alias>
+              <ordinal>1</ordinal>
+              <family>task3.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LFR_RFR' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[task3.csv_DCD46D7804F74775B433FA58430D598B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>dept_name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[dept_name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>dept_name</remote-alias>
+              <ordinal>2</ordinal>
+              <family>task3.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LFR_RFR' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[task3.csv_DCD46D7804F74775B433FA58430D598B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>total_salary</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[total_salary]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>total_salary</remote-alias>
+              <ordinal>3</ordinal>
+              <family>task3.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>352</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[task3.csv_DCD46D7804F74775B433FA58430D598B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>nb_employees</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[nb_employees]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>nb_employees</remote-alias>
+              <ordinal>4</ordinal>
+              <family>task3.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>346</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[task3.csv_DCD46D7804F74775B433FA58430D598B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+        <filter class='categorical' column='[none:dept_name:nk]'>
+          <groupfilter from='&quot;Customer Service&quot;' function='range' level='[none:dept_name:nk]' to='&quot;Sales&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          <target field='[federated.1w22g810z1wnp6135sgz80q43b64].[none:dept_name:nk]' />
+        </filter>
+      </extract>
       <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
       <semantic-values>
         <semantic-value key='[Country].[Name]' value='&quot;France&quot;' />
@@ -496,136 +990,8 @@
                 </columns>
               </relation>
             </properties>
-          </object>
-        </objects>
-      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
-    </datasource>
-    <datasource caption='task4' inline='true' name='federated.1sj636d1gdum7b1cllkau1nejzoy' version='18.1'>
-      <connection class='federated'>
-        <named-connections>
-          <named-connection caption='task4' name='textscan.1rn7d1a0s1avi911fm1zq15bfxl1'>
-            <connection class='textscan' directory='/Users/ericmartinet/Documents/GitHub/IRONLABS/Module02/Lab_28_SQL+-Tableau' filename='task4.csv' password='' server='' />
-          </named-connection>
-        </named-connections>
-        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1rn7d1a0s1avi911fm1zq15bfxl1' name='task4.csv' table='[task4#csv]' type='table'>
-          <columns character-set='UTF-8' header='yes' locale='fr_FR'>
-            <column datatype='string' name='gender' ordinal='0' />
-            <column datatype='string' name='dept_name' ordinal='1' />
-            <column datatype='integer' name='total_salary' ordinal='2' />
-            <column datatype='integer' name='nb_employees' ordinal='3' />
-          </columns>
-        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
-        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1rn7d1a0s1avi911fm1zq15bfxl1' name='task4.csv' table='[task4#csv]' type='table'>
-          <columns character-set='UTF-8' header='yes' locale='fr_FR'>
-            <column datatype='string' name='gender' ordinal='0' />
-            <column datatype='string' name='dept_name' ordinal='1' />
-            <column datatype='integer' name='total_salary' ordinal='2' />
-            <column datatype='integer' name='nb_employees' ordinal='3' />
-          </columns>
-        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
-        <metadata-records>
-          <metadata-record class='capability'>
-            <remote-name />
-            <remote-type>0</remote-type>
-            <parent-name>[task4.csv]</parent-name>
-            <remote-alias />
-            <aggregation>Count</aggregation>
-            <contains-null>true</contains-null>
-            <attributes>
-              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
-              <attribute datatype='string' name='collation'>&quot;fr_FR&quot;</attribute>
-              <attribute datatype='string' name='currency'>&quot;€&quot;</attribute>
-              <attribute datatype='string' name='debit-close-char'>&quot;&quot;</attribute>
-              <attribute datatype='string' name='debit-open-char'>&quot;&quot;</attribute>
-              <attribute datatype='string' name='decimal-char'>&quot;,&quot;</attribute>
-              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
-              <attribute datatype='string' name='locale'>&quot;fr_FR&quot;</attribute>
-              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
-              <attribute datatype='string' name='thousands-char'>&quot; &quot;</attribute>
-            </attributes>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>gender</remote-name>
-            <remote-type>129</remote-type>
-            <local-name>[gender]</local-name>
-            <parent-name>[task4.csv]</parent-name>
-            <remote-alias>gender</remote-alias>
-            <ordinal>0</ordinal>
-            <local-type>string</local-type>
-            <aggregation>Count</aggregation>
-            <scale>1</scale>
-            <width>1073741823</width>
-            <contains-null>true</contains-null>
-            <collation flag='0' name='LFR_RFR' />
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[task4.csv_ADBC0140EF7F41D6A2A8B7C60089EBBF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>dept_name</remote-name>
-            <remote-type>129</remote-type>
-            <local-name>[dept_name]</local-name>
-            <parent-name>[task4.csv]</parent-name>
-            <remote-alias>dept_name</remote-alias>
-            <ordinal>1</ordinal>
-            <local-type>string</local-type>
-            <aggregation>Count</aggregation>
-            <scale>1</scale>
-            <width>1073741823</width>
-            <contains-null>true</contains-null>
-            <collation flag='0' name='LFR_RFR' />
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[task4.csv_ADBC0140EF7F41D6A2A8B7C60089EBBF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>total_salary</remote-name>
-            <remote-type>20</remote-type>
-            <local-name>[total_salary]</local-name>
-            <parent-name>[task4.csv]</parent-name>
-            <remote-alias>total_salary</remote-alias>
-            <ordinal>2</ordinal>
-            <local-type>integer</local-type>
-            <aggregation>Sum</aggregation>
-            <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[task4.csv_ADBC0140EF7F41D6A2A8B7C60089EBBF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>nb_employees</remote-name>
-            <remote-type>20</remote-type>
-            <local-name>[nb_employees]</local-name>
-            <parent-name>[task4.csv]</parent-name>
-            <remote-alias>nb_employees</remote-alias>
-            <ordinal>3</ordinal>
-            <local-type>integer</local-type>
-            <aggregation>Sum</aggregation>
-            <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[task4.csv_ADBC0140EF7F41D6A2A8B7C60089EBBF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-        </metadata-records>
-      </connection>
-      <aliases enabled='yes' />
-      <column caption='Average Salary' datatype='real' name='[Calculation_2430817917561675780]' role='measure' type='quantitative'>
-        <calculation class='tableau' formula='SUM([total_salary]) / SUM([nb_employees])' />
-      </column>
-      <_.fcp.ObjectModelTableType.true...column caption='task4.csv' datatype='table' name='[__tableau_internal_object_id__].[task4.csv_ADBC0140EF7F41D6A2A8B7C60089EBBF]' role='measure' type='quantitative' />
-      <column caption='Dept Name' datatype='string' name='[dept_name]' role='dimension' type='nominal' />
-      <column caption='Gender' datatype='string' name='[gender]' role='dimension' type='nominal' />
-      <column caption='Nb Employees' datatype='integer' name='[nb_employees]' role='measure' type='quantitative' />
-      <column caption='Total Salary' datatype='integer' name='[total_salary]' role='measure' type='quantitative' />
-      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
-      <semantic-values>
-        <semantic-value key='[Country].[Name]' value='&quot;France&quot;' />
-      </semantic-values>
-      <date-options start-of-week='monday' />
-      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
-        <objects>
-          <object caption='task4.csv' id='task4.csv_ADBC0140EF7F41D6A2A8B7C60089EBBF'>
-            <properties context=''>
-              <relation connection='textscan.1rn7d1a0s1avi911fm1zq15bfxl1' name='task4.csv' table='[task4#csv]' type='table'>
-                <columns character-set='UTF-8' header='yes' locale='fr_FR'>
-                  <column datatype='string' name='gender' ordinal='0' />
-                  <column datatype='string' name='dept_name' ordinal='1' />
-                  <column datatype='integer' name='total_salary' ordinal='2' />
-                  <column datatype='integer' name='nb_employees' ordinal='3' />
-                </columns>
-              </relation>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
             </properties>
           </object>
         </objects>
@@ -1142,8 +1508,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='1300' minheight='1300' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='21' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='98000' id='20' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='100000' id='25' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='24' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
                 <zone h='6500' id='10' mode='checkdropdown' name='# of Employees by Gender' param='[federated.145n98l1f6yvtu11o2bj70ci6ew8].[none:gender:nk]' type-v2='filter' w='16000' x='83200' y='9250'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -3020,101 +3386,101 @@
       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
-      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
+      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
-      u41t6jwbOP63Yzut4yQkvCQxSUjidJCSglYw5SVLWkZhdNPo+DCGRLe16iboojEhEY1qg3ab
-      uj2a1Ems26qpHzqt3Zg0aXSCtQPRtdBQQpO0tF0xJDTkFTvviePgxG/PhzzxE4gNTnIOtjnX
-      71tpfJ3b59zXfZ033/e3vw3A559/zksvvXTD1A8DAwPk5uayfv16Nm/eDEwsgmIymcL99uLF
-      i1y5cuWGuV/+/ve/T8vJ0tJSBgcHpz2LmJoD0WJ3d3dTWlrK97//fYCYbr1Mjg9vv/0227Zt
-      Y+PGjWzcuJHdu3eH/ybS+PCNb3yDoaEhXC4XFRUVfPLJJxQWFtLe3s6mTZvCU0l4vV6uX78e
-      nvisubl5VuPDjh07yMnJ4eDBg8DEOOB0OqeNDzAxdXZ5eXn4SuxuM6MC8Pnnn/Pwww/T19fH
-      yy+/HN4hkX7WfM8996DX6wkEAtTU1LB48WLy8vIYHBwkEAig1+vZtGnTDZe+MzG57Y6ODp5/
-      /nlg4lJyJgslWCwWfvCDH/C73/2Onp4enn76aex2+6zaI0QkfX194RManU5HWlpaeM6W3bt3
-      T5v3Z926dfT09IRXe6qpqaGvrw+Hw8HkrC1utzt8K2Tqdm7Oye7u7ttO/hctttPpnHFuTo4P
-      ly9fpr6+nvr6emBikrWb56mZHB9gYi2J1tZWysrK6OjoCM8AW1BQEHEeoVgoMT4APPvss/zl
-      L3/h8OHDbNy4kZ07d86qPYkq5gJQV1fHyMgIJSUlFBYWsmXLFlasWAFEXpvS4XAwf/58Ojs7
-      WbBgAfv27bthmlaYPl2v0Wic9qbB7eTn57N//37S0tIIhUKMjIzcMkYgECAUCoUXbFi5ciWr
-      V69mZGSEAwcOSAEQipqcg2XVqlV4vV48Hk94NspIZ5Rer5dt27axbds2zp49y/Hjx9m+fTs5
-      OTkcOnQo3G8DgQA9PT3hz0XKyVAoxKeffkowGESv14f7/dQcWLx4ccTYbreb8+fPhydpu91b
-      PlPHh9bWVkKhEE8++WS4LTfPwDk5PgA0NjaGbxMdPXo0/DeRxof+/v7b7/QpIo0PtzJ13wDM
-      nz+fmpoaQqEQ3/ve99ixY8ctZzZNNrcsAC0tLezduxe/309mZiYHDx5Ep9PxxBNP8JOf/ITC
-      wkKGhoYoKyvj6aefBiami503bx7t7e387Gc/Izs7m+bmZl588UW6urro6OiIeilVWVnJCy+8
-      gM1mi7iSU6TPPfnkk1RXV2Oz2XA6nezYsWPazJVTP7d69Wr27dtHXl4e3/nOdzh06BA2mw2X
-      y0VVVdXt95gQtzG1v+3atYsDBw6wdOlSLl26FB4Uo2loaODIkSPYbDYcDgc//OEPyc7O5sEH
-      H+SZZ54hLy8Pl8s1bV3laDm5ZcsW9uzZQ25uLnl5eezevfuGHKipqYkY2263c+TIEX7605/i
-      8/n4+OOPp7U12vhQVVXFs88+y4EDB0hJSWF8fDz8XOPm8QEmnh/8/Oc/Dz9riHbWv2LFCvbu
-      3UtLS0t4Ou1o+31SpPHh5s9GGx9qamo4ePBgePW0SFOhJ7tZTwURCoUYHBzEYrGE35z5xS9+
-      wXe/+13MZjNZWVnhHev3+3E6neTk5Nz2LZvJ5fQmzw5iEQwGGRgYICsrK6YDNDg4iMFgwGKx
-      EAwGcblcpKWlTVujUwglBINBOjs7ycrKCi+Ccivj4+P09PSwYMGCG27zjI+PMzo6SmZmZsTB
-      LlJOAvh8PjweD/PmzQv/29QciBY7FArR3d2NxWKZNjVzLCbXCpj8bLTxIRQK4XQ6SU9Pv+3+
-      8fl8DAwMsGDBgpgH47mMDzDxuw6/3x91caJkNusVNHQ6XcRpdu+5555pzwQMBgP5+fkxxTWb
-      zTdMpRsLvV4/o4IxNRH0er08ABaqmly3OFYmk+mGFyGm/vvkwjyRRMtJo9F4Q58Hpv13pNg6
-      nS782uRsRCoakcYHnU4Xcw4ajcYZD8RzGR8g8jPOu4VMBieEEBp1d93QEkIIETMpAEIIoVFS
-      AIQQQqOkAAghhEZJARBCCI2SAiCEEBolBUAIITRKCoAQQmiUFAAhhNAoKQBCCKFRUgCEEEKj
-      pAAIIYRGSQEQQgiNkgIghBAaJQVACCE0KmkLQCAQUDym3++ftni1EsbGxhSPqVbcZGqrWnHV
-      6geJQI28iUatYy7bUk7SFgAhhBBzIwVACCE0atZrAsfb240t9A57FY0ZDAYBYl5sOlYBv58U
-      g/K7Wo24idzWnV8uV6g12qVG3kSjVl+Sbc3ezTmUtAXgVGMLF1v74t0McQdJAZg7yRttuzmH
-      5BaQEEJolBQAIYTQKCkAQgihUVIAhBBCo6QACCGERkkBEEIIjUr410CHh4dpamoCoLy8nNTU
-      1Di3SMRbXV0dJ06cICsri6985Su89dZbAHR2dvLLX/4SgMOHDxMMBqmoqKC/v58LFy4wNDTE
-      /v37+f3vf4/JZCI/P58dO3bE86uoRvJG3E5jY2PiF4Curi7S0tKwWq0YjcZ4N0ckgAsXLvDU
-      U09htVoZHx+nurqauro6iouLAWhpaWH+/PlUVVWRn5/P4cOH2bVrF2+88QZDQ0McOHAAp9PJ
-      n//85zh/E/VI3ohb8fl8/Otf/0r8AgDw2Wefce3aNSoqKhT/la5IPuvXr+fEiRN0dHSwa9cu
-      ioqKePPNNzl06BAATqeTCxcuAODxeCgtLeX1118nFAqh0+mora3l7NmzLF26NJ5fQ3WSNyKa
-      F154geLi4uR4BmC323nkkUfkTEYAE2e3Dz30EEajEZ/Px7Fjx3jsscfQ6XQAPPDAAxgMBux2
-      O263m48++oitW7diNpu5ePEiPp+P7du3U19fH+dvoi7JGxHNU089xYYNGxL/CsBsNsv9S3GD
-      9evXc+bMGR5//HGWLFmCyWSiqKgo/P8tFgt79uyhsbGR6upqdDodp06dorKykvLycurq6vjs
-      s8/Yv39//L6EyiRvxK0UFBQASfAQuLCwMN5NEAnGYrGwdetWYGK+9KmD/6SCgoJwJwfCfw+w
-      du1a1dsYb5I3IhZJcQtICCGE8qQACCGERkkBEEIIjZICIIQQGiUFQAghNEoKgBBCaJQuFAqF
-      4t2I2Wju6OP6eEDRmMHgRDy9PkXRuD6fT5Uf46gRN5Hb+kDJomn/NjY2pvj77n6/HwDDHVr3
-      9U5SI2+iUasvybZm7+YcStoCEAgESElRdqBWK/HVGKTUiptMbVUr7t1cANTIm2jUOuayLeXI
-      LSAhhNAoKQBCCKFRUgCEEEKjpAAIIYRGJe1TrmCPg5BvVNmY//cWkF/ht4CCPh9+Fd4aUCNu
-      MrV1Mm5w/hL0mYsVj303UiNvom5LpWMu21KGPsOavAXA+87/wLXGeDcjZv4kiptMbQXQr32G
-      1HXPqBT97nKn80atYy7bmjvT2mfkFpAQQmiVFAAhhNAoKQBCCKFRUgCEEEKjpAAIIYRGSQEQ
-      QgiNStjXQH0+H6FQCJPJBMDo6ChmsznOrRKJ7syZMzQ0NLBixQpWrlzJK6+8gtVq5YknngDg
-      /PnznDt3DqPRyO7du3n11VdxuVxUVFRQUVGBy+XitddeY+/evXH+JrMjeSNmImGvAOrq6vj3
-      v/8NwLVr13j55Zfj3CKR6Px+P++99x4/+tGP2LhxI3/605+orq4mEAjQ3t4OQG1tLdXV1ezZ
-      s4dgMEhlZSU//vGPeffddwF45ZVXGBsbi+fXmBPJGzETCVsAAIxGIz6fD4fDwfLly+PdHJHg
-      nE4nDoeDF198kVdffRWAtLQ0li9fTktLCwBWq5Xf/va3/PrXv0av15OXl8fzzz/P5s2bOXbs
-      GJs3bw6fPScryRsRq4QuAKtWraKhoQGdTnfH5jAXyWvhwoUsXbqUffv20dXVhcFgoL+/nw8/
-      /JDS0lIA1qxZE769Mzg4yK9+9Suqq6ux2+2kp6eTnp5Od3c3AwMD8fwqcyJ5I2KVsM8AANLT
-      02lqauLRRx/l008/jXdzRIJLTU2lqqqK3/zmN3z1q1/FZrPxxz/+kZKSEqxWKwBtbW0cPXqU
-      pUuXYjAYSE9P569//StWq5Xt27cD8PWvf52srKx4fpU5kbwRsUraFcHcR76dVHMBCfWYFJ4L
-      6G5eEUzyRkySuYCEEELDpAAIIYRGSQEQQgiNkgIghBAaJQVACCE0SgqAEEJoVNK+52Zc/ji6
-      JWsVjRkMBgHQ65Wti4GAn5QU5Xe1GnGTqa3huPl2xePerdTIm2jUOuayLWWk5NuT93cAgUBA
-      8V85qvX+99jYGKmpqYrGVCtuMrVVrbh38+8A1MibaNQ65rIt5cgtICGE0KikPcWZvF2jpMmL
-      oUAgoHhcpWOqFTeZ2qpW3Fj7gU6nU/x2odrUyJto1Drmsi3lJFfvVZlayazWJbcacQ0GA2rc
-      FVQrrhr7INkG9UR1Jyeiu5PbUqsvx2NbSXsFAOoc9GAwqHhcNWKqFXfybCNZ4ibTvk0Ud+p7
-      3cl9eCe3pVZfjse25FRHCCE0KmnfAhJCCDE3cgUghBAaJQVACCE0KuW55557Lt6NmK1Lly5x
-      /vx5WltbKSoq4vz58yxatIh3332X4uLi236+rq6O+vp6li1bxtDQEG+99RYOhwObzcYHH3xA
-      fn4+p0+fZuHChRiNxpja5HA4aGho4MqVK9hsNo4dO8alS5fIzMzk8uXLZGdnc+XKFdxu94xW
-      naqtraWpqYmmpiZF43q9Xv7whz+wZs0aLl++HN6fJSUlnDt3DqvVysmTJ7HZbDHHDAQC/O1v
-      f6O3txez2UxnZ6cicYeGhjh58iRtbW0sWbKE2tpaHA4HIyMjmEwm2traMJlMNDQ0UFBQEFNM
-      j8dDbW0tV69e5aOPPsJqtSrSDxLZXPMmkv7+fo4ePcq8efPIzMzkzJkzcz420Uwed4fDwX33
-      3adYLkTS3d1NbW0tFy9e5N5778XpdCrSl6NRIx+jOX78eHJfAbS0tPDYY49hMBjwer14PB5O
-      njzJmjVrYvr8F77wBdLT0wFobGxk69at2O32cMdtbm4mLS0Ns9kcc5tsNhtbtmzBZDLR3t6O
-      zWbja1/7Gh9//DGjo6O43W6am5tnnGgbNmygsrISr9eraNzTp09TUlICTN+fIyMjnD59mpUr
-      V84oZm9vL6WlpVRVVZGTk6NY3IaGBiorK9mwYQMpKSl4PB62bNmC0+kkEAhw/fp1Tp06hd0e
-      +9QQaWlpPPLIIxQVFVFaWqpYP0hkc82bSFJSUli9ejV+v59QKKTIsYlmzZo1PProo/j9fkVz
-      IZJFixaxefNmli1bRm9vr2J9ORo18jEavV6f3AVg8tWo9PR0RkdHcTgcjI+PY7FYYvr81LMD
-      v99PamoqGRkZeDwehoeHeeeddygvL59RmwwGA//5z3/Izc3F4/GQkZGBXq9Hp9MB8M9//pPl
-      y5fPKCZAX18f//jHP7BYLIrFbW5uJjc3F6PReMNrdJP7s7W1la6uLnJycmYU12w24/f7OX78
-      OE1NTYrFHR4exuFwcOLECa5du4bJZAL+vx/U19eTkZExq7P0Tz75hPLycsX6QSKba95EkpmZ
-      Gf79RDAYVPTY3CwQCPDGG2/wxS9+UdEci+b999+ntraW/Px8xfpyJGrlYzTZ2dnJXQD8fj9+
-      vx+Xy0VmZibLli2juLiY//73vzOOlZmZicvloqWlhdzcXDIyMti5cydvvvnmjH6I8f7771Nc
-      XExZWRk5OTlcvXoVt9sdnlfmW9/6Fo2NjVy/fn1G7TMajXzzm9/E6/WycOFCReLqdDrcbjet
-      ra1cunTphv2ZkZHBkiVLWLt2LWfPnp1RWwOBAHa7nYcffpiOjg7F4mZlZbFs2TJWrlzJ8PAw
-      Ho+HYDDI2NgYAHa7HaPRSHt7+4zidnR0kJ+fj06nU6wfJDIl8yaSyaszJY5NJCdOnGDTpk0U
-      FhYqmmORjIyM8NBDD7Fz504aGxsV68uRqJWPkYyNjVFWVpbczwBycnI4c+YMRUVFLFq0CJ1O
-      R1lZGS6X67ZV0u/389577+H3++nv72fVqlU0NDQQDAYpLy9Hp9ORk5ODxWIhEAhw7733xtSm
-      gYEBurq6uHr1KmVlZfT19dHc3MyXvvQlUlJSyMzMxGaz0dnZSXZ2dszf9cMPP+Ty5cvk5eVR
-      XFxMb2/vnONmZ2dTWFhIVlYW991337T9CVBSUoLb7Z44W4jxF7Lj4+OcPXuWrq4uNmzYgNVq
-      VSTu4sWLqaurw+128+CDD5KamsoHH3zA6tWrMZvNGI1G7r//ftra2mZ0luR0Orn//vvR6XTk
-      5uYq0g8S2VzyJporV67Q1tbG4OAgaWlpZGdnK3JsInG5XHR0dCieY5EMDg5y7tw52traWLdu
-      HQUFBYr05UjUysdoGhoa5HcAQgihVUl9C0gIIcTsSQEQQgiNkgIghBAaJQVACCE0SgqAEEJo
-      lBQAcVterzfeTRAi6fh8vju2cths/S/uklNFeliTegAAAABJRU5ErkJggg==
+      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
     </thumbnail>
   </thumbnails>
 </workbook>
